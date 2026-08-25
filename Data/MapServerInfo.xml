@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== MapServerInfo.xml
+== Defines GameServer instances and which maps each one hosts.
+== Loaded by GameServer via CMapServerManager::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### MapServer::ServerList ###
+Each <Server> here registers one GameServer instance.
+  ServerCode      Unique id for this server. Must match the ServerCode
+                  used by that GameServer's own GameServer.ini.
+  MapServerGroup  Group index (0-19) this server belongs to.
+  InitSetVal      Default move rule applied to every map NOT explicitly
+                  listed for this server under ServerMapping:
+                    0  = allowed, resolved automatically to whichever
+                         server actually hosts that map
+                    1  = blocked (map does not exist on this server)
+                   -1  = unrestricted default
+  IP              Address players connect to for this server (IPv4 or
+                  DNS name, max 15 chars).
+  Port            Port players connect to for this server. Must match
+                  that GameServer's own GameServer.ini.
+  MinLevel        Entry restrictions enforced by that GameServer once a
+  MaxLevel        player is connected/selecting this server. 0 = no
+  MinReset        restriction on that field. Values apply only to the
+  MaxReset        server matching its own ServerCode (a GameServer only
+  MinMasterReset  enforces the row for itself).
+  MaxMasterReset
+  Name            Free-text label, for readability only (not read by
+                  the loader).
+
+### MapServer::ServerMapping ###
+Every server referenced above should have its hosted maps declared here.
+  ServerCode      Which server (by ServerCode above) this rule applies to.
+  NotMoveOption   0 = this map exists elsewhere; moving into it sends the
+                      player to NextServerCode
+                  1 = this map is hosted locally on this ServerCode
+                      (NextServerCode is ignored, use -1)
+  MapNumber       The map id this rule applies to.
+  NextServerCode  Destination ServerCode for a move request into
+                  MapNumber. Use -1 when NotMoveOption is 1.
+  Name            Free-text label, for readability only (not read by
+                  the loader).
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MapServer>
+	<ServerList>
+		<Server ServerCode="00" MapServerGroup="00" InitSetVal="01" IP="192.168.1.12" Port="55901" MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Server01" />
+		<Server ServerCode="19" MapServerGroup="00" InitSetVal="00" IP="192.168.1.12" Port="55919" MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="ServerCS" />
+	</ServerList>
+
+	<ServerMapping>
+		<Server ServerCode="00" NotMoveOption="00" MapNumber="30" NextServerCode="19" Name="Castle Siege" />
+		<Server ServerCode="00" NotMoveOption="00" MapNumber="31" NextServerCode="19" Name="Land of Trials" />
+		<Server ServerCode="00" NotMoveOption="00" MapNumber="34" NextServerCode="19" Name="Crywolf" />
+		<Server ServerCode="00" NotMoveOption="00" MapNumber="41" NextServerCode="19" Name="Barracks" />
+		<Server ServerCode="00" NotMoveOption="00" MapNumber="42" NextServerCode="19" Name="Refuge" />
+		<Server ServerCode="00" NotMoveOption="00" MapNumber="79" NextServerCode="19" Name="Loren Market" />
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<Server ServerCode="19" NotMoveOption="01" MapNumber="30" NextServerCode="-1" Name="Castle Siege" />
+		<Server ServerCode="19" NotMoveOption="01" MapNumber="31" NextServerCode="-1" Name="Land of Trials" />
+		<Server ServerCode="19" NotMoveOption="01" MapNumber="34" NextServerCode="-1" Name="Crywolf" />
+		<Server ServerCode="19" NotMoveOption="01" MapNumber="41" NextServerCode="-1" Name="Barracks" />
+		<Server ServerCode="19" NotMoveOption="01" MapNumber="42" NextServerCode="-1" Name="Refuge" />
+		<Server ServerCode="19" NotMoveOption="01" MapNumber="79" NextServerCode="-1" Name="Loren Market" />
+	</ServerMapping>
+</MapServer>

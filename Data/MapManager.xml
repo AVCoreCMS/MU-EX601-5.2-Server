@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== MapManager.xml
+== Per-map settings (PK mode, drop rates, helper/Gens toggles).
+== Loaded by GameServer via CMapManager::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### MapManager::Config ###
+Each <Map> here configures one map. Maps not listed use engine defaults.
+  Number           Map id (matches the map numbers used everywhere else,
+                    e.g. MapServerInfo.xml's MapNumber).
+  PK               -1 = use the server-wide default (GameServer.ini)
+                     1 = force non-PK / safe zone on this map
+                     0 = force PK enabled on this map
+  Range             View range in tiles.
+  ExpRate           Experience rate, percent (100 = normal, 200 = double).
+  ItemDropRate      Item drop rate, percent (100 = normal, 200 = double).
+  ExcItemDropRate   Excellent item drop chance, out of 1,000,000
+                     (1000 = 0.1%, 10000 = 1%, 1000000 = 100% guaranteed;
+                     values above 1000000 have no extra effect).
+  SetItemDropRate   Set item drop chance, out of 1,000,000 (same scale
+                     as ExcItemDropRate).
+  SocketItemDrop     1 = socket items can drop on this map, 0 = cannot.
+  Helper            1 = MU Helper (auto-pathing/bot assist) allowed here,
+                     0 = disabled.
+  Gens              1 = Gens (faction) battle rules apply here, 0 = don't.
+  Attack            1 = the CustomAttack (auto-attack/farm) command is
+                     allowed on this map, 0 = blocked.
+  Store             1 = personal store (CustomStore, online and offline)
+                     can be opened on this map, 0 = blocked.
+  Pick              1 = the CustomPick (auto-pickup) command is allowed
+                     on this map, 0 = blocked.
+  Trade             1 = player-to-player trade requests are allowed on
+                     this map, 0 = blocked.
+  GuildWar          1 = guild war can be declared while the requester or
+                     the target guild's master is on this map, 0 = blocked.
+  AccountLevel      -1 = no restriction. N = minimum VIP AccountLevel
+                     (0-3) required to enter this map, enforced both via
+                     the "Move" NPC command and by walking onto any gate/
+                     portal that leads here. Does not affect other ways
+                     of reaching the map (events, GM commands, etc.).
+  CashShop          1 = the Cash Shop can be opened while on this map,
+                     0 = blocked.
+  Summon            1 = the Dark Lord's "Summon" skill can pull party
+                     members onto this map, 0 = blocked (they stay put
+                     and get a notice instead).
+  Resurrection      1 = the Resurrection Talisman can bring its owner
+                     back to this map, 0 = blocked.
+  Mobility          1 = the Mobility Talisman can bring its owner back
+                     to this map, 0 = blocked.
+  Name              Free-text label, for readability only (not read by
+                    the loader).
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MapManager>
+	<Config>
+		<Map Number="0" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Lorencia" />
+		<Map Number="1" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Dungeon" />
+		<Map Number="2" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Devias" />
+		<Map Number="3" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Noria" />
+		<Map Number="4" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Lost Tower" />
+		<Map Number="6" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Arena" />
+		<Map Number="7" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Atlans" />
+		<Map Number="8" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Tarkan" />
+		<Map Number="9" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Devil Square 1" />
+		<Map Number="10" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Icarus" />
+		<Map Number="11" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Blood Castle 1" />
+		<Map Number="12" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Blood Castle 2" />
+		<Map Number="13" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Blood Castle 3" />
+		<Map Number="14" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Blood Castle 4" />
+		<Map Number="15" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Blood Castle 5" />
+		<Map Number="16" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Blood Castle 6" />
+		<Map Number="17" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Blood Castle 7" />
+		<Map Number="18" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="0" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Chaos Castle 1" />
+		<Map Number="19" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="0" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Chaos Castle 2" />
+		<Map Number="20" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="0" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Chaos Castle 3" />
+		<Map Number="21" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="0" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Chaos Castle 4" />
+		<Map Number="22" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="0" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Chaos Castle 5" />
+		<Map Number="23" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="0" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Chaos Castle 6" />
+		<Map Number="24" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Kalima 1" />
+		<Map Number="25" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Kalima 2" />
+		<Map Number="26" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Kalima 3" />
+		<Map Number="27" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Kalima 4" />
+		<Map Number="28" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Kalima 5" />
+		<Map Number="29" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Kalima 6" />
+		<Map Number="30" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Castle Siege" />
+		<Map Number="31" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="30000" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Land of Trials" />
+		<Map Number="32" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Devil Square 2" />
+		<Map Number="33" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Aida" />
+		<Map Number="34" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Crywolf" />
+		<Map Number="36" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Kalima 7" />
+		<Map Number="37" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Kanturu 1" />
+		<Map Number="38" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Kanturu 2" />
+		<Map Number="39" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Kanturu 3" />
+		<Map Number="40" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Silent" />
+		<Map Number="41" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Barracks" />
+		<Map Number="42" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Refuge" />
+		<Map Number="45" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Illusion Temple 1" />
+		<Map Number="46" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Illusion Temple 2" />
+		<Map Number="47" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Illusion Temple 3" />
+		<Map Number="48" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Illusion Temple 4" />
+		<Map Number="49" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Illusion Temple 5" />
+		<Map Number="50" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Illusion Temple 6" />
+		<Map Number="51" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Elbeland" />
+		<Map Number="52" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Blood Castle 8" />
+		<Map Number="53" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="0" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Chaos Castle 7" />
+		<Map Number="56" PK="-1" Range="10" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Swamp of Calmness" />
+		<Map Number="57" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="1" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Raklion 1" />
+		<Map Number="58" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="1" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Raklion 2" />
+		<Map Number="62" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Santa Town" />
+		<Map Number="63" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="1" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Vulcanus" />
+		<Map Number="64" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="0" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Duel Arena" />
+		<Map Number="65" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Double Goer 1" />
+		<Map Number="66" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Double Goer 2" />
+		<Map Number="67" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Double Goer 3" />
+		<Map Number="68" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Double Goer 4" />
+		<Map Number="69" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Imperial Guardian 1" />
+		<Map Number="70" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Imperial Guardian 2" />
+		<Map Number="71" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Imperial Guardian 3" />
+		<Map Number="72" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="0" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Imperial Guardian 4" />
+		<Map Number="79" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="0" Resurrection="0" Mobility="0" Name="Loren Market" />
+		<Map Number="80" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Karutan 1" />
+		<Map Number="81" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Karutan 2" />
+		<Map Number="82" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Arkania" />
+		<Map Number="83" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Acheron" />
+		<Map Number="84" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Debenter" />
+		<Map Number="85" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="1" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Urk Montain" />
+		<Map Number="86" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="1" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Ferea" />
+		<Map Number="87" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Team vs Team" />
+		<Map Number="88" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="1" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Nars" />
+		<Map Number="89" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="1" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Nixie Lake" />
+		<Map Number="90" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Deep Dungeon1" />
+		<Map Number="91" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Deep Dungeon2" />
+		<Map Number="92" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Deep Dungeon3" />
+		<Map Number="93" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Deep Dungeon4" />
+		<Map Number="94" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Kubera Mine" />
+		<Map Number="95" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Swamp Of Darkness" />
+		<Map Number="96" PK="-1" Range="12" ExpRate="100" ItemDropRate="100" ExcItemDropRate="1000" SetItemDropRate="0" SocketItemDrop="0" Helper="1" Gens="0" Attack="1" Store="1" Pick="1" Trade="1" GuildWar="1" AccountLevel="-1" CashShop="1" Summon="1" Resurrection="1" Mobility="1" Name="Scotch Canyon" />
+	</Config>
+</MapManager>

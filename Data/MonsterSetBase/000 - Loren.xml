@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MonsterSpawn>
+	<Map Number="0" Name="Lorencia">
+		<Spot Type="0" Description="NPC">
+		   <Spawn MonsterIndex="254" Distance="0" StartX="119" StartY="113" Dir="3" />
+		    <Spawn MonsterIndex="230" Distance="0" StartX="137" StartY="133" Dir="3" />
+			<Spawn MonsterIndex="251" Distance="0" StartX="117" StartY="141" Dir="3" />
+			<Spawn MonsterIndex="255" Distance="0" StartX="122" StartY="135" Dir="1" />
+			<Spawn MonsterIndex="246" Distance="0" StartX="130" StartY="121" Dir="3" />
+			<Spawn MonsterIndex="257" Distance="0" StartX="96" StartY="129" Dir="1" />
+            <Spawn MonsterIndex="257" Distance="0" StartX="132" StartY="165" Dir="3" />
+			<Spawn MonsterIndex="257" Distance="0" StartX="132" StartY="90" Dir="3" />
+			<Spawn MonsterIndex="257" Distance="0" StartX="170" StartY="129" Dir="1" />
+			<Spawn MonsterIndex="240" Distance="0" StartX="147" StartY="145" Dir="1" />
+			<Spawn MonsterIndex="240" Distance="0" StartX="146" StartY="110" Dir="3" />
+			<Spawn MonsterIndex="379" Distance="0" StartX="131" StartY="146" Dir="1" />
+		</Spot>
+		<Spot Type="1" Description="Multi~Spawn">
+			<Spawn MonsterIndex="3" Distance="4" StartX="183" StartY="123" EndX="183" EndY="123" Dir="-1" Count="7" />
+			<Spawn MonsterIndex="2" Distance="4" StartX="194" StartY="142" EndX="194" EndY="142" Dir="-1" Count="7" />
+			<Spawn MonsterIndex="2" Distance="4" StartX="193" StartY="110" EndX="193" EndY="110" Dir="-1" Count="7" />
+			<Spawn MonsterIndex="1" Distance="4" StartX="141" StartY="82"  EndX="141" EndY="82"  Dir="-1" Count="7" />
+			<Spawn MonsterIndex="0" Distance="4" StartX="153" StartY="66"  EndX="153" EndY="66"  Dir="-1" Count="7" />
+			<Spawn MonsterIndex="0" Distance="4" StartX="170" StartY="73"  EndX="170" EndY="73"  Dir="-1" Count="7" />
+			<Spawn MonsterIndex="4" Distance="4" StartX="80"  StartY="124" EndX="80"  EndY="124" Dir="-1" Count="7" />
+			<Spawn MonsterIndex="4" Distance="4" StartX="90"  StartY="100" EndX="90"  EndY="100" Dir="-1" Count="7" />
+			<Spawn MonsterIndex="7" Distance="4" StartX="65"  StartY="135" EndX="65"  EndY="135" Dir="-1" Count="7" />
+			<Spawn MonsterIndex="14" Distance="4" StartX="128"  StartY="181" EndX="128"  EndY="181" Dir="-1" Count="7" />
+			<Spawn MonsterIndex="6"  Distance="4" StartX="144"  StartY="187" EndX="144"  EndY="187" Dir="-1" Count="7" />
+			<Spawn MonsterIndex="6"  Distance="4" StartX="97"  StartY="177" EndX="97"  EndY="177" Dir="-1" Count="7" />
+		</Spot>
+	</Map>
+</MonsterSpawn>

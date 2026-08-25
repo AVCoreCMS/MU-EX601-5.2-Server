@@ -1,0 +1,11 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<MonsterSpawn>
+	<Map Number="49" Name="Illusion Temple 5">
+		<Spot Type="0" Description="NPC">
+			<Spawn MonsterIndex="381" Distance="0" StartX="195" StartY="116" Dir="2" />
+			<Spawn MonsterIndex="382" Distance="0" StartX="140" StartY="061" Dir="2" />
+			<Spawn MonsterIndex="383" Distance="0" StartX="139" StartY="059" Dir="2" />
+			<Spawn MonsterIndex="384" Distance="0" StartX="192" StartY="116" Dir="2" />
+		</Spot>
+	</Map>
+</MonsterSpawn>

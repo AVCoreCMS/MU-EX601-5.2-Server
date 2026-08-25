@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== EventItemBagManager.xml
+== Maps each event "item bag" (loot table) to the trigger that
+== awards it - a specific item, a monster kill, or a special
+== event value (Blood Castle rank, Illusion Temple rank, etc.).
+== Loaded by GameServer via CItemBagManager::LoadXML().
+== The actual loot contents of each bag are separate files in
+== Data/EventItemBag/ (NNN - Name.txt, matched by Index) - not
+== part of this file.
+== Modify only if you know what you're doing!
+============================================================
+
+### ItemBagManager::Config ###
+Each <Bag> maps one trigger to a bag Index. A bag is awarded through
+exactly one of ItemIndex, MonsterClass, or SpecialValue - the other two
+stay -1 on that entry.
+  Index          Bag id. Must match the corresponding file's leading
+                 number in Data/EventItemBag/ (e.g. Index="7" matches
+                 "007 - ....txt"). Do not change for existing bags.
+  ItemIndex      -1 = not used. Otherwise, the item index that triggers
+                 this bag (e.g. opening item 7179 at a given ItemLevel).
+  ItemLevel      -1 = any level. Only meaningful together with ItemIndex.
+  MonsterClass   -1 = not used. Otherwise, the monster class whose kill
+                 triggers this bag (bosses/events, e.g. Kundun, Selupan).
+  SpecialValue   -1 = not used. Otherwise, an internal event code (see
+                 eItemBagSpecialValue in ItemBagManager.h - Blood Castle/
+                 Chaos Castle/Illusion Temple rank rewards, Crywolf,
+                 Lucky Coin, Cherry Blossom Mix, Double Goer chests,
+                 Imperial Guardian bosses, Online Lottery, Gift System...).
+  DropInventory  0 = the bag's item is dropped on the ground, 1 = it is
+                 given directly into the player's inventory.
+  Name           Free-text label, for readability only (not read by
+                 the loader).
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemBagManager>
+	<Config>
+		<Bag Index="0" ItemIndex="7179" ItemLevel="0" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Box of Luck" />
+		<Bag Index="1" ItemIndex="-1" ItemLevel="-1" MonsterClass="55" SpecialValue="-1" DropInventory="0" Name="Skeleton King" />
+		<Bag Index="2" ItemIndex="-1" ItemLevel="-1" MonsterClass="42" SpecialValue="-1" DropInventory="0" Name="Red Dragon" />
+		<Bag Index="3" ItemIndex="7179" ItemLevel="1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Star of Christmas" />
+		<Bag Index="4" ItemIndex="7179" ItemLevel="3" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Heart of Love" />
+		<Bag Index="5" ItemIndex="7179" ItemLevel="5" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Silver Medal" />
+		<Bag Index="6" ItemIndex="7179" ItemLevel="6" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Gold Medal" />
+		<Bag Index="7" ItemIndex="7179" ItemLevel="8" MonsterClass="-1" SpecialValue="-1" DropInventory="1" Name="Box of Kundun 1" />
+		<Bag Index="8" ItemIndex="7179" ItemLevel="9" MonsterClass="-1" SpecialValue="-1" DropInventory="1" Name="Box of Kundun 2" />
+		<Bag Index="9" ItemIndex="7179" ItemLevel="10" MonsterClass="-1" SpecialValue="-1" DropInventory="1" Name="Box of Kundun 3" />
+		<Bag Index="10" ItemIndex="7179" ItemLevel="11" MonsterClass="-1" SpecialValue="-1" DropInventory="1" Name="Box of Kundun 4" />
+		<Bag Index="11" ItemIndex="7179" ItemLevel="12" MonsterClass="-1" SpecialValue="-1" DropInventory="1" Name="Box of Kundun 5" />
+		<Bag Index="12" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="0" DropInventory="0" Name="Blood Castle 1" />
+		<Bag Index="13" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="1" DropInventory="0" Name="Blood Castle 2" />
+		<Bag Index="14" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="2" DropInventory="0" Name="Blood Castle 3" />
+		<Bag Index="15" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="3" DropInventory="0" Name="Blood Castle 4" />
+		<Bag Index="16" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="4" DropInventory="0" Name="Blood Castle 5" />
+		<Bag Index="17" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="5" DropInventory="0" Name="Blood Castle 6" />
+		<Bag Index="18" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="6" DropInventory="0" Name="Blood Castle 7" />
+		<Bag Index="19" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="7" DropInventory="0" Name="Blood Castle 8" />
+		<Bag Index="20" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="8" DropInventory="0" Name="Chaos Castle 1" />
+		<Bag Index="21" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="9" DropInventory="0" Name="Chaos Castle 2" />
+		<Bag Index="22" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="10" DropInventory="0" Name="Chaos Castle 3" />
+		<Bag Index="23" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="11" DropInventory="0" Name="Chaos Castle 4" />
+		<Bag Index="24" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="12" DropInventory="0" Name="Chaos Castle 5" />
+		<Bag Index="25" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="13" DropInventory="0" Name="Chaos Castle 6" />
+		<Bag Index="26" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="14" DropInventory="0" Name="Chaos Castle 7" />
+		<Bag Index="27" ItemIndex="-1" ItemLevel="-1" MonsterClass="135" SpecialValue="-1" DropInventory="0" Name="White Wizard" />
+		<Bag Index="28" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="15" DropInventory="0" Name="Starter Ring 40" />
+		<Bag Index="29" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="16" DropInventory="0" Name="Starter Ring 80" />
+		<Bag Index="30" ItemIndex="7179" ItemLevel="7" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Box of Heaven" />
+		<Bag Index="31" ItemIndex="7179" ItemLevel="13" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Blue Heart" />
+		<Bag Index="32" ItemIndex="-1" ItemLevel="-1" MonsterClass="275" SpecialValue="-1" DropInventory="0" Name="Kundun" />
+		<Bag Index="33" ItemIndex="-1" ItemLevel="-1" MonsterClass="295" SpecialValue="-1" DropInventory="0" Name="Erohim" />
+		<Bag Index="34" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="17" DropInventory="0" Name="Senior Mix" />
+		<Bag Index="35" ItemIndex="6176" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Red Ribbon Box" />
+		<Bag Index="36" ItemIndex="6177" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Green Ribbon Box" />
+		<Bag Index="37" ItemIndex="6178" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Blue Ribbon Box" />
+		<Bag Index="38" ItemIndex="7200" ItemLevel="0" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Pink Chocolate Box" />
+		<Bag Index="39" ItemIndex="7201" ItemLevel="0" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Red Chocolate Box" />
+		<Bag Index="40" ItemIndex="7202" ItemLevel="0" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Blue Chocolate Box" />
+		<Bag Index="41" ItemIndex="7200" ItemLevel="1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Purple Candy Box" />
+		<Bag Index="42" ItemIndex="7201" ItemLevel="1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Red Candy Box" />
+		<Bag Index="43" ItemIndex="7202" ItemLevel="1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Blue Candy Box" />
+		<Bag Index="44" ItemIndex="-1" ItemLevel="-1" MonsterClass="340" SpecialValue="-1" DropInventory="0" Name="Dark Elf" />
+		<Bag Index="45" ItemIndex="-1" ItemLevel="-1" MonsterClass="349" SpecialValue="-1" DropInventory="0" Name="Balgass" />
+		<Bag Index="46" ItemIndex="-1" ItemLevel="-1" MonsterClass="362" SpecialValue="-1" DropInventory="0" Name="Maya Hand Left" />
+		<Bag Index="47" ItemIndex="-1" ItemLevel="-1" MonsterClass="363" SpecialValue="-1" DropInventory="0" Name="Maya Hand Right" />
+		<Bag Index="48" ItemIndex="-1" ItemLevel="-1" MonsterClass="361" SpecialValue="-1" DropInventory="0" Name="Nightmare" />
+		<Bag Index="49" ItemIndex="7213" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Halloween Pumpkin" />
+		<Bag Index="50" ItemIndex="-1" ItemLevel="-1" MonsterClass="365" SpecialValue="-1" DropInventory="0" Name="Fortune Pouch" />
+		<Bag Index="51" ItemIndex="7220" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Game Master Box" />
+		<Bag Index="52" ItemIndex="7223" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Green Mistery Box" />
+		<Bag Index="53" ItemIndex="7224" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Pink Mistery Box" />
+		<Bag Index="54" ItemIndex="7225" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Purple Mistery Box" />
+		<Bag Index="55" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="18" DropInventory="0" Name="Leo the Helper" />
+		<Bag Index="56" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="19" DropInventory="0" Name="Illusion Temple 1" />
+		<Bag Index="57" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="20" DropInventory="0" Name="Illusion Temple 2" />
+		<Bag Index="58" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="21" DropInventory="0" Name="Illusion Temple 3" />
+		<Bag Index="59" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="22" DropInventory="0" Name="Illusion Temple 4" />
+		<Bag Index="60" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="23" DropInventory="0" Name="Illusion Temple 5" />
+		<Bag Index="61" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="24" DropInventory="0" Name="Illusion Temple 6" />
+		<Bag Index="62" ItemIndex="-1" ItemLevel="-1" MonsterClass="413" SpecialValue="-1" DropInventory="0" Name="Lunar Rabbit" />
+		<Bag Index="63" ItemIndex="7252" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Cherry Blossom Box" />
+		<Bag Index="64" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="25" DropInventory="0" Name="Cherry Blossom Mix 1" />
+		<Bag Index="65" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="26" DropInventory="0" Name="Cherry Blossom Mix 2" />
+		<Bag Index="66" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="27" DropInventory="0" Name="Cherry Blossom Mix 3" />
+		<Bag Index="67" ItemIndex="-1" ItemLevel="-1" MonsterClass="459" SpecialValue="-1" DropInventory="0" Name="Selupan" />
+		<Bag Index="68" ItemIndex="-1" ItemLevel="-1" MonsterClass="463" SpecialValue="-1" DropInventory="0" Name="Fire Flame Ghost" />
+		<Bag Index="69" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="28" DropInventory="0" Name="Santa Claus" />
+		<Bag Index="70" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="29" DropInventory="0" Name="Lucky Coin 1" />
+		<Bag Index="71" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="30" DropInventory="0" Name="Lucky Coin 2" />
+		<Bag Index="72" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="31" DropInventory="0" Name="Lucky Coin 3" />
+		<Bag Index="73" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="32" DropInventory="0" Name="Chaos Card Mix 1" />
+		<Bag Index="74" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="33" DropInventory="0" Name="Chaos Card Mix 2" />
+		<Bag Index="75" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="34" DropInventory="0" Name="Chaos Card Mix 3" />
+		<Bag Index="76" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="35" DropInventory="0" Name="Chaos Card Mix 4" />
+		<Bag Index="77" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="36" DropInventory="0" Name="Chaos Card Mix 5" />
+		<Bag Index="78" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="37" DropInventory="0" Name="Double Goer Silver Chest 1" />
+		<Bag Index="79" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="38" DropInventory="0" Name="Double Goer Silver Chest 2" />
+		<Bag Index="80" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="39" DropInventory="0" Name="Double Goer Silver Chest 3" />
+		<Bag Index="81" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="40" DropInventory="0" Name="Double Goer Silver Chest 4" />
+		<Bag Index="82" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="41" DropInventory="0" Name="Double Goer Silver Chest 5" />
+		<Bag Index="83" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="42" DropInventory="0" Name="Double Goer Golden Chest 1" />
+		<Bag Index="84" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="43" DropInventory="0" Name="Double Goer Golden Chest 2" />
+		<Bag Index="85" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="44" DropInventory="0" Name="Double Goer Golden Chest 3" />
+		<Bag Index="86" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="45" DropInventory="0" Name="Double Goer Golden Chest 4" />
+		<Bag Index="87" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="46" DropInventory="0" Name="Double Goer Golden Chest 5" />
+		<Bag Index="88" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="47" DropInventory="0" Name="Imperial Guardian Side Boss 1" />
+		<Bag Index="89" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="48" DropInventory="0" Name="Imperial Guardian Side Boss 2" />
+		<Bag Index="90" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="49" DropInventory="0" Name="Imperial Guardian Side Boss 3" />
+		<Bag Index="91" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="50" DropInventory="0" Name="Imperial Guardian Side Boss 4" />
+		<Bag Index="92" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="51" DropInventory="0" Name="Imperial Guardian Side Boss 5" />
+		<Bag Index="93" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="52" DropInventory="0" Name="Imperial Guardian Main Boss 1" />
+		<Bag Index="94" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="53" DropInventory="0" Name="Imperial Guardian Main Boss 2" />
+		<Bag Index="95" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="54" DropInventory="0" Name="Imperial Guardian Main Boss 3" />
+		<Bag Index="96" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="55" DropInventory="0" Name="Imperial Guardian Main Boss 4" />
+		<Bag Index="97" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="56" DropInventory="0" Name="Imperial Guardian Main Boss 5" />
+		<Bag Index="98" ItemIndex="7179" ItemLevel="14" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Blue Luck Pouch" />
+		<Bag Index="99" ItemIndex="7179" ItemLevel="15" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Red Luck Pouch" />
+		<Bag Index="100" ItemIndex="7291" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Golden Box" />
+		<Bag Index="101" ItemIndex="7292" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Silver Box" />
+		<Bag Index="102" ItemIndex="7309" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Shining Jewelry Case" />
+		<Bag Index="103" ItemIndex="7310" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Elegant Jewelry Case" />
+		<Bag Index="104" ItemIndex="7311" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Steel Jewelry Case" />
+		<Bag Index="105" ItemIndex="7312" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Old Jewelry Case" />
+		<Bag Index="106" ItemIndex="-1" ItemLevel="-1" MonsterClass="561" SpecialValue="-1" DropInventory="0" Name="Medusa" />
+		<Bag Index="107" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="57" DropInventory="0" Name="Crywolf" />
+		<Bag Index="108" ItemIndex="-1" ItemLevel="-1" MonsterClass="43" SpecialValue="-1" DropInventory="0" Name="Golden Budge Dragon" />
+		<Bag Index="109" ItemIndex="-1" ItemLevel="-1" MonsterClass="78" SpecialValue="-1" DropInventory="0" Name="Golden Goblin" />
+		<Bag Index="110" ItemIndex="-1" ItemLevel="-1" MonsterClass="54" SpecialValue="-1" DropInventory="0" Name="Golden Soldier" />
+		<Bag Index="111" ItemIndex="-1" ItemLevel="-1" MonsterClass="53" SpecialValue="-1" DropInventory="0" Name="Golden Titan" />
+		<Bag Index="112" ItemIndex="-1" ItemLevel="-1" MonsterClass="79" SpecialValue="-1" DropInventory="0" Name="Golden Dragon" />
+		<Bag Index="113" ItemIndex="-1" ItemLevel="-1" MonsterClass="80" SpecialValue="-1" DropInventory="0" Name="Golden Lizard King" />
+		<Bag Index="114" ItemIndex="-1" ItemLevel="-1" MonsterClass="81" SpecialValue="-1" DropInventory="0" Name="Golden Vepar" />
+		<Bag Index="115" ItemIndex="-1" ItemLevel="-1" MonsterClass="82" SpecialValue="-1" DropInventory="0" Name="Golden Tantalos" />
+		<Bag Index="116" ItemIndex="-1" ItemLevel="-1" MonsterClass="83" SpecialValue="-1" DropInventory="0" Name="Golden Iron Wheel" />
+		<Bag Index="117" ItemIndex="-1" ItemLevel="-1" MonsterClass="502" SpecialValue="-1" DropInventory="0" Name="Golden Rabbit" />
+		<Bag Index="118" ItemIndex="-1" ItemLevel="-1" MonsterClass="493" SpecialValue="-1" DropInventory="0" Name="Golden Dark Knight" />
+		<Bag Index="119" ItemIndex="-1" ItemLevel="-1" MonsterClass="494" SpecialValue="-1" DropInventory="0" Name="Golden Devil" />
+		<Bag Index="120" ItemIndex="-1" ItemLevel="-1" MonsterClass="495" SpecialValue="-1" DropInventory="0" Name="Golden Stone Golem" />
+		<Bag Index="121" ItemIndex="-1" ItemLevel="-1" MonsterClass="496" SpecialValue="-1" DropInventory="0" Name="Golden Crust" />
+		<Bag Index="122" ItemIndex="-1" ItemLevel="-1" MonsterClass="497" SpecialValue="-1" DropInventory="0" Name="Golden Satyros" />
+		<Bag Index="123" ItemIndex="-1" ItemLevel="-1" MonsterClass="498" SpecialValue="-1" DropInventory="0" Name="Golden Twin Tail" />
+		<Bag Index="124" ItemIndex="-1" ItemLevel="-1" MonsterClass="499" SpecialValue="-1" DropInventory="0" Name="Golden Iron Knight" />
+		<Bag Index="125" ItemIndex="-1" ItemLevel="-1" MonsterClass="500" SpecialValue="-1" DropInventory="0" Name="Golden Napin" />
+		<Bag Index="126" ItemIndex="-1" ItemLevel="-1" MonsterClass="501" SpecialValue="-1" DropInventory="0" Name="Golden Great Dragon" />
+		<Bag Index="127" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="60" DropInventory="0" Name="Online Lottery" />
+		<Bag Index="128" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="61" DropInventory="0" Name="Gift System" />
+		<Bag Index="129" ItemIndex="6827" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Pet egg" />
+		<Bag Index="130" ItemIndex="-1" ItemLevel="-1" MonsterClass="476" SpecialValue="-1" DropInventory="0" Name="Pet egg" />
+
+	</Config>
+</ItemBagManager>

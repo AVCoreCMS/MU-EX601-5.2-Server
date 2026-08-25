@@ -1,0 +1,118 @@
+//Index		 		- Index quái lấy trong Monter.txt
+//Map		 		- ID Map
+//MaxLife			- Tỉ lệ máu quái
+//DamageMin			- Tỉ lệ dame nhỏ nhất của quái
+//DamageMax			- Tỉ lệ dame lớn nhất của quái
+//Defense			- Tỉ lệ phòng thủ
+//AttackRate		- Tỉ lệ tấn công
+//DefenseRate		- Tỉ lệ phòng thủ
+//ExperienceRate	- Tỉ lệ EXP nhận được
+//KillMessage		- Index thông báo khi giết quái [Người chơi [%s] tiêu diệt ...!] (Message.txt)
+//InfoMessage		- Index thông báo cho người giết quái số tiền được thưởng (Message.txt)
+//WcoinC			- WcoinC nhận được khi giết quái >= 0
+//WcoinP			- WcoinP nhận được khi giết quái >= 0
+//GoblinPoint		- GoblinPoint nhận được khi giết quái >= 0
+//Ruud				- Ruud nhận được khi giết quái >= 0
+//***Lưu ý: Các chỉ số ở file này sẽ nhân với chỉ số ở Monster.txt					
+//=========================================================================================================================================================================================================================>
+//Index	   Map 	   MaxLife 	   DamageMin    DamageMax	 Defense 	AttackRate	DefenseRate 	ExpRate 	KillMessage 	InfoMessage WCoinC WCoinP WCoinG Ruud   SummonMonster SummonMonterCount 
+// Loren Monster
+	0		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *      			//Bull Fighter
+	1		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *      			//Hound
+	2		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *      			//Rồng Con
+	3		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *      			//Spider
+	4		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *      			//Elite Bull Fighter
+	7		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *      			//Giant
+	14		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *      			//Skeleton
+	6		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *      			//Lich
+// Noria Monster
+    26		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *      			//Golbin
+    33		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *      			//Elite Goblin
+    27		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *      			//Chain Scorpion
+	28		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Beetle Monster
+	29		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Hunter
+	31		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Agon
+	30		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Forest Monster
+	32		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Stone Golem
+// Devias Monster
+	24		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Worm
+    23		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Hommerd
+	22		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Ice Monster
+	21		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Assassin
+	19		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Yeti
+	25		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //ICE Queen
+	20		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Elite Yeti
+// Dungeon Monster	
+	14		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Skeleton
+	17		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Cyclops
+	12		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Larva
+	11		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Ghost
+	13		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Hell Spider
+	15		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Skeleton Archer
+	5		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Hell Hound	
+	16		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Chief Skeleton Warrior	
+	9		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Thunder Lich	
+	10		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Dark Knight	
+	8		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Poison Bull Fighter
+	18		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Gorgon
+// Elbeland Monster
+	418		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Strange Rabbit
+	421		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Polluted Butterfly
+	419		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Hideous Rabbit	
+	422		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Cursed Lich	
+	423		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Totem Golem
+	424		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Grizzly
+	425		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Captain Grizzly
+// Atlans Monster
+    45		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Bahamut
+	47		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Valkyrie
+	46		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Vepar
+	51		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Great Bahamut
+	52		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Silver Valkyrie	
+	49		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Hydra	
+	48		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                 //Lizard King
+// Lost Tower Monster
+    36		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Shadow
+	34		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Cursed Wizard	
+	39		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Poison Shadow
+	41		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Death Cow
+	37		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Devil
+	40		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Death Knight
+	35		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Death Gorgon
+	38		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Balrog
+// Tarkan Monster
+    62		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Mutant
+	57		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Iron Wheel
+	60		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Bloody wolf
+	58		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Tantalos	
+	61		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Beam Knight	
+	63		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Death Beam Knight	
+	59		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                  //Zaikan
+// Aida Monster	
+    308		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                   //Death Tree	
+	305		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                   //Blue Golem	
+	304		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                   //Witch Queen
+	306		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                   //Death Rider
+	307		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Forest Orc
+// icarus Monster		
+    69		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Alquamos
+	70		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Queen Rainier	
+	73		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Drakan
+	74		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Alpha Crust	
+	77		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Phoenix of Darkness
+// Kanturu Monster
+    351		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Splinter Wolf	
+	353		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Satyros
+    352		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Iron Rider
+	354		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Blade Hunter
+	355		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Kentauros	
+	350		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Berserker	
+	356		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Gigantis	
+	357		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Genocider
+//Kanturu (Remain)	
+	359		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Twin Tale
+	360		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Dreadfear	
+	358		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 *         	   *          0     0      0     0 	   	0             *                    //Persona
+//Event	                                                                                                                                  
+	42		0   	 100   		  100    	  100    	  100   	     100     	 100         100		   	 193           *          0     0      0     0 	   	0             *      			//Rồng Đỏ
+end

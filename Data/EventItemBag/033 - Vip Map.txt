@@ -1,0 +1,19 @@
+0
+//EventName              DropZen   ItemDropRate   ItemDropCount   SetItemDropRate   ItemDropType   Fireworks	
+"Vip Map"	         		1000	   100			  1				  0			  		0			 1
+end
+
+1
+//Section   Type   MinLevel   MaxLevel    Skill   Luck   Option   Excellent     Time      Rate   
+14			169		 0			0			0		0		0		0		     0        30        // Lệnh Bài Quân Hàm
+14			263		 0			0			0		0		0		0		     0        30        // Cron Stone
+13			157		 0			0			0		0		0		0		     0        30        // Đá Bang Hội Cấp 3
+12			30		 0			0			0		0		0		0		     0        50        // Cụm Ngọc Ước Nguyện
+12			31		 0			0			0		0		0		0		     0        50        // Cụm Ngọc Tâm Linh
+12			136		 0			0			0		0		0		0		     0        50        // Cụm Ngọc Sinh Mệnh
+12			137		 0			0			0		0		0		0		     0        50        // Cụm Ngọc Sáng Tạo
+12			140		 0			0			0		0		0		0		     0        50        // Cụm Đá Tạo Hóa
+12			141		 0			0			0		0		0		0		     0        50        // Cụm Ngọc Hỗn Nguyên
+13			159		 0			0			0		0		0		0		     0        30        // Nguyên Liệu Tăng Cấp Hồn Hoàn
+
+end

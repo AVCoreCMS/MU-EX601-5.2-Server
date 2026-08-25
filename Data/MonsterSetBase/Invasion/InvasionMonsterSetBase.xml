@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<MonsterSpawn>
+	<Map Number="0" Name="Lorencia">
+		<Spot Type="0" Description="Invasion">
+			<Spawn MonsterIndex="42" Distance="5" StartX="56" StartY="202" Dir="2" EndX="56" EndY="202" Value="2" Comment="Rồng Đỏ" />
+			<Spawn MonsterIndex="42" Distance="5" StartX="40" StartY="63" Dir="2" EndX="40" EndY="63" Value="2" Comment="Rồng Đỏ" />
+			<Spawn MonsterIndex="42" Distance="5" StartX="220" StartY="51" Dir="2" EndX="220" EndY="51" Value="2" Comment="Rồng Đỏ" />
+			<Spawn MonsterIndex="42" Distance="5" StartX="225" StartY="204" Dir="2" EndX="225" EndY="204" Value="2" Comment="Rồng Đỏ" />
+			<Spawn MonsterIndex="42" Distance="5" StartX="130" StartY="228" Dir="2" EndX="130" EndY="228" Value="2" Comment="Rồng Đỏ" />
+		</Spot>
+	</Map>
+</MonsterSpawn>

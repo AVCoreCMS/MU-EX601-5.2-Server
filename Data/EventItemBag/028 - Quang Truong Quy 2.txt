@@ -1,0 +1,19 @@
+// Quảng Trường Quỷ 2
+//===========================================================================
+0
+//EventName				DropZen		ItemDropRate	ItemDropCount	SetItemDropRate		ItemDropType	Fireworks
+"Devil Squuare 2"		1000	     	100			     2				0					0				0
+end
+
+1
+//Section	Type	MinLevel	MaxLevel	Skill	Luck	Option	Excellent	ItemTime	Rate	NameItem
+14			96		0			0			0		0		0		0			0			30		//Bùa Kết Hợp Chaos
+12			141		0			0			0		0		0		0			0			20		//Cụm Ngọc Hỗn Nguyên
+14			192		0			0			0		0		0		0			0			25		//Wcoin 100.000
+14			193 	0			0			0		0		0		0			0			10		//Wcoin 500.000
+12			30		0			0			0		0		0		0			0			30		//Cụm Ngọc Ước Nguyện
+12			31		0			0			0		0		0		0			0			40		//Cụm Ngọc Tâm Linh
+12			137  	0			0			0		0		0		0			0			70		//Cụm Ngọc Sáng Tạo
+12			136		0			0			0		0		0		0			0			80		//Cụm Ngọc Sinh Mệnh
+
+end

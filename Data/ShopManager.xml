@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== ShopManager.xml
+== Maps each NPC shop to the NPC class that opens it.
+== Loaded by GameServer via CShopManager::LoadXML().
+== The actual item list each shop sells is a separate file in
+== Data/Shop/ (NNN - Name.txt, matched by Index) - not part of
+== this file.
+== Modify only if you know what you're doing!
+============================================================
+
+### ShopManager::Config ###
+Each <Shop> maps one NPC to a shop Index.
+  Index          Shop id. Must match the corresponding file's leading
+                 number in Data/Shop/ (e.g. Index="0" matches
+                 "000 - ....txt"). Do not change for existing shops.
+  MonsterClass   NPC class that opens this shop when talked to.
+  Map            -1 = any map (matched by MonsterClass alone). A real
+                 map number pins this shop to one specific NPC instance
+                 at X/Y, for cases where the same NPC class exists more
+                 than once (e.g. a test/duplicate spawn).
+  X/Y            -1 = any position. Only meaningful together with Map.
+  AccountLevel   -1 = no restriction. N = minimum VIP AccountLevel (0-3)
+                 required to open this shop.
+  GameMaster     0 = anyone can open this shop, 1 = Game Master required,
+                 2 = Administrator required.
+  Name           Free-text label, for readability only (not read by
+                 the loader).
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ShopManager>
+	<Config>
+		<Shop Index="0" MonsterClass="251" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Hanzo the Blacksmith" />
+		<Shop Index="1" MonsterClass="255" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Liaman the Barmaid" />
+		<Shop Index="2" MonsterClass="254" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Pasi the Wizard" />
+		<Shop Index="3" MonsterClass="250" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Harold the Wandering Merchant" />
+		<Shop Index="4" MonsterClass="248" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Martin the Wandering Merchant" />
+		<Shop Index="5" MonsterClass="253" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Amy the Potion Girl" />
+		<Shop Index="6" MonsterClass="244" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Lumen the Barmaid" />
+		<Shop Index="7" MonsterClass="245" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Isabel the Wizard" />
+		<Shop Index="8" MonsterClass="246" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Zienna the Weapon Merchant" />
+		<Shop Index="9" MonsterClass="243" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Eo the Craftsman" />
+		<Shop Index="10" MonsterClass="242" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Elf Lala" />
+		<Shop Index="11" MonsterClass="230" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Alex the Wandering Merchant" />
+		<Shop Index="12" MonsterClass="231" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Thompson Kenel" />
+		<Shop Index="13" MonsterClass="376" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Drink Seller Hillary" />
+		<Shop Index="14" MonsterClass="377" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Drink Seller Lindsay" />
+		<Shop Index="15" MonsterClass="379" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Fireworks Girl" />
+		<Shop Index="16" MonsterClass="415" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Sivia" />
+		<Shop Index="17" MonsterClass="416" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Leah" />
+		<Shop Index="18" MonsterClass="417" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Marseille" />
+		<Shop Index="19" MonsterClass="492" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Moss Merchant" />
+		<Shop Index="20" MonsterClass="545" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Christine" />
+		<Shop Index="21" MonsterClass="239" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Stadium Guard" />
+		<Shop Index="22" MonsterClass="259" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Priestess Reira" />
+		<Shop Index="23" MonsterClass="577" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Leina" />
+		<Shop Index="24" MonsterClass="578" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Bolo" />
+		<Shop Index="25" MonsterClass="620" Map="0" X="124" Y="143" AccountLevel="-1" GameMaster="0" Name="Hanzo the Blacksmith (Teste)" />
+	</Config>
+</ShopManager>

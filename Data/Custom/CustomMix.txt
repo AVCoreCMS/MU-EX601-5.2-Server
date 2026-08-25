@@ -1,0 +1,18 @@
+0
+//Index	Money	RateAL0	RateAL1	RateAL2	RateAL3	CGroup	CItem	ExeRand
+
+end
+
+1
+//Index	ItemMix		level	Count	commnet
+
+end
+
+2
+
+end
+
+3
+//Index		Group	ItemMin			ItemMax			ItemLvl		Skill	Luck	AddOpc		ExeOpc	SetOpc	Socket1	Socket2	Socket3	Socket4	Socket5
+
+end

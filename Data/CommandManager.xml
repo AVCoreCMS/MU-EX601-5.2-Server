@@ -1,0 +1,799 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== CommandManager.xml
+== Chat command permissions (/move, /reset, /attack, etc.).
+== Loaded by GameServer via CCommand::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### Command::Config ###
+Each <Command> here configures one chat command. Index is fixed by the
+engine (it drives the internal dispatch table) - do not renumber existing
+entries or reuse an Index for a different command.
+  Index          Command id. Do not change for existing commands.
+  Names          Comma-separated list of chat strings that trigger this
+                 command, without the leading "/" (e.g. "addstr,s,str,f"
+                 - all four run the same command with the same
+                 permissions/cooldown; the loader adds "/" back
+                 automatically). The first name is the canonical one.
+  Delay          Cooldown in seconds before the command can be used
+                 again (shared across all VIP tiers).
+  GameMaster     Minimum GM level required: 0 = normal player,
+                 1 = Game Master, 2 = Administrator.
+  Coin1/2/3      WCoinC / WCoinP / GoblinPoint cost per use.
+  Enable_ALn     1 = allowed, 0 = disabled, for VIP tier n (0-3).
+  Money_ALn      Zen cost per use, for VIP tier n.
+  MinLevel_ALn   Minimum character level required, for VIP tier n.
+  MaxLevel_ALn   Maximum character level allowed, for VIP tier n
+                 (0 = no cap).
+  MinReset_ALn   Minimum Reset count required, for VIP tier n.
+  MaxReset_ALn   Maximum Reset count allowed, for VIP tier n
+                 (0 = no cap).
+  Comment        Free-text description, for readability only (not read
+                 by the loader).
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<CommandManager>
+	<Config>
+		<!-- ================= Player Commands ================= -->
+
+		<Command Index="0" Names="move" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Warp to a map via the Move menu" />
+
+		<Command Index="1" Names="post" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Post a message in global/world chat" />
+
+		<Command Index="2" Names="addstr,s,str,f" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Add stat points to Strength" />
+
+		<Command Index="3" Names="addagi,a,agi" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Add stat points to Agility" />
+
+		<Command Index="4" Names="addvit,v,vit" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Add stat points to Vitality" />
+
+		<Command Index="5" Names="addene,e,ene" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Add stat points to Energy" />
+
+		<Command Index="6" Names="addcmd,c,cmd" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Add stat points to Command" />
+
+		<Command Index="7" Names="pkclear" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Remove PK (murderer) status" />
+
+		<Command Index="8" Names="zen" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Add zen to your own character" />
+
+		<Command Index="9" Names="evo" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Evolve to the next character class" />
+
+		<Command Index="10" Names="bau" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Switch to a different warehouse tab" />
+
+		<Command Index="11" Names="reset" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Reset the character (stats/level reset)" />
+
+		<Command Index="12" Names="gmmove" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Teleport a player to a specific map/position" />
+
+		<Command Index="19" Names="skin" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Change a player's character skin" />
+
+		<Command Index="22" Names="mreset" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Perform a Master (Grand) Reset" />
+
+		<Command Index="23" Names="war" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Declare guild war against another guild" />
+
+		<Command Index="24" Names="soccer" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Challenge another guild to Battle Soccer" />
+
+		<Command Index="25" Names="re" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Toggle the trade/party request system" />
+
+		<Command Index="27" Names="rei" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Claim the throne in the King of MU event" />
+
+		<Command Index="28" Names="xoado" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Clear your own inventory" />
+
+		<Command Index="30" Names="marry" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Propose marriage to another player" />
+
+		<Command Index="31" Names="abrirbau" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Open your warehouse" />
+
+		<Command Index="32" Names="change" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Change character class" />
+
+		<Command Index="38" Names="mudarnome" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Change your character name" />
+
+		<Command Index="40" Names="info" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Show a player's character status" />
+
+		<Command Index="42" Names="participar" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Join the currently open event" />
+
+		<Command Index="44" Names="queroir" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Teleport to the Run and Catch event" />
+
+		<Command Index="48" Names="quest" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Open the quest command menu" />
+
+		<Command Index="49" Names="presente" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Give a gift item/reward" />
+
+		<Command Index="51" Names="top" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Show a ranking (top players)" />
+
+		<Command Index="52" Names="readd" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Re-add stat points (undo a stat allocation)" />
+
+		<Command Index="53" Names="resp" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Answer a Quiz event question" />
+
+		<Command Index="54" Names="pick" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Toggle an auto-pickup type" />
+
+		<Command Index="55" Names="ajuda" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="200" MaxLevel_AL1="200" MaxLevel_AL2="200" MaxLevel_AL3="200"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Summon a helper/assistant (low-level only)" />
+
+		<Command Index="56" Names="remaster" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Reset the Master Skill Tree points" />
+
+		<Command Index="61" Names="offpvp" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Disable PvP against your character" />
+
+		<Command Index="62" Names="lock" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Password-lock your inventory items from being moved" />
+
+		<Command Index="63" Names="unlock" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Password-unlock your inventory items" />
+
+		<Command Index="64" Names="store" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Open your personal store" />
+
+		<Command Index="65" Names="offstore" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Open your personal store in offline mode" />
+
+		<Command Index="66" Names="attack" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start Custom Attack (auto-farm)" />
+
+		<Command Index="67" Names="offattack" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start Custom Attack in offline mode" />
+
+		<Command Index="73" Names="spot" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Spawn monsters at your location" />
+
+		<Command Index="75" Names="pack" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Pack jewels into bundles" />
+
+		<Command Index="76" Names="unpack" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Unpack a jewel bundle" />
+
+		<Command Index="82" Names="autohp" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Toggle Auto HP/Mana potion usage" />
+
+		<!-- ============= Game Master Commands (GameMaster=1) ============= -->
+
+		<Command Index="13" Names="gmpost" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Send a message to all game servers" />
+
+		<Command Index="14" Names="track" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Teleport yourself to a player" />
+
+		<Command Index="15" Names="trace" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Teleport a player to yourself" />
+
+		<Command Index="16" Names="disconnect" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Disconnect a player from the server" />
+
+		<Command Index="17" Names="fireworks" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Trigger a fireworks effect" />
+
+		<Command Index="20" Names="setmoney" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Set a player's zen amount" />
+
+		<Command Index="21" Names="notice" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Broadcast a message to all connected servers" />
+
+		<Command Index="26" Names="hide" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Toggle hidden GM mode (invisible to players)" />
+
+		<Command Index="33" Names="premiar" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Reward a specific player" />
+
+		<Command Index="34" Names="premiarall" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Reward all online players" />
+
+		<Command Index="36" Names="banchar" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Ban a character" />
+
+		<Command Index="37" Names="banacc" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Ban an account" />
+
+		<Command Index="39" Names="veloz" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Quickly event" />
+
+		<Command Index="41" Names="abrirevento" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Open an event for players to join" />
+
+		<Command Index="43" Names="pegapega" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Run and Catch event" />
+
+		<Command Index="45" Names="escesc" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Hide and Seek event" />
+
+		<Command Index="50" Names="roletarussa" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Russian Roulette event" />
+
+		<Command Index="68" Names="moveall" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Teleport all online players to a map/position" />
+
+		<Command Index="69" Names="moveguild" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Teleport an entire guild to a map/position" />
+
+		<Command Index="70" Names="pvp" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start a PvP event" />
+
+		<Command Index="71" Names="matamata" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Kill All event" />
+
+		<Command Index="72" Names="starttvt" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Team vs Team event" />
+
+		<Command Index="77" Names="startquiz" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Quiz event" />
+
+		<Command Index="78" Names="startdrop" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Drop event" />
+
+		<Command Index="79" Names="startking" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the King of MU event" />
+
+		<Command Index="80" Names="startinvasion" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start a monster invasion" />
+
+		<Command Index="81" Names="startarena" Delay="0" GameMaster="1" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Custom Arena event" />
+
+		<!-- ============= Administrator Commands (GameMaster=2) ============= -->
+
+		<Command Index="18" Names="make" Delay="0" GameMaster="2" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Spawn a custom item into your inventory" />
+
+		<Command Index="29" Names="setvip" Delay="0" GameMaster="2" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Grant VIP status to an account" />
+
+		<Command Index="35" Names="reload" Delay="0" GameMaster="2" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Reload a server configuration file" />
+
+		<Command Index="46" Names="makeset" Delay="0" GameMaster="2" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Spawn a custom set item into your inventory" />
+
+		<Command Index="47" Names="drop" Delay="0" GameMaster="2" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Drop a custom item on the ground" />
+
+		<Command Index="57" Names="startbc" Delay="0" GameMaster="2" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Blood Castle event" />
+
+		<Command Index="58" Names="startds" Delay="0" GameMaster="2" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Devil Square event" />
+
+		<Command Index="59" Names="startcc" Delay="0" GameMaster="2" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Chaos Castle event" />
+
+		<Command Index="60" Names="startit" Delay="0" GameMaster="2" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Illusion Temple event" />
+
+		<Command Index="74" Names="setcoin" Delay="0" GameMaster="2" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Add or remove a player's coin balance" />
+
+	</Config>
+</CommandManager>
