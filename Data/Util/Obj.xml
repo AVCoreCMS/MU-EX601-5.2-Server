@@ -125,7 +125,7 @@
     <!-- RF  Skill 263  Buff 264,265,266-->
 	<!-- DK  Skill 41  Buff 4-->
     <!-- MG  Skill 56 -->
-	<!--<Info Account="CHANGE_ME" Password="CHANGE_ME" Name="RFHP" SkillID="264" UseBuffs_0="266" UseBuffs_1="267" UseBuffs_2="268"
+	<!--<Info Account="CHANGE_ME" Password="CHANGE_ME" Name="RFHP" SkillID="264" UseBuffs_0="266" UseBuffs_1="267" UseBuffs_2="268" 
 	GateNumber="6" MapX="54" MapY="112" 
 	PhamViTrain="6"  MoveRange="1" TimeReturn="10"
 	TuNhatItem="0" TuDongReset="1"

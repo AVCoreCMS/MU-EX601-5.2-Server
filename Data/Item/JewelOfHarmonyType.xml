@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== JewelOfHarmonyType.xml
+== Whitelist of items that can receive a Jewel of Harmony,
+== and the max Jewel level each one accepts.
+== Loaded by GameServer via CJewelOfHarmonyType::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### JewelOfHarmonyType::Config ###
+An item not listed here cannot receive a Jewel of Harmony at all.
+	Section     Item section (0-15, matches Item.xml).
+	ItemIndex   Item sub-index within that section (matches Item.xml).
+	Level       Maximum Jewel of Harmony level this item accepts.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<JewelOfHarmonyType>
+	<Config>
+		<Item Section="0" ItemIndex="0" Level="4" />
+		<Item Section="0" ItemIndex="1" Level="4" />
+		<Item Section="0" ItemIndex="2" Level="4" />
+		<Item Section="0" ItemIndex="4" Level="4" />
+		<Item Section="1" ItemIndex="0" Level="4" />
+		<Item Section="1" ItemIndex="1" Level="4" />
+		<Item Section="1" ItemIndex="2" Level="4" />
+		<Item Section="2" ItemIndex="0" Level="4" />
+		<Item Section="2" ItemIndex="1" Level="4" />
+		<Item Section="2" ItemIndex="2" Level="4" />
+		<Item Section="3" ItemIndex="1" Level="4" />
+		<Item Section="3" ItemIndex="2" Level="4" />
+		<Item Section="3" ItemIndex="3" Level="4" />
+		<Item Section="3" ItemIndex="5" Level="4" />
+		<Item Section="3" ItemIndex="6" Level="4" />
+		<Item Section="4" ItemIndex="0" Level="4" />
+		<Item Section="4" ItemIndex="1" Level="4" />
+		<Item Section="4" ItemIndex="2" Level="4" />
+		<Item Section="4" ItemIndex="3" Level="4" />
+		<Item Section="4" ItemIndex="8" Level="4" />
+		<Item Section="4" ItemIndex="9" Level="4" />
+		<Item Section="4" ItemIndex="10" Level="4" />
+		<Item Section="4" ItemIndex="11" Level="4" />
+		<Item Section="5" ItemIndex="0" Level="4" />
+		<Item Section="5" ItemIndex="1" Level="4" />
+		<Item Section="5" ItemIndex="2" Level="4" />
+		<Item Section="6" ItemIndex="0" Level="4" />
+		<Item Section="6" ItemIndex="1" Level="4" />
+		<Item Section="6" ItemIndex="2" Level="4" />
+		<Item Section="6" ItemIndex="3" Level="4" />
+		<Item Section="6" ItemIndex="4" Level="4" />
+		<Item Section="6" ItemIndex="6" Level="4" />
+		<Item Section="6" ItemIndex="7" Level="4" />
+		<Item Section="6" ItemIndex="9" Level="4" />
+		<Item Section="6" ItemIndex="10" Level="4" />
+		<Item Section="7" ItemIndex="0" Level="4" />
+		<Item Section="7" ItemIndex="2" Level="4" />
+		<Item Section="7" ItemIndex="4" Level="4" />
+		<Item Section="7" ItemIndex="5" Level="4" />
+		<Item Section="7" ItemIndex="6" Level="4" />
+		<Item Section="7" ItemIndex="7" Level="4" />
+		<Item Section="7" ItemIndex="8" Level="4" />
+		<Item Section="7" ItemIndex="10" Level="4" />
+		<Item Section="7" ItemIndex="11" Level="4" />
+		<Item Section="7" ItemIndex="12" Level="4" />
+		<Item Section="8" ItemIndex="0" Level="4" />
+		<Item Section="8" ItemIndex="2" Level="4" />
+		<Item Section="8" ItemIndex="4" Level="4" />
+		<Item Section="8" ItemIndex="5" Level="4" />
+		<Item Section="8" ItemIndex="6" Level="4" />
+		<Item Section="8" ItemIndex="7" Level="4" />
+		<Item Section="8" ItemIndex="8" Level="4" />
+		<Item Section="8" ItemIndex="10" Level="4" />
+		<Item Section="8" ItemIndex="11" Level="4" />
+		<Item Section="8" ItemIndex="12" Level="4" />
+		<Item Section="9" ItemIndex="0" Level="4" />
+		<Item Section="9" ItemIndex="2" Level="4" />
+		<Item Section="9" ItemIndex="4" Level="4" />
+		<Item Section="9" ItemIndex="5" Level="4" />
+		<Item Section="9" ItemIndex="6" Level="4" />
+		<Item Section="9" ItemIndex="7" Level="4" />
+		<Item Section="9" ItemIndex="8" Level="4" />
+		<Item Section="9" ItemIndex="10" Level="4" />
+		<Item Section="9" ItemIndex="11" Level="4" />
+		<Item Section="9" ItemIndex="12" Level="4" />
+		<Item Section="10" ItemIndex="0" Level="4" />
+		<Item Section="10" ItemIndex="2" Level="4" />
+		<Item Section="10" ItemIndex="4" Level="4" />
+		<Item Section="10" ItemIndex="5" Level="4" />
+		<Item Section="10" ItemIndex="6" Level="4" />
+		<Item Section="10" ItemIndex="7" Level="4" />
+		<Item Section="10" ItemIndex="8" Level="4" />
+		<Item Section="10" ItemIndex="10" Level="4" />
+		<Item Section="10" ItemIndex="11" Level="4" />
+		<Item Section="10" ItemIndex="12" Level="4" />
+		<Item Section="11" ItemIndex="0" Level="4" />
+		<Item Section="11" ItemIndex="2" Level="4" />
+		<Item Section="11" ItemIndex="4" Level="4" />
+		<Item Section="11" ItemIndex="5" Level="4" />
+		<Item Section="11" ItemIndex="6" Level="4" />
+		<Item Section="11" ItemIndex="7" Level="4" />
+		<Item Section="11" ItemIndex="8" Level="4" />
+		<Item Section="11" ItemIndex="10" Level="4" />
+		<Item Section="11" ItemIndex="11" Level="4" />
+		<Item Section="11" ItemIndex="12" Level="4" />
+	</Config>
+</JewelOfHarmonyType>

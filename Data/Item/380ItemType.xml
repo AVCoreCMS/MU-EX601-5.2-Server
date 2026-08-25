@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== 380ItemType.xml
+== Assigns up to two "380 options" (see 380ItemOption.xml) to
+== specific items.
+== Loaded by GameServer via C380ItemType::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### 380ItemType::Config ###
+	Section        Item section (0-15, matches Item.xml).
+	ItemIndex      Item sub-index within that section (matches Item.xml).
+	Option1Index   1-8, see 380ItemOption.xml Index. 0 = unused slot.
+	Option1Value   -1 = use 380ItemOption.xml's default Value for this
+	               option, otherwise overrides it for this item only.
+	Option2Index   Second option slot, same rules as Option1Index.
+	Option2Value   Second option slot, same rules as Option1Value.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemType380>
+	<Config>
+		<Item Section="0" ItemIndex="22" Option1Index="2" Option1Value="-1" Option2Index="1" Option2Value="-1" />
+		<Item Section="0" ItemIndex="23" Option1Index="2" Option1Value="-1" Option2Index="1" Option2Value="-1" />
+		<Item Section="0" ItemIndex="35" Option1Index="2" Option1Value="-1" Option2Index="1" Option2Value="-1" />
+		<Item Section="2" ItemIndex="14" Option1Index="2" Option1Value="-1" Option2Index="1" Option2Value="-1" />
+		<Item Section="4" ItemIndex="21" Option1Index="2" Option1Value="-1" Option2Index="1" Option2Value="-1" />
+		<Item Section="5" ItemIndex="12" Option1Index="2" Option1Value="-1" Option2Index="1" Option2Value="-1" />
+		<Item Section="5" ItemIndex="19" Option1Index="2" Option1Value="-1" Option2Index="1" Option2Value="-1" />
+		<Item Section="7" ItemIndex="29" Option1Index="8" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="7" ItemIndex="30" Option1Index="8" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="7" ItemIndex="31" Option1Index="8" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="7" ItemIndex="33" Option1Index="8" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="7" ItemIndex="43" Option1Index="8" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="7" ItemIndex="73" Option1Index="8" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="8" ItemIndex="29" Option1Index="7" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="8" ItemIndex="30" Option1Index="7" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="8" ItemIndex="31" Option1Index="7" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="8" ItemIndex="32" Option1Index="7" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="8" ItemIndex="33" Option1Index="7" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="8" ItemIndex="43" Option1Index="7" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="8" ItemIndex="73" Option1Index="7" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="9" ItemIndex="29" Option1Index="4" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="9" ItemIndex="30" Option1Index="4" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="9" ItemIndex="31" Option1Index="4" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="9" ItemIndex="32" Option1Index="4" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="9" ItemIndex="33" Option1Index="4" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="9" ItemIndex="43" Option1Index="4" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="9" ItemIndex="73" Option1Index="4" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="10" ItemIndex="29" Option1Index="5" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="10" ItemIndex="30" Option1Index="5" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="10" ItemIndex="31" Option1Index="5" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="10" ItemIndex="32" Option1Index="5" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="10" ItemIndex="33" Option1Index="5" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="10" ItemIndex="43" Option1Index="5" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="11" ItemIndex="29" Option1Index="6" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="11" ItemIndex="30" Option1Index="6" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="11" ItemIndex="31" Option1Index="6" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="11" ItemIndex="32" Option1Index="6" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="11" ItemIndex="33" Option1Index="6" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="11" ItemIndex="43" Option1Index="6" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+		<Item Section="11" ItemIndex="73" Option1Index="6" Option1Value="-1" Option2Index="3" Option2Value="-1" />
+	</Config>
+</ItemType380>

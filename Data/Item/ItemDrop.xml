@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== ItemDrop.xml
+== Extra monster-kill drop entries for specific items (event
+== items, jewels, scrolls...), on top of the normal per-map
+== drop tables.
+== Loaded by GameServer via CItemDrop::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### ItemDrop::Config ###
+	Index              Item id (GET_ITEM(Section,SubIndex) - see Item.xml).
+	Level              Item level (+0, +1, ...) this drop entry creates.
+	Grade              Item grade/quality flag written onto the dropped item.
+	Option0-Option6    -1 = not set. Otherwise, a fixed option value baked
+	                   into the dropped item.
+	Duration           0 = permanent. Otherwise, the item's time-limited
+	                   duration in seconds.
+	MapNumber          -1 = any map. Otherwise, restricts this drop to one
+	                   specific map.
+	MonsterClass       -1 = any monster. Otherwise, restricts this drop to
+	                   one specific monster class.
+	MonsterLevelMin    Minimum monster level required for this drop to be
+	                   eligible.
+	MonsterLevelMax    Maximum monster level eligible for this drop.
+	DropRate           Chance out of 1,000,000 (see MapManager.xml's
+	                   ExcItemDropRate for the same scale).
+	Comment            Free-text label, for readability only (not read by
+	                   the loader).
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemDrop>
+	<Config>
+﻿		<Item Index="6159" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="150" DropRate="1000" Comment="Jewel of Chaos" />
+		<Item Index="6176" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="49" DropRate="0" Comment="Box of Red Ribbon" />
+		<Item Index="6177" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="50" MonsterLevelMax="69" DropRate="0" Comment="Box of Green Ribbon" />
+		<Item Index="6178" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="70" MonsterLevelMax="97" DropRate="0" Comment="Box of Blue Ribbon" />
+		<Item Index="6214" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="58" MonsterLevelMax="76" DropRate="1000" Comment="Sphere (Mono)" />
+		<Item Index="6215" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="77" MonsterLevelMax="101" DropRate="1000" Comment="Sphere (Di)" />
+		<Item Index="6216" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="102" MonsterLevelMax="150" DropRate="1000" Comment="Sphere (Tri)" />
+		<Item Index="6670" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="10" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" DropRate="1000" Comment="Loch's Feather" />
+		<Item Index="6670" Level="1" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="10" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" DropRate="1000" Comment="Monarch's Crest" />
+		<Item Index="6672" Level="1" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="1" MonsterLevelMax="32" DropRate="1000" Comment="Scroll of Archangel 1" />
+		<Item Index="6672" Level="2" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="33" MonsterLevelMax="45" DropRate="1000" Comment="Scroll of Archangel 2" />
+		<Item Index="6672" Level="3" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="46" MonsterLevelMax="57" DropRate="1000" Comment="Scroll of Archangel 3" />
+		<Item Index="6672" Level="4" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="58" MonsterLevelMax="68" DropRate="1000" Comment="Scroll of Archangel 4" />
+		<Item Index="6672" Level="5" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="69" MonsterLevelMax="76" DropRate="1000" Comment="Scroll of Archangel 5" />
+		<Item Index="6672" Level="6" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="77" MonsterLevelMax="84" DropRate="1000" Comment="Scroll of Archangel 6" />
+		<Item Index="6672" Level="7" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="85" MonsterLevelMax="101" DropRate="1000" Comment="Scroll of Archangel 7" />
+		<Item Index="6672" Level="8" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="102" MonsterLevelMax="150" DropRate="1000" Comment="Scroll of Archangel 8" />
+		<Item Index="6673" Level="1" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="1" MonsterLevelMax="32" DropRate="1000" Comment="Blood Bone 1" />
+		<Item Index="6673" Level="2" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="33" MonsterLevelMax="45" DropRate="1000" Comment="Blood Bone 2" />
+		<Item Index="6673" Level="3" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="46" MonsterLevelMax="57" DropRate="1000" Comment="Blood Bone 3" />
+		<Item Index="6673" Level="4" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="58" MonsterLevelMax="68" DropRate="1000" Comment="Blood Bone 4" />
+		<Item Index="6673" Level="5" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="69" MonsterLevelMax="76" DropRate="1000" Comment="Blood Bone 5" />
+		<Item Index="6673" Level="6" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="77" MonsterLevelMax="84" DropRate="1000" Comment="Blood Bone 6" />
+		<Item Index="6673" Level="7" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="85" MonsterLevelMax="101" DropRate="1000" Comment="Blood Bone 7" />
+		<Item Index="6673" Level="8" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="102" MonsterLevelMax="150" DropRate="1000" Comment="Blood Bone 8" />
+		<Item Index="6687" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" DropRate="1000" Comment="Spirit of Dark Horse" />
+		<Item Index="6687" Level="1" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" DropRate="1000" Comment="Spirit of Dark Spirit" />
+		<Item Index="6688" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="34" MonsterClass="-1" MonsterLevelMin="97" MonsterLevelMax="134" DropRate="2000" Comment="Splinter of Armor" />
+		<Item Index="6689" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="34" MonsterClass="-1" MonsterLevelMin="97" MonsterLevelMax="134" DropRate="2000" Comment="Bless of Guardian" />
+		<Item Index="6690" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="34" MonsterClass="-1" MonsterLevelMin="97" MonsterLevelMax="134" DropRate="2000" Comment="Claw of Beast" />
+		<Item Index="6694" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="38" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" DropRate="5000" Comment="Moonstone Pendant" />
+		<Item Index="6705" Level="1" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="46" MonsterLevelMax="57" DropRate="1000" Comment="Old Scroll 1" />
+		<Item Index="6705" Level="2" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="58" MonsterLevelMax="68" DropRate="1000" Comment="Old Scroll 2" />
+		<Item Index="6705" Level="3" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="69" MonsterLevelMax="76" DropRate="1000" Comment="Old Scroll 3" />
+		<Item Index="6705" Level="4" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="77" MonsterLevelMax="84" DropRate="1000" Comment="Old Scroll 4" />
+		<Item Index="6705" Level="5" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="85" MonsterLevelMax="101" DropRate="1000" Comment="Old Scroll 5" />
+		<Item Index="6705" Level="6" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="102" MonsterLevelMax="150" DropRate="1000" Comment="Old Scroll 6" />
+		<Item Index="6706" Level="1" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="46" MonsterLevelMax="57" DropRate="1000" Comment="Illusion Sorcerer Covenant 1" />
+		<Item Index="6706" Level="2" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="58" MonsterLevelMax="68" DropRate="1000" Comment="Illusion Sorcerer Covenant 2" />
+		<Item Index="6706" Level="3" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="69" MonsterLevelMax="76" DropRate="1000" Comment="Illusion Sorcerer Covenant 3" />
+		<Item Index="6706" Level="4" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="77" MonsterLevelMax="84" DropRate="1000" Comment="Illusion Sorcerer Covenant 4" />
+		<Item Index="6706" Level="5" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="85" MonsterLevelMax="101" DropRate="1000" Comment="Illusion Sorcerer Covenant 5" />
+		<Item Index="6706" Level="6" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="102" MonsterLevelMax="150" DropRate="1000" Comment="Illusion Sorcerer Covenant 6" />
+		<Item Index="6708" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="41" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" DropRate="1000" Comment="Condor Flame" />
+		<Item Index="6722" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="466" MonsterLevelMin="-1" MonsterLevelMax="-1" DropRate="0" Comment="Invitation to Santa Village" />
+		<Item Index="7179" Level="1" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="69" DropRate="0" Comment="Star of Christmas" />
+		<Item Index="7179" Level="3" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="69" DropRate="0" Comment="Heart of Love" />
+		<Item Index="7179" Level="5" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="49" DropRate="0" Comment="Silver Medal" />
+		<Item Index="7179" Level="6" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="50" MonsterLevelMax="69" DropRate="0" Comment="Gold Medal" />
+		<Item Index="7179" Level="7" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="50" MonsterLevelMax="69" DropRate="0" Comment="Box of Heaven" />
+		<Item Index="7179" Level="13" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="50" MonsterLevelMax="69" DropRate="0" Comment="Blue Heart" />
+		<Item Index="7181" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" DropRate="1000" Comment="Jewel of Bless" />
+		<Item Index="7182" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" DropRate="1000" Comment="Jewel of Soul" />
+		<Item Index="7184" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="46" MonsterLevelMax="150" DropRate="1000" Comment="Jewel of Life" />
+		<Item Index="7185" Level="1" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="1" MonsterLevelMax="32" DropRate="1000" Comment="Devil's Eye 1" />
+		<Item Index="7185" Level="2" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="33" MonsterLevelMax="45" DropRate="1000" Comment="Devil's Eye 2" />
+		<Item Index="7185" Level="3" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="46" MonsterLevelMax="57" DropRate="1000" Comment="Devil's Eye 3" />
+		<Item Index="7185" Level="4" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="58" MonsterLevelMax="68" DropRate="1000" Comment="Devil's Eye 4" />
+		<Item Index="7185" Level="5" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="69" MonsterLevelMax="76" DropRate="1000" Comment="Devil's Eye 5" />
+		<Item Index="7185" Level="6" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="77" MonsterLevelMax="84" DropRate="1000" Comment="Devil's Eye 6" />
+		<Item Index="7185" Level="7" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="85" MonsterLevelMax="150" DropRate="1000" Comment="Devil's Eye 7" />
+		<Item Index="7186" Level="1" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="1" MonsterLevelMax="32" DropRate="1000" Comment="Devil's Key 1" />
+		<Item Index="7186" Level="2" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="33" MonsterLevelMax="45" DropRate="1000" Comment="Devil's Key 2" />
+		<Item Index="7186" Level="3" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="46" MonsterLevelMax="57" DropRate="1000" Comment="Devil's Key 3" />
+		<Item Index="7186" Level="4" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="58" MonsterLevelMax="68" DropRate="1000" Comment="Devil's Key 4" />
+		<Item Index="7186" Level="5" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="69" MonsterLevelMax="76" DropRate="1000" Comment="Devil's Key 5" />
+		<Item Index="7186" Level="6" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="77" MonsterLevelMax="84" DropRate="1000" Comment="Devil's Key 6" />
+		<Item Index="7186" Level="7" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="85" MonsterLevelMax="150" DropRate="1000" Comment="Devil's Key 7" />
+		<Item Index="7189" Level="3" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" DropRate="3000" Comment="Sign of the Lord" />
+		<Item Index="7190" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="46" MonsterLevelMax="150" DropRate="1000" Comment="Jewel of Creation" />
+		<Item Index="7197" Level="1" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="46" DropRate="1000" Comment="Symbol of Kundun 1" />
+		<Item Index="7197" Level="2" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="47" MonsterLevelMax="65" DropRate="1000" Comment="Symbol of Kundun 2" />
+		<Item Index="7197" Level="3" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="66" MonsterLevelMax="77" DropRate="1000" Comment="Symbol of Kundun 3" />
+		<Item Index="7197" Level="4" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="78" MonsterLevelMax="83" DropRate="1000" Comment="Symbol of Kundun 4" />
+		<Item Index="7197" Level="5" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="84" MonsterLevelMax="91" DropRate="1000" Comment="Symbol of Kundun 5" />
+		<Item Index="7197" Level="6" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="92" MonsterLevelMax="113" DropRate="1000" Comment="Symbol of Kundun 6" />
+		<Item Index="7197" Level="7" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="114" MonsterLevelMax="150" DropRate="1000" Comment="Symbol of Kundun 7" />
+		<Item Index="7200" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="49" DropRate="0" Comment="Pink Chocolate Box" />
+		<Item Index="7200" Level="1" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="49" DropRate="0" Comment="Lilac Candy Box" />
+		<Item Index="7201" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="50" MonsterLevelMax="69" DropRate="0" Comment="Red Chocolate Box" />
+		<Item Index="7201" Level="1" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="50" MonsterLevelMax="69" DropRate="0" Comment="Orange Candy Box" />
+		<Item Index="7202" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="70" MonsterLevelMax="97" DropRate="0" Comment="Blue Chocolate Box" />
+		<Item Index="7202" Level="1" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="70" MonsterLevelMax="97" DropRate="0" Comment="Navy Candy Box" />
+		<Item Index="7209" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="39" MonsterClass="-1" MonsterLevelMin="69" MonsterLevelMax="150" DropRate="1000" Comment="Gemstone" />
+		<Item Index="7213" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" DropRate="0" Comment="Pumpkin of Luck" />
+		<Item Index="7258" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="58" MonsterLevelMax="150" DropRate="0" Comment="Golden Cherry Blossom Branch" />
+		<Item Index="7268" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" DropRate="0" Comment="Lucky Coin" />
+		<Item Index="7269" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="60" MonsterLevelMax="150" DropRate="1000" Comment="Suspicious Scrap of Paper" />
+		<Item Index="7278" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="60" MonsterLevelMax="150" DropRate="1000" Comment="Sign of Dimensions" />
+		<Item Index="7289" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" DropRate="1000" Comment="Sealed Golden Box" />
+		<Item Index="7290" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" DropRate="1000" Comment="Sealed Silver Box" />
+
+	</Config>
+</ItemDrop>

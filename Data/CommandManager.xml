@@ -215,7 +215,7 @@ STRICTLY NO COMMENTS INSIDE TAGS
 			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
 			Comment="Claim the throne in the King of MU event" />
 
-		<Command Index="28" Names="xoado" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+		<Command Index="28" Names="clearinv" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
 			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
 			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
 			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
@@ -233,7 +233,7 @@ STRICTLY NO COMMENTS INSIDE TAGS
 			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
 			Comment="Propose marriage to another player" />
 
-		<Command Index="31" Names="abrirbau" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
+		<Command Index="31" Names="openware" Delay="0" GameMaster="0" Coin1="0" Coin2="0" Coin3="0"
 			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
 			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
 			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== ItemStack.xml
+== Which items can stack in one inventory slot, up to how
+== many, and what item (if any) they combine into on overflow.
+== Loaded by GameServer via CItemStack::LoadXML().
+== An item not listed here does not stack at all.
+== Modify only if you know what you're doing!
+============================================================
+
+### ItemStack::Config ###
+	Index             Item id (GET_ITEM(Section,SubIndex) - see Item.xml).
+	MaxStack          Max quantity per inventory slot.
+	CreateItemIndex   -1 = none. Otherwise, the item id this one converts
+	                  into once enough of them are combined (e.g. Mithril
+	                  Fragments into a Mithril, Symbols of Kundun into a
+	                  full Symbol).
+	Name              Free-text label, for readability only (not read by
+	                  the loader).
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemStack>
+	<Config>
+		<Item Index="2055" MaxStack="255" CreateItemIndex="-1" Name="Bolt" />
+		<Item Index="2063" MaxStack="255" CreateItemIndex="-1" Name="Arrow" />
+		<Item Index="6688" MaxStack="20" CreateItemIndex="-1" Name="Splinter of Armor" />
+		<Item Index="6689" MaxStack="20" CreateItemIndex="-1" Name="Bless of Guardian" />
+		<Item Index="6690" MaxStack="10" CreateItemIndex="-1" Name="Claw of Beast" />
+		<Item Index="6288" MaxStack="5" CreateItemIndex="6292" Name="Mithril Fragment" />
+		<Item Index="6290" MaxStack="5" CreateItemIndex="6293" Name="Elixir Fragment" />
+		<Item Index="6801" MaxStack="5" CreateItemIndex="6802" Name="Spirit Map Fragment" />
+		<Item Index="6803" MaxStack="10" CreateItemIndex="-1" Name="Trophies of Battle" />
+		<Item Index="7168" MaxStack="255" CreateItemIndex="-1" Name="Apple" />
+		<Item Index="7169" MaxStack="255" CreateItemIndex="-1" Name="Small Healing Potion" />
+		<Item Index="7170" MaxStack="255" CreateItemIndex="-1" Name="Healing Potion" />
+		<Item Index="7171" MaxStack="255" CreateItemIndex="-1" Name="Large Healing Potion" />
+		<Item Index="7172" MaxStack="255" CreateItemIndex="-1" Name="Small Mana Potion" />
+		<Item Index="7173" MaxStack="255" CreateItemIndex="-1" Name="Mana Potion" />
+		<Item Index="7174" MaxStack="255" CreateItemIndex="-1" Name="Large Mana Potion" />
+		<Item Index="7175" MaxStack="255" CreateItemIndex="-1" Name="Siege Potion" />
+		<Item Index="7176" MaxStack="255" CreateItemIndex="-1" Name="Antidote" />
+		<Item Index="7189" MaxStack="255" CreateItemIndex="-1" Name="Rena" />
+		<Item Index="7197" MaxStack="5" CreateItemIndex="7196" Name="Symbol of Kundun" />
+		<Item Index="7203" MaxStack="255" CreateItemIndex="-1" Name="Small SD Potion" />
+		<Item Index="7204" MaxStack="255" CreateItemIndex="-1" Name="SD Potion" />
+		<Item Index="7205" MaxStack="255" CreateItemIndex="-1" Name="Large SD Potion" />
+		<Item Index="7206" MaxStack="255" CreateItemIndex="-1" Name="Small Complex Potion" />
+		<Item Index="7207" MaxStack="255" CreateItemIndex="-1" Name="Complex Potion" />
+		<Item Index="7208" MaxStack="255" CreateItemIndex="-1" Name="Large Complex Potion" />
+		<Item Index="7214" MaxStack="3" CreateItemIndex="-1" Name="Jack O'Lantern Blessings" />
+		<Item Index="7215" MaxStack="3" CreateItemIndex="-1" Name="Jack O'Lantern Wrath" />
+		<Item Index="7216" MaxStack="3" CreateItemIndex="-1" Name="Jack O'Lantern Cry" />
+		<Item Index="7217" MaxStack="3" CreateItemIndex="-1" Name="Jack O'Lantern Food" />
+		<Item Index="7218" MaxStack="3" CreateItemIndex="-1" Name="Jack O'Lantern Drink" />
+		<Item Index="7238" MaxStack="255" CreateItemIndex="-1" Name="Elite Healing Potion" />
+		<Item Index="7239" MaxStack="255" CreateItemIndex="-1" Name="Elite Mana Potion" />
+		<Item Index="7253" MaxStack="3" CreateItemIndex="-1" Name="Cherry Blossom Wine" />
+		<Item Index="7254" MaxStack="3" CreateItemIndex="-1" Name="Cherry Blossom Rice Cake" />
+		<Item Index="7255" MaxStack="3" CreateItemIndex="-1" Name="Cherry Blossom Flower Petal" />
+		<Item Index="7256" MaxStack="10" CreateItemIndex="-1" Name="White Cherry Blossom Branch" />
+		<Item Index="7257" MaxStack="30" CreateItemIndex="-1" Name="Red Cherry Blossom Branch" />
+		<Item Index="7258" MaxStack="255" CreateItemIndex="-1" Name="Golden Cherry Blossom Branch" />
+		<Item Index="7268" MaxStack="255" CreateItemIndex="-1" Name="Lucky Coin" />
+		<Item Index="7269" MaxStack="5" CreateItemIndex="7270" Name="Suspicious Scrap of Paper" />
+		<Item Index="7278" MaxStack="5" CreateItemIndex="7279" Name="Sign of Dimensions" />
+		<Item Index="7301" MaxStack="255" CreateItemIndex="-1" Name="Elite SD Potion" />
+		<Item Index="7383" MaxStack="24" CreateItemIndex="7384" Name="Card Piece" />
+	</Config>
+</ItemStack>

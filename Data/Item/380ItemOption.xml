@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== 380ItemOption.xml
+== The 8 possible "380 option" bonuses (PvP-only stat boosts
+== on certain items) and their default magnitude.
+== Loaded by GameServer via C380ItemOption::LoadXML().
+== Which items carry which of these options, and at what slot,
+== is configured separately in 380ItemType.xml.
+== Modify only if you know what you're doing!
+============================================================
+
+### 380ItemOption::Config ###
+	Index   1-8, fixed - matches e380ItemOption in 380ItemOption.h. Do not
+	        renumber.
+	Name    Free-text label, for readability only (not read by the loader).
+	Value   Default bonus magnitude applied when 380ItemType.xml doesn't
+	        override it for a specific item (Option Value="-1").
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemOption380>
+	<Config>
+		<Option Index="1" Name="Add Attack Success Rate PvP" Value="10" />
+		<Option Index="2" Name="Add Damage PvP" Value="200" />
+		<Option Index="3" Name="Add Defense Success Rate PvP" Value="10" />
+		<Option Index="4" Name="Add Defense PvP" Value="200" />
+		<Option Index="5" Name="Add Max HP" Value="200" />
+		<Option Index="6" Name="Add Max SD" Value="700" />
+		<Option Index="7" Name="Set SD Recovery Type" Value="1" />
+		<Option Index="8" Name="Add SD Recovery Rate" Value="2" />
+	</Config>
+</ItemOption380>

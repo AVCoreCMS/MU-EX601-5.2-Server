@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== LuckyItem.xml
+== Marks which items are "Lucky Items" (found via Jewel of
+== Extension/Elevation), what durability-decay speed and
+== which roll-context group (see ItemOptionRate.xml Index 10)
+== each one uses for its random options.
+== Loaded by GameServer via CLuckyItem::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### LuckyItem::Config ###
+	Index          Raw item index (Section*512 + SubIndex, matches
+	               Item.xml's raw index values, not GET_ITEM()).
+	Group          Item family used by GetLuckyItemIndex() to pick a
+	               random replacement of the same tier when rerolling.
+	Decay          Extra durability-decay rate while worn.
+	Option0-6      Roll-context group passed into ItemOptionRate.xml's
+	               Option0-6 tables (Index 10 = "Lucky") when this item
+	               generates its Level/Skill/Luck/JoL/Excellent/Set/
+	               Socket options.
+	Comment        Free-text label, for readability only.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<LuckyItem>
+	<Config>
+		<Item Index="3646" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Scale Helm" />
+		<Item Index="3647" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Silk Helm" />
+		<Item Index="3648" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Sphinx Helm" />
+		<Item Index="3649" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Violent Wind Helm" />
+		<Item Index="3650" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Dark Soul Helm" />
+		<Item Index="3651" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Dragon Helm" />
+		<Item Index="3652" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Guardian Helm" />
+		<Item Index="3653" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Legendary Helm" />
+		<Item Index="3654" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Red Wing Helm" />
+		<Item Index="3656" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Storm Jahad Helm" />
+		<Item Index="4158" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Scale Armor" />
+		<Item Index="4159" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Silk Armor" />
+		<Item Index="4160" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Sphinx Armor" />
+		<Item Index="4161" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Violent Wind Armor" />
+		<Item Index="4162" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Dark Soul Armor" />
+		<Item Index="4163" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Dragon Armor" />
+		<Item Index="4164" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Guardian Armor" />
+		<Item Index="4165" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Legendary Armor" />
+		<Item Index="4166" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Red Wing Armor" />
+		<Item Index="4167" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Atlans Armor" />
+		<Item Index="4168" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Storm Jahad Armor" />
+		<Item Index="4670" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Scale Pants" />
+		<Item Index="4671" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Silk Pants" />
+		<Item Index="4672" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Sphinx Pants" />
+		<Item Index="4673" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Violent Wind Pants" />
+		<Item Index="4674" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Dark Soul Pants" />
+		<Item Index="4675" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Dragon Pants" />
+		<Item Index="4676" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Guardian Pants" />
+		<Item Index="4677" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Legendary Pants" />
+		<Item Index="4678" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Red Wing Pants" />
+		<Item Index="4679" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Atlans Pants" />
+		<Item Index="4680" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Storm Jahad Pants" />
+		<Item Index="5182" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Scale Gloves" />
+		<Item Index="5183" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Silk Gloves" />
+		<Item Index="5184" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Sphinx Gloves" />
+		<Item Index="5185" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Violent Wind Gloves" />
+		<Item Index="5186" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Dark Soul Gloves" />
+		<Item Index="5187" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Dragon Gloves" />
+		<Item Index="5188" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Guardian Gloves" />
+		<Item Index="5189" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Legendary Gloves" />
+		<Item Index="5190" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Red Wing Gloves" />
+		<Item Index="5191" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Atlans Gloves" />
+		<Item Index="5694" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Scale Boots" />
+		<Item Index="5695" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Silk Boots" />
+		<Item Index="5696" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Sphinx Boots" />
+		<Item Index="5697" Group="0" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Violent Wind Boots" />
+		<Item Index="5698" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Dark Soul Boots" />
+		<Item Index="5699" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Dragon Boots" />
+		<Item Index="5700" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Guardian Boots" />
+		<Item Index="5701" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Legendary Boots" />
+		<Item Index="5702" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Red Wing Boots" />
+		<Item Index="5703" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Atlans Boots" />
+		<Item Index="5704" Group="1" Decay="2400" Option0="10" Option1="10" Option2="10" Option3="10" Option4="10" Option5="10" Option6="10" Comment="Storm Jahad Boots" />
+	</Config>
+</LuckyItem>

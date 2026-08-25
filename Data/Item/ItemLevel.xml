@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== ItemLevel.xml
+== Per-level display name override for items whose "level"
+== is actually a sub-type selector (event boxes, warp scrolls,
+== summon orbs, fruits...), so each level shows its own name
+== instead of a generic "Item +N".
+== Loaded by GameServer via cCItemLevel::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### ItemLevel::Config ###
+	Section     Item section (0-15, matches Item.xml).
+	ItemIndex   Item sub-index within that section (matches Item.xml).
+	Level       The item's level (+0, +1, ...) this name applies to.
+	Name        Display name shown for this item at this specific level.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemLevel>
+	<Config>
+		<Item Section="12" ItemIndex="11" Level="0" Name="Summon Goblin" />
+		<Item Section="12" ItemIndex="11" Level="1" Name="Summon Stone Golem" />
+		<Item Section="12" ItemIndex="11" Level="2" Name="Assassin Summoning Orb" />
+		<Item Section="12" ItemIndex="11" Level="3" Name="Summon Elite Yeti" />
+		<Item Section="12" ItemIndex="11" Level="4" Name="Summon Dark Knight" />
+		<Item Section="12" ItemIndex="11" Level="5" Name="Bali Summoning Orb" />
+		<Item Section="12" ItemIndex="11" Level="6" Name="Soldier Summoning Orb" />
+		<Item Section="13" ItemIndex="14" Level="0" Name="Loch's Feather" />
+		<Item Section="13" ItemIndex="14" Level="1" Name="Monarch's Crest" />
+		<Item Section="13" ItemIndex="15" Level="0" Name="Energy Fruit" />
+		<Item Section="13" ItemIndex="15" Level="1" Name="HP Fruit" />
+		<Item Section="13" ItemIndex="15" Level="2" Name="Agility Fruit" />
+		<Item Section="13" ItemIndex="15" Level="3" Name="Strength Fruit" />
+		<Item Section="13" ItemIndex="15" Level="4" Name="Command Fruit" />
+		<Item Section="13" ItemIndex="20" Level="0" Name="Wizard's Ring" />
+		<Item Section="13" ItemIndex="20" Level="1" Name="Ring of Warrior" />
+		<Item Section="13" ItemIndex="20" Level="2" Name="Ring of Warrior" />
+		<Item Section="13" ItemIndex="20" Level="3" Name="Ring of Glory" />
+		<Item Section="13" ItemIndex="31" Level="0" Name="Darkhorse Soul" />
+		<Item Section="13" ItemIndex="31" Level="1" Name="Darkspirit Soul" />
+		<Item Section="14" ItemIndex="9" Level="0" Name="Ale" />
+		<Item Section="14" ItemIndex="9" Level="1" Name="Olive of Love" />
+		<Item Section="14" ItemIndex="10" Level="0" Name="Town Portal Scroll" />
+		<Item Section="14" ItemIndex="10" Level="1" Name="Lorencia Warp Scroll" />
+		<Item Section="14" ItemIndex="10" Level="2" Name="Noria Warp Scroll" />
+		<Item Section="14" ItemIndex="10" Level="3" Name="Devias Warp Scroll" />
+		<Item Section="14" ItemIndex="10" Level="4" Name="Dungeon Warp Scroll" />
+		<Item Section="14" ItemIndex="10" Level="5" Name="Atlans Warp Scroll" />
+		<Item Section="14" ItemIndex="10" Level="6" Name="Lost tower Warp Scroll" />
+		<Item Section="14" ItemIndex="10" Level="7" Name="Tarkan Warp Scroll" />
+		<Item Section="14" ItemIndex="10" Level="8" Name="Icarus Warp Scroll" />
+		<Item Section="14" ItemIndex="11" Level="0" Name="Box of Luck" />
+		<Item Section="14" ItemIndex="11" Level="1" Name="Star of the Sacred Birth" />
+		<Item Section="14" ItemIndex="11" Level="2" Name="Firecracker" />
+		<Item Section="14" ItemIndex="11" Level="3" Name="Heart of Love" />
+		<Item Section="14" ItemIndex="11" Level="4" Name="Olive of Love" />
+		<Item Section="14" ItemIndex="11" Level="5" Name="Silver Medal" />
+		<Item Section="14" ItemIndex="11" Level="6" Name="Gold Medal" />
+		<Item Section="14" ItemIndex="11" Level="7" Name="Box of Heaven" />
+		<Item Section="14" ItemIndex="11" Level="8" Name="Box of Kundun +1" />
+		<Item Section="14" ItemIndex="11" Level="9" Name="Box of Kundun +2" />
+		<Item Section="14" ItemIndex="11" Level="10" Name="Box of Kundun +3" />
+		<Item Section="14" ItemIndex="11" Level="11" Name="Box of Kundun +4" />
+		<Item Section="14" ItemIndex="11" Level="12" Name="Box of Kundun +5" />
+		<Item Section="14" ItemIndex="11" Level="13" Name="Heart of Dark Lord" />
+		<Item Section="14" ItemIndex="11" Level="14" Name="Lucky Blue Pouch" />
+		<Item Section="14" ItemIndex="11" Level="15" Name="Lucky Red Pouch" />
+		<Item Section="14" ItemIndex="12" Level="0" Name="Zen" />
+		<Item Section="14" ItemIndex="12" Level="1" Name="Heart" />
+		<Item Section="14" ItemIndex="21" Level="0" Name="Rena" />
+		<Item Section="14" ItemIndex="21" Level="1" Name="Stone" />
+		<Item Section="14" ItemIndex="21" Level="2" Name="Stone of Friendship" />
+		<Item Section="14" ItemIndex="21" Level="3" Name="Sign of the Lord" />
+		<Item Section="14" ItemIndex="23" Level="0" Name="Scroll of Emperor" />
+		<Item Section="14" ItemIndex="23" Level="1" Name="Ring of Honor" />
+		<Item Section="14" ItemIndex="24" Level="0" Name="Broken Sword" />
+		<Item Section="14" ItemIndex="24" Level="1" Name="Dark Stone" />
+		<Item Section="14" ItemIndex="32" Level="0" Name="Pink Chocolate Box" />
+		<Item Section="14" ItemIndex="32" Level="1" Name="Lilac Candy Box" />
+		<Item Section="14" ItemIndex="33" Level="0" Name="Red Chocolate Box" />
+		<Item Section="14" ItemIndex="33" Level="1" Name="Orange Candy Box" />
+		<Item Section="14" ItemIndex="34" Level="0" Name="Blue Chocolate Box" />
+		<Item Section="14" ItemIndex="34" Level="1" Name="Navy Candy Box" />
+	</Config>
+</ItemLevel>

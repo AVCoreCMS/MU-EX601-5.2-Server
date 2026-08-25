@@ -29,6 +29,17 @@ Each <Shop> maps one NPC to a shop Index.
                  required to open this shop.
   GameMaster     0 = anyone can open this shop, 1 = Game Master required,
                  2 = Administrator required.
+  GensFamily     -1 = no restriction, 1 = Vanert required, 2 = Duprian
+                 required.
+  GensContribution  Minimum GensContribution required (0 = no minimum),
+                 only checked when GensFamily != -1.
+  Class          -1 = no restriction, otherwise the player's base
+                 class/race (ignoring evolution stage) must equal this
+                 value: 0=DW family, 16=DK family, 32=Elf family,
+                 48=MG family, 64=DL family, 80=SU family.
+  MinReset/MaxReset  0/0 = no minimum/no maximum Reset count required.
+  MinMasterReset/MaxMasterReset  0/0 = no minimum/no maximum Master
+                 Reset count required.
   Name           Free-text label, for readability only (not read by
                  the loader).
 
@@ -37,31 +48,31 @@ STRICTLY NO COMMENTS INSIDE TAGS
 
 <ShopManager>
 	<Config>
-		<Shop Index="0" MonsterClass="251" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Hanzo the Blacksmith" />
-		<Shop Index="1" MonsterClass="255" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Liaman the Barmaid" />
-		<Shop Index="2" MonsterClass="254" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Pasi the Wizard" />
-		<Shop Index="3" MonsterClass="250" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Harold the Wandering Merchant" />
-		<Shop Index="4" MonsterClass="248" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Martin the Wandering Merchant" />
-		<Shop Index="5" MonsterClass="253" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Amy the Potion Girl" />
-		<Shop Index="6" MonsterClass="244" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Lumen the Barmaid" />
-		<Shop Index="7" MonsterClass="245" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Isabel the Wizard" />
-		<Shop Index="8" MonsterClass="246" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Zienna the Weapon Merchant" />
-		<Shop Index="9" MonsterClass="243" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Eo the Craftsman" />
-		<Shop Index="10" MonsterClass="242" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Elf Lala" />
-		<Shop Index="11" MonsterClass="230" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Alex the Wandering Merchant" />
-		<Shop Index="12" MonsterClass="231" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Thompson Kenel" />
-		<Shop Index="13" MonsterClass="376" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Drink Seller Hillary" />
-		<Shop Index="14" MonsterClass="377" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Drink Seller Lindsay" />
-		<Shop Index="15" MonsterClass="379" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Fireworks Girl" />
-		<Shop Index="16" MonsterClass="415" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Sivia" />
-		<Shop Index="17" MonsterClass="416" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Leah" />
-		<Shop Index="18" MonsterClass="417" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Marseille" />
-		<Shop Index="19" MonsterClass="492" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Moss Merchant" />
-		<Shop Index="20" MonsterClass="545" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Christine" />
-		<Shop Index="21" MonsterClass="239" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Stadium Guard" />
-		<Shop Index="22" MonsterClass="259" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Priestess Reira" />
-		<Shop Index="23" MonsterClass="577" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Leina" />
-		<Shop Index="24" MonsterClass="578" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" Name="Bolo" />
-		<Shop Index="25" MonsterClass="620" Map="0" X="124" Y="143" AccountLevel="-1" GameMaster="0" Name="Hanzo the Blacksmith (Teste)" />
+		<Shop Index="0" MonsterClass="251" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Hanzo the Blacksmith" />
+		<Shop Index="1" MonsterClass="255" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Liaman the Barmaid" />
+		<Shop Index="2" MonsterClass="254" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Pasi the Wizard" />
+		<Shop Index="3" MonsterClass="250" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Harold the Wandering Merchant" />
+		<Shop Index="4" MonsterClass="248" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Martin the Wandering Merchant" />
+		<Shop Index="5" MonsterClass="253" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Amy the Potion Girl" />
+		<Shop Index="6" MonsterClass="244" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Lumen the Barmaid" />
+		<Shop Index="7" MonsterClass="245" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Isabel the Wizard" />
+		<Shop Index="8" MonsterClass="246" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Zienna the Weapon Merchant" />
+		<Shop Index="9" MonsterClass="243" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Eo the Craftsman" />
+		<Shop Index="10" MonsterClass="242" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Elf Lala" />
+		<Shop Index="11" MonsterClass="230" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Alex the Wandering Merchant" />
+		<Shop Index="12" MonsterClass="231" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Thompson Kenel" />
+		<Shop Index="13" MonsterClass="376" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Drink Seller Hillary" />
+		<Shop Index="14" MonsterClass="377" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Drink Seller Lindsay" />
+		<Shop Index="15" MonsterClass="379" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Fireworks Girl" />
+		<Shop Index="16" MonsterClass="415" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Sivia" />
+		<Shop Index="17" MonsterClass="416" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Leah" />
+		<Shop Index="18" MonsterClass="417" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Marseille" />
+		<Shop Index="19" MonsterClass="492" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Moss Merchant" />
+		<Shop Index="20" MonsterClass="545" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Christine" />
+		<Shop Index="21" MonsterClass="239" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Stadium Guard" />
+		<Shop Index="22" MonsterClass="259" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Priestess Reira" />
+		<Shop Index="23" MonsterClass="577" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Leina" />
+		<Shop Index="24" MonsterClass="578" Map="-1" X="-1" Y="-1" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Bolo" />
+		<Shop Index="25" MonsterClass="620" Map="0" X="124" Y="143" AccountLevel="-1" GameMaster="0" GensFamily="-1" GensContribution="0" Class="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Hanzo the Blacksmith (Teste)" />
 	</Config>
 </ShopManager>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== ItemValueTrade.xml
+== Per-item zen/coin fee charged to BOTH sides of a player
+== trade when a listed item is on the trade window.
+== Loaded by GameServer via CItemValueTrade::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### ItemValueTrade::Config ###
+Empty by default - no trade currently costs anything. Each <Fee> charges
+the listed amount once per matching item found in either player's trade
+slots (multiplied by the item's stack/durability count for stackable
+items), on top of the normal trade.
+  Index   Item id (GET_ITEM(Section,SubIndex) - see Item.xml).
+  Zen     Zen charged per matching item.
+  Coin1   WCoinC charged per matching item.
+  Coin2   WCoinP charged per matching item.
+  Coin3   GoblinPoint charged per matching item.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemValueTrade>
+	<Config>
+	</Config>
+</ItemValueTrade>

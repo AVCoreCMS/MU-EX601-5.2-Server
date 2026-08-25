@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== SocketItemType.xml
+== Which items can be socketed (have elemental seeds inserted)
+== and how many sockets each one has.
+== Loaded by GameServer via CSocketItemType::LoadXML().
+== The actual seed options rolled into those sockets are
+== configured separately in SocketItemOption.xml.
+== Modify only if you know what you're doing!
+============================================================
+
+### SocketItemType::Config ###
+	Section     Item section (0-15, matches Item.xml).
+	ItemIndex   Item sub-index within that section (matches Item.xml).
+	MaxSocket   Number of socket slots this item has (typically 3 or 5).
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<SocketItemType>
+	<Config>
+		<Item Section="0" ItemIndex="26" MaxSocket="3" />
+		<Item Section="0" ItemIndex="27" MaxSocket="3" />
+		<Item Section="0" ItemIndex="28" MaxSocket="3" />
+		<Item Section="0" ItemIndex="29" MaxSocket="3" />
+		<Item Section="0" ItemIndex="30" MaxSocket="3" />
+		<Item Section="0" ItemIndex="36" MaxSocket="3" />
+		<Item Section="0" ItemIndex="37" MaxSocket="5" />
+		<Item Section="2" ItemIndex="16" MaxSocket="3" />
+		<Item Section="2" ItemIndex="17" MaxSocket="3" />
+		<Item Section="2" ItemIndex="19" MaxSocket="3" />
+		<Item Section="2" ItemIndex="20" MaxSocket="5" />
+		<Item Section="3" ItemIndex="12" MaxSocket="5" />
+		<Item Section="4" ItemIndex="23" MaxSocket="5" />
+		<Item Section="4" ItemIndex="25" MaxSocket="5" />
+		<Item Section="4" ItemIndex="26" MaxSocket="5" />
+		<Item Section="5" ItemIndex="30" MaxSocket="3" />
+		<Item Section="5" ItemIndex="31" MaxSocket="3" />
+		<Item Section="5" ItemIndex="32" MaxSocket="3" />
+		<Item Section="5" ItemIndex="35" MaxSocket="3" />
+		<Item Section="5" ItemIndex="37" MaxSocket="5" />
+		<Item Section="6" ItemIndex="17" MaxSocket="3" />
+		<Item Section="6" ItemIndex="18" MaxSocket="3" />
+		<Item Section="6" ItemIndex="19" MaxSocket="3" />
+		<Item Section="6" ItemIndex="20" MaxSocket="3" />
+		<Item Section="6" ItemIndex="22" MaxSocket="3" />
+		<Item Section="6" ItemIndex="23" MaxSocket="3" />
+		<Item Section="6" ItemIndex="24" MaxSocket="3" />
+		<Item Section="6" ItemIndex="25" MaxSocket="3" />
+		<Item Section="6" ItemIndex="26" MaxSocket="3" />
+		<Item Section="7" ItemIndex="45" MaxSocket="3" />
+		<Item Section="7" ItemIndex="46" MaxSocket="3" />
+		<Item Section="7" ItemIndex="47" MaxSocket="3" />
+		<Item Section="7" ItemIndex="48" MaxSocket="3" />
+		<Item Section="7" ItemIndex="49" MaxSocket="3" />
+		<Item Section="7" ItemIndex="50" MaxSocket="3" />
+		<Item Section="7" ItemIndex="51" MaxSocket="3" />
+		<Item Section="7" ItemIndex="52" MaxSocket="3" />
+		<Item Section="7" ItemIndex="53" MaxSocket="3" />
+		<Item Section="7" ItemIndex="54" MaxSocket="3" />
+		<Item Section="7" ItemIndex="55" MaxSocket="3" />
+		<Item Section="7" ItemIndex="56" MaxSocket="3" />
+		<Item Section="7" ItemIndex="58" MaxSocket="3" />
+		<Item Section="7" ItemIndex="74" MaxSocket="3" />
+		<Item Section="7" ItemIndex="75" MaxSocket="3" />
+		<Item Section="8" ItemIndex="45" MaxSocket="3" />
+		<Item Section="8" ItemIndex="46" MaxSocket="3" />
+		<Item Section="8" ItemIndex="47" MaxSocket="3" />
+		<Item Section="8" ItemIndex="48" MaxSocket="3" />
+		<Item Section="8" ItemIndex="49" MaxSocket="3" />
+		<Item Section="8" ItemIndex="50" MaxSocket="3" />
+		<Item Section="8" ItemIndex="51" MaxSocket="3" />
+		<Item Section="8" ItemIndex="52" MaxSocket="3" />
+		<Item Section="8" ItemIndex="53" MaxSocket="3" />
+		<Item Section="8" ItemIndex="54" MaxSocket="3" />
+		<Item Section="8" ItemIndex="55" MaxSocket="3" />
+		<Item Section="8" ItemIndex="56" MaxSocket="3" />
+		<Item Section="8" ItemIndex="57" MaxSocket="3" />
+		<Item Section="8" ItemIndex="58" MaxSocket="3" />
+		<Item Section="8" ItemIndex="74" MaxSocket="3" />
+		<Item Section="8" ItemIndex="75" MaxSocket="3" />
+		<Item Section="8" ItemIndex="76" MaxSocket="3" />
+		<Item Section="9" ItemIndex="45" MaxSocket="3" />
+		<Item Section="9" ItemIndex="46" MaxSocket="3" />
+		<Item Section="9" ItemIndex="47" MaxSocket="3" />
+		<Item Section="9" ItemIndex="48" MaxSocket="3" />
+		<Item Section="9" ItemIndex="49" MaxSocket="3" />
+		<Item Section="9" ItemIndex="50" MaxSocket="3" />
+		<Item Section="9" ItemIndex="51" MaxSocket="3" />
+		<Item Section="9" ItemIndex="52" MaxSocket="3" />
+		<Item Section="9" ItemIndex="53" MaxSocket="3" />
+		<Item Section="9" ItemIndex="54" MaxSocket="3" />
+		<Item Section="9" ItemIndex="55" MaxSocket="3" />
+		<Item Section="9" ItemIndex="56" MaxSocket="3" />
+		<Item Section="9" ItemIndex="57" MaxSocket="3" />
+		<Item Section="9" ItemIndex="58" MaxSocket="3" />
+		<Item Section="9" ItemIndex="74" MaxSocket="3" />
+		<Item Section="9" ItemIndex="75" MaxSocket="3" />
+		<Item Section="9" ItemIndex="76" MaxSocket="3" />
+		<Item Section="10" ItemIndex="45" MaxSocket="3" />
+		<Item Section="10" ItemIndex="46" MaxSocket="3" />
+		<Item Section="10" ItemIndex="47" MaxSocket="3" />
+		<Item Section="10" ItemIndex="48" MaxSocket="3" />
+		<Item Section="10" ItemIndex="49" MaxSocket="3" />
+		<Item Section="10" ItemIndex="50" MaxSocket="3" />
+		<Item Section="10" ItemIndex="51" MaxSocket="3" />
+		<Item Section="10" ItemIndex="52" MaxSocket="3" />
+		<Item Section="10" ItemIndex="53" MaxSocket="3" />
+		<Item Section="10" ItemIndex="54" MaxSocket="3" />
+		<Item Section="10" ItemIndex="55" MaxSocket="3" />
+		<Item Section="10" ItemIndex="56" MaxSocket="3" />
+		<Item Section="10" ItemIndex="57" MaxSocket="3" />
+		<Item Section="10" ItemIndex="58" MaxSocket="3" />
+		<Item Section="10" ItemIndex="74" MaxSocket="3" />
+		<Item Section="10" ItemIndex="75" MaxSocket="3" />
+		<Item Section="10" ItemIndex="76" MaxSocket="3" />
+		<Item Section="11" ItemIndex="45" MaxSocket="3" />
+		<Item Section="11" ItemIndex="46" MaxSocket="3" />
+		<Item Section="11" ItemIndex="47" MaxSocket="3" />
+		<Item Section="11" ItemIndex="48" MaxSocket="3" />
+		<Item Section="11" ItemIndex="49" MaxSocket="3" />
+		<Item Section="11" ItemIndex="50" MaxSocket="3" />
+		<Item Section="11" ItemIndex="51" MaxSocket="3" />
+		<Item Section="11" ItemIndex="52" MaxSocket="3" />
+		<Item Section="11" ItemIndex="53" MaxSocket="3" />
+		<Item Section="11" ItemIndex="54" MaxSocket="3" />
+		<Item Section="11" ItemIndex="55" MaxSocket="3" />
+		<Item Section="11" ItemIndex="56" MaxSocket="3" />
+		<Item Section="11" ItemIndex="57" MaxSocket="3" />
+		<Item Section="11" ItemIndex="58" MaxSocket="3" />
+		<Item Section="11" ItemIndex="74" MaxSocket="3" />
+		<Item Section="11" ItemIndex="75" MaxSocket="3" />
+		<Item Section="11" ItemIndex="76" MaxSocket="3" />
+	</Config>
+</SocketItemType>

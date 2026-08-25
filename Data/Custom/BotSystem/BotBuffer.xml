@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== BotBuffer.xml
+== NPC-bot party buffers: summon-controlled characters that
+== cast a support skill (Mana Shield, Greater Damage, etc) on
+== a player who trades with them, optionally for a Zen/PCPoint
+== fee and/or gated behind VIP or Gens Family requirements.
+== Loaded by GameServer via ObjBotBuffer::LoadXML().
+== Reduced 2026-08-25 from ~50 duplicate entries (one Elf and
+== 49 near-identical copies of the same Soul Master bot spread
+== across Lorencia) down to the original 2: one Elf buffer and
+== one Soul Master buffer, at the user's request.
+== Modify only if you know what you're doing!
+============================================================
+
+### BotBuffer::Config::Bot ###
+	Index             0-99, fixed.
+	Class             eClass value (see Item.h). 0,1,2=DW,SM,GM;
+	                  16,17,18=DK,BK,BM; 32,33,34=Elf,ME,HE;
+	                  48,49,50=MG,DM; 64,65,66=DL,LE; 80,81,82=SU,BS,DS.
+	Enabled           1 = this bot spawns. 0 = skipped.
+	ColorName         PK-level color tint applied to the bot's name (0-7).
+	Zen               Zen fee charged per buff. 0 = free.
+	PCPoint           PCPoint fee charged per buff. 0 = free.
+	MaxLevel          Player's character level must be <= this to use
+	                  the bot.
+	Name              Bot's display name, max 10 characters.
+	Map/X/Y/Dir       Spawn location.
+	OnlyVip           1 = requires AccountLevel > 0 (VIP) to use.
+	ActiveGensFamily  1 = enforces the GensFamily requirement below.
+	ContributionGens  Minimum GensContribution required (when
+	                  ActiveGensFamily = 1).
+	GensFamily        Required Gens Family (1 Vanert, 2 Duprian) when
+	                  ActiveGensFamily = 1.
+
+	Child <Equipment> - up to 9 <Item> slots (0-8, see comment below)
+	worn by the bot for its visual appearance only:
+		Slot    0=Sword 1=Shield 2=Helm 3=Armor 4=Pants
+		        5=Gloves 6=Boots 7=Wings 8=Pet
+		Type    Item section (matches Item.xml).
+		Index   Item sub-index within that section.
+		Level   Item +Level.
+		Opt     Excellent/extra option value.
+
+	Child <Skills> - up to 5 <Skill> entries applied (in order) to the
+	player when they trade with this bot:
+		Index   Skill/effect ID (see SkillManager.cpp's BotBuffer switch
+		        - 28 Greater Damage, 27 Greater Defense, 16 Greater Mana
+		        Shield, 64 Critical Damage, 48 Greater Life, 217
+		        Reflect, 82 Magic Circle, 129 Greater Ignore Defense
+		        Rate, 130 Fitness).
+		Time    Buff duration in minutes.
+		Power   Buff magnitude (%).
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<BotBuffer>
+	<Config>
+		<Bot Index="0" Class="2" Enabled="1" ColorName="0" Zen="100" PCPoint="0" MaxLevel="400" Name="SMBuffer" Map="0" X="136" Y="140" Dir="1" OnlyVip="0" ActiveGensFamily="0" ContributionGens="100" GensFamily="0">
+			<Equipment>
+				<Item Slot="2" Type="7" Index="52" Level="13" Opt="0" />
+				<Item Slot="3" Type="8" Index="52" Level="13" Opt="0" />
+				<Item Slot="4" Type="9" Index="52" Level="13" Opt="0" />
+				<Item Slot="5" Type="10" Index="52" Level="13" Opt="0" />
+				<Item Slot="6" Type="11" Index="52" Level="13" Opt="15" />
+				<Item Slot="7" Type="12" Index="156" Level="13" Opt="15" />
+			</Equipment>
+			<Skills>
+				<Skill Index="16" Time="5" Power="30" />
+				<Skill Index="16" Time="5" Power="30" />
+			</Skills>
+		</Bot>
+		
+		<Bot Index="1" Class="18" Enabled="1" ColorName="0" Zen="100" PCPoint="0" MaxLevel="400" Name="BKBuffer" Map="0" X="138" Y="140" Dir="1" OnlyVip="0" ActiveGensFamily="0" ContributionGens="100" GensFamily="0">
+			<Equipment>
+				<Item Slot="2" Type="7" Index="45" Level="13" Opt="0" />
+				<Item Slot="3" Type="8" Index="45" Level="13" Opt="0" />
+				<Item Slot="4" Type="9" Index="45" Level="13" Opt="0" />
+				<Item Slot="5" Type="10" Index="45" Level="13" Opt="0" />
+				<Item Slot="6" Type="11" Index="45" Level="13" Opt="15" />
+				<Item Slot="7" Type="12" Index="157" Level="13" Opt="15" />
+			</Equipment>
+			<Skills>
+				<Skill Index="48" Time="5" Power="30" />
+				<Skill Index="48" Time="5" Power="30" />
+			</Skills>
+		</Bot>
+		
+		<Bot Index="2" Class="34" Enabled="1" ColorName="0" Zen="100" PCPoint="0" MaxLevel="400" Name="ELFBuffer" Map="0" X="140" Y="140" Dir="1" OnlyVip="0" ActiveGensFamily="0" ContributionGens="100" GensFamily="0">
+			<Equipment>
+				<Item Slot="2" Type="7" Index="50" Level="13" Opt="0" />
+				<Item Slot="3" Type="8" Index="50" Level="13" Opt="0" />
+				<Item Slot="4" Type="9" Index="50" Level="13" Opt="0" />
+				<Item Slot="5" Type="10" Index="50" Level="13" Opt="0" />
+				<Item Slot="6" Type="11" Index="50" Level="13" Opt="0" />
+				<Item Slot="7" Type="12" Index="158" Level="13" Opt="0" />
+			</Equipment>
+			<Skills>
+				<Skill Index="28" Time="5" Power="30" />
+				<Skill Index="16" Time="5" Power="30" />
+			</Skills>
+		</Bot>
+		
+		<Bot Index="3" Class="82" Enabled="1" ColorName="0" Zen="100" PCPoint="0" MaxLevel="400" Name="SUMBuffer" Map="0" X="142" Y="140" Dir="1" OnlyVip="0" ActiveGensFamily="0" ContributionGens="100" GensFamily="0">
+			<Equipment>
+				<Item Slot="2" Type="7" Index="53" Level="13" Opt="0" />
+				<Item Slot="3" Type="8" Index="53" Level="13" Opt="0" />
+				<Item Slot="4" Type="9" Index="53" Level="13" Opt="0" />
+				<Item Slot="5" Type="10" Index="53" Level="13" Opt="0" />
+				<Item Slot="6" Type="11" Index="53" Level="13" Opt="0" />
+				<Item Slot="7" Type="12" Index="161" Level="13" Opt="0" />
+			</Equipment>
+			<Skills>
+				<Skill Index="217" Time="5" Power="30" />
+				<Skill Index="217" Time="5" Power="30" />
+			</Skills>
+		</Bot>
+		
+	</Config>
+</BotBuffer>

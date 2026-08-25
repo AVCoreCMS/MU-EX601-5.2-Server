@@ -1,9 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== CheckItemVip.xml
+== Minimum VIP (AccountLevel) required to use an item at a
+== given item level.
+== Loaded by GameServer via CheckItemVip::Load().
+== Modify only if you know what you're doing!
+============================================================
+
+### CheckItemVip::ConfigCheckVip ###
+Empty by default - no item is currently VIP-gated. Each <Item> requires
+the listed AccountLevel to use the item at exactly that item level.
+  IndexItem   Item id (GET_ITEM(Section,SubIndex) - see Item.xml).
+  LevelItem   Item level (+0, +1, ...) this rule applies to. NOTE: loaded
+              but currently NOT checked by CheckLevelVIP() - a rule
+              blocks the item at every +level, not just this one.
+  LevelVip    Minimum AccountLevel (VIP tier) required.
+  Comment     Optional. Free-text label (e.g. the item's name), for
+              readability only - not read by the loader.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
 <CheckItemVip>
-   
 	<ConfigCheckVip>
-	    
-		
-		
 	</ConfigCheckVip>
-	
 </CheckItemVip>

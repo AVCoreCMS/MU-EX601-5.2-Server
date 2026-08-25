@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== SetItemType.xml
+== Assigns each item to a set (StatType = set index, matches
+== SetItemOption.xml's Index) and to up to two option-index
+== slots within that set's OptionTable rows.
+== Loaded by GameServer via CSetItemType::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### SetItemType::Config ###
+	Section       Item section (0-15, matches Item.xml).
+	ItemIndex     Item sub-index within that section (matches Item.xml).
+	StatType      Set index this item belongs to. Matches the Index
+	              attribute in SetItemOption.xml.
+	OptionIndex1  Which OptionTable row (0-11, see SetItemOption.xml)
+	              this item contributes when equipped alone.
+	OptionIndex2  Second OptionTable row this item contributes when a
+	              matching second copy/piece is also equipped
+	              (e.g. dual-wielded weapons or paired rings).
+	              0 = unused slot.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<SetItemType>
+	<Config>
+		<Item Section="0" ItemIndex="2" StatType="0" OptionIndex1="21" OptionIndex2="0" />
+		<Item Section="0" ItemIndex="14" StatType="0" OptionIndex1="11" OptionIndex2="0" />
+		<Item Section="0" ItemIndex="32" StatType="0" OptionIndex1="37" OptionIndex2="38" />
+		<Item Section="2" ItemIndex="1" StatType="0" OptionIndex1="1" OptionIndex2="0" />
+		<Item Section="4" ItemIndex="5" StatType="1" OptionIndex1="29" OptionIndex2="0" />
+		<Item Section="4" ItemIndex="9" StatType="1" OptionIndex1="23" OptionIndex2="0" />
+		<Item Section="5" ItemIndex="0" StatType="2" OptionIndex1="13" OptionIndex2="0" />
+		<Item Section="6" ItemIndex="0" StatType="3" OptionIndex1="2" OptionIndex2="0" />
+		<Item Section="6" ItemIndex="6" StatType="3" OptionIndex1="17" OptionIndex2="0" />
+		<Item Section="6" ItemIndex="9" StatType="3" OptionIndex1="5" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="0" StatType="3" OptionIndex1="4" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="1" StatType="3" OptionIndex1="11" OptionIndex2="12" />
+		<Item Section="7" ItemIndex="2" StatType="3" OptionIndex1="13" OptionIndex2="14" />
+		<Item Section="7" ItemIndex="3" StatType="3" OptionIndex1="19" OptionIndex2="20" />
+		<Item Section="7" ItemIndex="4" StatType="3" OptionIndex1="16" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="5" StatType="3" OptionIndex1="1" OptionIndex2="2" />
+		<Item Section="7" ItemIndex="6" StatType="3" OptionIndex1="5" OptionIndex2="6" />
+		<Item Section="7" ItemIndex="7" StatType="3" OptionIndex1="17" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="8" StatType="3" OptionIndex1="8" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="9" StatType="3" OptionIndex1="9" OptionIndex2="10" />
+		<Item Section="7" ItemIndex="10" StatType="3" OptionIndex1="21" OptionIndex2="22" />
+		<Item Section="7" ItemIndex="11" StatType="3" OptionIndex1="23" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="12" StatType="3" OptionIndex1="25" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="14" StatType="3" OptionIndex1="0" OptionIndex2="30" />
+		<Item Section="7" ItemIndex="26" StatType="3" OptionIndex1="33" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="40" StatType="3" OptionIndex1="35" OptionIndex2="36" />
+		<Item Section="7" ItemIndex="59" StatType="3" OptionIndex1="37" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="62" StatType="3" OptionIndex1="39" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="63" StatType="3" OptionIndex1="40" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="64" StatType="3" OptionIndex1="41" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="65" StatType="3" OptionIndex1="42" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="66" StatType="3" OptionIndex1="43" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="67" StatType="3" OptionIndex1="44" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="68" StatType="3" OptionIndex1="45" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="69" StatType="3" OptionIndex1="46" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="70" StatType="3" OptionIndex1="47" OptionIndex2="0" />
+		<Item Section="7" ItemIndex="72" StatType="3" OptionIndex1="49" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="0" StatType="3" OptionIndex1="3" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="1" StatType="3" OptionIndex1="0" OptionIndex2="12" />
+		<Item Section="8" ItemIndex="2" StatType="3" OptionIndex1="13" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="3" StatType="3" OptionIndex1="19" OptionIndex2="20" />
+		<Item Section="8" ItemIndex="4" StatType="3" OptionIndex1="15" OptionIndex2="16" />
+		<Item Section="8" ItemIndex="5" StatType="3" OptionIndex1="1" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="6" StatType="3" OptionIndex1="5" OptionIndex2="6" />
+		<Item Section="8" ItemIndex="7" StatType="3" OptionIndex1="17" OptionIndex2="18" />
+		<Item Section="8" ItemIndex="8" StatType="3" OptionIndex1="7" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="9" StatType="3" OptionIndex1="9" OptionIndex2="10" />
+		<Item Section="8" ItemIndex="10" StatType="3" OptionIndex1="22" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="11" StatType="3" OptionIndex1="23" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="12" StatType="3" OptionIndex1="25" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="13" StatType="3" OptionIndex1="27" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="14" StatType="3" OptionIndex1="29" OptionIndex2="30" />
+		<Item Section="8" ItemIndex="15" StatType="3" OptionIndex1="31" OptionIndex2="32" />
+		<Item Section="8" ItemIndex="26" StatType="3" OptionIndex1="33" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="40" StatType="3" OptionIndex1="0" OptionIndex2="36" />
+		<Item Section="8" ItemIndex="59" StatType="3" OptionIndex1="37" OptionIndex2="38" />
+		<Item Section="8" ItemIndex="62" StatType="3" OptionIndex1="39" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="63" StatType="3" OptionIndex1="40" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="64" StatType="3" OptionIndex1="41" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="65" StatType="3" OptionIndex1="42" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="66" StatType="3" OptionIndex1="43" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="67" StatType="3" OptionIndex1="44" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="68" StatType="3" OptionIndex1="45" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="69" StatType="3" OptionIndex1="46" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="70" StatType="3" OptionIndex1="47" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="71" StatType="3" OptionIndex1="48" OptionIndex2="0" />
+		<Item Section="8" ItemIndex="72" StatType="3" OptionIndex1="49" OptionIndex2="0" />
+		<Item Section="9" ItemIndex="0" StatType="3" OptionIndex1="3" OptionIndex2="4" />
+		<Item Section="9" ItemIndex="1" StatType="3" OptionIndex1="0" OptionIndex2="12" />
+		<Item Section="9" ItemIndex="2" StatType="3" OptionIndex1="13" OptionIndex2="14" />
+		<Item Section="9" ItemIndex="3" StatType="3" OptionIndex1="0" OptionIndex2="20" />
+		<Item Section="9" ItemIndex="4" StatType="3" OptionIndex1="15" OptionIndex2="0" />
+		<Item Section="9" ItemIndex="5" StatType="3" OptionIndex1="1" OptionIndex2="2" />
+		<Item Section="9" ItemIndex="6" StatType="3" OptionIndex1="5" OptionIndex2="6" />
+		<Item Section="9" ItemIndex="7" StatType="3" OptionIndex1="17" OptionIndex2="18" />
+		<Item Section="9" ItemIndex="8" StatType="3" OptionIndex1="7" OptionIndex2="8" />
+		<Item Section="9" ItemIndex="9" StatType="3" OptionIndex1="9" OptionIndex2="10" />
+		<Item Section="9" ItemIndex="10" StatType="3" OptionIndex1="21" OptionIndex2="22" />
+		<Item Section="9" ItemIndex="11" StatType="3" OptionIndex1="23" OptionIndex2="24" />
+		<Item Section="9" ItemIndex="12" StatType="3" OptionIndex1="25" OptionIndex2="26" />
+		<Item Section="9" ItemIndex="13" StatType="3" OptionIndex1="27" OptionIndex2="28" />
+		<Item Section="9" ItemIndex="14" StatType="3" OptionIndex1="0" OptionIndex2="30" />
+		<Item Section="9" ItemIndex="15" StatType="3" OptionIndex1="31" OptionIndex2="32" />
+		<Item Section="9" ItemIndex="26" StatType="3" OptionIndex1="33" OptionIndex2="34" />
+		<Item Section="9" ItemIndex="40" StatType="3" OptionIndex1="35" OptionIndex2="0" />
+		<Item Section="9" ItemIndex="59" StatType="3" OptionIndex1="37" OptionIndex2="38" />
+		<Item Section="9" ItemIndex="62" StatType="3" OptionIndex1="39" OptionIndex2="0" />
+		<Item Section="9" ItemIndex="63" StatType="3" OptionIndex1="40" OptionIndex2="0" />
+		<Item Section="9" ItemIndex="64" StatType="3" OptionIndex1="41" OptionIndex2="0" />
+		<Item Section="9" ItemIndex="65" StatType="3" OptionIndex1="42" OptionIndex2="0" />
+		<Item Section="9" ItemIndex="66" StatType="3" OptionIndex1="43" OptionIndex2="0" />
+		<Item Section="9" ItemIndex="67" StatType="3" OptionIndex1="44" OptionIndex2="0" />
+		<Item Section="9" ItemIndex="68" StatType="3" OptionIndex1="45" OptionIndex2="0" />
+		<Item Section="9" ItemIndex="69" StatType="3" OptionIndex1="46" OptionIndex2="0" />
+		<Item Section="9" ItemIndex="70" StatType="3" OptionIndex1="47" OptionIndex2="0" />
+		<Item Section="9" ItemIndex="71" StatType="3" OptionIndex1="48" OptionIndex2="0" />
+		<Item Section="9" ItemIndex="72" StatType="3" OptionIndex1="49" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="0" StatType="3" OptionIndex1="4" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="1" StatType="3" OptionIndex1="11" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="2" StatType="3" OptionIndex1="13" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="3" StatType="3" OptionIndex1="19" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="4" StatType="3" OptionIndex1="16" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="5" StatType="3" OptionIndex1="1" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="6" StatType="3" OptionIndex1="6" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="7" StatType="3" OptionIndex1="17" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="8" StatType="3" OptionIndex1="7" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="9" StatType="3" OptionIndex1="9" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="10" StatType="3" OptionIndex1="21" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="11" StatType="3" OptionIndex1="23" OptionIndex2="24" />
+		<Item Section="10" ItemIndex="12" StatType="3" OptionIndex1="25" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="13" StatType="3" OptionIndex1="27" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="14" StatType="3" OptionIndex1="29" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="15" StatType="3" OptionIndex1="0" OptionIndex2="32" />
+		<Item Section="10" ItemIndex="26" StatType="3" OptionIndex1="0" OptionIndex2="34" />
+		<Item Section="10" ItemIndex="40" StatType="3" OptionIndex1="35" OptionIndex2="36" />
+		<Item Section="10" ItemIndex="62" StatType="3" OptionIndex1="39" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="63" StatType="3" OptionIndex1="40" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="64" StatType="3" OptionIndex1="41" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="65" StatType="3" OptionIndex1="42" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="66" StatType="3" OptionIndex1="43" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="67" StatType="3" OptionIndex1="44" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="68" StatType="3" OptionIndex1="45" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="69" StatType="3" OptionIndex1="46" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="70" StatType="3" OptionIndex1="47" OptionIndex2="0" />
+		<Item Section="10" ItemIndex="71" StatType="3" OptionIndex1="48" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="0" StatType="3" OptionIndex1="3" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="1" StatType="3" OptionIndex1="11" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="2" StatType="3" OptionIndex1="14" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="3" StatType="3" OptionIndex1="0" OptionIndex2="20" />
+		<Item Section="11" ItemIndex="4" StatType="3" OptionIndex1="15" OptionIndex2="16" />
+		<Item Section="11" ItemIndex="5" StatType="3" OptionIndex1="1" OptionIndex2="2" />
+		<Item Section="11" ItemIndex="6" StatType="3" OptionIndex1="6" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="7" StatType="3" OptionIndex1="17" OptionIndex2="18" />
+		<Item Section="11" ItemIndex="8" StatType="3" OptionIndex1="7" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="9" StatType="3" OptionIndex1="9" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="10" StatType="3" OptionIndex1="21" OptionIndex2="22" />
+		<Item Section="11" ItemIndex="11" StatType="3" OptionIndex1="24" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="12" StatType="3" OptionIndex1="25" OptionIndex2="26" />
+		<Item Section="11" ItemIndex="14" StatType="3" OptionIndex1="29" OptionIndex2="30" />
+		<Item Section="11" ItemIndex="15" StatType="3" OptionIndex1="31" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="26" StatType="3" OptionIndex1="0" OptionIndex2="34" />
+		<Item Section="11" ItemIndex="40" StatType="3" OptionIndex1="0" OptionIndex2="36" />
+		<Item Section="11" ItemIndex="59" StatType="3" OptionIndex1="38" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="62" StatType="3" OptionIndex1="39" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="63" StatType="3" OptionIndex1="40" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="64" StatType="3" OptionIndex1="41" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="65" StatType="3" OptionIndex1="42" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="66" StatType="3" OptionIndex1="43" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="67" StatType="3" OptionIndex1="44" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="68" StatType="3" OptionIndex1="45" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="69" StatType="3" OptionIndex1="46" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="70" StatType="3" OptionIndex1="47" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="71" StatType="3" OptionIndex1="48" OptionIndex2="0" />
+		<Item Section="11" ItemIndex="72" StatType="3" OptionIndex1="49" OptionIndex2="0" />
+		<Item Section="13" ItemIndex="8" StatType="1" OptionIndex1="1" OptionIndex2="0" />
+		<Item Section="13" ItemIndex="9" StatType="3" OptionIndex1="9" OptionIndex2="33" />
+		<Item Section="13" ItemIndex="12" StatType="2" OptionIndex1="5" OptionIndex2="0" />
+		<Item Section="13" ItemIndex="13" StatType="0" OptionIndex1="7" OptionIndex2="0" />
+		<Item Section="13" ItemIndex="21" StatType="2" OptionIndex1="19" OptionIndex2="32" />
+		<Item Section="13" ItemIndex="22" StatType="0" OptionIndex1="21" OptionIndex2="12" />
+		<Item Section="13" ItemIndex="23" StatType="1" OptionIndex1="9" OptionIndex2="0" />
+		<Item Section="13" ItemIndex="24" StatType="2" OptionIndex1="13" OptionIndex2="35" />
+		<Item Section="13" ItemIndex="25" StatType="0" OptionIndex1="13" OptionIndex2="34" />
+		<Item Section="13" ItemIndex="26" StatType="1" OptionIndex1="15" OptionIndex2="0" />
+		<Item Section="13" ItemIndex="27" StatType="3" OptionIndex1="31" OptionIndex2="0" />
+		<Item Section="13" ItemIndex="28" StatType="1" OptionIndex1="29" OptionIndex2="0" />
+	</Config>
+</SetItemType>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== ItemValue.xml
+== Fixed sell-price / zen value table for items that don't
+== use the normal formula-based pricing (event/cash items,
+== jewel bundles, potions, etc).
+== Loaded by GameServer via CItemValue::LoadXML().
+==
+== NOTE: the original ItemValue.txt only ever had 4 real
+== columns (Index/Level/Grade/Value) even though the C++
+== struct/Load() historically read 8 fields per record
+== (...,Coin1,Coin2,Coin3,Sell). Because the legacy parser
+== reads tokens as one continuous stream ignoring line
+== breaks, this silently misaligned every record - each
+== item's Coin1/Coin2/Coin3/Sell were actually the NEXT
+== line's Index/Level/Grade/Value. This was a real bug in
+== the live server (confirmed 2026-08-25). LoadXML() fixes
+== this: it reads exactly the 4 fields below per item, and
+== Coin1/Coin2/Coin3/Sell now default to 0 for every entry.
+== Modify only if you know what you're doing!
+============================================================
+
+### ItemValue::Config ###
+	Index    Item index (Section*512 + SubIndex encoding, matches
+	         Item.txt/Item.xml's raw index values, not GET_ITEM()).
+	Level    Required item +Level for this price to apply. -1 = any.
+	Grade    Required item Grade/NewOption byte for this price to
+	         apply (used for items like Horn of Dinorant where the
+	         grade encodes which mount). -1 = any.
+	Value    Zen sell price (or coin price where relevant).
+	Comment  Free-text label, for readability only.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemValue>
+	<Config>
+		<Item Index="2055" Level="0" Grade="-1" Value="100" Comment="Bolt" />
+		<Item Index="2055" Level="1" Grade="-1" Value="1400" Comment="Bolt" />
+		<Item Index="2055" Level="2" Grade="-1" Value="2200" Comment="Bolt" />
+		<Item Index="2055" Level="3" Grade="-1" Value="3000" Comment="Bolt" />
+		<Item Index="2063" Level="0" Grade="-1" Value="70" Comment="Arrow" />
+		<Item Index="2063" Level="1" Grade="-1" Value="1200" Comment="Arrow" />
+		<Item Index="2063" Level="2" Grade="-1" Value="2000" Comment="Arrow" />
+		<Item Index="2063" Level="3" Grade="-1" Value="2800" Comment="Arrow" />
+		<Item Index="6159" Level="-1" Grade="-1" Value="810000" Comment="Jewel of Chaos" />
+		<Item Index="6170" Level="0" Grade="-1" Value="60000" Comment="Gem of Secret" />
+		<Item Index="6174" Level="0" Grade="-1" Value="90000000" Comment="Bundle of Jewel of Bless 1" />
+		<Item Index="6174" Level="1" Grade="-1" Value="180000000" Comment="Bundle of Jewel of Bless 2" />
+		<Item Index="6174" Level="2" Grade="-1" Value="270000000" Comment="Bundle of Jewel of Bless 3" />
+		<Item Index="6175" Level="0" Grade="-1" Value="60000000" Comment="Bundle of Jewel of Soul 1" />
+		<Item Index="6175" Level="1" Grade="-1" Value="120000000" Comment="Bundle of Jewel of Soul 2" />
+		<Item Index="6175" Level="0" Grade="-1" Value="180000000" Comment="Bundle of Jewel of Soul 3" />
+		<Item Index="6274" Level="-1" Grade="-1" Value="240" Comment="Small Cape of Lord" />
+		<Item Index="6275" Level="-1" Grade="-1" Value="240" Comment="Small Wing of Curse" />
+		<Item Index="6276" Level="-1" Grade="-1" Value="240" Comment="Small Wings of Elf" />
+		<Item Index="6277" Level="-1" Grade="-1" Value="240" Comment="Small Wings of Heaven" />
+		<Item Index="6278" Level="-1" Grade="-1" Value="240" Comment="Small Wings of Satan" />
+		<Item Index="6279" Level="-1" Grade="-1" Value="240" Comment="Little Warrior's Cloak" />
+		<Item Index="6280" Level="0" Grade="-1" Value="450000000" Comment="Jewel of Life Bundle 1" />
+		<Item Index="6280" Level="1" Grade="-1" Value="900000000" Comment="Jewel of Life Bundle 2" />
+		<Item Index="6280" Level="2" Grade="-1" Value="1350000000" Comment="Jewel of Life Bundle 3" />
+		<Item Index="6281" Level="0" Grade="-1" Value="360000000" Comment="Jewel of Creation Bundle 1" />
+		<Item Index="6281" Level="1" Grade="-1" Value="720000000" Comment="Jewel of Creation Bundle 2" />
+		<Item Index="6281" Level="2" Grade="-1" Value="1080000000" Comment="Jewel of Creation Bundle 3" />
+		<Item Index="6282" Level="0" Grade="-1" Value="600000000" Comment="Jewel of Guardian Bundle 1" />
+		<Item Index="6282" Level="1" Grade="-1" Value="1200000000" Comment="Jewel of Guardian Bundle 2" />
+		<Item Index="6282" Level="2" Grade="-1" Value="1800000000" Comment="Jewel of Guardian Bundle 3" />
+		<Item Index="6285" Level="0" Grade="-1" Value="8100000" Comment="Jewel of Chaos Bundle 1" />
+		<Item Index="6285" Level="1" Grade="-1" Value="16200000" Comment="Jewel of Chaos Bundle 2" />
+		<Item Index="6285" Level="2" Grade="-1" Value="24300000" Comment="Jewel of Chaos Bundle 3" />
+		<Item Index="6288" Level="-1" Grade="-1" Value="300000" Comment="Mithril Fragment" />
+		<Item Index="6290" Level="-1" Grade="-1" Value="300000" Comment="Elixir Fragment" />
+		<Item Index="6410" Level="-1" Grade="-1" Value="300000000" Comment="Wings of Conqueror" />
+		<Item Index="6411" Level="-1" Grade="-1" Value="3000000" Comment="Wings of Angel and Devil" />
+		<Item Index="6659" Level="-1" Grade="0" Value="960000" Comment="Horn of Dinorant" />
+		<Item Index="6659" Level="-1" Grade="1" Value="1260000" Comment="Horn of Dinorant" />
+		<Item Index="6659" Level="-1" Grade="2" Value="1260000" Comment="Horn of Dinorant" />
+		<Item Index="6659" Level="-1" Grade="4" Value="1260000" Comment="Horn of Dinorant" />
+		<Item Index="6659" Level="-1" Grade="3" Value="1560000" Comment="Horn of Dinorant" />
+		<Item Index="6659" Level="-1" Grade="5" Value="1560000" Comment="Horn of Dinorant" />
+		<Item Index="6659" Level="-1" Grade="6" Value="1560000" Comment="Horn of Dinorant" />
+		<Item Index="6663" Level="0" Grade="-1" Value="1500000" Comment="Contract (Summon)" />
+		<Item Index="6663" Level="1" Grade="-1" Value="1200000" Comment="Contract (Summon)" />
+		<Item Index="6667" Level="1" Grade="-1" Value="2400000" Comment="Order (Guardian/Life Stone)" />
+		<Item Index="6670" Level="0" Grade="-1" Value="180000" Comment="Loch's Feather" />
+		<Item Index="6670" Level="1" Grade="-1" Value="7500000" Comment="Crest of Monarch" />
+		<Item Index="6671" Level="-1" Grade="-1" Value="33000000" Comment="Fruits" />
+		<Item Index="6672" Level="1" Grade="-1" Value="15000" Comment="Scroll of Archangel 1" />
+		<Item Index="6672" Level="2" Grade="-1" Value="21000" Comment="Scroll of Archangel 2" />
+		<Item Index="6672" Level="3" Grade="-1" Value="30000" Comment="Scroll of Archangel 3" />
+		<Item Index="6672" Level="4" Grade="-1" Value="39000" Comment="Scroll of Archangel 4" />
+		<Item Index="6672" Level="5" Grade="-1" Value="48000" Comment="Scroll of Archangel 5" />
+		<Item Index="6672" Level="6" Grade="-1" Value="60000" Comment="Scroll of Archangel 6" />
+		<Item Index="6672" Level="7" Grade="-1" Value="75000" Comment="Scroll of Archangel 7" />
+		<Item Index="6672" Level="8" Grade="-1" Value="90000" Comment="Scroll of Archangel 8" />
+		<Item Index="6673" Level="1" Grade="-1" Value="15000" Comment="Blood Bone 1" />
+		<Item Index="6673" Level="2" Grade="-1" Value="21000" Comment="Blood Bone 2" />
+		<Item Index="6673" Level="3" Grade="-1" Value="30000" Comment="Blood Bone 3" />
+		<Item Index="6673" Level="4" Grade="-1" Value="39000" Comment="Blood Bone 4" />
+		<Item Index="6673" Level="5" Grade="-1" Value="48000" Comment="Blood Bone 5" />
+		<Item Index="6673" Level="6" Grade="-1" Value="60000" Comment="Blood Bone 6" />
+		<Item Index="6673" Level="7" Grade="-1" Value="75000" Comment="Blood Bone 7" />
+		<Item Index="6673" Level="8" Grade="-1" Value="90000" Comment="Blood Bone 8" />
+		<Item Index="6674" Level="1" Grade="-1" Value="150000" Comment="Invisibility Cloak 1" />
+		<Item Index="6674" Level="2" Grade="-1" Value="660000" Comment="Invisibility Cloak 2" />
+		<Item Index="6674" Level="3" Grade="-1" Value="720000" Comment="Invisibility Cloak 3" />
+		<Item Index="6674" Level="4" Grade="-1" Value="780000" Comment="Invisibility Cloak 4" />
+		<Item Index="6674" Level="5" Grade="-1" Value="840000" Comment="Invisibility Cloak 5" />
+		<Item Index="6674" Level="6" Grade="-1" Value="900000" Comment="Invisibility Cloak 6" />
+		<Item Index="6674" Level="7" Grade="-1" Value="960000" Comment="Invisibility Cloak 7" />
+		<Item Index="6674" Level="8" Grade="-1" Value="1020000" Comment="Invisibility Cloak 8" />
+		<Item Index="6676" Level="0" Grade="-1" Value="30000" Comment="Wizards Ring" />
+		<Item Index="6685" Level="-1" Grade="-1" Value="5000" Comment="Armor of Guardsman" />
+		<Item Index="6687" Level="0" Grade="-1" Value="30000000" Comment="Spirit" />
+		<Item Index="6687" Level="1" Grade="-1" Value="15000000" Comment="Spirit" />
+		<Item Index="6688" Level="-1" Grade="-1" Value="150" Comment="Splinter of Armor" />
+		<Item Index="6689" Level="-1" Grade="-1" Value="300" Comment="Bless of Guardian" />
+		<Item Index="6690" Level="-1" Grade="-1" Value="3000" Comment="Claw of Beast" />
+		<Item Index="6691" Level="-1" Grade="-1" Value="30000" Comment="Fragment of Horn" />
+		<Item Index="6692" Level="-1" Grade="-1" Value="90000" Comment="Broken Horn" />
+		<Item Index="6693" Level="-1" Grade="-1" Value="150000" Comment="Horn of Fenrir" />
+		<Item Index="6694" Level="-1" Grade="-1" Value="9300" Comment="Moonstone Pendant" />
+		<Item Index="6705" Level="1" Grade="-1" Value="500000" Comment="Old Scroll 1" />
+		<Item Index="6705" Level="2" Grade="-1" Value="600000" Comment="Old Scroll 2" />
+		<Item Index="6705" Level="3" Grade="-1" Value="800000" Comment="Old Scroll 3" />
+		<Item Index="6705" Level="4" Grade="-1" Value="1000000" Comment="Old Scroll 4" />
+		<Item Index="6705" Level="5" Grade="-1" Value="1200000" Comment="Old Scroll 5" />
+		<Item Index="6705" Level="6" Grade="-1" Value="1400000" Comment="Old Scroll 6" />
+		<Item Index="6706" Level="1" Grade="-1" Value="500000" Comment="Illusion Sorcerer Covenant 1" />
+		<Item Index="6706" Level="2" Grade="-1" Value="600000" Comment="Illusion Sorcerer Covenant 2" />
+		<Item Index="6706" Level="3" Grade="-1" Value="800000" Comment="Illusion Sorcerer Covenant 3" />
+		<Item Index="6706" Level="4" Grade="-1" Value="1000000" Comment="Illusion Sorcerer Covenant 4" />
+		<Item Index="6706" Level="5" Grade="-1" Value="1200000" Comment="Illusion Sorcerer Covenant 5" />
+		<Item Index="6706" Level="6" Grade="-1" Value="1400000" Comment="Illusion Sorcerer Covenant 6" />
+		<Item Index="6707" Level="1" Grade="-1" Value="500000" Comment="Scroll of Blood 1" />
+		<Item Index="6707" Level="2" Grade="-1" Value="600000" Comment="Scroll of Blood 2" />
+		<Item Index="6707" Level="3" Grade="-1" Value="800000" Comment="Scroll of Blood 3" />
+		<Item Index="6707" Level="4" Grade="-1" Value="1000000" Comment="Scroll of Blood 4" />
+		<Item Index="6707" Level="5" Grade="-1" Value="1200000" Comment="Scroll of Blood 5" />
+		<Item Index="6707" Level="6" Grade="-1" Value="1400000" Comment="Scroll of Blood 6" />
+		<Item Index="6708" Level="-1" Grade="-1" Value="3000000" Comment="Condor Flame" />
+		<Item Index="6709" Level="-1" Grade="-1" Value="3000000" Comment="Condor Feather" />
+		<Item Index="6720" Level="-1" Grade="-1" Value="3000" Comment="Demon" />
+		<Item Index="6721" Level="-1" Grade="-1" Value="3000" Comment="Spirit of Guardian" />
+		<Item Index="6727" Level="-1" Grade="-1" Value="1000000" Comment="Sword/Mace/Spear" />
+		<Item Index="6728" Level="-1" Grade="-1" Value="1000000" Comment="Staff" />
+		<Item Index="6729" Level="-1" Grade="-1" Value="1000000" Comment="Bow/Crossbow" />
+		<Item Index="6730" Level="-1" Grade="-1" Value="1000000" Comment="Scepter" />
+		<Item Index="6731" Level="-1" Grade="-1" Value="1000000" Comment="Stick" />
+		<Item Index="6732" Level="-1" Grade="-1" Value="3000" Comment="Panda Ring" />
+		<Item Index="6733" Level="-1" Grade="-1" Value="3000" Comment="Brown Panda Ring" />
+		<Item Index="6734" Level="-1" Grade="-1" Value="3000" Comment="Pink Panda Ring" />
+		<Item Index="6736" Level="-1" Grade="-1" Value="3000" Comment="Pet Panda" />
+		<Item Index="6765" Level="-1" Grade="-1" Value="3000" Comment="Sapphire Ring" />
+		<Item Index="6766" Level="-1" Grade="-1" Value="3000" Comment="Ruby Ring" />
+		<Item Index="6767" Level="-1" Grade="-1" Value="3000" Comment="Topaz Ring" />
+		<Item Index="6768" Level="-1" Grade="-1" Value="3000" Comment="Amethyst Ring" />
+		<Item Index="6769" Level="-1" Grade="-1" Value="3000" Comment="Ruby Necklace" />
+		<Item Index="6770" Level="-1" Grade="-1" Value="3000" Comment="Emerald Necklace" />
+		<Item Index="6771" Level="-1" Grade="-1" Value="3000" Comment="Sapphire Necklace" />
+		<Item Index="6778" Level="-1" Grade="-1" Value="6000" Comment="Skeleton Transformation Ring" />
+		<Item Index="6779" Level="-1" Grade="-1" Value="6000" Comment="Pet Skeleton" />
+		<Item Index="6819" Level="-1" Grade="-1" Value="6000" Comment="Robot Knight Ring" />
+		<Item Index="6820" Level="-1" Grade="-1" Value="6000" Comment="Mini Robot Ring" />
+		<Item Index="6821" Level="-1" Grade="-1" Value="6000" Comment="Great Heavenly Mage Ring" />
+		<Item Index="6825" Level="-1" Grade="-1" Value="90000" Comment="Decoration Ring" />
+		<Item Index="6826" Level="-1" Grade="-1" Value="90000" Comment="Blessed Decoration Ring" />
+		<Item Index="6867" Level="-1" Grade="-1" Value="600000" Comment="Evolution Stone" />
+		<Item Index="6895" Level="-1" Grade="-1" Value="600000" Comment="Muun Energy Converter" />
+		<Item Index="6896" Level="-1" Grade="-1" Value="600000" Comment="Wizardry Stone" />
+		<Item Index="7175" Level="0" Grade="-1" Value="900000" Comment="Siege Potion" />
+		<Item Index="7175" Level="1" Grade="-1" Value="450000" Comment="Siege Potion" />
+		<Item Index="7177" Level="1" Grade="-1" Value="1000" Comment="Ale" />
+		<Item Index="7181" Level="-1" Grade="-1" Value="9000000" Comment="Jewel of Bless" />
+		<Item Index="7182" Level="-1" Grade="-1" Value="6000000" Comment="Jewel of Soul" />
+		<Item Index="7184" Level="-1" Grade="-1" Value="45000000" Comment="Jewel of Life" />
+		<Item Index="7185" Level="1" Grade="-1" Value="15000" Comment="Devil's Eye 1" />
+		<Item Index="7185" Level="2" Grade="-1" Value="21000" Comment="Devil's Eye 2" />
+		<Item Index="7185" Level="3" Grade="-1" Value="30000" Comment="Devil's Eye 3" />
+		<Item Index="7185" Level="4" Grade="-1" Value="45000" Comment="Devil's Eye 4" />
+		<Item Index="7185" Level="5" Grade="-1" Value="60000" Comment="Devil's Eye 5" />
+		<Item Index="7185" Level="6" Grade="-1" Value="75000" Comment="Devil's Eye 6" />
+		<Item Index="7185" Level="7" Grade="-1" Value="90000" Comment="Devil's Eye 7" />
+		<Item Index="7186" Level="1" Grade="-1" Value="15000" Comment="Devil's Key 1" />
+		<Item Index="7186" Level="2" Grade="-1" Value="21000" Comment="Devil's Key 2" />
+		<Item Index="7186" Level="3" Grade="-1" Value="30000" Comment="Devil's Key 3" />
+		<Item Index="7186" Level="4" Grade="-1" Value="45000" Comment="Devil's Key 4" />
+		<Item Index="7186" Level="5" Grade="-1" Value="60000" Comment="Devil's Key 5" />
+		<Item Index="7186" Level="6" Grade="-1" Value="75000" Comment="Devil's Key 6" />
+		<Item Index="7186" Level="7" Grade="-1" Value="90000" Comment="Devil's Key 7" />
+		<Item Index="7187" Level="1" Grade="-1" Value="60000" Comment="Devil's Invitation 1" />
+		<Item Index="7187" Level="2" Grade="-1" Value="84000" Comment="Devil's Invitation 2" />
+		<Item Index="7187" Level="3" Grade="-1" Value="120000" Comment="Devil's Invitation 3" />
+		<Item Index="7187" Level="4" Grade="-1" Value="180000" Comment="Devil's Invitation 4" />
+		<Item Index="7187" Level="5" Grade="-1" Value="240000" Comment="Devil's Invitation 5" />
+		<Item Index="7187" Level="6" Grade="-1" Value="300000" Comment="Devil's Invitation 6" />
+		<Item Index="7187" Level="7" Grade="-1" Value="180000" Comment="Devil's Invitation 7" />
+		<Item Index="7188" Level="-1" Grade="-1" Value="900" Comment="Remedy of Love" />
+		<Item Index="7189" Level="0" Grade="-1" Value="9000" Comment="Rena" />
+		<Item Index="7189" Level="3" Grade="-1" Value="3900" Comment="Mark of Lord" />
+		<Item Index="7190" Level="-1" Grade="-1" Value="36000000" Comment="Jewel of Creation" />
+		<Item Index="7191" Level="-1" Grade="-1" Value="9000" Comment="Scroll of the Emperor" />
+		<Item Index="7192" Level="-1" Grade="-1" Value="9000" Comment="Broken Sword" />
+		<Item Index="7193" Level="-1" Grade="-1" Value="9000" Comment="Tear of Elf" />
+		<Item Index="7194" Level="-1" Grade="-1" Value="9000" Comment="Soul Shard of Wizard" />
+		<Item Index="7196" Level="-1" Grade="-1" Value="600000" Comment="Lost Map" />
+		<Item Index="7197" Level="-1" Grade="-1" Value="30000" Comment="Symbol of Kundun" />
+		<Item Index="7199" Level="-1" Grade="-1" Value="60000000" Comment="Jewel of Guardian" />
+		<Item Index="7203" Level="-1" Grade="-1" Value="2000" Comment="Small SD Potion" />
+		<Item Index="7204" Level="-1" Grade="-1" Value="4000" Comment="SD Potion" />
+		<Item Index="7205" Level="-1" Grade="-1" Value="6000" Comment="Large SD Potion" />
+		<Item Index="7206" Level="-1" Grade="-1" Value="2500" Comment="Small Complex Potion" />
+		<Item Index="7207" Level="-1" Grade="-1" Value="5000" Comment="Complex Potion" />
+		<Item Index="7208" Level="-1" Grade="-1" Value="7500" Comment="Large Complex Potion" />
+		<Item Index="7213" Level="-1" Grade="-1" Value="150" Comment="Pumpkin of Luck" />
+		<Item Index="7214" Level="-1" Grade="-1" Value="150" Comment="Jack O'Lantern Blessings" />
+		<Item Index="7215" Level="-1" Grade="-1" Value="150" Comment="Jack O'Lantern Wrath" />
+		<Item Index="7216" Level="-1" Grade="-1" Value="150" Comment="Jack O'Lantern Cry" />
+		<Item Index="7217" Level="-1" Grade="-1" Value="150" Comment="Jack O'Lantern Food" />
+		<Item Index="7218" Level="-1" Grade="-1" Value="150" Comment="Jack O'Lantern Drink" />
+		<Item Index="7219" Level="-1" Grade="-1" Value="200000" Comment="Chistmas Star" />
+		<Item Index="7223" Level="-1" Grade="-1" Value="9000" Comment="Green Chaos Box" />
+		<Item Index="7224" Level="-1" Grade="-1" Value="9000" Comment="Red Chaos Box" />
+		<Item Index="7225" Level="-1" Grade="-1" Value="9000" Comment="Purple Chaos Box" />
+		<Item Index="7231" Level="-1" Grade="-1" Value="200000" Comment="Firecracker" />
+		<Item Index="7232" Level="-1" Grade="-1" Value="9000" Comment="Cursed Castle Water" />
+		<Item Index="7233" Level="-1" Grade="-1" Value="9000" Comment="Death-beam Knight Flame" />
+		<Item Index="7234" Level="-1" Grade="-1" Value="9000" Comment="Hell-Miner Horn" />
+		<Item Index="7235" Level="-1" Grade="-1" Value="9000" Comment="Dark Phoenix Feather" />
+		<Item Index="7236" Level="-1" Grade="-1" Value="9000" Comment="Abyssal Eye" />
+		<Item Index="7253" Level="-1" Grade="-1" Value="300" Comment="Cherry Blossom Wine" />
+		<Item Index="7254" Level="-1" Grade="-1" Value="300" Comment="Cherry Blossom Rice Cake" />
+		<Item Index="7255" Level="-1" Grade="-1" Value="300" Comment="Cherry Blossom Flower Petal" />
+		<Item Index="7256" Level="-1" Grade="-1" Value="300" Comment="White Cherry Blossom Branch" />
+		<Item Index="7257" Level="-1" Grade="-1" Value="300" Comment="Red Cherry Blossom Branch" />
+		<Item Index="7258" Level="-1" Grade="-1" Value="300" Comment="Golden Cherry Blossom Branch" />
+		<Item Index="7268" Level="-1" Grade="-1" Value="300" Comment="Lucky Coin" />
+		<Item Index="7269" Level="-1" Grade="-1" Value="30000" Comment="Suspicious Scrap of Paper" />
+		<Item Index="7270" Level="-1" Grade="-1" Value="30000" Comment="Gaion's Order" />
+		<Item Index="7271" Level="-1" Grade="-1" Value="30000" Comment="First Secromicon Fragment" />
+		<Item Index="7272" Level="-1" Grade="-1" Value="30000" Comment="Second Secromicon Fragment" />
+		<Item Index="7273" Level="-1" Grade="-1" Value="30000" Comment="Third Secromicon Fragment" />
+		<Item Index="7274" Level="-1" Grade="-1" Value="30000" Comment="Fourth Secromicon Fragment" />
+		<Item Index="7275" Level="-1" Grade="-1" Value="30000" Comment="Fifth Secromicon Fragment" />
+		<Item Index="7276" Level="-1" Grade="-1" Value="30000" Comment="Sixth Secromicon Fragment" />
+		<Item Index="7277" Level="-1" Grade="-1" Value="30000" Comment="Complete Secromicon" />
+		<Item Index="7278" Level="-1" Grade="-1" Value="30000" Comment="Sign of Dimensions" />
+		<Item Index="7279" Level="-1" Grade="-1" Value="600000" Comment="Mirror of Dimensions" />
+		<Item Index="7280" Level="-1" Grade="-1" Value="3000" Comment="Silver Key" />
+		<Item Index="7281" Level="-1" Grade="-1" Value="3000" Comment="Golden Key" />
+		<Item Index="7289" Level="-1" Grade="-1" Value="3000" Comment="Sealed Golden Box" />
+		<Item Index="7290" Level="-1" Grade="-1" Value="3000" Comment="Sealed Silver Box" />
+		<Item Index="7291" Level="-1" Grade="-1" Value="3000" Comment="Golden Box" />
+		<Item Index="7292" Level="-1" Grade="-1" Value="3000" Comment="Silver Box" />
+		<Item Index="7309" Level="-1" Grade="-1" Value="672000" Comment="Shining Jewelry Case" />
+		<Item Index="7310" Level="-1" Grade="-1" Value="546000" Comment="Elegant Jewelry Case" />
+		<Item Index="7311" Level="-1" Grade="-1" Value="471000" Comment="Steel Jewelry Case" />
+		<Item Index="7312" Level="-1" Grade="-1" Value="363000" Comment="Old Jewelry Case" />
+		<Item Index="7385" Level="-1" Grade="-1" Value="300000" Comment="Titan's Anger" />
+		<Item Index="7386" Level="-1" Grade="-1" Value="300000" Comment="Tantalose's Punishment" />
+		<Item Index="7387" Level="-1" Grade="-1" Value="300000" Comment="Erohim's Nightmare" />
+		<Item Index="7388" Level="-1" Grade="-1" Value="300000" Comment="Hell Maine's Insanity" />
+		<Item Index="7389" Level="-1" Grade="-1" Value="300000" Comment="Kundun's Greed" />
+	</Config>
+</ItemValue>

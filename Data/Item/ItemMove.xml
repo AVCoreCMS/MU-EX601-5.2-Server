@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== ItemMove.xml
+== Per-item overrides for whether an item can be dropped on
+== the ground, sold to an NPC, traded, or stored in the
+== warehouse.
+== Loaded by GameServer via CItemMove::LoadXML().
+== An item not listed here uses the engine's normal defaults
+== for all four actions.
+== Modify only if you know what you're doing!
+============================================================
+
+### ItemMove::Config ###
+	Index         Item id (GET_ITEM(Section,SubIndex) - see Item.xml).
+	AllowDrop     1 = can be dropped on the ground, 0 = cannot.
+	AllowSell     1 = can be sold to an NPC, 0 = cannot.
+	AllowTrade    1 = can be traded/put in a personal store, 0 = cannot.
+	AllowVault    1 = can be stored in the warehouse, 0 = cannot.
+	Comment       Free-text label, for readability only (not read by
+	              the loader).
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemMove>
+	<Config>
+﻿		<Item Index="6144" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wings of Elf" />
+		<Item Index="6145" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wings of Heaven" />
+		<Item Index="6146" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wings of Satan" />
+		<Item Index="6147" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wings of Spirits" />
+		<Item Index="6148" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wings of Soul" />
+		<Item Index="6149" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wings of Dragon" />
+		<Item Index="6150" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wings of Darkness" />
+		<Item Index="6159" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Jewel of Chaos" />
+		<Item Index="6174" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Bundled Jewel of Bless" />
+		<Item Index="6175" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Bundled Jewel of Soul" />
+		<Item Index="6180" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wing of Storm" />
+		<Item Index="6181" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wing of Eternal" />
+		<Item Index="6182" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wing of Illusion" />
+		<Item Index="6183" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wing of Ruin" />
+		<Item Index="6184" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Cape of Emperor" />
+		<Item Index="6185" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wing of Curse" />
+		<Item Index="6186" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wind of Despair" />
+		<Item Index="6187" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wing of Dimension" />
+		<Item Index="6204" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed (Fire)" />
+		<Item Index="6205" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed (Water)" />
+		<Item Index="6206" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed (Ice)" />
+		<Item Index="6207" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed (Wind)" />
+		<Item Index="6208" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed (Lightning)" />
+		<Item Index="6209" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed (Earth)" />
+		<Item Index="6214" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Sphere (Mono)" />
+		<Item Index="6215" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Sphere (Di)" />
+		<Item Index="6216" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Sphere (Tri)" />
+		<Item Index="6217" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Sphere (Tetra)" />
+		<Item Index="6218" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Sphere (Penta)" />
+		<Item Index="6244" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Fire)" />
+		<Item Index="6245" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Water)" />
+		<Item Index="6246" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Ice)" />
+		<Item Index="6247" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Wind)" />
+		<Item Index="6248" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Lightning)" />
+		<Item Index="6249" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Earth)" />
+		<Item Index="6250" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Fire)" />
+		<Item Index="6251" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Water)" />
+		<Item Index="6252" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Ice)" />
+		<Item Index="6253" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Wind)" />
+		<Item Index="6254" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Lightning)" />
+		<Item Index="6255" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Earth)" />
+		<Item Index="6256" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Fire)" />
+		<Item Index="6257" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Water)" />
+		<Item Index="6258" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Ice)" />
+		<Item Index="6259" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Wind)" />
+		<Item Index="6260" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Lightning)" />
+		<Item Index="6261" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Earth)" />
+		<Item Index="6262" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Fire)" />
+		<Item Index="6263" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Water)" />
+		<Item Index="6264" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Ice)" />
+		<Item Index="6265" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Wind)" />
+		<Item Index="6266" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Lightning)" />
+		<Item Index="6267" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Earth)" />
+		<Item Index="6268" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Fire)" />
+		<Item Index="6269" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Water)" />
+		<Item Index="6270" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Ice)" />
+		<Item Index="6271" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Wind)" />
+		<Item Index="6272" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Lightning)" />
+		<Item Index="6273" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Seed Sphere (Earth)" />
+		<Item Index="6274" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Small Cape of Lord" />
+		<Item Index="6275" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Small Wing of Curse" />
+		<Item Index="6276" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Small Wings of Elf" />
+		<Item Index="6277" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Small Wings of Heaven" />
+		<Item Index="6278" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Small Wings of Satan" />
+		<Item Index="6279" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Small Cloak of Warrior" />
+		<Item Index="6406" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Cloak of Death" />
+		<Item Index="6407" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wings of Chaos" />
+		<Item Index="6408" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wings of Magic" />
+		<Item Index="6409" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wings of Life" />
+		<Item Index="6410" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wings of Conqueror" />
+		<Item Index="6411" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Wings of Angel and Devil" />
+		<Item Index="6280" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Bundled Jewel of Life" />
+		<Item Index="6281" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Bundled Jewel of Creation" />
+		<Item Index="6282" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Bundled Jewel of Guardian" />
+		<Item Index="6283" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Bundled Gemstone" />
+		<Item Index="6284" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Bundled Jewel of Harmony" />
+		<Item Index="6285" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Bundled Jewel of Chaos" />
+		<Item Index="6286" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Bundled Lower Refining Stone" />
+		<Item Index="6287" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Bundled Higer Refining Stone" />
+		<Item Index="6656" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Guardian Angel" />
+		<Item Index="6657" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Imp" />
+		<Item Index="6658" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Horn of Uniria" />
+		<Item Index="6659" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Horn of Dinorant" />
+		<Item Index="6675" AllowDrop="1" AllowSell="0" AllowTrade="0" AllowVault="0" Comment="Absolute Weapon of Archangel" />
+		<Item Index="6676" AllowDrop="1" AllowSell="1" AllowTrade="0" AllowVault="0" Comment="Wizards Ring" />
+		<Item Index="6693" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Horn of Fenrir" />
+		<Item Index="6694" AllowDrop="1" AllowSell="1" AllowTrade="0" AllowVault="1" Comment="Moonstone Pendant" />
+		<Item Index="6695" AllowDrop="1" AllowSell="1" AllowTrade="0" AllowVault="1" Comment="Eilte Transfer Skeleton Ring" />
+		<Item Index="6710" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Reset Fruit Strength" />
+		<Item Index="6711" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Reset Fruit Quickness" />
+		<Item Index="6712" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Reset Fruit Health" />
+		<Item Index="6713" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Reset Fruit Energy" />
+		<Item Index="6714" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Reset Fruit Control" />
+		<Item Index="6720" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Demon" />
+		<Item Index="6721" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Spirit of Guardian" />
+		<Item Index="6723" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Pet Rudolf" />
+		<Item Index="6736" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Pet Panda" />
+		<Item Index="7181" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Jewel of Bless" />
+		<Item Index="7182" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Jewel of Soul" />
+		<Item Index="7184" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Jewel of Life" />
+		<Item Index="7190" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Jewel of Creation" />
+		<Item Index="7209" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Gemstone" />
+		<Item Index="7210" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Jewel of Harmony" />
+		<Item Index="7211" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Lower refining stone" />
+		<Item Index="7212" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Higher refining stone" />
+		<Item Index="7221" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Talisman of Luck" />
+		<Item Index="7232" AllowDrop="1" AllowSell="0" AllowTrade="0" AllowVault="0" Comment="Cursed Castle Water" />
+		<Item Index="7264" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Talisman of Chaos Assembly" />
+		<Item Index="7357" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Elemental Talisman of Luck" />
+		<Item Index="7358" AllowDrop="0" AllowSell="1" AllowTrade="1" AllowVault="1" Comment="Elemental Talisman of Chaos Assembly" />
+
+	</Config>
+</ItemMove>

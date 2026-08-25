@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== ExcellentBuyer.xml
+== NPC-bot that buys Excellent-grade items from players via
+== trade, in exchange for WCoin/WCoinP, gated by which item
+== options it accepts and an optional VIP requirement.
+== Loaded by GameServer via CExcellentBuyer::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### ExcellentBuyer::Config::Bot ###
+	Index         0-29, fixed (MAX_EXCELLENT_BUYER).
+	Class         eClass value (see Item.h).
+	Enabled       1 = this bot spawns. 0 = skipped.
+	ColorName     PK-level color tint applied to the bot's name (0-7).
+	Rate          Base success rate (%) used by the buy roll.
+	Name          Bot's display name, max 10 characters.
+	Map/X/Y/Dir   Spawn location.
+	OnlyVip       1 = requires AccountLevel > 0 (VIP) to use.
+	WCoinCMin/
+	WCoinCMax     Random WCoinC payout range per accepted item.
+	WCoinP        Fixed WCoinP payout per accepted item.
+	AllowLevel    1 = the item's +Level counts toward acceptance.
+	AllowOpt      1 = the item's Excellent option count counts.
+	AllowLuck     1 = the item's Luck option counts.
+	AllowSkill    1 = the item's Skill option counts.
+	AllowExc      1 = Excellent-grade items are accepted at all.
+
+	Child <Equipment> - up to 9 <Item> slots (0-8: 0=Sword 1=Shield
+	2=Helm 3=Armor 4=Pants 5=Gloves 6=Boots 7=Wings 8=Pet) worn by the
+	bot for its visual appearance only. Type/Index match Item.xml's
+	Section/SubIndex; Level is the item's +Level; Opt is its excellent
+	option value.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ExcellentBuyer>
+	<Config>
+		<Bot Index="0" Class="2" Enabled="1" ColorName="0" Rate="100" Name="ExeBuyer" Map="0" X="138" Y="144" Dir="3" OnlyVip="0" WCoinCMin="1" WCoinCMax="100" WCoinP="0" AllowLevel="1" AllowOpt="1" AllowLuck="1" AllowSkill="1" AllowExc="1">
+			<Equipment>
+				<Item Slot="2" Type="7" Index="46" Level="15" Opt="7" />
+				<Item Slot="3" Type="8" Index="46" Level="15" Opt="7" />
+				<Item Slot="4" Type="9" Index="46" Level="15" Opt="7" />
+				<Item Slot="5" Type="10" Index="46" Level="15" Opt="7" />
+				<Item Slot="6" Type="11" Index="46" Level="15" Opt="7" />
+				<Item Slot="7" Type="12" Index="166" Level="15" Opt="7" />
+			</Equipment>
+		</Bot>
+	</Config>
+</ExcellentBuyer>

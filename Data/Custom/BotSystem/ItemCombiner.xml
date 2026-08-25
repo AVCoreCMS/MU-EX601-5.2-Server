@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== ItemCombiner.xml
+== NPC-bot that combines two Excellent/Set items traded to it
+== into one, rolling a success chance and paying out WCoinC/
+== WCoinP on success.
+== Loaded by GameServer via ObjBotAlchemist::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### ItemCombiner::Config::Bot ###
+	Index           0-29, fixed (MAX_BOTALCHEMIST). Having a <Bot> entry
+	                at all is what enables it - there is no separate
+	                Enabled flag.
+	Class           eClass value (see Item.h).
+	Rate            Success rate (%) of the combine roll.
+	Name            Bot's display name, max 10 characters.
+	Map/X/Y/Dir     Spawn location.
+	AllowLevel      1 = the item's +Level counts toward the combine.
+	AllowOpt        1 = the item's Excellent option count counts.
+	AllowLuck       1 = the item's Luck option counts.
+	AllowSkill      1 = the item's Skill option counts.
+	AllowExc        1 = Excellent-grade items are accepted at all.
+	AllowFFFF       Reserved/unused acceptance flag.
+	OnlyVip         1 = requires AccountLevel > 0 (VIP) to use.
+	VipMoney        WCoinC fee charged when OnlyVip is set.
+	Zen             Zen fee charged per combine. 0 = free.
+	PCPoint         WCoinP payout on a successful combine.
+	OnlySameType    1 = only accepts combining items of the same type
+	                (e.g. Sword with Sword, not Sword with Axe).
+	OnlyLowerIndex  1 = only accepts a destination item level within
+	                +/-10 of the source item's level.
+	AcceptAncient   1 = Ancient-option items are accepted.
+	MaxLevel        Maximum item +Level accepted.
+	MaxExc          Maximum number of Excellent options accepted.
+
+	Child <Equipment> - up to 9 <Item> slots (0-8: 0=Sword 1=Shield
+	2=Helm 3=Armor 4=Pants 5=Gloves 6=Boots 7=Wings 8=Pet) worn by the
+	bot for its visual appearance only. Type/Index match Item.xml's
+	Section/SubIndex; Level is the item's +Level; Opt is its excellent
+	option value.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemCombiner>
+	<Config>
+		<Bot Index="0" Class="0" Rate="32" Name="Alchemist" Map="0" X="138" Y="146" Dir="3" AllowLevel="1" AllowOpt="1" AllowLuck="1" AllowSkill="1" AllowExc="1" AllowFFFF="0" OnlyVip="0" VipMoney="0" Zen="0" PCPoint="10000" OnlySameType="1" OnlyLowerIndex="1" AcceptAncient="0" MaxLevel="9" MaxExc="3">
+			<Equipment>
+				<Item Slot="2" Type="7" Index="51" Level="15" Opt="0" />
+				<Item Slot="3" Type="8" Index="51" Level="15" Opt="0" />
+				<Item Slot="4" Type="9" Index="51" Level="15" Opt="0" />
+				<Item Slot="5" Type="10" Index="51" Level="15" Opt="0" />
+				<Item Slot="6" Type="11" Index="51" Level="15" Opt="0" />
+				<Item Slot="7" Type="12" Index="165" Level="15" Opt="0" />
+			</Equipment>
+		</Bot>
+	</Config>
+</ItemCombiner>
