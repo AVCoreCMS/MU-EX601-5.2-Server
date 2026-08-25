@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== MossMerchant.xml
+== Moss Merchant event: schedule, and the pool of items (with
+== their fixed option rolls and per-item gamble weight) the
+== merchant can offer.
+== Loaded by GameServer via CMossMerchant::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### MossMerchant::Config ###
+	<StartTime>  One or more scheduled triggers, matched against the
+	             real-world clock (-1 = any/wildcard for that field):
+	             Year/Month/Day/DayOfWeek/Hour/Minute/Second.
+	<Item>       One row per item the merchant can offer:
+	               Index        Raw item index (matches Item.xml).
+	               Group        Item category (0=Sword 1=Staff 2=Bow
+	                            3=Scepter 4=Stick - matches
+	                            ItemOptionRate.xml-style groupings used
+	                            elsewhere for weapon families).
+	               Option0-6    Fixed roll passed into
+	                            ItemOptionRate.xml's per-category
+	                            tables (see that file's Index column) -
+	                            not raw stat values.
+	               GambleRate   Weight (out of the group's total) for
+	                            this item being the one offered.
+	               Comment      Free-text label (the item's name), for
+	                            readability only.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MossMerchant>
+	<Config>
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="2" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="8" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="0" Second="0" />
+		<Item Index="5" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Blade" />
+		<Item Index="6" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Gladius" />
+		<Item Index="7" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Falchion" />
+		<Item Index="8" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Serpent Sword" />
+		<Item Index="9" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Sword of Salamander" />
+		<Item Index="10" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Light Saber" />
+		<Item Index="11" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Legendary Sword" />
+		<Item Index="12" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Heliacal Sword" />
+		<Item Index="13" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Double Blade" />
+		<Item Index="14" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Lighting Sword" />
+		<Item Index="15" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Giant Sword" />
+		<Item Index="16" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Sword of Destruction" />
+		<Item Index="17" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Dark Breaker" />
+		<Item Index="18" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Thunder Blade" />
+		<Item Index="20" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Knight Blade" />
+		<Item Index="517" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Battle Axe" />
+		<Item Index="518" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Nikea Axe" />
+		<Item Index="519" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Larkan Axe" />
+		<Item Index="520" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Crescent Axe" />
+		<Item Index="1024" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Mace" />
+		<Item Index="1025" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Morning Star" />
+		<Item Index="1026" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Flail" />
+		<Item Index="1027" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Great Hammer" />
+		<Item Index="1028" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Crystal Morning Star" />
+		<Item Index="1541" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Double Poleaxe" />
+		<Item Index="1542" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Halberd" />
+		<Item Index="1543" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Berdysh" />
+		<Item Index="1544" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Great Scythe" />
+		<Item Index="1545" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Bill of Balrog" />
+		<Item Index="1546" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Dragon Spear" />
+		<Item Index="1547" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1000" Comment="Brova" />
+		<Item Index="2562" Group="1" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="6125" Comment="Serpent Staff" />
+		<Item Index="2563" Group="1" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="6125" Comment="Thunder Staff" />
+		<Item Index="2564" Group="1" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="6125" Comment="Gorgon Staff" />
+		<Item Index="2565" Group="1" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="6125" Comment="Legendary Staff" />
+		<Item Index="2566" Group="1" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="6125" Comment="Staff of Resurrection" />
+		<Item Index="2568" Group="1" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="6125" Comment="Staff of Destruction" />
+		<Item Index="2569" Group="1" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="6125" Comment="Dragon Soul Staff" />
+		<Item Index="2571" Group="1" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="6125" Comment="Staff of Kundun" />
+		<Item Index="2593" Group="1" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1000" Comment="Chromatic Staff" />
+		<Item Index="2053" Group="2" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="4083" Comment="Silver Bow" />
+		<Item Index="2056" Group="2" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="4083" Comment="Crossbow" />
+		<Item Index="2057" Group="2" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="4083" Comment="Golden Crossbow" />
+		<Item Index="2058" Group="2" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="4083" Comment="Arquebus" />
+		<Item Index="2059" Group="2" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="4083" Comment="Light Crossbow" />
+		<Item Index="2060" Group="2" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="4083" Comment="Serpent Crossbow" />
+		<Item Index="2061" Group="2" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="4083" Comment="Bluewing Crossbow" />
+		<Item Index="2062" Group="2" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="4083" Comment="Aquagold Crossbow" />
+		<Item Index="2064" Group="2" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="4083" Comment="Saint Crossbow" />
+		<Item Index="2065" Group="2" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="4083" Comment="Celestial Bow" />
+		<Item Index="2067" Group="2" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="4083" Comment="Great Reign Crossbow" />
+		<Item Index="2068" Group="2" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="4083" Comment="Arrow Viper Bow" />
+		<Item Index="2072" Group="2" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1000" Comment="Aileen Bow" />
+		<Item Index="1032" Group="3" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="9800" Comment="Battle Scepter" />
+		<Item Index="1033" Group="3" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="9800" Comment="Master Scepter" />
+		<Item Index="1034" Group="3" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="9800" Comment="Great Scepter" />
+		<Item Index="1035" Group="3" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="9800" Comment="Lord Scepter" />
+		<Item Index="1036" Group="3" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="9800" Comment="Great Lord Scepter" />
+		<Item Index="1042" Group="3" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1000" Comment="Striker Scepter" />
+		<Item Index="2574" Group="4" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="9800" Comment="Mystery Stick" />
+		<Item Index="2575" Group="4" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="9800" Comment="Violent Wind Stick" />
+		<Item Index="2576" Group="4" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="9800" Comment="Red Wing Stick" />
+		<Item Index="2577" Group="4" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="9800" Comment="Ancient Stick" />
+		<Item Index="2578" Group="4" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="9800" Comment="Demonic Stick" />
+		<Item Index="2594" Group="4" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1000" Comment="Raven Stick" />
+	</Config>
+</MossMerchant>

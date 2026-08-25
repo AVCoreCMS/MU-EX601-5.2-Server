@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== ImperialGuardian.xml
+== Imperial Guardian event: timing, the default/support monster
+== AI unit numbers, and the 60-step monster difficulty table.
+== Loaded by GameServer via CImperialGuardian::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### ImperialGuardian::Config ###
+	<Timing>       NotifyTime/EventTime/CloseTime in minutes.
+	<MonsterAI>    Default/Support - AI unit numbers used for the
+	               event's regular and support monsters.
+	<Monster>      One row per difficulty step (0-59,
+	               MAX_IG_MONSTER_DIFFICULT):
+	                 Index                Difficulty step.
+	                 Level                Monster level.
+	                 Life                 Max life.
+	                 DamageMin/DamageMax  Damage range.
+	                 Defense              Defense.
+	                 AttackSuccessRate/
+	                 DefenseSuccessRate   Attack/defense success rate.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ImperialGuardian>
+	<Config>
+		<Timing NotifyTime="1" EventTime="10" CloseTime="1" />
+		<MonsterAI Default="72" Support="73" />
+		<Monster Index="0" Level="45" Life="10.00" DamageMin="3.00" DamageMax="3.00" Defense="3.00" AttackSuccessRate="5.00" DefenseSuccessRate="5.00" />
+		<Monster Index="1" Level="46" Life="10.00" DamageMin="4.00" DamageMax="4.00" Defense="4.00" AttackSuccessRate="6.00" DefenseSuccessRate="6.00" />
+		<Monster Index="2" Level="47" Life="20.00" DamageMin="5.00" DamageMax="5.00" Defense="4.00" AttackSuccessRate="6.00" DefenseSuccessRate="6.00" />
+		<Monster Index="3" Level="48" Life="40.00" DamageMin="6.00" DamageMax="6.00" Defense="4.00" AttackSuccessRate="6.00" DefenseSuccessRate="6.00" />
+		<Monster Index="4" Level="49" Life="50.00" DamageMin="7.00" DamageMax="7.00" Defense="5.00" AttackSuccessRate="7.00" DefenseSuccessRate="7.00" />
+		<Monster Index="5" Level="50" Life="50.00" DamageMin="8.00" DamageMax="8.00" Defense="5.00" AttackSuccessRate="7.00" DefenseSuccessRate="7.00" />
+		<Monster Index="6" Level="51" Life="50.00" DamageMin="9.00" DamageMax="9.00" Defense="5.00" AttackSuccessRate="7.00" DefenseSuccessRate="7.00" />
+		<Monster Index="7" Level="52" Life="60.00" DamageMin="10.00" DamageMax="10.00" Defense="6.00" AttackSuccessRate="7.00" DefenseSuccessRate="7.00" />
+		<Monster Index="8" Level="53" Life="60.00" DamageMin="11.00" DamageMax="11.00" Defense="6.00" AttackSuccessRate="7.00" DefenseSuccessRate="7.00" />
+		<Monster Index="9" Level="54" Life="70.00" DamageMin="12.00" DamageMax="12.00" Defense="6.00" AttackSuccessRate="8.00" DefenseSuccessRate="8.00" />
+		<Monster Index="10" Level="55" Life="70.00" DamageMin="13.00" DamageMax="13.00" Defense="7.00" AttackSuccessRate="8.00" DefenseSuccessRate="8.00" />
+		<Monster Index="11" Level="56" Life="70.00" DamageMin="14.00" DamageMax="14.00" Defense="7.00" AttackSuccessRate="8.00" DefenseSuccessRate="8.00" />
+		<Monster Index="12" Level="57" Life="80.00" DamageMin="15.00" DamageMax="15.00" Defense="7.00" AttackSuccessRate="8.00" DefenseSuccessRate="8.00" />
+		<Monster Index="13" Level="58" Life="80.00" DamageMin="16.00" DamageMax="16.00" Defense="8.00" AttackSuccessRate="8.00" DefenseSuccessRate="8.00" />
+		<Monster Index="14" Level="59" Life="90.00" DamageMin="17.00" DamageMax="17.00" Defense="8.00" AttackSuccessRate="9.00" DefenseSuccessRate="9.00" />
+		<Monster Index="15" Level="60" Life="90.00" DamageMin="18.00" DamageMax="18.00" Defense="8.00" AttackSuccessRate="9.00" DefenseSuccessRate="9.00" />
+		<Monster Index="16" Level="61" Life="90.00" DamageMin="19.00" DamageMax="19.00" Defense="9.00" AttackSuccessRate="9.00" DefenseSuccessRate="9.00" />
+		<Monster Index="17" Level="62" Life="90.00" DamageMin="20.00" DamageMax="20.00" Defense="9.00" AttackSuccessRate="9.00" DefenseSuccessRate="9.00" />
+		<Monster Index="18" Level="63" Life="100.00" DamageMin="21.00" DamageMax="21.00" Defense="9.00" AttackSuccessRate="9.00" DefenseSuccessRate="9.00" />
+		<Monster Index="19" Level="64" Life="500.00" DamageMin="22.00" DamageMax="22.00" Defense="10.00" AttackSuccessRate="10.00" DefenseSuccessRate="10.00" />
+		<Monster Index="20" Level="66" Life="600.00" DamageMin="23.00" DamageMax="23.00" Defense="10.00" AttackSuccessRate="10.00" DefenseSuccessRate="10.00" />
+		<Monster Index="21" Level="68" Life="600.00" DamageMin="24.00" DamageMax="24.00" Defense="11.00" AttackSuccessRate="11.00" DefenseSuccessRate="11.00" />
+		<Monster Index="22" Level="70" Life="700.00" DamageMin="25.00" DamageMax="25.00" Defense="11.00" AttackSuccessRate="11.00" DefenseSuccessRate="11.00" />
+		<Monster Index="23" Level="72" Life="700.00" DamageMin="26.00" DamageMax="26.00" Defense="12.00" AttackSuccessRate="12.00" DefenseSuccessRate="12.00" />
+		<Monster Index="24" Level="74" Life="800.00" DamageMin="27.00" DamageMax="27.00" Defense="12.00" AttackSuccessRate="12.00" DefenseSuccessRate="12.00" />
+		<Monster Index="25" Level="76" Life="800.00" DamageMin="28.00" DamageMax="28.00" Defense="13.00" AttackSuccessRate="13.00" DefenseSuccessRate="13.00" />
+		<Monster Index="26" Level="78" Life="900.00" DamageMin="29.00" DamageMax="29.00" Defense="13.00" AttackSuccessRate="13.00" DefenseSuccessRate="13.00" />
+		<Monster Index="27" Level="80" Life="900.00" DamageMin="30.00" DamageMax="30.00" Defense="14.00" AttackSuccessRate="14.00" DefenseSuccessRate="14.00" />
+		<Monster Index="28" Level="82" Life="900.00" DamageMin="31.00" DamageMax="31.00" Defense="14.00" AttackSuccessRate="14.00" DefenseSuccessRate="14.00" />
+		<Monster Index="29" Level="85" Life="1000.00" DamageMin="32.00" DamageMax="32.00" Defense="15.00" AttackSuccessRate="15.00" DefenseSuccessRate="15.00" />
+		<Monster Index="30" Level="87" Life="1100.00" DamageMin="33.00" DamageMax="33.00" Defense="16.00" AttackSuccessRate="15.00" DefenseSuccessRate="15.00" />
+		<Monster Index="31" Level="89" Life="1200.00" DamageMin="34.00" DamageMax="34.00" Defense="17.00" AttackSuccessRate="16.00" DefenseSuccessRate="16.00" />
+		<Monster Index="32" Level="91" Life="1300.00" DamageMin="35.00" DamageMax="35.00" Defense="18.00" AttackSuccessRate="16.00" DefenseSuccessRate="16.00" />
+		<Monster Index="33" Level="93" Life="1400.00" DamageMin="36.00" DamageMax="36.00" Defense="19.00" AttackSuccessRate="17.00" DefenseSuccessRate="17.00" />
+		<Monster Index="34" Level="95" Life="1500.00" DamageMin="37.00" DamageMax="37.00" Defense="20.00" AttackSuccessRate="17.00" DefenseSuccessRate="17.00" />
+		<Monster Index="35" Level="97" Life="1500.00" DamageMin="38.00" DamageMax="38.00" Defense="21.00" AttackSuccessRate="18.00" DefenseSuccessRate="18.00" />
+		<Monster Index="36" Level="99" Life="1550.00" DamageMin="39.00" DamageMax="39.00" Defense="22.00" AttackSuccessRate="18.00" DefenseSuccessRate="18.00" />
+		<Monster Index="37" Level="101" Life="1600.00" DamageMin="40.00" DamageMax="40.00" Defense="23.00" AttackSuccessRate="19.00" DefenseSuccessRate="19.00" />
+		<Monster Index="38" Level="103" Life="1700.00" DamageMin="41.00" DamageMax="41.00" Defense="24.00" AttackSuccessRate="19.00" DefenseSuccessRate="19.00" />
+		<Monster Index="39" Level="105" Life="1800.00" DamageMin="42.00" DamageMax="42.00" Defense="25.00" AttackSuccessRate="20.00" DefenseSuccessRate="20.00" />
+		<Monster Index="40" Level="107" Life="1810.00" DamageMin="42.00" DamageMax="42.00" Defense="26.00" AttackSuccessRate="20.00" DefenseSuccessRate="20.00" />
+		<Monster Index="41" Level="109" Life="1820.00" DamageMin="43.00" DamageMax="43.00" Defense="27.00" AttackSuccessRate="21.00" DefenseSuccessRate="21.00" />
+		<Monster Index="42" Level="111" Life="1830.00" DamageMin="43.00" DamageMax="43.00" Defense="28.00" AttackSuccessRate="21.00" DefenseSuccessRate="21.00" />
+		<Monster Index="43" Level="113" Life="1840.00" DamageMin="44.00" DamageMax="44.00" Defense="29.00" AttackSuccessRate="22.00" DefenseSuccessRate="22.00" />
+		<Monster Index="44" Level="115" Life="1850.00" DamageMin="44.00" DamageMax="44.00" Defense="30.00" AttackSuccessRate="22.00" DefenseSuccessRate="22.00" />
+		<Monster Index="45" Level="117" Life="1860.00" DamageMin="45.00" DamageMax="45.00" Defense="31.00" AttackSuccessRate="23.00" DefenseSuccessRate="23.00" />
+		<Monster Index="46" Level="119" Life="1870.00" DamageMin="45.00" DamageMax="45.00" Defense="32.00" AttackSuccessRate="23.00" DefenseSuccessRate="23.00" />
+		<Monster Index="47" Level="121" Life="1880.00" DamageMin="46.00" DamageMax="46.00" Defense="33.00" AttackSuccessRate="24.00" DefenseSuccessRate="24.00" />
+		<Monster Index="48" Level="123" Life="1890.00" DamageMin="46.00" DamageMax="46.00" Defense="34.00" AttackSuccessRate="24.00" DefenseSuccessRate="24.00" />
+		<Monster Index="49" Level="125" Life="1900.00" DamageMin="47.00" DamageMax="47.00" Defense="35.00" AttackSuccessRate="25.00" DefenseSuccessRate="25.00" />
+		<Monster Index="50" Level="127" Life="1910.00" DamageMin="48.00" DamageMax="48.00" Defense="36.00" AttackSuccessRate="25.00" DefenseSuccessRate="25.00" />
+		<Monster Index="51" Level="129" Life="1920.00" DamageMin="48.00" DamageMax="48.00" Defense="37.00" AttackSuccessRate="26.00" DefenseSuccessRate="26.00" />
+		<Monster Index="52" Level="131" Life="1930.00" DamageMin="49.00" DamageMax="49.00" Defense="38.00" AttackSuccessRate="26.00" DefenseSuccessRate="26.00" />
+		<Monster Index="53" Level="133" Life="1940.00" DamageMin="49.00" DamageMax="49.00" Defense="39.00" AttackSuccessRate="27.00" DefenseSuccessRate="27.00" />
+		<Monster Index="54" Level="135" Life="1950.00" DamageMin="50.00" DamageMax="50.00" Defense="40.00" AttackSuccessRate="27.00" DefenseSuccessRate="27.00" />
+		<Monster Index="55" Level="137" Life="1960.00" DamageMin="50.00" DamageMax="50.00" Defense="41.00" AttackSuccessRate="28.00" DefenseSuccessRate="28.00" />
+		<Monster Index="56" Level="139" Life="1970.00" DamageMin="51.00" DamageMax="51.00" Defense="42.00" AttackSuccessRate="28.00" DefenseSuccessRate="28.00" />
+		<Monster Index="57" Level="141" Life="1980.00" DamageMin="51.00" DamageMax="51.00" Defense="43.00" AttackSuccessRate="29.00" DefenseSuccessRate="29.00" />
+		<Monster Index="58" Level="143" Life="1990.00" DamageMin="52.00" DamageMax="52.00" Defense="44.00" AttackSuccessRate="29.00" DefenseSuccessRate="29.00" />
+		<Monster Index="59" Level="145" Life="2000.00" DamageMin="53.00" DamageMax="53.00" Defense="45.00" AttackSuccessRate="30.00" DefenseSuccessRate="30.00" />
+	</Config>
+</ImperialGuardian>

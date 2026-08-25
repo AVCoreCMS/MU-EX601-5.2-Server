@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== ReiDoMU.xml
+== "King of MU" event: schedule, timing, and WCoin/WCoinP/
+== GoblinPoint rewards for the winning guild and character.
+== Loaded by GameServer via CReiDoMU::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### ReiDoMU::Config ###
+	<Timing>       WarningTime/EventTime in minutes - how long before
+	               start the warning fires, and how long the event runs.
+	<StartTime>    Scheduled trigger, matched against the real-world
+	               clock (-1 = any/wildcard for that field):
+	               Year/Month/Day/DayOfWeek/Hour/Minute/Second.
+	<GuildReward>  WC/WP/GP - WCoinC/WCoinP/GoblinPoint paid to the
+	               winning guild.
+	<CharReward>   WC/WP/GP - WCoinC/WCoinP/GoblinPoint paid to the
+	               winning character.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ReiDoMU>
+	<Config>
+		<Timing WarningTime="5" EventTime="30" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="5" Second="0" />
+		<GuildReward WC="10" WP="0" GP="0" />
+		<CharReward WC="8" WP="0" GP="0" />
+	</Config>
+</ReiDoMU>

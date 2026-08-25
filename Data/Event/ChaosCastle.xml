@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== ChaosCastle.xml
+== Chaos Castle event: timing, schedule, per-level (0-6)
+== experience reward table, and per-level WCoin reward.
+== Loaded by GameServer via CChaosCastle::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### ChaosCastle::Config ###
+	<Timing>       WarningTime/NotifyTime/EventTime/CloseTime in
+	               minutes.
+	<StartTime>    One or more scheduled triggers, matched against the
+	               real-world clock (-1 = any/wildcard for that field):
+	               Year/Month/Day/DayOfWeek/Hour/Minute/Second.
+	<Experience>   Level 0-6 (MAX_CC_LEVEL) - Table1/Table2 experience
+	               reward values for that castle level.
+	<Reward>       Level 0-6 - WC/WP/GP (WCoinC/WCoinP/GoblinPoint)
+	               paid for winning at that level.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ChaosCastle>
+	<Config>
+		<Timing WarningTime="5" NotifyTime="1" EventTime="10" CloseTime="4" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="1" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="3" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="5" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="7" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="9" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="11" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="13" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="15" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="17" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="19" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="21" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="23" Minute="0" Second="0" />
+		<Experience Level="0" Table1="1000" Table2="500" />
+		<Experience Level="1" Table1="1500" Table2="100" />
+		<Experience Level="2" Table1="2000" Table2="1500" />
+		<Experience Level="3" Table1="2500" Table2="2000" />
+		<Experience Level="4" Table1="3000" Table2="2500" />
+		<Experience Level="5" Table1="3500" Table2="3000" />
+		<Experience Level="6" Table1="4000" Table2="3500" />
+		<Reward Level="0" WC="0" WP="0" GP="0" />
+		<Reward Level="1" WC="0" WP="0" GP="0" />
+		<Reward Level="2" WC="0" WP="0" GP="0" />
+		<Reward Level="3" WC="0" WP="0" GP="0" />
+		<Reward Level="4" WC="0" WP="0" GP="0" />
+		<Reward Level="5" WC="0" WP="0" GP="0" />
+		<Reward Level="6" WC="0" WP="0" GP="0" />
+	</Config>
+</ChaosCastle>

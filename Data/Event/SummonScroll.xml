@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== SummonScroll.xml
+== Maps summon-scroll items to which monster(s) they spawn.
+== Loaded by GameServer via CSummonScroll::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### SummonScroll::Config ###
+	<Scroll>   One row per summon-scroll item:
+	             Index      Scroll id - matched by <Monster> entries
+	                        below to know which monsters that scroll
+	                        can summon.
+	             ItemIndex  Raw item index (matches Item.xml) of the
+	                        scroll item.
+	             Comment    Free-text label, for readability only.
+
+	<Monster>  One or more monsters a scroll can summon (several rows
+	           sharing the same Index = multiple possible monsters for
+	           that scroll, picked via Group):
+	             Index         Which <Scroll> this belongs to.
+	             Group         Sub-group within the scroll (0-19,
+	                           MAX_SUMMON_SCROLL_MONSTER_GROUP) - rows
+	                           sharing an Index but different Group are
+	                           all summoned together as one encounter.
+	             MonsterClass  Monster class to summon.
+	             CreateRate    Spawn weight (out of 10000).
+	             Comment       Free-text label, for readability only.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<SummonScroll>
+	<Config>
+		<Scroll Index="0" ItemIndex="7730" Comment="Summon Scroll Lv1" />
+		<Scroll Index="1" ItemIndex="7379" Comment="Summon Scroll Lv2" />
+		<Scroll Index="2" ItemIndex="7380" Comment="Summon Scroll Lv3" />
+		<Scroll Index="3" ItemIndex="7381" Comment="Summon Scroll Lv4" />
+		<Scroll Index="4" ItemIndex="7382" Comment="Titan's Anger" />
+		<Scroll Index="5" ItemIndex="7383" Comment="Tantalose's Punishment" />
+		<Scroll Index="6" ItemIndex="7384" Comment="Erohim's Nightmare" />
+		<Scroll Index="7" ItemIndex="7385" Comment="Hell Maine's Insanity" />
+		<Scroll Index="8" ItemIndex="7386" Comment="Kundun's Greed" />
+		<Scroll Index="9" ItemIndex="7387" Comment="Book of Monster Invocation" />
+		<Scroll Index="10" ItemIndex="7393" Comment="The Lizard's King Anger" />
+		<Monster Index="0" Group="0" MonsterClass="904" CreateRate="10000" Comment="Golden Derkon" />
+		<Monster Index="1" Group="0" MonsterClass="497" CreateRate="10000" Comment="Satyros" />
+		<Monster Index="2" Group="0" MonsterClass="499" CreateRate="10000" Comment="Golden Iron Knight" />
+		<Monster Index="3" Group="0" MonsterClass="501" CreateRate="10000" Comment="Great Golden Dragon" />
+		<Monster Index="4" Group="0" MonsterClass="53" CreateRate="10000" Comment="Golden Titan" />
+		<Monster Index="4" Group="1" MonsterClass="54" CreateRate="10000" Comment="Golden Soldier" />
+		<Monster Index="5" Group="0" MonsterClass="82" CreateRate="10000" Comment="Golden Tantalos" />
+		<Monster Index="5" Group="1" MonsterClass="83" CreateRate="10000" Comment="Golden Wheel" />
+		<Monster Index="6" Group="0" MonsterClass="295" CreateRate="10000" Comment="Erohim" />
+		<Monster Index="7" Group="0" MonsterClass="309" CreateRate="10000" Comment="Hell Maine" />
+		<Monster Index="8" Group="0" MonsterClass="275" CreateRate="10000" Comment="Kundun" />
+		<Monster Index="8" Group="1" MonsterClass="82" CreateRate="10000" Comment="Illusion of Kundun" />
+		<Monster Index="8" Group="2" MonsterClass="82" CreateRate="10000" Comment="Illusion of Kundun" />
+		<Monster Index="8" Group="3" MonsterClass="82" CreateRate="10000" Comment="Illusion of Kundun" />
+		<Monster Index="8" Group="4" MonsterClass="82" CreateRate="10000" Comment="Illusion of Kundun" />
+		<Monster Index="9" Group="0" MonsterClass="43" CreateRate="10000" Comment="Golden Budge Dragon" />
+		<Monster Index="9" Group="1" MonsterClass="78" CreateRate="10000" Comment="Golden Goblin" />
+		<Monster Index="9" Group="2" MonsterClass="493" CreateRate="10000" Comment="Golden Dark Knight" />
+		<Monster Index="9" Group="3" MonsterClass="494" CreateRate="10000" Comment="Golden Devil" />
+		<Monster Index="9" Group="4" MonsterClass="495" CreateRate="10000" Comment="Golden Stone Golem" />
+		<Monster Index="9" Group="5" MonsterClass="496" CreateRate="10000" Comment="Golden Crust" />
+		<Monster Index="10" Group="0" MonsterClass="80" CreateRate="10000" Comment="Golden Lizard King" />
+		<Monster Index="10" Group="1" MonsterClass="81" CreateRate="1000000" Comment="Golden Vepar" />
+	</Config>
+</SummonScroll>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== BonusManager.xml
+== Scheduled server-wide bonus events (extra experience/drop
+== rate, etc): when each one starts (StartTime), how long it
+== runs and what messages it broadcasts, and what bonus values
+== it applies.
+== Loaded by GameServer via CBonusManager::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### BonusManager::Config::Bonus ###
+	Index          0-29, fixed (MAX_BONUS).
+	StartMessage   Message index (see Message_<LANG>.txt) broadcast when
+	               this bonus starts. -1 = none.
+	FinalMessage   Message index broadcast when this bonus ends. -1 = none.
+	BonusTime      Duration in seconds once started.
+
+	Child <StartTime> - one or more scheduled triggers, matched against
+	the real-world clock (-1 = any/wildcard for that field):
+		Year/Month/Day/DayOfWeek/Hour/Minute/Second
+
+	Child <Value> - one or more bonus effects applied while active:
+		BonusIndex   eBonusIndex value (BonusManager.h) - 0=Experience
+		             Rate, 1=Master Experience Rate, 2=Item Drop Rate,
+		             3=Common Item Drop Rate, 4=Excellent Item Drop
+		             Rate, 5=Set Item Drop Rate, 6=Goblin Point,
+		             7=Reset Amount, 8=Master Reset Amount.
+		Value0-3     Bonus magnitude per VIP AccountLevel tier (0-3).
+		ItemIndex/
+		ItemLevel    Restricts the bonus to a specific item/level.
+		             -1 = any.
+		MapNumber    Restricts the bonus to one map. -1 = any.
+		MonsterClass Restricts the bonus to one monster class. -1 = any.
+		MonsterLevelMin/MonsterLevelMax  Restricts the bonus to a
+		             monster level range. -1 = no restriction.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<BonusManager>
+	<Config>
+		<Bonus Index="0" StartMessage="-1" FinalMessage="-1" BonusTime="86400">
+			<StartTime Year="-1" Month="1" Day="-1" DayOfWeek="-1" Hour="0" Minute="0" Second="0" />
+			<Value BonusIndex="3" Value0="1000" Value1="1000" Value2="1000" Value3="1000" ItemIndex="7179" ItemLevel="3" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="69" />
+		</Bonus>
+		<Bonus Index="1" StartMessage="-1" FinalMessage="-1" BonusTime="86400">
+			<StartTime Year="-1" Month="4" Day="-1" DayOfWeek="-1" Hour="0" Minute="0" Second="0" />
+			<Value BonusIndex="3" Value0="5000" Value1="5000" Value2="5000" Value3="5000" ItemIndex="7213" ItemLevel="-1" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" />
+		</Bonus>
+		<Bonus Index="2" StartMessage="-1" FinalMessage="-1" BonusTime="86400">
+			<StartTime Year="-1" Month="5" Day="-1" DayOfWeek="-1" Hour="0" Minute="0" Second="0" />
+			<Value BonusIndex="3" Value0="3000" Value1="3000" Value2="3000" Value3="3000" ItemIndex="6722" ItemLevel="-1" MapNumber="-1" MonsterClass="466" MonsterLevelMin="-1" MonsterLevelMax="-1" />
+			<Value BonusIndex="3" Value0="3000" Value1="3000" Value2="3000" Value3="3000" ItemIndex="7179" ItemLevel="1" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="69" />
+		</Bonus>
+	</Config>
+</BonusManager>

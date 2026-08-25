@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== Kanturu.xml
+== Kanturu event: this one file is shared by 5 different
+== classes, each reading only the sections that belong to it
+== (mirrors the original Kanturu.dat, where CKanturu::Load()
+== reads sections 0/10 directly and then calls Load() on 4
+== sub-objects that each re-read this same file for their own
+== sections):
+==   CKanturu::LoadXML()                  -> <StateInfo>, <EnableCheckMoonStone>
+==   CKanturuBattleStanby::LoadXML()      -> <StanbyState>
+==   CKanturuBattleOfMaya::LoadXML()      -> <MayaBattleTime>, <MayaState>,
+==                                            <MayaAIChangeTime>, <MayaGroupNumber>,
+==                                            <MayaIceStormRate>
+==   CKanturuBattleOfNightmare::LoadXML() -> <NightmareState>, <NightmareAIGroupNumber>
+==   CKanturuTowerOfRefinement::LoadXML() -> <TowerState>
+== Modify only if you know what you're doing!
+============================================================
+
+### Kanturu::Config ###
+	All <...State>/<StateInfo> rows share the same shape:
+	  State      Sequential state id within that class's state machine.
+	  Condition  0 = Value is used as-is. 1 = Value is a number of
+	             seconds and gets multiplied by 1000 (stored as ms).
+	  Value      Raw value (seconds if Condition=1, see above).
+
+	<MayaAIChangeTime>/<MayaGroupNumber> - Value, one row per array
+	entry, in order.
+	<MayaIceStormRate>/<NightmareAIGroupNumber>/<EnableCheckMoonStone> -
+	single Value attribute, one row each.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<Kanturu>
+	<Config>
+		<StateInfo State="0" Condition="0" Value="0" />
+		<StateInfo State="1" Condition="0" Value="0" />
+		<StateInfo State="2" Condition="0" Value="0" />
+		<StateInfo State="3" Condition="0" Value="0" />
+		<StateInfo State="4" Condition="0" Value="0" />
+		<StateInfo State="5" Condition="1" Value="0" />
+		<StanbyState State="0" Condition="0" Value="0" />
+		<StanbyState State="1" Condition="1" Value="200" />
+		<StanbyState State="2" Condition="1" Value="60" />
+		<StanbyState State="3" Condition="0" Value="0" />
+		<MayaBattleTime State="0" Condition="1" Value="900" />
+		<MayaBattleTime State="1" Condition="1" Value="900" />
+		<MayaBattleTime State="2" Condition="1" Value="1200" />
+		<MayaState State="0" Condition="0" Value="0" />
+		<MayaState State="1" Condition="1" Value="120" />
+		<MayaState State="2" Condition="1" Value="15" />
+		<MayaState State="3" Condition="0" Value="0" />
+		<MayaState State="4" Condition="0" Value="0" />
+		<MayaState State="5" Condition="1" Value="5" />
+		<MayaState State="6" Condition="1" Value="3" />
+		<MayaState State="7" Condition="1" Value="60" />
+		<MayaState State="8" Condition="0" Value="0" />
+		<MayaState State="9" Condition="0" Value="0" />
+		<MayaState State="10" Condition="1" Value="5" />
+		<MayaState State="11" Condition="1" Value="3" />
+		<MayaState State="12" Condition="1" Value="120" />
+		<MayaState State="13" Condition="0" Value="0" />
+		<MayaState State="14" Condition="0" Value="0" />
+		<MayaState State="15" Condition="1" Value="5" />
+		<MayaState State="16" Condition="1" Value="10" />
+		<MayaState State="17" Condition="1" Value="3" />
+		<MayaState State="18" Condition="0" Value="0" />
+		<MayaAIChangeTime Value="3" />
+		<MayaAIChangeTime Value="60" />
+		<MayaAIChangeTime Value="60" />
+		<MayaAIChangeTime Value="900" />
+		<MayaGroupNumber Value="20" />
+		<MayaGroupNumber Value="21" />
+		<MayaGroupNumber Value="22" />
+		<MayaIceStormRate Value="60" />
+		<NightmareState State="0" Condition="0" Value="0" />
+		<NightmareState State="1" Condition="1" Value="5" />
+		<NightmareState State="2" Condition="1" Value="10" />
+		<NightmareState State="3" Condition="1" Value="1200" />
+		<NightmareState State="4" Condition="1" Value="5" />
+		<NightmareState State="5" Condition="0" Value="0" />
+		<NightmareAIGroupNumber Value="23" />
+		<TowerState State="0" Condition="0" Value="0" />
+		<TowerState State="1" Condition="1" Value="82500" />
+		<TowerState State="2" Condition="1" Value="300" />
+		<TowerState State="3" Condition="1" Value="2220" />
+		<TowerState State="4" Condition="1" Value="180" />
+		<TowerState State="5" Condition="1" Value="5" />
+		<EnableCheckMoonStone Value="1" />
+	</Config>
+</Kanturu>

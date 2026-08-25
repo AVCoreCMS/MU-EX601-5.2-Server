@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== BloodCastle.xml
+== Blood Castle event: timing, schedule, and per-level (0-7)
+== experience/money reward, gate/statue NPC HP, and WCoin
+== reward.
+== Loaded by GameServer via CBloodCastle::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### BloodCastle::Config ###
+	<Timing>       WarningTime/NotifyTime/EventTime/CloseTime in
+	               minutes.
+	<StartTime>    One or more scheduled triggers, matched against the
+	               real-world clock (-1 = any/wildcard for that field):
+	               Year/Month/Day/DayOfWeek/Hour/Minute/Second.
+	<Experience>   Level 0-7 (MAX_BC_LEVEL) - Table1/Table2 experience
+	               reward values for that level.
+	<Money>        Level 0-7 - Table1/Table2 Zen reward values.
+	<NpcLife>      Level 0-7 - GateNpcLife/StatueNpcLife HP for that
+	               level's gate keeper / Archangel statue.
+	<Reward>       Level 0-7 - WC/WP/GP (WCoinC/WCoinP/GoblinPoint)
+	               paid for clearing that level.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<BloodCastle>
+	<Config>
+		<Timing WarningTime="5" NotifyTime="1" EventTime="15" CloseTime="4" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="0" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="2" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="4" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="6" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="8" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="10" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="12" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="16" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="18" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="0" Second="0" />
+		<Experience Level="0" Table1="20000" Table2="5000" />
+		<Experience Level="1" Table1="50000" Table2="10000" />
+		<Experience Level="2" Table1="80000" Table2="15000" />
+		<Experience Level="3" Table1="90000" Table2="20000" />
+		<Experience Level="4" Table1="100000" Table2="25000" />
+		<Experience Level="5" Table1="110000" Table2="30000" />
+		<Experience Level="6" Table1="120000" Table2="35000" />
+		<Experience Level="7" Table1="130000" Table2="40000" />
+		<Money Level="0" Table1="20000" Table2="10000" />
+		<Money Level="1" Table1="50000" Table2="25000" />
+		<Money Level="2" Table1="100000" Table2="50000" />
+		<Money Level="3" Table1="150000" Table2="80000" />
+		<Money Level="4" Table1="200000" Table2="100000" />
+		<Money Level="5" Table1="250000" Table2="120000" />
+		<Money Level="6" Table1="300000" Table2="140000" />
+		<Money Level="7" Table1="350000" Table2="160000" />
+		<NpcLife Level="0" GateNpcLife="65000" StatueNpcLife="150000" />
+		<NpcLife Level="1" GateNpcLife="105000" StatueNpcLife="205000" />
+		<NpcLife Level="2" GateNpcLife="145000" StatueNpcLife="260000" />
+		<NpcLife Level="3" GateNpcLife="185000" StatueNpcLife="325000" />
+		<NpcLife Level="4" GateNpcLife="225000" StatueNpcLife="400000" />
+		<NpcLife Level="5" GateNpcLife="265000" StatueNpcLife="480000" />
+		<NpcLife Level="6" GateNpcLife="305000" StatueNpcLife="565000" />
+		<NpcLife Level="7" GateNpcLife="345000" StatueNpcLife="650000" />
+		<Reward Level="0" WC="0" WP="0" GP="0" />
+		<Reward Level="1" WC="0" WP="0" GP="0" />
+		<Reward Level="2" WC="0" WP="0" GP="0" />
+		<Reward Level="3" WC="0" WP="0" GP="0" />
+		<Reward Level="4" WC="0" WP="0" GP="0" />
+		<Reward Level="5" WC="0" WP="0" GP="0" />
+		<Reward Level="6" WC="0" WP="0" GP="0" />
+		<Reward Level="7" WC="0" WP="0" GP="0" />
+	</Config>
+</BloodCastle>

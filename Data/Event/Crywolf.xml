@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== Crywolf.xml
+== Crywolf siege event: schedule, per-state timing, monster
+== AI groups, boss timing, and MVP scoring/reward tables.
+== Loaded by GameServer via CCrywolf::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### Crywolf::Config ###
+	<Schedule>       Up to 20 rows (MAX_CRYWOLF_STATE_TIME) scheduling
+	                 when the event starts:
+	                   Mode              Schedule mode (0 = normal).
+	                   State             State to enter when triggered.
+	                   Month/Day/
+	                   DayOfWeek/Hour/
+	                   Minute            Real-world clock match; -1 =
+	                                     any/wildcard for that field.
+	                   ContinuanceTime   -1 = use the matching
+	                                     <StateTime>'s duration instead.
+	<StateTime>      One row per state (1-7, MAX_CRYWOLF_STATE):
+	                   State    State number (matches
+	                            eCrywolfState-style state ids).
+	                   Hour/Minute/Second  How long that state lasts.
+	<MonsterGroup>   Up to 20 (MAX_CRYWOLF_MONSTER_GROUP) AI group
+	                 numbers active during the event, one per row:
+	                   Value
+	<Boss>           Group/TurnUpTime - which AI group is the boss
+	                 group, and how many seconds until it appears.
+	<AIChange>       Time - seconds between monster AI behavior
+	                 changes.
+	<MVPScore>       Table1-7 - score awarded per MVP scoring category.
+	<MVPRankScore>   Table1-5 - minimum score thresholds for MVP ranks
+	                 1-5.
+	<MVPRankExp>     Table1-5 - experience reward for each MVP rank.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<Crywolf>
+	<Config>
+		<Schedule Mode="0" State="1" Month="-1" Day="-1" DayOfWeek="4" Hour="20" Minute="30" ContinuanceTime="-1" />
+		<Schedule Mode="0" State="1" Month="-1" Day="-1" DayOfWeek="7" Hour="20" Minute="30" ContinuanceTime="-1" />
+		<StateTime State="1" Hour="0" Minute="0" Second="300" />
+		<StateTime State="2" Hour="0" Minute="0" Second="60" />
+		<StateTime State="3" Hour="0" Minute="0" Second="120" />
+		<StateTime State="4" Hour="0" Minute="0" Second="900" />
+		<StateTime State="5" Hour="0" Minute="0" Second="15" />
+		<StateTime State="6" Hour="0" Minute="0" Second="10" />
+		<MonsterGroup Value="1" />
+		<MonsterGroup Value="2" />
+		<MonsterGroup Value="3" />
+		<MonsterGroup Value="4" />
+		<MonsterGroup Value="6" />
+		<MonsterGroup Value="7" />
+		<MonsterGroup Value="8" />
+		<MonsterGroup Value="9" />
+		<MonsterGroup Value="10" />
+		<MonsterGroup Value="11" />
+		<MonsterGroup Value="12" />
+		<MonsterGroup Value="13" />
+		<Boss Group="5" TurnUpTime="600" />
+		<AIChange Time="300" />
+		<MVPScore Table1="7000" Table2="3000" Table3="600" Table4="700" Table5="600" Table6="1000" Table7="6000" />
+		<MVPRankScore Table1="0" Table2="1001" Table3="3001" Table4="5001" Table5="10001" />
+		<MVPRankExp Table1="0" Table2="200000" Table3="800000" Table4="1200000" Table5="1800000" />
+	</Config>
+</Crywolf>

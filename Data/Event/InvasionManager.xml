@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== InvasionManager.xml
+== Scheduled monster invasion events (e.g. "Red Dragon"):
+== schedule, notice messages, boss, and the monster spawn
+== groups that appear during the invasion.
+== Loaded by GameServer via CInvasionManager::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### InvasionManager::Config::Invasion ###
+	Index           0-29, fixed (MAX_INVASION).
+	RespawnMessage  Message index (Message_<LANG>.txt) broadcast when
+	                the invasion starts. -1 = none.
+	DespawnMessage  Message index broadcast when the invasion time runs
+	                out. -1 = none.
+	BossIndex       Monster class of the invasion's boss. -1 = none.
+	BossMessage     Message index broadcast when the boss is killed.
+	                -1 = none.
+	InvasionTime    Duration in seconds once started.
+
+	Child <StartTime> - one or more scheduled triggers, matched against
+	the real-world clock (-1 = any/wildcard for that field):
+		Year/Month/Day/DayOfWeek/Hour/Minute/Second
+
+	Child <Respawn> - one or more spawn-point groups (0-19):
+		Group   Respawn group id (0-19, MAX_INVASION_RESPAWN_GROUP).
+		Map     Map number this respawn point is on.
+		Value   Spawn point reference (see CInvasionManager::SetMonster).
+
+	Child <Monster> - one or more monster entries spawned during the
+	invasion:
+		Group        Which <Respawn> group (0-19) this monster uses.
+		MonsterClass Monster class to spawn.
+		RegenType    Respawn behavior on death (0 = normal).
+		RegenTime    Seconds before respawning after death.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<InvasionManager>
+	<Config>
+		<Invasion Index="0" RespawnMessage="191" DespawnMessage="192" BossIndex="42" BossMessage="193" InvasionTime="1800">
+			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="2" Minute="-1" Second="0" />
+			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="4" Minute="-1" Second="0" />
+			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="6" Minute="-1" Second="0" />
+			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="8" Minute="-1" Second="0" />
+			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="10" Minute="-1" Second="0" />
+			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="12" Minute="-1" Second="0" />
+			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="-1" Second="0" />
+			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="16" Minute="-1" Second="0" />
+			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="18" Minute="-1" Second="0" />
+			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="-1" Second="0" />
+			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="-1" Second="0" />
+			<Respawn Group="0" Map="0" Value="0" />
+			<Monster Group="0" MonsterClass="42" RegenType="0" RegenTime="0" />
+		</Invasion>
+	</Config>
+</InvasionManager>

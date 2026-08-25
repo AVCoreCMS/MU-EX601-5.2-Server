@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== TvTEvent.xml
+== Team vs Team event: timing, schedule, entry requirements,
+== and the winning-character reward.
+== Loaded by GameServer via CTvTEvent::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### TvTEvent::Config ###
+	<Timing>     AlarmTime/StandTime/EventTime/CloseTime in minutes -
+	             warning lead time, registration window, match
+	             duration, and cooldown before the next cycle.
+	<StartTime>  One or more scheduled triggers, matched against the
+	             real-world clock (-1 = any/wildcard for that field):
+	             Year/Month/Day/DayOfWeek/Hour/Minute/Second.
+	<Entry>      Requirements to register:
+	               ReqItemIndex/ReqItemLevel/ReqItemCount  Item that
+	                 must be held (and its quantity) to enter. -1 index
+	                 = no item required.
+	               EventMap        Map the match takes place on.
+	               WaitingGate     Gate players wait at before the match.
+	               BlueTeamGate/RedTeamGate  Spawn gates per team.
+	               SetSkin         Cosmetic skin id applied during the
+	                 match.
+	               MinLevel/MaxLevel/MinReset/MaxReset/
+	               MinMasterReset/MaxMasterReset  Character requirements
+	                 to register. -1 = no restriction.
+	<Reward>     WC/WP/GP - WCoinC/WCoinP/GoblinPoint paid to the
+	             winning team's players.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<TvTEvent>
+	<Config>
+		<Timing AlarmTime="2" StandTime="1" EventTime="1" CloseTime="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="6" Minute="54" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="5" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="5" Second="0" />
+		<Entry ReqItemIndex="0" ReqItemLevel="0" ReqItemCount="0" EventMap="87" WaitingGate="347" BlueTeamGate="348" RedTeamGate="349" SetSkin="1" MinLevel="400" MaxLevel="-1" MinReset="0" MaxReset="-1" MinMasterReset="-1" MaxMasterReset="-1" />
+		<Reward WC="10" WP="0" GP="0" />
+	</Config>
+</TvTEvent>

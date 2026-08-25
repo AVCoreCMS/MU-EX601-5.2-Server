@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== DevilSquare.xml
+== Devil Square event: timing, schedule, and per-level (0-6)
+== per-rank (1-10) experience/money rewards, plus a per-level
+== WCoin reward.
+== Loaded by GameServer via CDevilSquare::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### DevilSquare::Config ###
+	<Timing>       WarningTime/NotifyTime/EventTime/CloseTime in
+	               minutes.
+	<StartTime>    One or more scheduled triggers, matched against the
+	               real-world clock (-1 = any/wildcard for that field):
+	               Year/Month/Day/DayOfWeek/Hour/Minute/Second.
+	<Experience>   Level 0-6 (MAX_DS_LEVEL) - Rank1-10 experience reward
+	               for finishing in that placement (1st-10th).
+	<Money>        Level 0-6 - Rank1-10 Zen reward for that placement.
+	<Reward>       Level 0-6 - WC/WP/GP (WCoinC/WCoinP/GoblinPoint)
+	               paid for clearing that level.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<DevilSquare>
+	<Config>
+		<Timing WarningTime="5" NotifyTime="1" EventTime="20" CloseTime="4" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="0" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="2" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="4" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="6" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="8" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="10" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="12" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="16" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="18" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="30" Second="0" />
+		<Experience Level="0" Rank1="6000" Rank2="4000" Rank3="4000" Rank4="2000" Rank5="2000" Rank6="2000" Rank7="1000" Rank8="1000" Rank9="1000" Rank10="1000" />
+		<Experience Level="1" Rank1="8000" Rank2="6000" Rank3="6000" Rank4="4000" Rank5="4000" Rank6="4000" Rank7="2000" Rank8="2000" Rank9="2000" Rank10="2000" />
+		<Experience Level="2" Rank1="10000" Rank2="8000" Rank3="8000" Rank4="6000" Rank5="6000" Rank6="6000" Rank7="4000" Rank8="4000" Rank9="4000" Rank10="4000" />
+		<Experience Level="3" Rank1="20000" Rank2="10000" Rank3="10000" Rank4="8000" Rank5="8000" Rank6="8000" Rank7="6000" Rank8="6000" Rank9="6000" Rank10="6000" />
+		<Experience Level="4" Rank1="22000" Rank2="20000" Rank3="20000" Rank4="10000" Rank5="10000" Rank6="10000" Rank7="8000" Rank8="8000" Rank9="8000" Rank10="8000" />
+		<Experience Level="5" Rank1="24000" Rank2="22000" Rank3="22000" Rank4="20000" Rank5="20000" Rank6="20000" Rank7="10000" Rank8="10000" Rank9="10000" Rank10="10000" />
+		<Experience Level="6" Rank1="26000" Rank2="24000" Rank3="24000" Rank4="22000" Rank5="22000" Rank6="22000" Rank7="20000" Rank8="20000" Rank9="20000" Rank10="20000" />
+		<Money Level="0" Rank1="30000" Rank2="25000" Rank3="25000" Rank4="20000" Rank5="20000" Rank6="20000" Rank7="15000" Rank8="15000" Rank9="15000" Rank10="15000" />
+		<Money Level="1" Rank1="40000" Rank2="35000" Rank3="35000" Rank4="30000" Rank5="30000" Rank6="30000" Rank7="25000" Rank8="25000" Rank9="25000" Rank10="25000" />
+		<Money Level="2" Rank1="50000" Rank2="45000" Rank3="45000" Rank4="40000" Rank5="40000" Rank6="40000" Rank7="35000" Rank8="35000" Rank9="35000" Rank10="35000" />
+		<Money Level="3" Rank1="60000" Rank2="55000" Rank3="55000" Rank4="50000" Rank5="50000" Rank6="50000" Rank7="45000" Rank8="45000" Rank9="45000" Rank10="45000" />
+		<Money Level="4" Rank1="70000" Rank2="65000" Rank3="65000" Rank4="60000" Rank5="60000" Rank6="60000" Rank7="55000" Rank8="55000" Rank9="55000" Rank10="55000" />
+		<Money Level="5" Rank1="80000" Rank2="75000" Rank3="75000" Rank4="70000" Rank5="70000" Rank6="70000" Rank7="65000" Rank8="65000" Rank9="65000" Rank10="65000" />
+		<Money Level="6" Rank1="150000" Rank2="140000" Rank3="140000" Rank4="120000" Rank5="120000" Rank6="120000" Rank7="90000" Rank8="90000" Rank9="90000" Rank10="90000" />
+		<Reward Level="0" WC="0" WP="0" GP="0" />
+		<Reward Level="1" WC="0" WP="0" GP="0" />
+		<Reward Level="2" WC="0" WP="0" GP="0" />
+		<Reward Level="3" WC="0" WP="0" GP="0" />
+		<Reward Level="4" WC="0" WP="0" GP="0" />
+		<Reward Level="5" WC="0" WP="0" GP="0" />
+		<Reward Level="6" WC="0" WP="0" GP="0" />
+	</Config>
+</DevilSquare>
