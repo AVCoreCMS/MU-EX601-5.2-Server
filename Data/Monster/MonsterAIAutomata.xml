@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== MonsterAIAutomata.xml
+== Converted 1:1 from MonsterAIAutomata.txt (210 rows).
+== State-machine transitions for monster AI. Loaded by
+== CMonsterAIAutomata::LoadData(). Multiple <State> rows share the same
+== Number (the automata id) - each row is one transition edge out of
+== CurrentState, tried in Priority order.
+== Modify only if you know what you're doing!
+============================================================
+
+### State ###
+	Number       Automata id, referenced by MonsterAIUnit.xml's Automata
+	             attribute.
+	Name         Human-readable description of the transition (not used
+	             by game logic).
+	Priority     Order this transition is tried in among others sharing
+	             the same CurrentState.
+	CurrentState/NextState   AI state ids this edge goes from/to.
+	TransitionType   Which condition triggers the transition.
+	TransitionRate   Percent chance, out of 100.
+	TransitionValueType/TransitionValue   Extra condition parameters,
+	                                      -1 = unused (old file's "*").
+	DelayTime    Milliseconds before this transition can fire again.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MonsterAIAutomata>
+	<State Number="1" Name="General -> Go" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="General -> Go" Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="General -> Attack" Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="Go -> Attack" Priority="0" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="Go -> Go" Priority="1" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="Go -> Go" Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="Attack -> Go" Priority="0" CurrentState="2" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="Attack -> Avoid" Priority="1" CurrentState="2" NextState="4" TransitionType="4" TransitionRate="100" TransitionValueType="-1" TransitionValue="10000" DelayTime="1000" />
+	<State Number="1" Name="Attack -> Attack" Priority="2" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="Attack -> Go" Priority="3" CurrentState="2" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="Attack -> Attack" Priority="4" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="Avoid -> General" Priority="0" CurrentState="4" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="Avoid -> Attack" Priority="1" CurrentState="4" NextState="2" TransitionType="7" TransitionRate="70" TransitionValueType="-1" TransitionValue="3000" DelayTime="1000" />
+	<State Number="1" Name="Avoid -> Go" Priority="2" CurrentState="4" NextState="1" TransitionType="2" TransitionRate="50" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="Avoid -> Attack" Priority="3" CurrentState="4" NextState="2" TransitionType="1" TransitionRate="50" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="Avoid -> Avoid" Priority="4" CurrentState="4" NextState="4" TransitionType="1" TransitionRate="80" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="Avoid -> Avoid" Priority="5" CurrentState="4" NextState="4" TransitionType="4" TransitionRate="100" TransitionValueType="-1" TransitionValue="2000" DelayTime="1000" />
+	<State Number="1" Name="Avoid -> Avoid" Priority="6" CurrentState="4" NextState="4" TransitionType="4" TransitionRate="80" TransitionValueType="-1" TransitionValue="10000" DelayTime="1000" />
+	<State Number="1" Name="Avoid -> General" Priority="7" CurrentState="4" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="1" Name="Avoid -> General" Priority="8" CurrentState="4" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="General -> Go" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="50" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="General -> Treatment" Priority="1" CurrentState="0" NextState="3" TransitionType="0" TransitionRate="10" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="General -> Summon" Priority="2" CurrentState="0" NextState="6" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="General -> Go" Priority="3" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="80" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="General -> Summon" Priority="4" CurrentState="0" NextState="6" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="General -> Treatment" Priority="5" CurrentState="0" NextState="3" TransitionType="1" TransitionRate="10" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="General -> Go" Priority="6" CurrentState="0" NextState="1" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Go -> Treatment" Priority="0" CurrentState="1" NextState="3" TransitionType="1" TransitionRate="20" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Go -> Attack" Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="30" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Go -> Go" Priority="2" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Go -> Summon" Priority="3" CurrentState="1" NextState="6" TransitionType="0" TransitionRate="20" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Go -> Go" Priority="4" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Go -> Summon" Priority="5" CurrentState="1" NextState="6" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Go -> Go" Priority="6" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Attack -> Go" Priority="0" CurrentState="2" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Attack -> Treatment" Priority="1" CurrentState="2" NextState="3" TransitionType="4" TransitionRate="100" TransitionValueType="-1" TransitionValue="10000" DelayTime="1000" />
+	<State Number="2" Name="Attack -> Go" Priority="2" CurrentState="2" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Attack -> Attack" Priority="3" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="50" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Attack -> General" Priority="4" CurrentState="2" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Treatment -> General" Priority="0" CurrentState="3" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Treatment -> General" Priority="1" CurrentState="3" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Treatment -> General" Priority="2" CurrentState="3" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Summon -> General" Priority="0" CurrentState="6" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Summon -> General" Priority="1" CurrentState="6" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="2" Name="Summon -> General" Priority="2" CurrentState="6" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="3" Name="General -> Attack" Priority="0" CurrentState="0" NextState="2" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="3" Name="General -> Attack" Priority="1" CurrentState="0" NextState="2" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="3" Name="General -> Attack" Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="3" Name="Attack -> General" Priority="0" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="3" Name="Attack -> General" Priority="1" CurrentState="2" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="3" Name="Attack -> General" Priority="2" CurrentState="2" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="4" Name="General -> Go" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="4" Name="General -> Go" Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="4" Name="General -> Attack" Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="4" Name="Go -> Go" Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="4" Name="Go -> Attack" Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="50" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="4" Name="Go -> Go" Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="4" Name="Attack -> Go" Priority="0" CurrentState="2" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="4" Name="Attack -> Go" Priority="1" CurrentState="2" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="4" Name="Attack -> Attack" Priority="2" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="30" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="4" Name="Attack -> General" Priority="3" CurrentState="2" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="4" Name="Invisible -> General" Priority="0" CurrentState="6" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="4" Name="Invisible -> General" Priority="1" CurrentState="6" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="4" Name="Invisible -> General" Priority="2" CurrentState="6" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="5" Name="General -> Go" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="5" Name="General -> Attack" Priority="1" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="5" Name="General -> Go" Priority="2" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="5" Name="Go -> Go" Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="5" Name="Go -> Attack" Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="80" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="5" Name="Go -> Go" Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="5" Name="Attack -> Go" Priority="0" CurrentState="2" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="5" Name="Attack -> Attack" Priority="1" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="80" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="5" Name="Attack -> Go" Priority="2" CurrentState="2" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="5" Name="Attack -> General" Priority="3" CurrentState="2" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="General -> Go" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="General -> Attack" Priority="1" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="General -> Go" Priority="2" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="Go -> Go" Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="Go -> Attack" Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="Go -> Go" Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="Attack -> Go" Priority="0" CurrentState="2" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="Attack -> Attack" Priority="1" CurrentState="2" NextState="2" TransitionType="7" TransitionRate="50" TransitionValueType="-1" TransitionValue="3000" DelayTime="1000" />
+	<State Number="6" Name="Attack -> Attack" Priority="2" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="Attack -> Go" Priority="3" CurrentState="2" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="Attack -> Avoid" Priority="4" CurrentState="2" NextState="4" TransitionType="4" TransitionRate="100" TransitionValueType="-1" TransitionValue="10000" DelayTime="1000" />
+	<State Number="6" Name="Avoid -> General" Priority="0" CurrentState="4" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="Avoid -> Attack" Priority="1" CurrentState="4" NextState="2" TransitionType="7" TransitionRate="70" TransitionValueType="-1" TransitionValue="1000" DelayTime="1000" />
+	<State Number="6" Name="Avoid -> Go" Priority="2" CurrentState="4" NextState="1" TransitionType="2" TransitionRate="50" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="Avoid -> Attack" Priority="3" CurrentState="4" NextState="2" TransitionType="1" TransitionRate="50" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="Avoid -> Avoid" Priority="4" CurrentState="4" NextState="4" TransitionType="1" TransitionRate="80" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="Avoid -> Avoid" Priority="5" CurrentState="4" NextState="4" TransitionType="4" TransitionRate="100" TransitionValueType="-1" TransitionValue="2000" DelayTime="1000" />
+	<State Number="6" Name="Avoid -> General" Priority="6" CurrentState="4" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="6" Name="Avoid -> General" Priority="7" CurrentState="4" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="7" Name="General -> Invisible" Priority="0" CurrentState="0" NextState="6" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="7" Name="General -> Invisible" Priority="1" CurrentState="0" NextState="6" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="7" Name="General -> Invisible" Priority="2" CurrentState="0" NextState="6" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="7" Name="Invisible -> Invisible" Priority="0" CurrentState="6" NextState="6" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="7" Name="Invisible -> Invisible" Priority="1" CurrentState="6" NextState="6" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="7" Name="Invisible -> Invisible" Priority="2" CurrentState="6" NextState="6" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="8" Name="General -> Go" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="8" Name="General -> Go" Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="8" Name="General -> Summon" Priority="2" CurrentState="0" NextState="6" TransitionType="5" TransitionRate="100" TransitionValueType="-1" TransitionValue="80" DelayTime="1000" />
+	<State Number="8" Name="General -> Attack" Priority="3" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1500" />
+	<State Number="8" Name="Go -> Go" Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="8" Name="Go -> Summon" Priority="1" CurrentState="1" NextState="6" TransitionType="5" TransitionRate="100" TransitionValueType="-1" TransitionValue="80" DelayTime="1000" />
+	<State Number="8" Name="Go -> Attack" Priority="2" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1500" />
+	<State Number="8" Name="Go -> Go" Priority="3" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="8" Name="Attack -> General" Priority="0" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="8" Name="Attack -> General" Priority="1" CurrentState="2" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="8" Name="Attack -> Summon" Priority="2" CurrentState="2" NextState="6" TransitionType="5" TransitionRate="100" TransitionValueType="-1" TransitionValue="80" DelayTime="1000" />
+	<State Number="8" Name="Attack -> Attack" Priority="3" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1500" />
+	<State Number="8" Name="Summon -> Invisible" Priority="0" CurrentState="6" NextState="5" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="8" Name="Invisible -> Warp" Priority="0" CurrentState="5" NextState="4" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="8" Name="Warp -> AI" Priority="0" CurrentState="4" NextState="7" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="8" Name="AI -> Go" Priority="0" CurrentState="7" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="8" Name="AI -> Go" Priority="1" CurrentState="7" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="8" Name="AI -> Go" Priority="2" CurrentState="7" NextState="1" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="9" Name="General -> Go" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="9" Name="General -> Go" Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="9" Name="General -> Attack" Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1500" />
+	<State Number="9" Name="Go -> Go" Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="9" Name="Go -> Attack" Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1500" />
+	<State Number="9" Name="Go -> Go" Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="9" Name="Attack -> General" Priority="0" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="9" Name="Attack -> General" Priority="1" CurrentState="2" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="9" Name="Attack -> Summon" Priority="2" CurrentState="2" NextState="6" TransitionType="5" TransitionRate="100" TransitionValueType="-1" TransitionValue="50" DelayTime="1000" />
+	<State Number="9" Name="Attack -> Attack" Priority="3" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1500" />
+	<State Number="9" Name="Summon -> Invisible" Priority="0" CurrentState="6" NextState="5" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="9" Name="Invisible -> Warp" Priority="0" CurrentState="5" NextState="4" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="9" Name="Warp -> AI" Priority="0" CurrentState="4" NextState="7" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="9" Name="AI -> Go" Priority="0" CurrentState="7" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="9" Name="AI -> Go" Priority="1" CurrentState="7" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="9" Name="AI -> Go" Priority="2" CurrentState="7" NextState="1" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="10" Name="General -> General" Priority="0" CurrentState="0" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="10" Name="General -> General" Priority="1" CurrentState="0" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="10" Name="General -> General" Priority="2" CurrentState="0" NextState="0" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="11" Name="General -> Go" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="11" Name="General -> Go" Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="11" Name="General -> Attack" Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1500" />
+	<State Number="11" Name="Go -> Go" Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="11" Name="Go -> Attack" Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1500" />
+	<State Number="11" Name="Go -> Go" Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="11" Name="Attack -> General" Priority="0" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="11" Name="Attack -> General" Priority="1" CurrentState="2" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="11" Name="Attack -> Attack" Priority="2" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1500" />
+	<State Number="11" Name="AI -> Go" Priority="0" CurrentState="7" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="11" Name="AI -> Go" Priority="1" CurrentState="7" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="11" Name="AI -> Go" Priority="2" CurrentState="7" NextState="1" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="12" Name="General -> Go" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="12" Name="General -> Go" Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="12" Name="General -> Attack" Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1500" />
+	<State Number="12" Name="Go -> Go" Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="12" Name="Go -> Attack" Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="50" TransitionValueType="-1" TransitionValue="-1" DelayTime="1500" />
+	<State Number="12" Name="Go -> Go" Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="12" Name="Attack -> General" Priority="0" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="12" Name="Attack -> General" Priority="1" CurrentState="2" NextState="0" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="12" Name="Attack -> Summon" Priority="2" CurrentState="2" NextState="6" TransitionType="5" TransitionRate="100" TransitionValueType="-1" TransitionValue="20" DelayTime="1000" />
+	<State Number="12" Name="Attack -> Attack" Priority="3" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1500" />
+	<State Number="12" Name="Summon -> Invisible" Priority="0" CurrentState="6" NextState="5" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="12" Name="Invisible -> Warp" Priority="0" CurrentState="5" NextState="4" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="12" Name="Warp -> AI" Priority="0" CurrentState="4" NextState="7" TransitionType="6" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="12" Name="AI -> Go" Priority="0" CurrentState="7" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="12" Name="AI -> Go" Priority="1" CurrentState="7" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="12" Name="AI -> Go" Priority="2" CurrentState="7" NextState="1" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="13" Name="General -> Go" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="13" Name="General -> Go" Priority="1" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="13" Name="General -> Attack" Priority="2" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="13" Name="Go -> Go" Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="13" Name="Go -> Attack" Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="13" Name="Go -> Go" Priority="2" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="13" Name="Attack -> General" Priority="0" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="13" Name="Attack -> Go" Priority="1" CurrentState="2" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="13" Name="Attack -> Attack" Priority="2" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="General -> Go" Priority="0" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="General -> Heal" Priority="1" CurrentState="0" NextState="3" TransitionType="5" TransitionRate="80" TransitionValueType="-1" TransitionValue="40" DelayTime="1000" />
+	<State Number="14" Name="General -> Help" Priority="2" CurrentState="0" NextState="5" TransitionType="12" TransitionRate="80" TransitionValueType="-1" TransitionValue="60" DelayTime="1000" />
+	<State Number="14" Name="General -> Go" Priority="3" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="General -> Attack" Priority="4" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="Go -> Go" Priority="0" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="Go -> Heal" Priority="1" CurrentState="1" NextState="3" TransitionType="5" TransitionRate="80" TransitionValueType="-1" TransitionValue="40" DelayTime="1000" />
+	<State Number="14" Name="Go -> Help" Priority="2" CurrentState="1" NextState="5" TransitionType="12" TransitionRate="80" TransitionValueType="-1" TransitionValue="60" DelayTime="1000" />
+	<State Number="14" Name="Go -> Go" Priority="3" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="Go -> Attack" Priority="4" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="Attack -> Go" Priority="0" CurrentState="2" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="Attack -> Heal" Priority="1" CurrentState="2" NextState="3" TransitionType="5" TransitionRate="80" TransitionValueType="-1" TransitionValue="40" DelayTime="1000" />
+	<State Number="14" Name="Attack -> Help" Priority="2" CurrentState="2" NextState="5" TransitionType="12" TransitionRate="80" TransitionValueType="-1" TransitionValue="60" DelayTime="1000" />
+	<State Number="14" Name="Attack -> General" Priority="3" CurrentState="2" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="Attack -> Attack" Priority="4" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="Heal -> Go" Priority="0" CurrentState="3" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="Heal -> Heal" Priority="1" CurrentState="3" NextState="3" TransitionType="5" TransitionRate="80" TransitionValueType="-1" TransitionValue="40" DelayTime="1000" />
+	<State Number="14" Name="Heal -> Help" Priority="2" CurrentState="3" NextState="5" TransitionType="12" TransitionRate="80" TransitionValueType="-1" TransitionValue="60" DelayTime="1000" />
+	<State Number="14" Name="Heal -> General" Priority="3" CurrentState="3" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="Heal -> Attack" Priority="4" CurrentState="3" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="Help -> Go" Priority="0" CurrentState="5" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="Help -> Heal" Priority="1" CurrentState="5" NextState="3" TransitionType="5" TransitionRate="80" TransitionValueType="-1" TransitionValue="40" DelayTime="1000" />
+	<State Number="14" Name="Help -> Help" Priority="2" CurrentState="5" NextState="5" TransitionType="12" TransitionRate="80" TransitionValueType="-1" TransitionValue="60" DelayTime="1000" />
+	<State Number="14" Name="Help -> General" Priority="3" CurrentState="5" NextState="0" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="14" Name="Help -> Attack" Priority="4" CurrentState="5" NextState="2" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="15" Name="General -> Go" Priority="0" CurrentState="0" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="15" Name="General -> Attack" Priority="1" CurrentState="0" NextState="2" TransitionType="1" TransitionRate="25" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="15" Name="General -> Go" Priority="2" CurrentState="0" NextState="1" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="15" Name="General -> Go" Priority="3" CurrentState="0" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="15" Name="Go -> Go" Priority="0" CurrentState="1" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="15" Name="Go -> Attack" Priority="1" CurrentState="1" NextState="2" TransitionType="1" TransitionRate="25" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="15" Name="Go -> Go" Priority="2" CurrentState="1" NextState="1" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="15" Name="Go -> Go" Priority="3" CurrentState="1" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="15" Name="Attack -> Go" Priority="0" CurrentState="2" NextState="1" TransitionType="0" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="15" Name="Attack -> Attack" Priority="1" CurrentState="2" NextState="2" TransitionType="1" TransitionRate="25" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="15" Name="Attack -> Go" Priority="2" CurrentState="2" NextState="1" TransitionType="1" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+	<State Number="15" Name="Attack -> Go" Priority="3" CurrentState="2" NextState="1" TransitionType="2" TransitionRate="100" TransitionValueType="-1" TransitionValue="-1" DelayTime="1000" />
+</MonsterAIAutomata>

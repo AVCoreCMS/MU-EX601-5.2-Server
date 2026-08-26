@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== MonsterSkillElement.xml
+== Converted 1:1 from MonsterSkillElement.txt (90 rows).
+== One concrete debuff/effect a monster skill applies to its target.
+== Referenced by index from MonsterSkillUnit.xml's Slot* attributes.
+== Loaded by CMonsterSkillElement::LoadData().
+== Modify only if you know what you're doing!
+============================================================
+
+### Element ###
+	Index             Element id, referenced by MonsterSkillUnit.xml.
+	Name              Human-readable description.
+	Type              Effect type (e.g. which stat/status it affects).
+	SuccessRate       Percent chance, out of 100.
+	ContinuanceTime   How long the effect lasts.
+	IncAndDecType     Whether the effect increases or decreases the stat.
+	IncAndDecValue    Magnitude of the effect.
+	NullifiedMagic    Magic/skill id that cancels this effect, 0 = none.
+	CharacterClass    Character class this effect applies to, -1 = any.
+	CharacterLevel    Minimum character level for the effect to apply.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MonsterSkillElement>
+	<Element Index="1" Name="Monster Skill Element" Type="0" SuccessRate="50" ContinuanceTime="3" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="3" Name="Monster Skill Element" Type="3" SuccessRate="50" ContinuanceTime="10" IncAndDecType="2" IncAndDecValue="50" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="4" Name="Monster Skill Element" Type="4" SuccessRate="50" ContinuanceTime="10" IncAndDecType="2" IncAndDecValue="50" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="5" Name="Monster Skill Element" Type="5" SuccessRate="90" ContinuanceTime="10" IncAndDecType="12" IncAndDecValue="50" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="6" Name="Monster Skill Element" Type="6" SuccessRate="90" ContinuanceTime="10" IncAndDecType="12" IncAndDecValue="50" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="7" Name="Monster Skill Element" Type="9" SuccessRate="50" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="8" Name="Monster Skill Element" Type="2" SuccessRate="30" ContinuanceTime="10" IncAndDecType="112" IncAndDecValue="10" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="9" Name="Monster Skill Element" Type="1" SuccessRate="90" ContinuanceTime="10" IncAndDecType="12" IncAndDecValue="50" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="11" Name="Monster Skill Element" Type="7" SuccessRate="90" ContinuanceTime="10" IncAndDecType="12" IncAndDecValue="7" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="12" Name="Monster Skill Element" Type="2" SuccessRate="90" ContinuanceTime="10" IncAndDecType="101" IncAndDecValue="5" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="13" Name="Monster Skill Element" Type="2" SuccessRate="90" ContinuanceTime="10" IncAndDecType="11" IncAndDecValue="50" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="14" Name="Monster Skill Element" Type="2" SuccessRate="90" ContinuanceTime="10" IncAndDecType="12" IncAndDecValue="100" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="16" Name="Monster Skill Element" Type="8" SuccessRate="90" ContinuanceTime="10" IncAndDecType="0" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="17" Name="Monster Skill Element" Type="14" SuccessRate="50" ContinuanceTime="10" IncAndDecType="0" IncAndDecValue="-1" NullifiedMagic="27" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="22" Name="Monster Skill Element" Type="16" SuccessRate="90" ContinuanceTime="10" IncAndDecType="0" IncAndDecValue="-1" NullifiedMagic="28" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="23" Name="Monster Skill Element" Type="16" SuccessRate="90" ContinuanceTime="10" IncAndDecType="0" IncAndDecValue="-1" NullifiedMagic="28" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="24" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="25" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="26" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="27" Name="Monster Skill Element" Type="19" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="10" NullifiedMagic="800" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="28" Name="Monster Skill Element" Type="18" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="29" Name="Monster Skill Element" Type="19" SuccessRate="50" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="5" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="30" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="31" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="32" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="13" IncAndDecValue="38" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="33" Name="Monster Skill Element" Type="9" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="3" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="34" Name="Monster Skill Element" Type="17" SuccessRate="100" ContinuanceTime="3" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="35" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="36" Name="Monster Skill Element" Type="9" SuccessRate="50" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="3" NullifiedMagic="100" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="37" Name="Monster Skill Element" Type="7" SuccessRate="20" ContinuanceTime="10" IncAndDecType="2" IncAndDecValue="10" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="38" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="39" Name="Monster Skill Element" Type="9" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="40" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="41" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="42" Name="Monster Skill Element" Type="0" SuccessRate="10" ContinuanceTime="3" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="43" Name="Monster Skill Element" Type="0" SuccessRate="20" ContinuanceTime="2" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="44" Name="Monster Skill Element" Type="9" SuccessRate="100" ContinuanceTime="0" IncAndDecType="0" IncAndDecValue="2" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="45" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="46" Name="Monster Skill Element" Type="19" SuccessRate="100" ContinuanceTime="0" IncAndDecType="-1" IncAndDecValue="10" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="47" Name="Monster Skill Element" Type="18" SuccessRate="100" ContinuanceTime="0" IncAndDecType="0" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="48" Name="Monster Skill Element" Type="19" SuccessRate="100" ContinuanceTime="0" IncAndDecType="-1" IncAndDecValue="10" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="49" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="50" Name="Monster Skill Element" Type="9" SuccessRate="100" ContinuanceTime="0" IncAndDecType="-1" IncAndDecValue="10" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="51" Name="Monster Skill Element" Type="9" SuccessRate="100" ContinuanceTime="0" IncAndDecType="-1" IncAndDecValue="4" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="52" Name="Monster Skill Element" Type="8" SuccessRate="100" ContinuanceTime="0" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="53" Name="Monster Skill Element" Type="2" SuccessRate="100" ContinuanceTime="0" IncAndDecType="1" IncAndDecValue="5" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="54" Name="Monster Skill Element" Type="0" SuccessRate="100" ContinuanceTime="5" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="55" Name="Monster Skill Element" Type="17" SuccessRate="100" ContinuanceTime="0" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="56" Name="Monster Skill Element" Type="21" SuccessRate="100" ContinuanceTime="10" IncAndDecType="11" IncAndDecValue="10000" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="57" Name="Monster Skill Element" Type="6" SuccessRate="100" ContinuanceTime="-1" IncAndDecType="11" IncAndDecValue="300" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="58" Name="Monster Skill Element" Type="5" SuccessRate="100" ContinuanceTime="5" IncAndDecType="1" IncAndDecValue="50" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="59" Name="Monster Skill Element" Type="0" SuccessRate="30" ContinuanceTime="2" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="60" Name="Monster Skill Element" Type="2" SuccessRate="100" ContinuanceTime="0" IncAndDecType="1" IncAndDecValue="10" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="61" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="62" Name="Monster Skill Element" Type="19" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="10" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="63" Name="Monster Skill Element" Type="19" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="5" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="64" Name="Monster Skill Element" Type="9" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="3" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="65" Name="Monster Skill Element" Type="19" SuccessRate="100" ContinuanceTime="10" IncAndDecType="102" IncAndDecValue="50" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="66" Name="Monster Skill Element" Type="9" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="4" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="67" Name="Monster Skill Element" Type="6" SuccessRate="100" ContinuanceTime="-1" IncAndDecType="1" IncAndDecValue="150" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="68" Name="Monster Skill Element" Type="5" SuccessRate="100" ContinuanceTime="-1" IncAndDecType="1" IncAndDecValue="150" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="69" Name="Monster Skill Element" Type="1" SuccessRate="40" ContinuanceTime="10" IncAndDecType="12" IncAndDecValue="50" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="70" Name="Monster Skill Element" Type="5" SuccessRate="100" ContinuanceTime="10" IncAndDecType="2" IncAndDecValue="20" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="71" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="72" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="73" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="74" Name="Monster Skill Element" Type="0" SuccessRate="20" ContinuanceTime="3" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="75" Name="Monster Skill Element" Type="2" SuccessRate="80" ContinuanceTime="20" IncAndDecType="12" IncAndDecValue="100" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="76" Name="Monster Skill Element" Type="2" SuccessRate="100" ContinuanceTime="0" IncAndDecType="12" IncAndDecValue="500" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="77" Name="Monster Skill Element" Type="1" SuccessRate="100" ContinuanceTime="10" IncAndDecType="12" IncAndDecValue="30" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="78" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="79" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="80" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="81" Name="Monster Skill Element" Type="19" SuccessRate="50" ContinuanceTime="10" IncAndDecType="12" IncAndDecValue="50" NullifiedMagic="10" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="82" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="83" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="84" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="85" Name="Monster Skill Element" Type="1" SuccessRate="50" ContinuanceTime="10" IncAndDecType="12" IncAndDecValue="50" NullifiedMagic="300" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="86" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="87" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="88" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="89" Name="Monster Skill Element" Type="0" SuccessRate="50" ContinuanceTime="3" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="300" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="90" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="91" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="92" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="93" Name="Monster Skill Element" Type="9" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="5" NullifiedMagic="300" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="94" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="95" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="96" Name="Monster Skill Element" Type="20" SuccessRate="100" ContinuanceTime="10" IncAndDecType="-1" IncAndDecValue="-1" NullifiedMagic="-1" CharacterClass="0" CharacterLevel="0" />
+	<Element Index="97" Name="Monster Skill Element" Type="2" SuccessRate="100" ContinuanceTime="0" IncAndDecType="12" IncAndDecValue="100" NullifiedMagic="300" CharacterClass="0" CharacterLevel="0" />
+</MonsterSkillElement>

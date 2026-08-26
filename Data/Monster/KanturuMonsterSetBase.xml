@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== KanturuMonsterSetBase.xml
+== Static monster spawns for the Kanturu maps. Converted 1:1 from
+== KanturuMonsterSetBase.txt (87 rows).
+== Loaded by GameServer via CKanturuMonsterMng::Load().
+== Modify only if you know what you're doing!
+============================================================
+
+### Monster ###
+	Group   Kanturu battle stage this spawn belongs to.
+	Type    Monster class id (see Monster.xml).
+	Map     Map id.
+	Range   Wander range in tiles from the spawn point.
+	X/Y     Spawn coordinates.
+	Dir     Facing direction, -1 = random (old file's "*").
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<KanturuMonsterMng>
+	<Monster Group="0" Type="364" Map="39" Range="0" X="188" Y="110" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="176" Y="66" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="176" Y="69" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="176" Y="72" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="179" Y="67" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="179" Y="71" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="211" Y="65" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="211" Y="68" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="211" Y="71" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="213" Y="67" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="213" Y="70" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="196" Y="73" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="199" Y="73" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="202" Y="73" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="190" Y="72" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="187" Y="72" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="203" Y="68" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="200" Y="84" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="203" Y="84" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="181" Y="81" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="184" Y="81" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="191" Y="60" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="179" Y="79" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="182" Y="79" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="185" Y="79" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="199" Y="81" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="202" Y="81" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="196" Y="84" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="196" Y="60" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="186" Y="60" Dir="-1" />
+	<Monster Group="0" Type="354" Map="39" Range="30" X="191" Y="67" Dir="-1" />
+	<Monster Group="0" Type="360" Map="39" Range="30" X="177" Y="60" Dir="-1" />
+	<Monster Group="0" Type="360" Map="39" Range="30" X="177" Y="60" Dir="-1" />
+	<Monster Group="0" Type="360" Map="39" Range="30" X="193" Y="83" Dir="-1" />
+	<Monster Group="0" Type="360" Map="39" Range="30" X="191" Y="83" Dir="-1" />
+	<Monster Group="0" Type="360" Map="39" Range="30" X="207" Y="86" Dir="-1" />
+	<Monster Group="0" Type="360" Map="39" Range="30" X="214" Y="78" Dir="-1" />
+	<Monster Group="0" Type="360" Map="39" Range="30" X="209" Y="59" Dir="-1" />
+	<Monster Group="0" Type="360" Map="39" Range="30" X="193" Y="67" Dir="-1" />
+	<Monster Group="0" Type="360" Map="39" Range="30" X="189" Y="67" Dir="-1" />
+	<Monster Group="0" Type="360" Map="39" Range="30" X="189" Y="83" Dir="-1" />
+	<Monster Group="1" Type="364" Map="39" Range="0" X="188" Y="110" Dir="-1" />
+	<Monster Group="1" Type="359" Map="39" Range="30" X="178" Y="60" Dir="-1" />
+	<Monster Group="1" Type="359" Map="39" Range="30" X="178" Y="64" Dir="-1" />
+	<Monster Group="1" Type="359" Map="39" Range="30" X="177" Y="80" Dir="-1" />
+	<Monster Group="1" Type="359" Map="39" Range="30" X="179" Y="83" Dir="-1" />
+	<Monster Group="1" Type="359" Map="39" Range="30" X="179" Y="83" Dir="-1" />
+	<Monster Group="1" Type="359" Map="39" Range="30" X="179" Y="83" Dir="-1" />
+	<Monster Group="1" Type="359" Map="39" Range="30" X="214" Y="78" Dir="-1" />
+	<Monster Group="1" Type="359" Map="39" Range="30" X="214" Y="75" Dir="-1" />
+	<Monster Group="1" Type="359" Map="39" Range="30" X="213" Y="65" Dir="-1" />
+	<Monster Group="1" Type="359" Map="39" Range="30" X="210" Y="62" Dir="-1" />
+	<Monster Group="1" Type="359" Map="39" Range="30" X="187" Y="72" Dir="-1" />
+	<Monster Group="1" Type="359" Map="39" Range="30" X="195" Y="72" Dir="-1" />
+	<Monster Group="1" Type="360" Map="39" Range="30" X="176" Y="72" Dir="-1" />
+	<Monster Group="1" Type="360" Map="39" Range="30" X="189" Y="84" Dir="-1" />
+	<Monster Group="1" Type="360" Map="39" Range="30" X="197" Y="84" Dir="-1" />
+	<Monster Group="1" Type="360" Map="39" Range="30" X="192" Y="81" Dir="-1" />
+	<Monster Group="1" Type="360" Map="39" Range="30" X="213" Y="70" Dir="-1" />
+	<Monster Group="1" Type="360" Map="39" Range="30" X="203" Y="72" Dir="-1" />
+	<Monster Group="1" Type="360" Map="39" Range="30" X="192" Y="58" Dir="-1" />
+	<Monster Group="1" Type="360" Map="39" Range="30" X="200" Y="58" Dir="-1" />
+	<Monster Group="2" Type="360" Map="39" Range="30" X="78" Y="115" Dir="-1" />
+	<Monster Group="2" Type="360" Map="39" Range="30" X="80" Y="100" Dir="-1" />
+	<Monster Group="2" Type="360" Map="39" Range="30" X="79" Y="127" Dir="-1" />
+	<Monster Group="2" Type="360" Map="39" Range="30" X="81" Y="127" Dir="-1" />
+	<Monster Group="2" Type="358" Map="39" Range="30" X="76" Y="136" Dir="-1" />
+	<Monster Group="2" Type="358" Map="39" Range="30" X="80" Y="136" Dir="-1" />
+	<Monster Group="2" Type="358" Map="39" Range="30" X="86" Y="127" Dir="-1" />
+	<Monster Group="2" Type="358" Map="39" Range="30" X="87" Y="114" Dir="-1" />
+	<Monster Group="2" Type="357" Map="39" Range="30" X="78" Y="98" Dir="-1" />
+	<Monster Group="2" Type="357" Map="39" Range="30" X="84" Y="99" Dir="-1" />
+	<Monster Group="2" Type="357" Map="39" Range="30" X="75" Y="111" Dir="-1" />
+	<Monster Group="2" Type="357" Map="39" Range="30" X="78" Y="111" Dir="-1" />
+	<Monster Group="2" Type="357" Map="39" Range="30" X="81" Y="111" Dir="-1" />
+	<Monster Group="2" Type="357" Map="39" Range="30" X="84" Y="111" Dir="-1" />
+	<Monster Group="2" Type="357" Map="39" Range="30" X="79" Y="122" Dir="-1" />
+	<Monster Group="3" Type="364" Map="39" Range="0" X="188" Y="110" Dir="-1" />
+	<Monster Group="4" Type="364" Map="39" Range="0" X="188" Y="110" Dir="-1" />
+	<Monster Group="5" Type="364" Map="39" Range="0" X="188" Y="110" Dir="-1" />
+	<Monster Group="6" Type="360" Map="39" Range="30" X="75" Y="111" Dir="-1" />
+	<Monster Group="6" Type="360" Map="39" Range="30" X="82" Y="111" Dir="-1" />
+	<Monster Group="6" Type="360" Map="39" Range="30" X="79" Y="115" Dir="-1" />
+	<Monster Group="6" Type="360" Map="39" Range="30" X="77" Y="133" Dir="-1" />
+	<Monster Group="6" Type="360" Map="39" Range="30" X="81" Y="133" Dir="-1" />
+	<Monster Group="6" Type="360" Map="39" Range="30" X="79" Y="128" Dir="-1" />
+	<Monster Group="6" Type="360" Map="39" Range="30" X="77" Y="121" Dir="-1" />
+</KanturuMonsterMng>

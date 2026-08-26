@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== MonsterSkillUnit.xml
+== Converted 1:1 from MonsterSkillUnit.txt (96 rows).
+== Bundles up to 5 MonsterSkillElement effects into one castable skill,
+== referenced by index from MonsterSkill.xml's Unit1-10. Loaded by
+== CMonsterSkillUnit::LoadData() - must load AFTER MonsterSkillElement
+== (looked up by id here).
+== Modify only if you know what you're doing!
+============================================================
+
+### Unit ###
+	Index        Unit id, referenced by MonsterSkill.xml.
+	Name         Human-readable description.
+	TargetType   Who/what this skill targets.
+	ScopeType    Single-target vs area, etc.
+	ScopeValue   Area radius or other scope-specific parameter.
+	Delay        Cast delay/cooldown.
+	Slot1-5      MonsterSkillElement.xml Index for each effect applied.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MonsterSkillUnit>
+	<Unit Index="1" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" Slot1="1" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="2" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" Slot1="14" Slot2="7" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="3" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" Slot1="11" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="4" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="17" Slot2="23" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="5" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="3" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="6" Name="Monster Skill Unit" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="16" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="7" Name="Monster Skill Unit" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="13" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="8" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="1" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="9" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="17" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="10" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="3" Slot2="4" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="11" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" Slot1="7" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="12" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" Slot1="7" Slot2="1" Slot3="17" Slot4="-1" Slot5="-1" />
+	<Unit Index="13" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" Slot1="7" Slot2="1" Slot3="1" Slot4="-1" Slot5="-1" />
+	<Unit Index="14" Name="Monster Skill Unit" TargetType="1" ScopeType="1" ScopeValue="6" Delay="300" Slot1="24" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="15" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" Slot1="25" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="16" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="26" Slot2="27" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="17" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="28" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="18" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="29" Slot2="30" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="19" Name="Monster Skill Unit" TargetType="1" ScopeType="1" ScopeValue="6" Delay="300" Slot1="31" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="20" Name="Monster Skill Unit" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="-1" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="21" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" Slot1="32" Slot2="33" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="22" Name="Monster Skill Unit" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="34" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="23" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" Slot1="35" Slot2="36" Slot3="37" Slot4="-1" Slot5="-1" />
+	<Unit Index="24" Name="Monster Skill Unit" TargetType="1" ScopeType="1" ScopeValue="6" Delay="300" Slot1="38" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="25" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="39" Slot2="40" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="26" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="41" Slot2="42" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="27" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="1" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="28" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="8" Slot2="1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="29" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="43" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="30" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="44" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="31" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="2" Delay="300" Slot1="45" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="32" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="46" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="33" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="47" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="34" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" Slot1="48" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="35" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="8" Delay="300" Slot1="49" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="36" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" Slot1="50" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="37" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="4" Delay="300" Slot1="51" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="38" Name="Monster Skill Unit" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="52" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="39" Name="Monster Skill Unit" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="53" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="40" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="54" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="41" Name="Monster Skill Unit" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="55" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="42" Name="Monster Skill Unit" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="56" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="43" Name="Monster Skill Unit" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="57" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="44" Name="Monster Skill Unit" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="58" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="45" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="59" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="46" Name="Monster Skill Unit" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="60" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="47" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" Slot1="61" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="48" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="3" Delay="300" Slot1="61" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="49" Name="Monster Skill Unit" TargetType="1" ScopeType="1" ScopeValue="10" Delay="300" Slot1="61" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="50" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="61" Slot2="62" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="51" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" Slot1="61" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="52" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" Slot1="61" Slot2="59" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="53" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" Slot1="61" Slot2="65" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="54" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="3" Delay="300" Slot1="61" Slot2="64" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="55" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="61" Slot2="62" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="56" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="61" Slot2="66" Slot3="59" Slot4="-1" Slot5="-1" />
+	<Unit Index="57" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" Slot1="61" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="58" Name="Monster Skill Unit" TargetType="1" ScopeType="1" ScopeValue="5" Delay="300" Slot1="61" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="59" Name="Monster Skill Unit" TargetType="2" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="67" Slot2="68" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="60" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" Slot1="61" Slot2="59" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="61" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" Slot1="61" Slot2="69" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="62" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="6" Delay="300" Slot1="61" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="63" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="3" Delay="300" Slot1="61" Slot2="64" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="64" Name="Monster Skill Unit" TargetType="1" ScopeType="1" ScopeValue="3" Delay="300" Slot1="61" Slot2="70" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="65" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="5" Delay="300" Slot1="61" Slot2="72" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="66" Name="Monster Skill Unit" TargetType="1" ScopeType="1" ScopeValue="5" Delay="300" Slot1="61" Slot2="73" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="67" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="71" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="68" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="47" Slot2="74" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="69" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="47" Slot2="9" Slot3="5" Slot4="-1" Slot5="-1" />
+	<Unit Index="70" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="47" Slot2="74" Slot3="6" Slot4="-1" Slot5="-1" />
+	<Unit Index="71" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="47" Slot2="74" Slot3="7" Slot4="-1" Slot5="-1" />
+	<Unit Index="72" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="47" Slot2="74" Slot3="5" Slot4="-1" Slot5="-1" />
+	<Unit Index="73" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="47" Slot2="9" Slot3="7" Slot4="-1" Slot5="-1" />
+	<Unit Index="74" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="47" Slot2="74" Slot3="6" Slot4="-1" Slot5="-1" />
+	<Unit Index="75" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="47" Slot2="27" Slot3="6" Slot4="-1" Slot5="-1" />
+	<Unit Index="76" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="47" Slot2="27" Slot3="5" Slot4="-1" Slot5="-1" />
+	<Unit Index="77" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="47" Slot2="74" Slot3="27" Slot4="-1" Slot5="-1" />
+	<Unit Index="78" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" Slot1="75" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="79" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" Slot1="76" Slot2="77" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="80" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" Slot1="72" Slot2="77" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="81" Name="Monster Skill Unit" TargetType="1" ScopeType="0" ScopeValue="10" Delay="300" Slot1="25" Slot2="8" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="82" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="78" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="83" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="79" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="84" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="80" Slot2="81" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="85" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="82" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="86" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="83" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="87" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="84" Slot2="85" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="88" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="86" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="89" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="87" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="90" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="88" Slot2="89" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="91" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="90" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="92" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="91" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="93" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="92" Slot2="93" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="94" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="94" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="95" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="95" Slot2="-1" Slot3="-1" Slot4="-1" Slot5="-1" />
+	<Unit Index="96" Name="Monster Skill Unit" TargetType="1" ScopeType="-1" ScopeValue="0" Delay="300" Slot1="96" Slot2="97" Slot3="-1" Slot4="-1" Slot5="-1" />
+</MonsterSkillUnit>

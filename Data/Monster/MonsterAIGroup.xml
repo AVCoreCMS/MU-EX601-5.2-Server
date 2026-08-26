@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== MonsterAIGroup.xml
+== Converted 1:1 from MonsterAIGroup.txt (81 rows).
+== Static monster groups spawned together (e.g. a boss + its escort).
+== Loaded by CMonsterAIGroup::LoadData().
+== Modify only if you know what you're doing!
+============================================================
+
+### Member ###
+	Number      Group id - all rows with the same Number spawn together.
+	Guid        Member slot within the group (unique per Number).
+	Monster     Monster class id (see Monster.xml).
+	Rank        Role within the group (e.g. leader vs escort).
+	StartAI     Initial AI state.
+	AI1/AI2/AI3   Alternate AI states this member can switch into.
+	CreateType  How/when this member is spawned relative to the group.
+	Map         Map id.
+	X/Y         Spawn coordinates.
+	Dir         Facing direction.
+	RegenType   Respawn behavior after death.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MonsterAIGroup>
+	<Member Number="1" Guid="0" Monster="340" Rank="0" StartAI="10" AI1="11" AI2="31" AI3="2" CreateType="0" Map="34" X="110" Y="77" Dir="-1" RegenType="1" />
+	<Member Number="1" Guid="1" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="108" Y="73" Dir="-1" RegenType="1" />
+	<Member Number="1" Guid="2" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="110" Y="73" Dir="-1" RegenType="1" />
+	<Member Number="1" Guid="3" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="112" Y="73" Dir="-1" RegenType="1" />
+	<Member Number="1" Guid="4" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="109" Y="75" Dir="-1" RegenType="1" />
+	<Member Number="1" Guid="5" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="111" Y="75" Dir="-1" RegenType="1" />
+	<Member Number="2" Guid="0" Monster="340" Rank="0" StartAI="10" AI1="12" AI2="32" AI3="2" CreateType="0" Map="34" X="125" Y="77" Dir="-1" RegenType="1" />
+	<Member Number="2" Guid="1" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="125" Y="73" Dir="-1" RegenType="1" />
+	<Member Number="2" Guid="2" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="123" Y="73" Dir="-1" RegenType="1" />
+	<Member Number="2" Guid="3" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="127" Y="73" Dir="-1" RegenType="1" />
+	<Member Number="2" Guid="4" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="124" Y="75" Dir="-1" RegenType="1" />
+	<Member Number="2" Guid="5" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="126" Y="75" Dir="-1" RegenType="1" />
+	<Member Number="3" Guid="0" Monster="340" Rank="0" StartAI="10" AI1="13" AI2="33" AI3="2" CreateType="0" Map="34" X="119" Y="83" Dir="-1" RegenType="1" />
+	<Member Number="3" Guid="1" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="119" Y="77" Dir="-1" RegenType="1" />
+	<Member Number="3" Guid="2" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="117" Y="77" Dir="-1" RegenType="1" />
+	<Member Number="3" Guid="3" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="121" Y="77" Dir="-1" RegenType="1" />
+	<Member Number="3" Guid="4" Monster="344" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="118" Y="79" Dir="-1" RegenType="1" />
+	<Member Number="3" Guid="5" Monster="344" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="120" Y="79" Dir="-1" RegenType="1" />
+	<Member Number="3" Guid="6" Monster="345" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="116" Y="81" Dir="-1" RegenType="1" />
+	<Member Number="3" Guid="7" Monster="345" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="119" Y="81" Dir="-1" RegenType="1" />
+	<Member Number="3" Guid="8" Monster="345" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="122" Y="81" Dir="-1" RegenType="1" />
+	<Member Number="4" Guid="0" Monster="340" Rank="0" StartAI="10" AI1="14" AI2="34" AI3="2" CreateType="0" Map="34" X="119" Y="87" Dir="-1" RegenType="1" />
+	<Member Number="4" Guid="1" Monster="344" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="119" Y="90" Dir="-1" RegenType="1" />
+	<Member Number="4" Guid="2" Monster="348" Rank="-1" StartAI="10" AI1="51" AI2="51" AI3="51" CreateType="0" Map="34" X="122" Y="90" Dir="-1" RegenType="-1" />
+	<Member Number="4" Guid="3" Monster="348" Rank="-1" StartAI="10" AI1="52" AI2="52" AI3="52" CreateType="0" Map="34" X="116" Y="90" Dir="-1" RegenType="-1" />
+	<Member Number="5" Guid="0" Monster="349" Rank="0" StartAI="4" AI1="4" AI2="4" AI3="4" CreateType="0" Map="34" X="110" Y="79" Dir="-1" RegenType="1" />
+	<Member Number="6" Guid="0" Monster="340" Rank="0" StartAI="10" AI1="15" AI2="35" AI3="2" CreateType="0" Map="34" X="77" Y="28" Dir="-1" RegenType="1" />
+	<Member Number="6" Guid="1" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="81" Y="25" Dir="-1" RegenType="1" />
+	<Member Number="6" Guid="2" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="81" Y="27" Dir="-1" RegenType="1" />
+	<Member Number="6" Guid="3" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="81" Y="29" Dir="-1" RegenType="1" />
+	<Member Number="6" Guid="4" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="79" Y="26" Dir="-1" RegenType="1" />
+	<Member Number="6" Guid="5" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="79" Y="28" Dir="-1" RegenType="1" />
+	<Member Number="7" Guid="0" Monster="340" Rank="0" StartAI="10" AI1="16" AI2="36" AI3="2" CreateType="0" Map="34" X="77" Y="42" Dir="-1" RegenType="1" />
+	<Member Number="7" Guid="1" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="79" Y="38" Dir="-1" RegenType="1" />
+	<Member Number="7" Guid="2" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="81" Y="37" Dir="-1" RegenType="1" />
+	<Member Number="7" Guid="3" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="81" Y="39" Dir="-1" RegenType="1" />
+	<Member Number="7" Guid="4" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="81" Y="41" Dir="-1" RegenType="1" />
+	<Member Number="7" Guid="5" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="79" Y="40" Dir="-1" RegenType="1" />
+	<Member Number="8" Guid="0" Monster="340" Rank="0" StartAI="10" AI1="17" AI2="37" AI3="2" CreateType="0" Map="34" X="70" Y="34" Dir="-1" RegenType="1" />
+	<Member Number="8" Guid="1" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="77" Y="31" Dir="-1" RegenType="1" />
+	<Member Number="8" Guid="2" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="77" Y="33" Dir="-1" RegenType="1" />
+	<Member Number="8" Guid="3" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="77" Y="35" Dir="-1" RegenType="1" />
+	<Member Number="8" Guid="4" Monster="344" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="75" Y="32" Dir="-1" RegenType="1" />
+	<Member Number="8" Guid="5" Monster="344" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="75" Y="34" Dir="-1" RegenType="1" />
+	<Member Number="8" Guid="6" Monster="345" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="73" Y="33" Dir="-1" RegenType="1" />
+	<Member Number="8" Guid="7" Monster="345" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="73" Y="29" Dir="-1" RegenType="1" />
+	<Member Number="8" Guid="8" Monster="345" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="73" Y="37" Dir="-1" RegenType="1" />
+	<Member Number="9" Guid="0" Monster="340" Rank="0" StartAI="10" AI1="18" AI2="38" AI3="2" CreateType="0" Map="34" X="65" Y="34" Dir="-1" RegenType="1" />
+	<Member Number="9" Guid="1" Monster="344" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="62" Y="34" Dir="-1" RegenType="1" />
+	<Member Number="9" Guid="2" Monster="348" Rank="-1" StartAI="10" AI1="53" AI2="53" AI3="53" CreateType="0" Map="34" X="62" Y="37" Dir="-1" RegenType="-1" />
+	<Member Number="9" Guid="3" Monster="348" Rank="-1" StartAI="10" AI1="54" AI2="54" AI3="54" CreateType="0" Map="34" X="62" Y="31" Dir="-1" RegenType="-1" />
+	<Member Number="10" Guid="0" Monster="340" Rank="0" StartAI="10" AI1="19" AI2="39" AI3="2" CreateType="0" Map="34" X="167" Y="27" Dir="-1" RegenType="1" />
+	<Member Number="10" Guid="1" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="163" Y="29" Dir="-1" RegenType="1" />
+	<Member Number="10" Guid="2" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="163" Y="27" Dir="-1" RegenType="1" />
+	<Member Number="10" Guid="3" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="163" Y="25" Dir="-1" RegenType="1" />
+	<Member Number="10" Guid="4" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="165" Y="26" Dir="-1" RegenType="1" />
+	<Member Number="10" Guid="5" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="165" Y="28" Dir="-1" RegenType="1" />
+	<Member Number="11" Guid="0" Monster="340" Rank="0" StartAI="10" AI1="20" AI2="40" AI3="2" CreateType="0" Map="34" X="167" Y="39" Dir="-1" RegenType="1" />
+	<Member Number="11" Guid="1" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="165" Y="38" Dir="-1" RegenType="1" />
+	<Member Number="11" Guid="2" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="163" Y="37" Dir="-1" RegenType="1" />
+	<Member Number="11" Guid="3" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="163" Y="39" Dir="-1" RegenType="1" />
+	<Member Number="11" Guid="4" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="165" Y="40" Dir="-1" RegenType="1" />
+	<Member Number="11" Guid="5" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="163" Y="41" Dir="-1" RegenType="1" />
+	<Member Number="12" Guid="0" Monster="340" Rank="0" StartAI="10" AI1="21" AI2="41" AI3="2" CreateType="0" Map="34" X="174" Y="33" Dir="-1" RegenType="1" />
+	<Member Number="12" Guid="1" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="167" Y="35" Dir="-1" RegenType="1" />
+	<Member Number="12" Guid="2" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="167" Y="33" Dir="-1" RegenType="1" />
+	<Member Number="12" Guid="3" Monster="341" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="167" Y="31" Dir="-1" RegenType="1" />
+	<Member Number="12" Guid="4" Monster="344" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="169" Y="32" Dir="-1" RegenType="1" />
+	<Member Number="12" Guid="5" Monster="344" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="169" Y="34" Dir="-1" RegenType="1" />
+	<Member Number="12" Guid="6" Monster="345" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="171" Y="33" Dir="-1" RegenType="1" />
+	<Member Number="12" Guid="7" Monster="345" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="171" Y="30" Dir="-1" RegenType="1" />
+	<Member Number="12" Guid="8" Monster="345" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="171" Y="36" Dir="-1" RegenType="1" />
+	<Member Number="13" Guid="0" Monster="340" Rank="0" StartAI="10" AI1="22" AI2="42" AI3="2" CreateType="0" Map="34" X="179" Y="33" Dir="-1" RegenType="1" />
+	<Member Number="13" Guid="1" Monster="344" Rank="-1" StartAI="10" AI1="1" AI2="1" AI3="1" CreateType="0" Map="34" X="183" Y="33" Dir="-1" RegenType="1" />
+	<Member Number="13" Guid="2" Monster="348" Rank="-1" StartAI="10" AI1="55" AI2="55" AI3="55" CreateType="0" Map="34" X="183" Y="36" Dir="-1" RegenType="-1" />
+	<Member Number="13" Guid="3" Monster="348" Rank="-1" StartAI="10" AI1="56" AI2="56" AI3="56" CreateType="0" Map="34" X="183" Y="30" Dir="-1" RegenType="-1" />
+	<Member Number="20" Guid="0" Monster="362" Rank="0" StartAI="60" AI1="61" AI2="62" AI3="63" CreateType="0" Map="39" X="202" Y="83" Dir="2" RegenType="-1" />
+	<Member Number="21" Guid="0" Monster="363" Rank="0" StartAI="60" AI1="61" AI2="62" AI3="63" CreateType="0" Map="39" X="189" Y="82" Dir="2" RegenType="-1" />
+	<Member Number="22" Guid="0" Monster="362" Rank="0" StartAI="60" AI1="64" AI2="65" AI3="67" CreateType="0" Map="39" X="202" Y="83" Dir="2" RegenType="-1" />
+	<Member Number="22" Guid="1" Monster="363" Rank="-1" StartAI="60" AI1="64" AI2="66" AI3="67" CreateType="0" Map="39" X="189" Y="82" Dir="2" RegenType="-1" />
+	<Member Number="23" Guid="0" Monster="361" Rank="0" StartAI="68" AI1="69" AI2="70" AI3="71" CreateType="0" Map="39" X="78" Y="141" Dir="2" RegenType="-1" />
+</MonsterAIGroup>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== MonsterAIUnit.xml
+== Converted 1:1 from MonsterAIUnit.txt (53 rows).
+== Bundles one Automata (state machine, MonsterAIAutomata.xml) with a
+== concrete AIElement (MonsterAIElement.xml) for each behavior category.
+== Loaded by CMonsterAIUnit::LoadData() - must load AFTER
+== MonsterAIAutomata and MonsterAIElement (both looked up by id here).
+== Modify only if you know what you're doing!
+============================================================
+
+### Unit ###
+	Index         Unit id.
+	Name          Human-readable description.
+	DelayTime     Base delay between AI ticks.
+	Automata      MonsterAIAutomata.xml Number to use for state transitions.
+	AIClassNormal/AIClassMove/AIClassAttack/AIClassHeal/AIClassAvoid/
+	AIClassHelp/AIClassSpecial/AIClassEvent
+	              MonsterAIElement.xml Index for each behavior category.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MonsterAIUnit>
+	<Unit Index="1" Name="Monster General" DelayTime="1700" Automata="1" AIClassNormal="1" AIClassMove="8" AIClassAttack="3" AIClassHeal="5" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="2" Name="Dark Elf" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="2" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="3" Name="Ballesta" DelayTime="2000" Automata="3" AIClassNormal="1" AIClassMove="-1" AIClassAttack="9" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="4" Name="Balgass" DelayTime="1000" Automata="1" AIClassNormal="1" AIClassMove="2" AIClassAttack="3" AIClassHeal="5" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="10" Name="Maya Hand" DelayTime="5000" Automata="10" AIClassNormal="1" AIClassMove="-1" AIClassAttack="-1" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="11" Name="1 Dark Elf 1-1" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="11" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="12" Name="1 Dark Elf 1-2" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="12" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="13" Name="1 Dark Elf 1-3" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="13" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="14" Name="1 Dark Elf 1-4" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="14" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="15" Name="1 Dark Elf 2-1" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="15" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="16" Name="1 Dark Elf 2-2" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="16" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="17" Name="1 Dark Elf 2-3" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="17" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="18" Name="1 Dark Elf 2-4" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="18" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="19" Name="1 Dark Elf 3-1" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="19" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="20" Name="1 Dark Elf 3-2" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="20" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="21" Name="1 Dark Elf 3-3" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="21" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="22" Name="1 Dark Elf 3-4" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="22" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="31" Name="2 Dark Elf 1-1" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="31" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="32" Name="2 Dark Elf 1-2" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="32" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="33" Name="2 Dark Elf 1-3" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="33" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="34" Name="2 Dark Elf 1-4" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="34" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="35" Name="2 Dark Elf 2-1" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="35" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="36" Name="2 Dark Elf 2-2" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="36" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="37" Name="2 Dark Elf 2-3" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="37" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="38" Name="2 Dark Elf 2-4" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="38" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="39" Name="2 Dark Elf 3-1" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="39" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="40" Name="2 Dark Elf 3-2" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="40" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="41" Name="2 Dark Elf 3-3" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="41" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="42" Name="2 Dark Elf 3-4" DelayTime="1700" Automata="2" AIClassNormal="1" AIClassMove="42" AIClassAttack="3" AIClassHeal="7" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="6" AIClassEvent="-1" />
+	<Unit Index="51" Name="Ballesta 1-1" DelayTime="2000" Automata="3" AIClassNormal="1" AIClassMove="-1" AIClassAttack="51" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="52" Name="Ballesta 1-2" DelayTime="2000" Automata="3" AIClassNormal="1" AIClassMove="-1" AIClassAttack="52" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="53" Name="Ballesta 2-1" DelayTime="2000" Automata="3" AIClassNormal="1" AIClassMove="-1" AIClassAttack="53" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="54" Name="Ballesta 2-2" DelayTime="2000" Automata="3" AIClassNormal="1" AIClassMove="-1" AIClassAttack="54" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="55" Name="Ballesta 3-1" DelayTime="2000" Automata="3" AIClassNormal="1" AIClassMove="-1" AIClassAttack="55" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="56" Name="Ballesta 3-2" DelayTime="2000" Automata="3" AIClassNormal="1" AIClassMove="-1" AIClassAttack="56" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="60" Name="Maya Hand - Invisible" DelayTime="1000" Automata="7" AIClassNormal="1" AIClassMove="-1" AIClassAttack="-1" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="60" AIClassEvent="-1" />
+	<Unit Index="61" Name="Maya Hand - Attack General" DelayTime="2000" Automata="4" AIClassNormal="1" AIClassMove="65" AIClassAttack="61" AIClassHeal="-1" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="62" Name="Maya Hand - Disable Skills" DelayTime="2000" Automata="6" AIClassNormal="1" AIClassMove="65" AIClassAttack="64" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="63" Name="Maya Hand - Fasr Attack" DelayTime="800" Automata="5" AIClassNormal="1" AIClassMove="65" AIClassAttack="62" AIClassHeal="-1" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="64" Name="Maya Hand - Attack General" DelayTime="2000" Automata="4" AIClassNormal="1" AIClassMove="65" AIClassAttack="61" AIClassHeal="-1" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="65" Name="Maya Hand - Disable Skills" DelayTime="800" Automata="6" AIClassNormal="1" AIClassMove="65" AIClassAttack="64" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="66" Name="Maya Hand - Fast Attack" DelayTime="1000" Automata="5" AIClassNormal="1" AIClassMove="65" AIClassAttack="62" AIClassHeal="-1" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="67" Name="Maya Hand - Super Fast Attack" DelayTime="300" Automata="6" AIClassNormal="1" AIClassMove="65" AIClassAttack="63" AIClassHeal="-1" AIClassAvoid="4" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="68" Name="State - Nightmare 1" DelayTime="300" Automata="8" AIClassNormal="67" AIClassMove="67" AIClassAttack="73" AIClassHeal="-1" AIClassAvoid="70" AIClassHelp="66" AIClassSpecial="69" AIClassEvent="77" />
+	<Unit Index="69" Name="State - Nightmare 2" DelayTime="300" Automata="9" AIClassNormal="67" AIClassMove="67" AIClassAttack="74" AIClassHeal="-1" AIClassAvoid="71" AIClassHelp="66" AIClassSpecial="69" AIClassEvent="78" />
+	<Unit Index="70" Name="State - Nightmare 3" DelayTime="300" Automata="12" AIClassNormal="67" AIClassMove="67" AIClassAttack="75" AIClassHeal="-1" AIClassAvoid="72" AIClassHelp="66" AIClassSpecial="69" AIClassEvent="79" />
+	<Unit Index="71" Name="State - Nightmare 4" DelayTime="300" Automata="11" AIClassNormal="67" AIClassMove="67" AIClassAttack="76" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="72" Name="Imperial Guardian - Default" DelayTime="1500" Automata="13" AIClassNormal="80" AIClassMove="81" AIClassAttack="82" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="73" Name="Imperial Guardian - Support" DelayTime="1500" Automata="14" AIClassNormal="80" AIClassMove="81" AIClassAttack="82" AIClassHeal="83" AIClassAvoid="-1" AIClassHelp="84" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="74" Name="Double Goer - Default 1" DelayTime="1000" Automata="15" AIClassNormal="1" AIClassMove="85" AIClassAttack="89" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="75" Name="Double Goer - Default 2" DelayTime="1000" Automata="15" AIClassNormal="1" AIClassMove="86" AIClassAttack="89" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="76" Name="Double Goer - Default 3" DelayTime="1000" Automata="15" AIClassNormal="1" AIClassMove="87" AIClassAttack="89" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+	<Unit Index="77" Name="Double Goer - Default 4" DelayTime="1000" Automata="15" AIClassNormal="1" AIClassMove="88" AIClassAttack="89" AIClassHeal="-1" AIClassAvoid="-1" AIClassHelp="-1" AIClassSpecial="-1" AIClassEvent="-1" />
+</MonsterAIUnit>

@@ -786,6 +786,23 @@ STRICTLY NO COMMENTS INSIDE TAGS
 			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
 			Comment="Start the Illusion Temple event" />
 
+		<Command Index="83" Names="startpandora" Delay="0" GameMaster="2" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Start the Pandora event" />
+		<Command Index="84" Names="stoppandora" Delay="0" GameMaster="2" Coin1="0" Coin2="0" Coin3="0"
+			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
+			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"
+			MinLevel_AL0="0" MinLevel_AL1="0" MinLevel_AL2="0" MinLevel_AL3="0"
+			MaxLevel_AL0="0" MaxLevel_AL1="0" MaxLevel_AL2="0" MaxLevel_AL3="0"
+			MinReset_AL0="0" MinReset_AL1="0" MinReset_AL2="0" MinReset_AL3="0"
+			MaxReset_AL0="0" MaxReset_AL1="0" MaxReset_AL2="0" MaxReset_AL3="0"
+			Comment="Stop the Pandora event" />
+
 		<Command Index="74" Names="setcoin" Delay="0" GameMaster="2" Coin1="0" Coin2="0" Coin3="0"
 			Enable_AL0="1" Enable_AL1="1" Enable_AL2="1" Enable_AL3="1"
 			Money_AL0="0" Money_AL1="0" Money_AL2="0" Money_AL3="0"

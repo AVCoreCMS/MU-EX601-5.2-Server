@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== MonsterAIRule.xml
+== Converted 1:1 from MonsterAIRule.txt (0 rows, empty on this server).
+== Time/condition-based AI unit switches for a monster class. Loaded
+== by CMonsterAIRule::LoadData().
+== Modify only if you know what you're doing!
+============================================================
+
+### Rule ###
+	Index            Rule id.
+	Monster          Monster class id this rule applies to.
+	Name             Human-readable description.
+	AIUnit           AI unit (see MonsterAIUnit.xml) to switch to when
+	                 this rule matches.
+	RuleCondition    What triggers the check.
+	WaitTime         Delay before the rule can re-trigger.
+	ContinuanceTime  How long the switched AI unit stays active.
+	Month/Day/Week/Hour/Minute   Schedule window the rule is active in.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MonsterAIRule>
+
+</MonsterAIRule>

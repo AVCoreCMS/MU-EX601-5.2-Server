@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== MonsterAIElement.xml
+== Converted 1:1 from MonsterAIElement.txt (69 rows).
+== One concrete AI action a monster can perform. Referenced by index
+== from MonsterAIUnit.xml's AIClass* attributes. Loaded by
+== CMonsterAIElement::LoadData().
+== Modify only if you know what you're doing!
+============================================================
+
+### Element ###
+	Index         Element id, referenced by MonsterAIUnit.xml.
+	Name          Human-readable description.
+	Class         Element category (movement, attack, etc).
+	Type          Sub-behavior within Class.
+	SuccessRate   Percent chance, out of 100.
+	DelayTime     Milliseconds before this action can repeat.
+	TargetType    Who/what this action targets.
+	X/Y           Action-specific position parameters (e.g. move offset).
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<MonsterAIElement>
+	<Element Index="1" Name="General Condition" Class="0" Type="1" SuccessRate="100" DelayTime="1000" TargetType="-1" X="-1" Y="-1" />
+	<Element Index="2" Name="Item Move" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="121" Y="36" />
+	<Element Index="3" Name="Test Attack" Class="2" Type="21" SuccessRate="100" DelayTime="300" TargetType="2" X="-1" Y="-1" />
+	<Element Index="4" Name="Avoid - Fugitive" Class="4" Type="41" SuccessRate="100" DelayTime="300" TargetType="2" X="-1" Y="-1" />
+	<Element Index="5" Name="Self- Treatment" Class="3" Type="31" SuccessRate="100" DelayTime="300" TargetType="2" X="-1" Y="-1" />
+	<Element Index="6" Name="Group Summon" Class="6" Type="62" SuccessRate="100" DelayTime="300" TargetType="2" X="-1" Y="-1" />
+	<Element Index="7" Name="Group Therapy" Class="3" Type="32" SuccessRate="100" DelayTime="300" TargetType="2" X="-1" Y="-1" />
+	<Element Index="8" Name="Group Migration" Class="1" Type="13" SuccessRate="100" DelayTime="300" TargetType="2" X="-1" Y="-1" />
+	<Element Index="9" Name="Position Attack" Class="2" Type="22" SuccessRate="100" DelayTime="300" TargetType="2" X="121" Y="36" />
+	<Element Index="11" Name="Goal Move 1-1" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="128" Y="45" />
+	<Element Index="12" Name="Goal Move 1-2" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="109" Y="42" />
+	<Element Index="13" Name="Goal Move 1-3" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="123" Y="84" />
+	<Element Index="14" Name="Goal Move 1-4" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="119" Y="87" />
+	<Element Index="15" Name="Goal Move 2-1" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="105" Y="32" />
+	<Element Index="16" Name="Goal Move 2-2" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="89" Y="32" />
+	<Element Index="17" Name="Goal Move 2-3" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="83" Y="29" />
+	<Element Index="18" Name="Goal Move 2-4" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="65" Y="34" />
+	<Element Index="19" Name="Goal Move 3-1" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="136" Y="38" />
+	<Element Index="20" Name="Goal Move 3-2" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="134" Y="19" />
+	<Element Index="21" Name="Goal Move 3-3" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="177" Y="37" />
+	<Element Index="22" Name="Goal Move 3-4" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="179" Y="33" />
+	<Element Index="31" Name="Goal Move 1-1" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="126" Y="35" />
+	<Element Index="32" Name="Goal Move 1-2" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="125" Y="27" />
+	<Element Index="33" Name="Goal Move 1-3" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="121" Y="19" />
+	<Element Index="34" Name="Goal Move 1-4" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="119" Y="87" />
+	<Element Index="35" Name="Goal Move 2-1" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="120" Y="38" />
+	<Element Index="36" Name="Goal Move 2-2" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="115" Y="32" />
+	<Element Index="37" Name="Goal Move 2-3" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="109" Y="40" />
+	<Element Index="38" Name="Goal Move 2-4" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="65" Y="34" />
+	<Element Index="39" Name="Goal Move 3-1" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="117" Y="27" />
+	<Element Index="40" Name="Goal Move 3-2" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="117" Y="37" />
+	<Element Index="41" Name="Goal Move 3-3" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="131" Y="31" />
+	<Element Index="42" Name="Goal Move 3-4" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="179" Y="33" />
+	<Element Index="51" Name="1-1 Position Attacks" Class="2" Type="22" SuccessRate="100" DelayTime="300" TargetType="2" X="121" Y="52" />
+	<Element Index="52" Name="1-2 Position Attacks" Class="2" Type="22" SuccessRate="100" DelayTime="300" TargetType="2" X="120" Y="35" />
+	<Element Index="53" Name="2-1 Position Attacks" Class="2" Type="22" SuccessRate="100" DelayTime="300" TargetType="2" X="101" Y="31" />
+	<Element Index="54" Name="2-2 Position Attacks" Class="2" Type="22" SuccessRate="100" DelayTime="300" TargetType="2" X="117" Y="31" />
+	<Element Index="55" Name="3-1 Position Attacks" Class="2" Type="22" SuccessRate="100" DelayTime="300" TargetType="2" X="141" Y="32" />
+	<Element Index="56" Name="3-2 Position Attacks" Class="2" Type="22" SuccessRate="100" DelayTime="300" TargetType="2" X="125" Y="31" />
+	<Element Index="60" Name="Invisible" Class="6" Type="64" SuccessRate="100" DelayTime="1000" TargetType="-1" X="-1" Y="-1" />
+	<Element Index="61" Name="General Attack" Class="2" Type="21" SuccessRate="100" DelayTime="1000" TargetType="1" X="-1" Y="-1" />
+	<Element Index="62" Name="Fast Attack" Class="2" Type="21" SuccessRate="100" DelayTime="800" TargetType="1" X="-1" Y="-1" />
+	<Element Index="63" Name="Super Fast Attack" Class="2" Type="21" SuccessRate="100" DelayTime="100" TargetType="1" X="-1" Y="-1" />
+	<Element Index="64" Name="Rubber Meat" Class="2" Type="23" SuccessRate="100" DelayTime="300" TargetType="1" X="-1" Y="-1" />
+	<Element Index="65" Name="General Move" Class="1" Type="11" SuccessRate="100" DelayTime="100" TargetType="1" X="-1" Y="-1" />
+	<Element Index="66" Name="High Bank" Class="6" Type="64" SuccessRate="100" DelayTime="1000" TargetType="-1" X="2" Y="2" />
+	<Element Index="67" Name="General Move" Class="1" Type="11" SuccessRate="100" DelayTime="100" TargetType="1" X="-1" Y="-1" />
+	<Element Index="68" Name="General Attack" Class="2" Type="21" SuccessRate="100" DelayTime="1000" TargetType="1" X="-1" Y="-1" />
+	<Element Index="69" Name="Summon" Class="6" Type="65" SuccessRate="100" DelayTime="1000" TargetType="1" X="-1" Y="-1" />
+	<Element Index="70" Name="Year For The Body" Class="6" Type="66" SuccessRate="100" DelayTime="1000" TargetType="1" X="79" Y="100" />
+	<Element Index="71" Name="Year For The Body" Class="6" Type="66" SuccessRate="100" DelayTime="1000" TargetType="1" X="78" Y="124" />
+	<Element Index="72" Name="Year For The Body" Class="6" Type="66" SuccessRate="100" DelayTime="1000" TargetType="1" X="78" Y="141" />
+	<Element Index="73" Name="Attack Pattern" Class="2" Type="67" SuccessRate="100" DelayTime="1000" TargetType="60" X="40" Y="0" />
+	<Element Index="74" Name="Attack Pattern" Class="2" Type="67" SuccessRate="100" DelayTime="1000" TargetType="40" X="60" Y="0" />
+	<Element Index="75" Name="Attack Pattern" Class="2" Type="67" SuccessRate="100" DelayTime="1000" TargetType="30" X="30" Y="40" />
+	<Element Index="76" Name="Attack Pattern" Class="2" Type="67" SuccessRate="100" DelayTime="1000" TargetType="30" X="20" Y="50" />
+	<Element Index="77" Name="AI Change" Class="7" Type="68" SuccessRate="100" DelayTime="1000" TargetType="23" X="1" Y="-1" />
+	<Element Index="78" Name="AI Change" Class="7" Type="68" SuccessRate="100" DelayTime="1000" TargetType="23" X="2" Y="-1" />
+	<Element Index="79" Name="AI Change" Class="7" Type="68" SuccessRate="100" DelayTime="1000" TargetType="23" X="3" Y="-1" />
+	<Element Index="80" Name="Imperial Guardian - Common" Class="0" Type="1" SuccessRate="100" DelayTime="1000" TargetType="-1" X="-1" Y="-1" />
+	<Element Index="81" Name="Imperial Guardian - Move" Class="1" Type="11" SuccessRate="100" DelayTime="1000" TargetType="2" X="-1" Y="-1" />
+	<Element Index="82" Name="Imperial Guardian - Attack" Class="2" Type="21" SuccessRate="100" DelayTime="1000" TargetType="2" X="-1" Y="-1" />
+	<Element Index="83" Name="Imperial Guardian - Heal Self" Class="3" Type="31" SuccessRate="100" DelayTime="1000" TargetType="2" X="-1" Y="-1" />
+	<Element Index="84" Name="Imperial Guardian - Help Heal" Class="5" Type="51" SuccessRate="100" DelayTime="1000" TargetType="2" X="-1" Y="-1" />
+	<Element Index="85" Name="Double Goer - Move 1" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="197" Y="25" />
+	<Element Index="86" Name="Double Goer - Move 2" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="138" Y="67" />
+	<Element Index="87" Name="Double Goer - Move 3" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="110" Y="56" />
+	<Element Index="88" Name="Double Goer - Move 4" Class="1" Type="12" SuccessRate="100" DelayTime="1000" TargetType="2" X="95" Y="11" />
+	<Element Index="89" Name="Double Goer - Attack" Class="2" Type="21" SuccessRate="100" DelayTime="1000" TargetType="2" X="-1" Y="-1" />
+</MonsterAIElement>
