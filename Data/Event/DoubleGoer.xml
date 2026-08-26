@@ -51,6 +51,13 @@
 	        -1 = unlimited. Kept in memory only - resets if the server
 	        restarts.
 
+### DoubleGoer::RewardMode ###
+	PartyReward  1 = every party member present gets the Silver/Golden
+	             chest reward (fixed default - previously only whoever
+	             clicked the single chest NPC first got anything, and
+	             it never scaled with party size). 0 = restore the old
+	             single physical chest behavior.
+
 STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
@@ -59,6 +66,7 @@ STRICTLY NO COMMENTS INSIDE TAGS
 	<MonsterAI Unit1="74" Unit2="75" Unit3="76" Unit4="77" />
 	<BreachSettings BreachLimit="3" SlaughtererThreshold="75" MadSlaughtererThreshold="50" IceWalkerThreshold="25" />
 	<DailyEntryLimit Vip0="-1" Vip1="-1" Vip2="-1" Vip3="-1" />
+	<RewardMode PartyReward="1" />
 
 	<MonsterSettings>
 		<Monster Index="0" Level1="1.00" Level2="1.00" Level3="1.00" Level4="1.00" Level5="1.00" Life1="1.00" Life2="2.00" Life3="3.00" Life4="3.80" Life5="4.80" Damage1="1.00" Damage2="2.00" Damage3="3.00" Damage4="3.70" Damage5="4.70" Defense1="1.00" Defense2="2.00" Defense3="3.00" Defense4="3.70" Defense5="4.50" />
