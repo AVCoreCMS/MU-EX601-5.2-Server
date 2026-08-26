@@ -14,27 +14,53 @@
 == Modify only if you know what you're doing!
 ============================================================
 
-### DoubleGoer::Config ###
-	<Timing>       NotifyTime/EventTime/CloseTime in minutes.
-	<MonsterAI>    Unit1-4 - AI unit numbers used for each of the 4
-	               difficulty levels (MAX_DG_LEVEL).
-	<Monster>      One row per difficulty step (0-59,
-	               MAX_DG_MONSTER_DIFFICULT):
-	                 Index          Difficulty step.
-	                 Level1-5       Monster level multiplier, per tier
-	                                1-5.
-	                 Life1-5        Max life multiplier, per tier.
-	                 Damage1-5      Damage multiplier, per tier.
-	                 Defense1-5     Defense multiplier, per tier.
-	               All values are floats (multipliers), not raw stats.
+### DoubleGoer::Timing ###
+	NotifyTime/EventTime/CloseTime in minutes.
+
+### DoubleGoer::MonsterAI ###
+	Unit1-4 - AI unit numbers used for each of the 4 difficulty
+	levels (MAX_DG_LEVEL).
+
+### DoubleGoer::MonsterSettings::Monster ###
+	One row per difficulty step (0-59, MAX_DG_MONSTER_DIFFICULT):
+	  Index          Difficulty step.
+	  Level1-5       Monster level multiplier, per tier 1-5.
+	  Life1-5        Max life multiplier, per tier.
+	  Damage1-5      Damage multiplier, per tier.
+	  Defense1-5     Defense multiplier, per tier.
+	All values are floats (multipliers), not raw stats.
+
+### DoubleGoer::BreachSettings ###
+	Monsters (including the Slaughterer/Mad Slaughterer/Ice Walker
+	mini-bosses) walk toward the map's final point; each one that
+	reaches it counts as a "breach" and despawns.
+	BreachLimit               Breaches allowed before the party fails
+	                          the run.
+	SlaughtererThreshold      % of event time remaining at or below
+	                          which the Slaughterer spawns.
+	MadSlaughtererThreshold   % of event time remaining at or below
+	                          which the Mad Slaughterer spawns.
+	IceWalkerThreshold        % of event time remaining at or below
+	                          which the Ice Walker spawns (winning
+	                          requires it to never reach the final
+	                          point).
+
+### DoubleGoer::DailyEntryLimit ###
+	Vip0-3  Maximum number of DoubleGoer entries per day, per VIP tier
+	        (AccountLevel 0-3). Resets at midnight (server local time).
+	        -1 = unlimited. Kept in memory only - resets if the server
+	        restarts.
 
 STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
 <DoubleGoer>
-	<Config>
-		<Timing NotifyTime="1" EventTime="10" CloseTime="4" />
-		<MonsterAI Unit1="74" Unit2="75" Unit3="76" Unit4="77" />
+	<Timing NotifyTime="1" EventTime="10" CloseTime="4" />
+	<MonsterAI Unit1="74" Unit2="75" Unit3="76" Unit4="77" />
+	<BreachSettings BreachLimit="3" SlaughtererThreshold="75" MadSlaughtererThreshold="50" IceWalkerThreshold="25" />
+	<DailyEntryLimit Vip0="-1" Vip1="-1" Vip2="-1" Vip3="-1" />
+
+	<MonsterSettings>
 		<Monster Index="0" Level1="1.00" Level2="1.00" Level3="1.00" Level4="1.00" Level5="1.00" Life1="1.00" Life2="2.00" Life3="3.00" Life4="3.80" Life5="4.80" Damage1="1.00" Damage2="2.00" Damage3="3.00" Damage4="3.70" Damage5="4.70" Defense1="1.00" Defense2="2.00" Defense3="3.00" Defense4="3.70" Defense5="4.50" />
 		<Monster Index="1" Level1="1.20" Level2="1.20" Level3="1.20" Level4="1.20" Level5="1.20" Life1="2.00" Life2="2.20" Life3="3.20" Life4="4.00" Life5="5.00" Damage1="1.15" Damage2="2.05" Damage3="3.05" Damage4="3.75" Damage5="4.75" Defense1="1.35" Defense2="2.15" Defense3="3.15" Defense4="3.85" Defense5="4.65" />
 		<Monster Index="2" Level1="1.60" Level2="1.60" Level3="1.60" Level4="1.60" Level5="1.60" Life1="2.70" Life2="2.40" Life3="3.40" Life4="4.20" Life5="5.20" Damage1="1.20" Damage2="2.10" Damage3="3.10" Damage4="3.80" Damage5="4.80" Defense1="1.50" Defense2="2.30" Defense3="3.30" Defense4="4.00" Defense5="4.80" />
@@ -95,5 +121,5 @@ STRICTLY NO COMMENTS INSIDE TAGS
 		<Monster Index="57" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="137.00" Life2="142.00" Life3="147.00" Life4="155.80" Life5="160.80" Damage1="13.28" Damage2="15.80" Damage3="16.50" Damage4="16.40" Damage5="17.00" Defense1="22.50" Defense2="25.50" Defense3="27.50" Defense4="28.20" Defense5="30.00" />
 		<Monster Index="58" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="143.00" Life2="148.00" Life3="153.00" Life4="161.80" Life5="166.80" Damage1="13.58" Damage2="16.10" Damage3="16.80" Damage4="16.70" Damage5="17.30" Defense1="23.30" Defense2="26.30" Defense3="28.30" Defense4="29.00" Defense5="30.80" />
 		<Monster Index="59" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="149.00" Life2="157.00" Life3="162.00" Life4="167.80" Life5="172.80" Damage1="13.88" Damage2="16.60" Damage3="17.20" Damage4="17.00" Damage5="17.60" Defense1="24.10" Defense2="28.10" Defense3="29.10" Defense4="29.80" Defense5="31.60" />
-	</Config>
+	</MonsterSettings>
 </DoubleGoer>

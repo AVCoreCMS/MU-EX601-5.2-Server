@@ -981,3 +981,4 @@ end
 9123	  "You have too many Resets to use this shop"
 9124	  "You need more Master Resets to use this shop"
 9125	  "You have too many Master Resets to use this shop"
+9126	  "You must wait longer before delivering the weapon to the Archangel King"

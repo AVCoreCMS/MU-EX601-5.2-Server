@@ -982,3 +982,4 @@ end
 9123	  "Ban co qua nhieu Reset de su dung cua hang nay"
 9124	  "Ban can them Master Reset de su dung cua hang nay"
 9125	  "Ban co qua nhieu Master Reset de su dung cua hang nay"
+9126	  "Ban can cho lau hon truoc khi giao vu khi cho Vua Thien Than"

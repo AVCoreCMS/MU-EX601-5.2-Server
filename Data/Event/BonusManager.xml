@@ -14,7 +14,7 @@
 == Modify only if you know what you're doing!
 ============================================================
 
-### BonusManager::Config::Bonus ###
+### BonusManager::Bonus ###
 	Index          0-29, fixed (MAX_BONUS).
 	StartMessage   Message index (see Message_<LANG>.txt) broadcast when
 	               this bonus starts. -1 = none.
@@ -44,19 +44,17 @@ STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
 <BonusManager>
-	<Config>
-		<Bonus Index="0" StartMessage="-1" FinalMessage="-1" BonusTime="86400">
-			<StartTime Year="-1" Month="1" Day="-1" DayOfWeek="-1" Hour="0" Minute="0" Second="0" />
-			<Value BonusIndex="3" Value0="1000" Value1="1000" Value2="1000" Value3="1000" ItemIndex="7179" ItemLevel="3" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="69" />
-		</Bonus>
-		<Bonus Index="1" StartMessage="-1" FinalMessage="-1" BonusTime="86400">
-			<StartTime Year="-1" Month="4" Day="-1" DayOfWeek="-1" Hour="0" Minute="0" Second="0" />
-			<Value BonusIndex="3" Value0="5000" Value1="5000" Value2="5000" Value3="5000" ItemIndex="7213" ItemLevel="-1" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" />
-		</Bonus>
-		<Bonus Index="2" StartMessage="-1" FinalMessage="-1" BonusTime="86400">
-			<StartTime Year="-1" Month="5" Day="-1" DayOfWeek="-1" Hour="0" Minute="0" Second="0" />
-			<Value BonusIndex="3" Value0="3000" Value1="3000" Value2="3000" Value3="3000" ItemIndex="6722" ItemLevel="-1" MapNumber="-1" MonsterClass="466" MonsterLevelMin="-1" MonsterLevelMax="-1" />
-			<Value BonusIndex="3" Value0="3000" Value1="3000" Value2="3000" Value3="3000" ItemIndex="7179" ItemLevel="1" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="69" />
-		</Bonus>
-	</Config>
+	<Bonus Index="0" StartMessage="-1" FinalMessage="-1" BonusTime="86400">
+		<StartTime Year="-1" Month="1" Day="-1" DayOfWeek="-1" Hour="0" Minute="0" Second="0" />
+		<Value BonusIndex="3" Value0="1000" Value1="1000" Value2="1000" Value3="1000" ItemIndex="7179" ItemLevel="3" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="69" />
+	</Bonus>
+	<Bonus Index="1" StartMessage="-1" FinalMessage="-1" BonusTime="86400">
+		<StartTime Year="-1" Month="4" Day="-1" DayOfWeek="-1" Hour="0" Minute="0" Second="0" />
+		<Value BonusIndex="3" Value0="5000" Value1="5000" Value2="5000" Value3="5000" ItemIndex="7213" ItemLevel="-1" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="25" MonsterLevelMax="150" />
+	</Bonus>
+	<Bonus Index="2" StartMessage="-1" FinalMessage="-1" BonusTime="86400">
+		<StartTime Year="-1" Month="5" Day="-1" DayOfWeek="-1" Hour="0" Minute="0" Second="0" />
+		<Value BonusIndex="3" Value0="3000" Value1="3000" Value2="3000" Value3="3000" ItemIndex="6722" ItemLevel="-1" MapNumber="-1" MonsterClass="466" MonsterLevelMin="-1" MonsterLevelMax="-1" />
+		<Value BonusIndex="3" Value0="3000" Value1="3000" Value2="3000" Value3="3000" ItemIndex="7179" ItemLevel="1" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="69" />
+	</Bonus>
 </BonusManager>

@@ -22,35 +22,40 @@
 == Modify only if you know what you're doing!
 ============================================================
 
-### MuCastleData::Config ###
-	<Cycle>     Value - Castle Siege cycle length, in weeks.
-	<Schedule>  One row per siege state transition:
-	              State           Sequential state id (see
-	                              CASTLESIEGE_STATE_* in CastleSiege.h).
-	              Day/Hour/Minute Offset from the start of the cycle
-	                              at which this state begins.
-	<Npc>       One row per guardian/gate NPC placed for the siege:
-	              Monster  Monster class.
-	              Index    NPC slot index for this Monster class (must
-	                       be unique per Monster).
-	              DBSave   1 = this NPC's state is persisted to the DB.
-	              Side     0 = Defender (Guardian), 1 = Attacker/neutral
-	                       (see actual in-game role - the raw value is
-	                       passed straight to CCastleSiege's side logic).
-	              DFLevel  Base defense level.
-	              RGLevel  Base attack/rage level.
-	              MaxHP    Maximum HP.
-	              SX/SY    Spawn (source) position.
-	              DX/DY    Destination position, or -1/-1 if the NPC
-	                       doesn't move.
-	              Dir      Spawn direction.
+### MuCastleData::Cycle ###
+	Value - Castle Siege cycle length, in weeks.
+
+### MuCastleData::ScheduleSettings::Schedule ###
+	One row per siege state transition:
+	State           Sequential state id (see CASTLESIEGE_STATE_*
+	                in CastleSiege.h).
+	Day/Hour/Minute Offset from the start of the cycle at which
+	                this state begins.
+
+### MuCastleData::NPCSettings::Npc ###
+	One row per guardian/gate NPC placed for the siege:
+	Monster  Monster class.
+	Index    NPC slot index for this Monster class (must be
+	         unique per Monster).
+	DBSave   1 = this NPC's state is persisted to the DB.
+	Side     0 = Defender (Guardian), 1 = Attacker/neutral (see
+	         actual in-game role - the raw value is passed
+	         straight to CCastleSiege's side logic).
+	DFLevel  Base defense level.
+	RGLevel  Base attack/rage level.
+	MaxHP    Maximum HP.
+	SX/SY    Spawn (source) position.
+	DX/DY    Destination position, or -1/-1 if the NPC doesn't
+	         move.
+	Dir      Spawn direction.
 
 STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
 <MuCastleData>
-	<Config>
-		<Cycle Value="7" />
+	<Cycle Value="7" />
+
+	<ScheduleSettings>
 		<Schedule State="1" Day="0" Hour="0" Minute="0" />
 		<Schedule State="2" Day="1" Hour="23" Minute="59" />
 		<Schedule State="3" Day="2" Hour="0" Minute="0" />
@@ -60,6 +65,9 @@ STRICTLY NO COMMENTS INSIDE TAGS
 		<Schedule State="7" Day="6" Hour="20" Minute="2" />
 		<Schedule State="8" Day="6" Hour="20" Minute="5" />
 		<Schedule State="9" Day="7" Hour="0" Minute="0" />
+	</ScheduleSettings>
+
+	<NPCSettings>
 		<Npc Monster="283" Index="1" DBSave="1" Side="1" DFLevel="0" RGLevel="0" MaxHP="400000" SX="94" SY="227" DX="-1" DY="-1" Dir="1" />
 		<Npc Monster="283" Index="2" DBSave="1" Side="1" DFLevel="0" RGLevel="0" MaxHP="400000" SX="94" SY="182" DX="-1" DY="-1" Dir="1" />
 		<Npc Monster="283" Index="3" DBSave="1" Side="1" DFLevel="0" RGLevel="0" MaxHP="400000" SX="82" SY="130" DX="-1" DY="-1" Dir="1" />
@@ -84,5 +92,5 @@ STRICTLY NO COMMENTS INSIDE TAGS
 		<Npc Monster="222" Index="2" DBSave="1" Side="0" DFLevel="0" RGLevel="0" MaxHP="10000" SX="105" SY="188" DX="-1" DY="-1" Dir="1" />
 		<Npc Monster="221" Index="1" DBSave="2" Side="0" DFLevel="0" RGLevel="0" MaxHP="10000" SX="63" SY="19" DX="-1" DY="-1" Dir="5" />
 		<Npc Monster="221" Index="2" DBSave="2" Side="0" DFLevel="0" RGLevel="0" MaxHP="10000" SX="119" SY="19" DX="-1" DY="-1" Dir="5" />
-	</Config>
+	</NPCSettings>
 </MuCastleData>

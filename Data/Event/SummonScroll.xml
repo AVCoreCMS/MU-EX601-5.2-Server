@@ -11,32 +11,32 @@
 == Modify only if you know what you're doing!
 ============================================================
 
-### SummonScroll::Config ###
-	<Scroll>   One row per summon-scroll item:
-	             Index      Scroll id - matched by <Monster> entries
-	                        below to know which monsters that scroll
-	                        can summon.
-	             ItemIndex  Raw item index (matches Item.xml) of the
-	                        scroll item.
-	             Comment    Free-text label, for readability only.
+### SummonScroll::ScrollSettings::Scroll ###
+	One row per summon-scroll item:
+	  Index      Scroll id - matched by <Monster> entries below to
+	             know which monsters that scroll can summon.
+	  ItemIndex  Raw item index (matches Item.xml) of the scroll
+	             item.
+	  Comment    Free-text label, for readability only.
 
-	<Monster>  One or more monsters a scroll can summon (several rows
-	           sharing the same Index = multiple possible monsters for
-	           that scroll, picked via Group):
-	             Index         Which <Scroll> this belongs to.
-	             Group         Sub-group within the scroll (0-19,
-	                           MAX_SUMMON_SCROLL_MONSTER_GROUP) - rows
-	                           sharing an Index but different Group are
-	                           all summoned together as one encounter.
-	             MonsterClass  Monster class to summon.
-	             CreateRate    Spawn weight (out of 10000).
-	             Comment       Free-text label, for readability only.
+### SummonScroll::MonsterSettings::Monster ###
+	One or more monsters a scroll can summon (several rows sharing
+	the same Index = multiple possible monsters for that scroll,
+	picked via Group):
+	  Index         Which <Scroll> this belongs to.
+	  Group         Sub-group within the scroll (0-19,
+	                MAX_SUMMON_SCROLL_MONSTER_GROUP) - rows sharing
+	                an Index but different Group are all summoned
+	                together as one encounter.
+	  MonsterClass  Monster class to summon.
+	  CreateRate    Spawn weight (out of 10000).
+	  Comment       Free-text label, for readability only.
 
 STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
 <SummonScroll>
-	<Config>
+	<ScrollSettings>
 		<Scroll Index="0" ItemIndex="7730" Comment="Summon Scroll Lv1" />
 		<Scroll Index="1" ItemIndex="7379" Comment="Summon Scroll Lv2" />
 		<Scroll Index="2" ItemIndex="7380" Comment="Summon Scroll Lv3" />
@@ -48,6 +48,9 @@ STRICTLY NO COMMENTS INSIDE TAGS
 		<Scroll Index="8" ItemIndex="7386" Comment="Kundun's Greed" />
 		<Scroll Index="9" ItemIndex="7387" Comment="Book of Monster Invocation" />
 		<Scroll Index="10" ItemIndex="7393" Comment="The Lizard's King Anger" />
+	</ScrollSettings>
+
+	<MonsterSettings>
 		<Monster Index="0" Group="0" MonsterClass="904" CreateRate="10000" Comment="Golden Derkon" />
 		<Monster Index="1" Group="0" MonsterClass="497" CreateRate="10000" Comment="Satyros" />
 		<Monster Index="2" Group="0" MonsterClass="499" CreateRate="10000" Comment="Golden Iron Knight" />
@@ -71,5 +74,5 @@ STRICTLY NO COMMENTS INSIDE TAGS
 		<Monster Index="9" Group="5" MonsterClass="496" CreateRate="10000" Comment="Golden Crust" />
 		<Monster Index="10" Group="0" MonsterClass="80" CreateRate="10000" Comment="Golden Lizard King" />
 		<Monster Index="10" Group="1" MonsterClass="81" CreateRate="1000000" Comment="Golden Vepar" />
-	</Config>
+	</MonsterSettings>
 </SummonScroll>

@@ -13,7 +13,7 @@
 == Modify only if you know what you're doing!
 ============================================================
 
-### InvasionManager::Config::Invasion ###
+### InvasionManager::Invasion ###
 	Index           0-29, fixed (MAX_INVASION).
 	RespawnMessage  Message index (Message_<LANG>.txt) broadcast when
 	                the invasion starts. -1 = none.
@@ -44,21 +44,19 @@ STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
 <InvasionManager>
-	<Config>
-		<Invasion Index="0" RespawnMessage="191" DespawnMessage="192" BossIndex="42" BossMessage="193" InvasionTime="1800">
-			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="2" Minute="-1" Second="0" />
-			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="4" Minute="-1" Second="0" />
-			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="6" Minute="-1" Second="0" />
-			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="8" Minute="-1" Second="0" />
-			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="10" Minute="-1" Second="0" />
-			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="12" Minute="-1" Second="0" />
-			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="-1" Second="0" />
-			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="16" Minute="-1" Second="0" />
-			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="18" Minute="-1" Second="0" />
-			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="-1" Second="0" />
-			<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="-1" Second="0" />
-			<Respawn Group="0" Map="0" Value="0" />
-			<Monster Group="0" MonsterClass="42" RegenType="0" RegenTime="0" />
-		</Invasion>
-	</Config>
+	<Invasion Index="0" RespawnMessage="191" DespawnMessage="192" BossIndex="42" BossMessage="193" InvasionTime="1800">
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="2" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="4" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="6" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="8" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="10" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="12" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="16" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="18" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="-1" Second="0" />
+		<Respawn Group="0" Map="0" Value="0" />
+		<Monster Group="0" MonsterClass="42" RegenType="0" RegenTime="0" />
+	</Invasion>
 </InvasionManager>

@@ -12,27 +12,31 @@
 == Modify only if you know what you're doing!
 ============================================================
 
-### ImperialGuardian::Config ###
-	<Timing>       NotifyTime/EventTime/CloseTime in minutes.
-	<MonsterAI>    Default/Support - AI unit numbers used for the
-	               event's regular and support monsters.
-	<Monster>      One row per difficulty step (0-59,
-	               MAX_IG_MONSTER_DIFFICULT):
-	                 Index                Difficulty step.
-	                 Level                Monster level.
-	                 Life                 Max life.
-	                 DamageMin/DamageMax  Damage range.
-	                 Defense              Defense.
-	                 AttackSuccessRate/
-	                 DefenseSuccessRate   Attack/defense success rate.
+### ImperialGuardian::Timing ###
+	NotifyTime/EventTime/CloseTime in minutes.
+
+### ImperialGuardian::MonsterAI ###
+	Default/Support - AI unit numbers used for the event's
+	regular and support monsters.
+
+### ImperialGuardian::MonsterSettings::Monster ###
+	One row per difficulty step (0-59, MAX_IG_MONSTER_DIFFICULT):
+	  Index                Difficulty step.
+	  Level                Monster level.
+	  Life                 Max life.
+	  DamageMin/DamageMax  Damage range.
+	  Defense              Defense.
+	  AttackSuccessRate/
+	  DefenseSuccessRate   Attack/defense success rate.
 
 STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
 <ImperialGuardian>
-	<Config>
-		<Timing NotifyTime="1" EventTime="10" CloseTime="1" />
-		<MonsterAI Default="72" Support="73" />
+	<Timing NotifyTime="1" EventTime="10" CloseTime="1" />
+	<MonsterAI Default="72" Support="73" />
+
+	<MonsterSettings>
 		<Monster Index="0" Level="45" Life="10.00" DamageMin="3.00" DamageMax="3.00" Defense="3.00" AttackSuccessRate="5.00" DefenseSuccessRate="5.00" />
 		<Monster Index="1" Level="46" Life="10.00" DamageMin="4.00" DamageMax="4.00" Defense="4.00" AttackSuccessRate="6.00" DefenseSuccessRate="6.00" />
 		<Monster Index="2" Level="47" Life="20.00" DamageMin="5.00" DamageMax="5.00" Defense="4.00" AttackSuccessRate="6.00" DefenseSuccessRate="6.00" />
@@ -93,5 +97,5 @@ STRICTLY NO COMMENTS INSIDE TAGS
 		<Monster Index="57" Level="141" Life="1980.00" DamageMin="51.00" DamageMax="51.00" Defense="43.00" AttackSuccessRate="29.00" DefenseSuccessRate="29.00" />
 		<Monster Index="58" Level="143" Life="1990.00" DamageMin="52.00" DamageMax="52.00" Defense="44.00" AttackSuccessRate="29.00" DefenseSuccessRate="29.00" />
 		<Monster Index="59" Level="145" Life="2000.00" DamageMin="53.00" DamageMax="53.00" Defense="45.00" AttackSuccessRate="30.00" DefenseSuccessRate="30.00" />
-	</Config>
+	</MonsterSettings>
 </ImperialGuardian>

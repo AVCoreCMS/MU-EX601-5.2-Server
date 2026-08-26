@@ -12,25 +12,32 @@
 == Modify only if you know what you're doing!
 ============================================================
 
-### ReiDoMU::Config ###
-	<Timing>       WarningTime/EventTime in minutes - how long before
-	               start the warning fires, and how long the event runs.
-	<StartTime>    Scheduled trigger, matched against the real-world
-	               clock (-1 = any/wildcard for that field):
-	               Year/Month/Day/DayOfWeek/Hour/Minute/Second.
-	<GuildReward>  WC/WP/GP - WCoinC/WCoinP/GoblinPoint paid to the
-	               winning guild.
-	<CharReward>   WC/WP/GP - WCoinC/WCoinP/GoblinPoint paid to the
-	               winning character.
+### ReiDoMU::Timing ###
+	WarningTime/EventTime in minutes - how long before start the
+	warning fires, and how long the event runs.
+
+### ReiDoMU::Schedule::StartTime ###
+	One or more scheduled triggers, matched against the real-world
+	clock (-1 = any/wildcard for that field):
+	Year/Month/Day/DayOfWeek/Hour/Minute/Second.
+
+### ReiDoMU::GuildReward ###
+	WC/WP/GP - WCoinC/WCoinP/GoblinPoint paid to the winning guild.
+
+### ReiDoMU::CharReward ###
+	WC/WP/GP - WCoinC/WCoinP/GoblinPoint paid to the winning
+	character.
 
 STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
 <ReiDoMU>
-	<Config>
-		<Timing WarningTime="5" EventTime="30" />
+	<Timing WarningTime="5" EventTime="30" />
+
+	<Schedule>
 		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="5" Second="0" />
-		<GuildReward WC="10" WP="0" GP="0" />
-		<CharReward WC="8" WP="0" GP="0" />
-	</Config>
+	</Schedule>
+
+	<GuildReward WC="10" WP="0" GP="0" />
+	<CharReward WC="8" WP="0" GP="0" />
 </ReiDoMU>

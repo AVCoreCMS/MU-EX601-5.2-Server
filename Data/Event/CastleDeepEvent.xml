@@ -13,40 +13,54 @@
 == Modify only if you know what you're doing!
 ============================================================
 
-### CastleDeepEvent::Config ###
-	<StartTime>  One or more scheduled triggers, matched against the
-	             real-world clock (-1 = any/wildcard for that field):
-	             Year/Month/Day/DayOfWeek/Hour/Minute/Second.
-	<Group>      Index/Rate - which of the (usually 2) monster-set
-	             groups gets picked for the run, and its roll weight.
-	<Spawn>      Index/Group/Minute - within group Index, the wave
-	             numbered Group spawns Minute minutes after the event
-	             starts.
-	<Monster>    One row per monster entry in a wave:
-	               Index    Which <Group> this belongs to.
-	               Group    Which <Spawn> wave (within that group) this
-	                        monster is part of.
-	               Class    Monster class to spawn.
-	               Count    How many of this monster spawn.
-	               X/Y      Spawn area top-left corner.
-	               TX/TY    Spawn area bottom-right corner.
+### CastleDeepEvent::Schedule::StartTime ###
+	One or more scheduled triggers, matched against the real-world
+	clock (-1 = any/wildcard for that field):
+	Year/Month/Day/DayOfWeek/Hour/Minute/Second.
+
+### CastleDeepEvent::GroupSettings::Group ###
+	Index/Rate - which of the (usually 2) monster-set groups gets
+	picked for the run, and its roll weight.
+
+### CastleDeepEvent::SpawnSettings::Spawn ###
+	Index/Group/Minute - within group Index, the wave numbered
+	Group spawns Minute minutes after the event starts.
+
+### CastleDeepEvent::MonsterSettings::Monster ###
+	One row per monster entry in a wave:
+	  Index    Which <Group> this belongs to.
+	  Group    Which <Spawn> wave (within that group) this monster
+	           is part of.
+	  Class    Monster class to spawn.
+	  Count    How many of this monster spawn.
+	  X/Y      Spawn area top-left corner.
+	  TX/TY    Spawn area bottom-right corner.
 
 STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
 <CastleDeepEvent>
-	<Config>
+	<Schedule>
 		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="4" Minute="0" Second="0" />
 		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="12" Minute="0" Second="0" />
 		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="0" Second="0" />
+	</Schedule>
+
+	<GroupSettings>
 		<Group Index="1" Rate="50" />
 		<Group Index="2" Rate="50" />
+	</GroupSettings>
+
+	<SpawnSettings>
 		<Spawn Index="1" Group="1" Minute="0" />
 		<Spawn Index="1" Group="2" Minute="10" />
 		<Spawn Index="1" Group="3" Minute="20" />
 		<Spawn Index="2" Group="1" Minute="0" />
 		<Spawn Index="2" Group="2" Minute="10" />
 		<Spawn Index="2" Group="3" Minute="20" />
+	</SpawnSettings>
+
+	<MonsterSettings>
 		<Monster Index="1" Group="1" Class="39" Count="15" X="60" Y="28" TX="132" TY="73" />
 		<Monster Index="1" Group="1" Class="34" Count="15" X="60" Y="28" TX="132" TY="73" />
 		<Monster Index="1" Group="1" Class="41" Count="15" X="60" Y="28" TX="132" TY="73" />
@@ -107,5 +121,5 @@ STRICTLY NO COMMENTS INSIDE TAGS
 		<Monster Index="2" Group="3" Class="292" Count="10" X="60" Y="58" TX="132" TY="101" />
 		<Monster Index="2" Group="3" Class="291" Count="10" X="60" Y="58" TX="132" TY="101" />
 		<Monster Index="2" Group="3" Class="295" Count="1" X="60" Y="58" TX="132" TY="101" />
-	</Config>
+	</MonsterSettings>
 </CastleDeepEvent>

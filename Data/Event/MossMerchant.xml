@@ -13,34 +13,37 @@
 == Modify only if you know what you're doing!
 ============================================================
 
-### MossMerchant::Config ###
-	<StartTime>  One or more scheduled triggers, matched against the
-	             real-world clock (-1 = any/wildcard for that field):
-	             Year/Month/Day/DayOfWeek/Hour/Minute/Second.
-	<Item>       One row per item the merchant can offer:
-	               Index        Raw item index (matches Item.xml).
-	               Group        Item category (0=Sword 1=Staff 2=Bow
-	                            3=Scepter 4=Stick - matches
-	                            ItemOptionRate.xml-style groupings used
-	                            elsewhere for weapon families).
-	               Option0-6    Fixed roll passed into
-	                            ItemOptionRate.xml's per-category
-	                            tables (see that file's Index column) -
-	                            not raw stat values.
-	               GambleRate   Weight (out of the group's total) for
-	                            this item being the one offered.
-	               Comment      Free-text label (the item's name), for
-	                            readability only.
+### MossMerchant::Schedule::StartTime ###
+	One or more scheduled triggers, matched against the real-world
+	clock (-1 = any/wildcard for that field):
+	Year/Month/Day/DayOfWeek/Hour/Minute/Second.
+
+### MossMerchant::ItemSettings::Item ###
+	One row per item the merchant can offer:
+	  Index        Raw item index (matches Item.xml).
+	  Group        Item category (0=Sword 1=Staff 2=Bow 3=Scepter
+	               4=Stick - matches ItemOptionRate.xml-style
+	               groupings used elsewhere for weapon families).
+	  Option0-6    Fixed roll passed into ItemOptionRate.xml's
+	               per-category tables (see that file's Index
+	               column) - not raw stat values.
+	  GambleRate   Weight (out of the group's total) for this item
+	               being the one offered.
+	  Comment      Free-text label (the item's name), for
+	               readability only.
 
 STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
 <MossMerchant>
-	<Config>
+	<Schedule>
 		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="2" Minute="0" Second="0" />
 		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="8" Minute="0" Second="0" />
 		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="0" Second="0" />
 		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="0" Second="0" />
+	</Schedule>
+
+	<ItemSettings>
 		<Item Index="5" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Blade" />
 		<Item Index="6" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Gladius" />
 		<Item Index="7" Group="0" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1633" Comment="Falchion" />
@@ -106,5 +109,5 @@ STRICTLY NO COMMENTS INSIDE TAGS
 		<Item Index="2577" Group="4" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="9800" Comment="Ancient Stick" />
 		<Item Index="2578" Group="4" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="9800" Comment="Demonic Stick" />
 		<Item Index="2594" Group="4" Option0="9" Option1="9" Option2="9" Option3="9" Option4="9" Option5="9" Option6="9" GambleRate="1000" Comment="Raven Stick" />
-	</Config>
+	</ItemSettings>
 </MossMerchant>
