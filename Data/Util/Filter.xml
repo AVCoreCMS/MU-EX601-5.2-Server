@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== Filter.xml
+== Words censored (replaced with *) anywhere they appear in
+== chat. Empty by default - nothing is censored.
+== Loaded by GameServer via CFilter::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### Word ###
+	Label   Blocked word/phrase (case-sensitive, max 15 characters).
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<Filter>
+</Filter>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== CustomStartItem.xml
+== Welcome package: items and buffs given once to a new character
+== per class (ItemStart counter on the character prevents repeats).
+== Loaded by GameServer via CCustomStartItem::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### Class ###
+	Index   0=DW 1=DK 2=FE 3=MG 4=DL 5=SU 6=RF.
+
+### Class::Item ###
+	Type/Index   Item code (GET_ITEM(Type,Index) - matches Item.xml).
+	Level        Item level.
+	Time         Hours until the item expires, 0 = permanent.
+	Luck/Durability/Skill   NOTE: named to match the C++ struct
+	             fields they feed (CUSTOM_START_ITEM_INFO), not
+	             literal luck/durability/skill - the original
+	             file's own column header used different labels
+	             (Dur/Skill/Luck) than what the loader actually
+	             reads into. Kept as-is to not change gameplay.
+	Option/Excellent/Ancient/JOH/OpEx   Item option rolls.
+	Socket1-5    Socket seed per slot, 255 = none.
+
+### Buffs::Class::Buff ###
+	Type         0 = buff ticket, 1 = skill buff.
+	Effect       Effect id (see EffectManager.h eEffectNumber).
+	Power1/Power2   Effect magnitude.
+	Time         Duration in seconds.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<CustomStartItem>
+	<Class Index="0" Name="Dark Wizard">
+		<Item Type="7" Index="52" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Hades Helm" />
+		<Item Type="8" Index="52" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Hades Armor" />
+		<Item Type="9" Index="52" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Hades Pants" />
+		<Item Type="10" Index="52" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="236" Time="365" Comment="Hades Gloves" />
+		<Item Type="11" Index="52" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="236" Time="365" Comment="Hades Boots" />
+		<Item Type="5" Index="31" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="200" Socket2="204" Socket3="218" Socket4="230" Socket5="232" Time="365" Comment="Inberial Staff" />
+		<Item Type="6" Index="20" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="200" Socket2="204" Socket3="218" Socket4="230" Socket5="232" Time="365" Comment="Guardian Shield" />
+		<Item Type="12" Index="37" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Time="365" Comment="Wings of Eternal" />
+	</Class>
+	<Class Index="1" Name="Dark Knight">
+		<Item Type="7" Index="7" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Sphinx Mask" />
+		<Item Type="8" Index="7" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Sphinx Armor" />
+		<Item Type="9" Index="7" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Sphinx Pants" />
+		<Item Type="10" Index="7" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="236" Time="365" Comment="Sphinx Gloves" />
+		<Item Type="11" Index="7" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="236" Time="365" Comment="Sphinx Boots" />
+		<Item Type="0" Index="7" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="200" Socket2="204" Socket3="218" Socket4="230" Socket5="232" Time="365" Comment="Falchion" />
+		<Item Type="6" Index="7" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="200" Socket2="204" Socket3="218" Socket4="230" Socket5="232" Time="365" Comment="Spiked Shield" />
+		<Item Type="12" Index="7" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Time="365" Comment="Orb of Twisting Slash" />
+	</Class>
+	<Class Index="2" Name="Fairy Elf">
+		<Item Type="7" Index="49" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Seraphim Helm" />
+		<Item Type="8" Index="49" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Seraphim Armor" />
+		<Item Type="9" Index="49" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Seraphim Pants" />
+		<Item Type="10" Index="49" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="236" Time="365" Comment="Seraphim Gloves" />
+		<Item Type="11" Index="49" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="236" Time="365" Comment="Seraphim Boots" />
+		<Item Type="4" Index="24" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="200" Socket2="204" Socket3="218" Socket4="230" Socket5="232" Time="365" Comment="Aileen Bow" />
+		<Item Type="12" Index="38" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Time="365" Comment="Wings of Illusion" />
+	</Class>
+	<Class Index="3" Name="Magic Gladiator">
+		<Item Type="8" Index="48" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Destroy Armor" />
+		<Item Type="9" Index="48" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Destroy Pants" />
+		<Item Type="10" Index="48" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Destroy Gloves" />
+		<Item Type="11" Index="48" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="236" Time="365" Comment="Destroy Boots" />
+		<Item Type="0" Index="28" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="200" Socket2="204" Socket3="218" Socket4="230" Socket5="232" Time="365" Comment="Rune Bastard Sword" />
+		<Item Type="0" Index="28" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="200" Socket2="204" Socket3="218" Socket4="230" Socket5="232" Time="365" Comment="Rune Bastard Sword" />
+		<Item Type="12" Index="39" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Time="365" Comment="Wings of Ruin" />
+	</Class>
+	<Class Index="4" Name="Dark Lord">
+		<Item Type="7" Index="51" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Royal Mask" />
+		<Item Type="8" Index="51" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Royal Armor" />
+		<Item Type="9" Index="51" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Royal Pants" />
+		<Item Type="10" Index="51" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="236" Time="365" Comment="Royal Gloves" />
+		<Item Type="11" Index="51" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="236" Time="365" Comment="Royal Boots" />
+		<Item Type="2" Index="17" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="200" Socket2="204" Socket3="218" Socket4="230" Socket5="232" Time="365" Comment="Absolute Scepter" />
+		<Item Type="6" Index="18" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="200" Socket2="204" Socket3="218" Socket4="230" Socket5="232" Time="365" Comment="Salamander Shield" />
+		<Item Type="12" Index="40" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Time="365" Comment="Cape of Emperor" />
+	</Class>
+	<Class Index="5" Name="Summoner">
+		<Item Type="7" Index="53" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Succubus Helm" />
+		<Item Type="8" Index="53" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Succubus Armor" />
+		<Item Type="9" Index="53" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Succubus Pants" />
+		<Item Type="10" Index="53" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="236" Time="365" Comment="Succubus Gloves" />
+		<Item Type="11" Index="53" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="236" Time="365" Comment="Succubus Boots" />
+		<Item Type="5" Index="23" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="200" Socket2="204" Socket3="218" Socket4="230" Socket5="232" Time="365" Comment="Book of Lagle" />
+		<Item Type="5" Index="34" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="200" Socket2="204" Socket3="218" Socket4="230" Socket5="232" Time="365" Comment="Raven Stick" />
+		<Item Type="12" Index="43" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Time="365" Comment="Wings of Dimension" />
+	</Class>
+	<Class Index="6" Name="Rage Fighter">
+		<Item Type="7" Index="73" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Phoenix Soul Helmet" />
+		<Item Type="8" Index="73" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Phoenix Soul Armor" />
+		<Item Type="9" Index="73" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="214" Time="365" Comment="Phoenix Soul Pants" />
+		<Item Type="11" Index="73" Level="15" Luck="1" Durability="0" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="210" Socket2="222" Socket3="212" Socket4="213" Socket5="236" Time="365" Comment="Phoenix Soul Boots" />
+		<Item Type="0" Index="35" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="200" Socket2="204" Socket3="218" Socket4="230" Socket5="232" Time="365" Comment="Phoenix Soul Star" />
+		<Item Type="0" Index="35" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="200" Socket2="204" Socket3="218" Socket4="230" Socket5="232" Time="365" Comment="Phoenix Soul Star" />
+		<Item Type="12" Index="49" Level="15" Luck="1" Durability="1" Skill="1" Option="7" Excellent="63" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Time="365" Comment="Cape of Fighter" />
+	</Class>
+
+	<Buffs>
+		<Class Index="0" Name="Dark Wizard">
+			<Buff Type="0" Effect="46" Power1="30" Power2="0" Time="86400" />
+			<Buff Type="0" Effect="45" Power1="30" Power2="0" Time="86400" />
+			<Buff Type="1" Effect="3" Power1="30" Power2="0" Time="86400" />
+		</Class>
+		<Class Index="1" Name="Dark Knight">
+			<Buff Type="0" Effect="46" Power1="30" Power2="0" Time="86400" />
+			<Buff Type="0" Effect="45" Power1="30" Power2="0" Time="86400" />
+			<Buff Type="1" Effect="3" Power1="30" Power2="0" Time="1800" />
+		</Class>
+	</Buffs>
+</CustomStartItem>

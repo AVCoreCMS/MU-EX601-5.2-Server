@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== 073 - Chaos Card Mix 1.xml
+== Imported from a same-season-family reference server
+== (matching Bag Index and filename numbering already used by
+== this project). Source item rows had no Time/DropRate data;
+== Time defaults to 0 (permanent) and DropRate is uniform
+== across each bag's items (equal weight).
+== Item reward table for EventItemBagManager.xml's Bag Index="73" (Chaos Card Mix 1).
+== Loaded by GameServer via CItemBag::LoadXML(), matched to its Bag
+== by the leading number in this filename (same convention as
+== Data/MonsterSetBase/*.txt).
+== Modify only if you know what you're doing!
+============================================================
+
+### Config ###
+	EventName        Internal label (not shown to players).
+	DropZen          Zen amount dropped, 0 = none.
+	ItemDropRate     Percent chance an item drops at all, out of 100.
+	ItemDropCount    How many items to roll when it does drop.
+	SetItemDropRate  Percent chance the item is a random Set item variant.
+	ItemDropType     Drop behavior (ground drop vs direct-to-inventory).
+	SendFirework     1 = show fireworks effect on drop.
+
+### Item ###
+	Type/Index    Item code (GET_ITEM(Type,Index) - matches Item.xml).
+	MinLevel/MaxLevel   Random item level range.
+	Option1-3/NewOption Random option rolls.
+	Time          Duration in seconds for a rental/temporary item, 0 = permanent.
+	DropRate      Relative weight among this bag's <Item> rows.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+
+<ItemBag>
+	<Config EventName="Chaos Card Mix 1" DropZen="1000" ItemDropRate="100" ItemDropCount="1" SetItemDropRate="0" ItemDropType="0" SendFirework="0" />
+	<Item Type="5" Index="14" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Mystery Stick" />
+	<Item Type="5" Index="15" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Violent Wind Stick" />
+	<Item Type="0" Index="5" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Blade" />
+	<Item Type="0" Index="13" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Double Blade" />
+	<Item Type="0" Index="14" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Lighting Sword" />
+	<Item Type="0" Index="10" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Light Saber" />
+	<Item Type="0" Index="11" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Legendary Sword" />
+	<Item Type="0" Index="15" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Giant Sword" />
+	<Item Type="0" Index="12" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Heliacal Sword" />
+	<Item Type="1" Index="3" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Tomahawk" />
+	<Item Type="1" Index="6" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Nikea Axe" />
+	<Item Type="1" Index="7" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Larkan Axe" />
+	<Item Type="1" Index="8" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Crescent Axe" />
+	<Item Type="2" Index="1" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Morning Star" />
+	<Item Type="2" Index="2" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Flail" />
+	<Item Type="2" Index="3" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Great Hammer" />
+	<Item Type="2" Index="4" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Crystal Morning Star" />
+	<Item Type="3" Index="1" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Spear" />
+	<Item Type="3" Index="3" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Giant Trident" />
+	<Item Type="3" Index="7" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Berdysh" />
+	<Item Type="3" Index="0" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Light Spear" />
+	<Item Type="3" Index="4" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Serpent Spear" />
+	<Item Type="3" Index="8" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Great Scythe" />
+	<Item Type="4" Index="0" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Short Bow" />
+	<Item Type="4" Index="3" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Battle Bow" />
+	<Item Type="4" Index="4" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Tiger Bow" />
+	<Item Type="4" Index="5" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Silver Bow" />
+	<Item Type="4" Index="9" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Golden Crossbow" />
+	<Item Type="4" Index="11" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Light Crossbow" />
+	<Item Type="4" Index="12" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Serpent Crossbow" />
+	<Item Type="5" Index="3" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Thunder Staff" />
+	<Item Type="5" Index="4" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Gorgon Staff" />
+	<Item Type="5" Index="5" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Legendary Staff" />
+	<Item Type="2" Index="8" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Battle Scepter" />
+	<Item Type="2" Index="9" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Master Scepter" />
+	<Item Type="2" Index="10" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Great Scepter" />
+	<Item Type="2" Index="11" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Lord Scepter" />
+	<Item Type="6" Index="0" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Small Shield" />
+	<Item Type="6" Index="1" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Horn Shield" />
+	<Item Type="6" Index="2" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Kite Shield" />
+	<Item Type="6" Index="3" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Elven Shield" />
+	<Item Type="6" Index="4" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Buckler" />
+	<Item Type="6" Index="5" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Dragon Slayer Shield" />
+	<Item Type="6" Index="6" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Skull Shield" />
+	<Item Type="6" Index="7" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Spiked Shield" />
+	<Item Type="6" Index="8" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Tower Shield" />
+	<Item Type="6" Index="9" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Plate Shield" />
+	<Item Type="6" Index="10" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Large Round Shield" />
+	<Item Type="6" Index="11" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Serpent Shield" />
+	<Item Type="7" Index="5" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Leather Helm" />
+	<Item Type="8" Index="5" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Leather Armor" />
+	<Item Type="9" Index="5" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Leather Pants" />
+	<Item Type="10" Index="5" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Leather Gloves" />
+	<Item Type="11" Index="5" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Leather Boots" />
+	<Item Type="7" Index="0" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Bronze Helm" />
+	<Item Type="8" Index="0" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Bronze Armor" />
+	<Item Type="9" Index="0" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Bronze Pants" />
+	<Item Type="10" Index="0" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Bronze Gloves" />
+	<Item Type="11" Index="0" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Bronze Boots" />
+	<Item Type="7" Index="8" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Brass Helm" />
+	<Item Type="8" Index="8" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Brass Armor" />
+	<Item Type="9" Index="8" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Brass Pants" />
+	<Item Type="10" Index="8" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Brass Gloves" />
+	<Item Type="11" Index="8" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Brass Boots" />
+	<Item Type="7" Index="9" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Plate Helm" />
+	<Item Type="8" Index="9" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Plate Armor" />
+	<Item Type="9" Index="9" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Plate Pants" />
+	<Item Type="10" Index="9" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Plate Gloves" />
+	<Item Type="11" Index="9" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Plate Boots" />
+	<Item Type="7" Index="1" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Dragon Helm" />
+	<Item Type="8" Index="1" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Dragon Armor" />
+	<Item Type="9" Index="1" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Dragon Pants" />
+	<Item Type="10" Index="1" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Dragon Gloves" />
+	<Item Type="11" Index="1" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Dragon Boots" />
+	<Item Type="7" Index="2" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Pad Helm" />
+	<Item Type="8" Index="2" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Pad Armor" />
+	<Item Type="9" Index="2" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Pad Pants" />
+	<Item Type="10" Index="2" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Pad Gloves" />
+	<Item Type="11" Index="2" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Pad Boots" />
+	<Item Type="7" Index="4" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Bone Helm" />
+	<Item Type="8" Index="4" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Bone Armor" />
+	<Item Type="9" Index="4" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Bone Pants" />
+	<Item Type="10" Index="4" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Bone Gloves" />
+	<Item Type="11" Index="4" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Bone Boots" />
+	<Item Type="7" Index="7" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Sphinx Mask" />
+	<Item Type="8" Index="7" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Sphinx Armor" />
+	<Item Type="9" Index="7" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Sphinx Pants" />
+	<Item Type="10" Index="7" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Sphinx Gloves" />
+	<Item Type="11" Index="7" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Sphinx Boots" />
+	<Item Type="7" Index="3" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Legendary Helm" />
+	<Item Type="8" Index="3" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Legendary Armor" />
+	<Item Type="9" Index="3" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Legendary Pants" />
+	<Item Type="10" Index="3" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Legendary Gloves" />
+	<Item Type="11" Index="3" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Legendary Boots" />
+	<Item Type="7" Index="10" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Vine Helm" />
+	<Item Type="8" Index="10" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Vine Armor" />
+	<Item Type="9" Index="10" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Vine Pants" />
+	<Item Type="10" Index="10" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Vine Gloves" />
+	<Item Type="11" Index="10" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Vine Boots" />
+	<Item Type="7" Index="11" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Silk Helm" />
+	<Item Type="8" Index="11" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Silk Armor" />
+	<Item Type="9" Index="11" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Silk Pants" />
+	<Item Type="10" Index="11" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Silk Gloves" />
+	<Item Type="11" Index="11" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Silk Boots" />
+	<Item Type="7" Index="12" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Wind Helm" />
+	<Item Type="8" Index="12" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Wind Armor" />
+	<Item Type="9" Index="12" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Wind Pants" />
+	<Item Type="10" Index="12" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Wind Gloves" />
+	<Item Type="11" Index="12" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Wind Boots" />
+	<Item Type="7" Index="13" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Spirit Helm" />
+	<Item Type="8" Index="13" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Spirit Armor" />
+	<Item Type="9" Index="13" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Spirit Pants" />
+	<Item Type="10" Index="13" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Spirit Gloves" />
+	<Item Type="11" Index="13" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Spirit Boots" />
+	<Item Type="7" Index="14" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Guardian Helm" />
+	<Item Type="8" Index="14" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Guardian Armor" />
+	<Item Type="9" Index="14" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Guardian Pants" />
+	<Item Type="10" Index="14" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Guardian Gloves" />
+	<Item Type="11" Index="14" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Guardian Boots" />
+	<Item Type="7" Index="25" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Light Plate Mask" />
+	<Item Type="8" Index="25" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Light Plate Armor" />
+	<Item Type="9" Index="25" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Light Plate Pants" />
+	<Item Type="10" Index="25" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Light Plate Gloves" />
+	<Item Type="11" Index="25" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Light Plate Boots" />
+	<Item Type="7" Index="26" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Adamantine Mask" />
+	<Item Type="8" Index="26" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Adamantine Armor" />
+	<Item Type="9" Index="26" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Adamantine Pants" />
+	<Item Type="10" Index="26" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Adamantine Gloves" />
+	<Item Type="11" Index="26" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Adamantine Boots" />
+	<Item Type="7" Index="39" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Violent Wind Helm" />
+	<Item Type="8" Index="39" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Violent Wind Armor" />
+	<Item Type="9" Index="39" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Violent Wind Pants" />
+	<Item Type="10" Index="39" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Violent Wind Gloves" />
+	<Item Type="11" Index="39" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Violent Wind Boots" />
+	<Item Type="13" Index="8" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Ring of Ice" />
+	<Item Type="13" Index="9" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Ring of Poison" />
+	<Item Type="13" Index="12" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Pendant of Lighting" />
+	<Item Type="13" Index="13" MinLevel="0" MaxLevel="0" Option1="0" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="1" Comment="Pendant of Fire" />
+	<Item Type="13" Index="3" MinLevel="0" MaxLevel="0" Option1="0" Option2="0" Option3="0" NewOption="0" Time="0" DropRate="1" Comment="Horn of Dinorant" />
+</ItemBag>

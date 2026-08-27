@@ -53,8 +53,8 @@ STRICTLY NO COMMENTS INSIDE TAGS
 
 <MapServer>
 	<ServerList>
-		<Server ServerCode="00" MapServerGroup="00" InitSetVal="01" IP="IP-CONFIG" Port="55901" MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Server01" />
-		<Server ServerCode="19" MapServerGroup="00" InitSetVal="00" IP="IP-CONFIG" Port="55919" MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="ServerCS" />
+		<Server ServerCode="00" MapServerGroup="00" InitSetVal="01" IP="192.168.1.12" Port="55901" MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="Server01" />
+		<Server ServerCode="19" MapServerGroup="00" InitSetVal="00" IP="192.168.1.12" Port="55919" MinLevel="0" MaxLevel="0" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" Name="ServerCS" />
 	</ServerList>
 
 	<ServerMapping>

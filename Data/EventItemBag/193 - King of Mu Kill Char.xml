@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== 193 - King of Mu Kill Char.xml
+== Empty template - no <Item> rows yet, add your own.
+== Item reward table for EventItemBagManager.xml's Bag Index="193" (King of Mu Kill Char).
+== Loaded by GameServer via CItemBag::LoadXML(), matched to its Bag
+== by the leading number in this filename (same convention as
+== Data/MonsterSetBase/*.txt).
+== Modify only if you know what you're doing!
+============================================================
+
+### Config ###
+	EventName        Internal label (not shown to players).
+	DropZen          Zen amount dropped, 0 = none.
+	ItemDropRate     Percent chance an item drops at all, out of 100.
+	ItemDropCount    How many items to roll when it does drop.
+	SetItemDropRate  Percent chance the item is a random Set item variant.
+	ItemDropType     Drop behavior (ground drop vs direct-to-inventory).
+	SendFirework     1 = show fireworks effect on drop.
+	Coin1/2/3        WCoin/WCoinP/GoblinPoint flat bonus, granted
+	                 every time this bag triggers. 0 = none.
+	GensContribution Flat Gens contribution points bonus. 0 = none.
+
+### Item ###
+	Type/Index    Item code (GET_ITEM(Type,Index) - matches Item.xml).
+	MinLevel/MaxLevel   Random item level range.
+	Option1-3/NewOption Random option rolls.
+	Time          Duration in seconds for a rental/temporary item, 0 = permanent.
+	DropRate      Relative weight among this bag's <Item> rows.
+	SocketOption      Forces exactly this many sockets (1-5), guaranteed.
+	SocketOptionRate  Random socket count instead - index into
+	                  ItemOptionRate.xml's <Option6> table.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemBag UseEx="0">
+	<Config EventName="King of Mu Kill Char" DropZen="0" ItemDropRate="100" ItemDropCount="1"
+	        SetItemDropRate="0" ItemDropType="0" SendFirework="0"
+	        Coin1="0" Coin2="0" Coin3="0" GensContribution="0" />
+</ItemBag>

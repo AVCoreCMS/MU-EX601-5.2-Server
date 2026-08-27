@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== EJEMPLO - Formato extendido (<Ex>)
+== Este archivo NO se carga en el juego (esta carpeta se ignora).
+== Es solo para copiar/pegar y entender el formato.
+============================================================
+
+UseEx="1" en la raiz = usa <Ex> en vez de <Item>.
+
+Coin1/2/3 (WCoin/WCoinP/GoblinPoint) y GensContribution funcionan
+igual aca aunque no haya <Item> - viven en <Config>, que es compartido
+entre ambos formatos sin importar UseEx. Ver "01 - Formato Basico.xml"
+para su significado; solo agrega un nodo <Config> con esos atributos
+a este archivo si los necesitas.
+
+Jerarquia:
+
+  <Drop>   un "tier" con su propia probabilidad, independiente de
+           los demas <Drop> del mismo bag (pueden caer VARIOS a la
+           vez en la misma muerte/apertura, cada uno tira sus
+           propios dados por separado - no es "esto o lo otro").
+    <Class> a que <Pool> tirar si este Drop pega, y que clases
+            pueden recibirlo.
+  <Pool>   la lista de items de la que se saca UNO al azar, parejo
+           (sin peso por item - a diferencia de <Item>/DropRate).
+
+Este ejemplo tiene 2 tiers: uno comun (30%, cualquier clase) y uno
+raro (5%, solo Dark Knight/Blade Knight). Pueden salir ambos en el
+mismo evento, ninguno, o solo uno.
+
+### Drop ###
+	Index      Id del tier (solo para agrupar, no importa el valor).
+	DropRate   Chance de que ESTE tier tire algo, sobre 10000.
+
+### Drop::Class ###
+	Section    A que <Pool> apunta si este Drop pega.
+	Rate       Peso de esta fila entre los <Class> del mismo Drop
+	           (si hay mas de una fila <Class>, compiten por peso).
+	Money      Zen que cae en vez de item, si el Pool no existe o
+	           esta vacio.
+	Option     Bit 1 = fuegos artificiales al caer. Bit 2 = revisa
+	           la clase de TODA la party, no solo la del que abrio.
+	DW/DK/FE/MG/DL/SU/RF   Clase habilitada (1) o no (0) para
+	           recibir este drop. El valor tambien puede ser un
+	           numero de reset minimo en vez de 0/1 (ej: DK="3" =
+	           solo Dark Knight con 3+ resets).
+
+### Pool::Item ###
+	Index      Codigo COMBINADO del item (ya es GET_ITEM(Type,Index),
+	           no separado en Type+Index como en el formato basico).
+	Level/Grade         Nivel y grado fijos (NO hay rango random
+	           como MinLevel/MaxLevel del formato basico).
+	Option0-5  Semillas de opciones random (-1 = "*", sin roll en
+	           esa opcion). El motor las procesa distinto a
+	           Option1-3/NewOption del formato basico.
+	Option6    A que fila de la tabla <Option6> en
+	           Data/Item/ItemOptionRate.xml apunta para tirar
+	           sockets - es una tabla de PROBABILIDAD, no una
+	           cantidad directa (a diferencia del SocketOption del
+	           formato basico). Ese archivo ya trae contextos
+	           armados para EventItemBag: 11=siempre 0 sockets,
+	           12=siempre 1, 13=siempre 2, 14=siempre 3, 15=siempre
+	           4, 16=siempre 5, 17-23=rangos random (ej: 20 = "entre
+	           2 y 4 sockets"). Solo funciona si el item esta
+	           registrado en SocketItemType.xml.
+	Duration   Segundos hasta que expira, 0 = permanente.
+-->
+
+<ItemBag UseEx="1">
+	<Ex>
+		<!-- Tier 0: drop comun, 30% de chance, cualquier clase -->
+		<Drop Index="0" DropRate="3000">
+			<Class Section="10" Rate="10000" Money="500" Option="0"
+			       DW="1" DK="1" FE="1" MG="1" DL="1" SU="1" RF="1" />
+		</Drop>
+
+		<!-- Tier 1: drop raro, 5% de chance, SOLO Dark Knight/Blade Knight -->
+		<Drop Index="1" DropRate="500">
+			<Class Section="11" Rate="10000" Money="0" Option="1"
+			       DW="0" DK="1" FE="0" MG="0" DL="0" SU="0" RF="0" />
+		</Drop>
+
+		<!-- Pool 10: lo que puede salir del tier comun (elige 1 al azar, parejo) -->
+		<Pool Section="10">
+			<Item Index="30" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1"
+			      Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0"
+			      Comment="Jewel of Bless" />
+			<Item Index="31" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1"
+			      Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0"
+			      Comment="Jewel of Soul" />
+		</Pool>
+
+		<!-- Pool 11: solo se usa si el tier 1 pega Y el jugador califica por clase.
+		     Option6="16" = siempre 5 sockets (solo funciona porque Sword Breaker
+		     esta registrado en SocketItemType.xml). -->
+		<Pool Section="11">
+			<Item Index="27" Level="13" Grade="1" Option0="4" Option1="1" Option2="1"
+			      Option3="-1" Option4="1" Option5="-1" Option6="16" Duration="0"
+			      Comment="Sword Breaker +13, 5 sockets garantizados" />
+		</Pool>
+	</Ex>
+</ItemBag>

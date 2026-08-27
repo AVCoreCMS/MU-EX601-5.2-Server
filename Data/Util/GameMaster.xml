@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== GameMaster.xml
+== Seed list of accounts/characters granted GameMaster level
+== on login. Never written back to by the server - purely a
+== startup list.
+== Loaded by GameServer via CGameMaster::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### Account ###
+	Account   Login account name.
+	Name      Character name on that account.
+	Level     GameMaster level granted.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<GameMaster>
+	<Account Account="admin" Name="Admin" Level="2" />
+	<Account Account="admin" Name="Phanh" Level="2" />
+</GameMaster>

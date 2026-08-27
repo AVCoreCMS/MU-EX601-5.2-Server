@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== 125 - Golden Napin.xml
+== Imported from a same-season-family reference server. Unlike most
+== other EventItemBag files, this one uses the extended CItemBagEx drop
+== system (the <Ex> node) instead of the basic <Item> list - selected
+== explicitly via UseEx="1" on the root <ItemBag> tag below (0 = use
+== <Item>, 1 = use <Ex>; both can coexist in the same file, only one is
+== active). Loaded by CItemBagEx::LoadXML() (called from
+== CItemBag::LoadXML() after the basic Config/Item parse).
+== Item reward table for EventItemBagManager.xml's Bag Index="125" (Golden Napin).
+== Modify only if you know what you're doing!
+============================================================
+
+### Ex::Drop ###
+	Index      Drop tier id (arbitrary, just a grouping key).
+	DropRate   Chance this tier rolls at all, out of 10000.
+
+### Ex::Drop::Class ###
+	Section         Which <Pool> to roll an item from if this tier hits.
+	Rate            Weight of this class-row among the Drop's <Class> rows.
+	Money           Zen dropped instead, if no item pool match.
+	Option          Bit 1 = fireworks on drop, bit 2 = party-wide class check.
+	DW/DK/FE/MG/DL/SU/RF   Which classes (and reset-tier, per class) may
+	                       receive this drop, 0 = never.
+
+### Ex::Pool::Item ###
+	Index      Raw combined item code (GET_ITEM(Type,Index) already
+	           combined) - taken from the reference as-is, unverified
+	           against this project's own Item.xml.
+	Level/Grade/Option0-6   Random item level/option rolls.
+	Duration   Seconds until the item expires, 0 = permanent.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemBag UseEx="1">
+	<Ex>
+		<Drop Index="0" DropRate="10000">
+			<Class Section="5" Rate="10000" Money="0" Option="0" DW="1" DK="1" FE="1" MG="1" DL="1" SU="1" RF="1" />
+		</Drop>
+		<Pool Section="5">
+			<Item Index="10" Level="0" Grade="0" Option0="-1" Option1="-1" Option2="-1" Option3="-1" Option4="-1" Option5="-1" Option6="-1" Duration="0" Comment="Lucky Bag Egg (reference comment, unverified)" />
+		</Pool>
+	</Ex>
+</ItemBag>

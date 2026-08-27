@@ -7,7 +7,9 @@
 == ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 == ReiDoMU.xml
 == "King of MU" event: schedule, timing, and WCoin/WCoinP/
-== GoblinPoint rewards for the winning guild and character.
+== GoblinPoint/GensContribution rewards for the winning guild and
+== character (throne-claim track) and separately for whoever got the
+== most PvP kills (kill track).
 == Loaded by GameServer via CReiDoMU::LoadXML().
 == Modify only if you know what you're doing!
 ============================================================
@@ -15,6 +17,20 @@
 ### ReiDoMU::Timing ###
 	WarningTime/EventTime in minutes - how long before start the
 	warning fires, and how long the event runs.
+
+### ReiDoMU::Location ###
+	Map/CordX/CordY   Where a guild member has to stand and type /rei
+	                  to claim the throne for their guild.
+	GuildMinMembers   Minimum guild size (TotalCount) required to
+	                  claim it.
+	Placeholder values below (Lorencia, 135/125) - pick a real spot
+	that makes sense for your map before enabling this event.
+
+### ReiDoMU::ExclusiveMap ###
+	Map   Only members of the last winning guild may enter this map
+	      (gate/warp checks, see Gate.cpp/Move.cpp) - access
+	      transfers automatically to whoever wins the next event, no
+	      manual reset needed. -1 or the node missing = disabled.
 
 ### ReiDoMU::Schedule::StartTime ###
 	One or more scheduled triggers, matched against the real-world
@@ -28,11 +44,28 @@
 	WC/WP/GP - WCoinC/WCoinP/GoblinPoint paid to the winning
 	character.
 
+### ReiDoMU::KillGuildReward / KillCharReward ###
+	A SEPARATE ranking track from GuildReward/CharReward above: pays
+	whichever guild got the most PvP kills on the throne map while
+	the event was active (KillGuildReward, split among all online
+	members like GuildReward), and whoever personally got the most
+	(KillCharReward). Both run every event alongside the throne-claim
+	ranking - a guild/character can win one, both, or neither.
+	WC/WP/GP - WCoinC/WCoinP/GoblinPoint.
+	GensContribution - flat Gens points, 0 = none.
+	Also pays an item from EventItemBagManager.xml's
+	ITEM_BAG_KING_OF_MU_KILL_GUILD/_CHAR (Data/EventItemBag/192 and
+	193 - empty templates, configure your own items).
+
 STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
 <ReiDoMU>
 	<Timing WarningTime="5" EventTime="30" />
+
+	<Location Map="0" CordX="135" CordY="125" GuildMinMembers="1" />
+
+	<ExclusiveMap Map="82" /> <!-- Arkania -->
 
 	<Schedule>
 		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="5" Second="0" />
@@ -40,4 +73,7 @@ STRICTLY NO COMMENTS INSIDE TAGS
 
 	<GuildReward WC="10" WP="0" GP="0" />
 	<CharReward WC="8" WP="0" GP="0" />
+
+	<KillGuildReward WC="10" WP="0" GP="0" GensContribution="5" />
+	<KillCharReward WC="8" WP="0" GP="0" GensContribution="3" />
 </ReiDoMU>

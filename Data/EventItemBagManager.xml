@@ -175,6 +175,31 @@ STRICTLY NO COMMENTS INSIDE TAGS
 		<Bag Index="129" ItemIndex="6827" ItemLevel="-1" MonsterClass="-1" SpecialValue="-1" DropInventory="0" Name="Pet egg" />
 		<Bag Index="130" ItemIndex="-1" ItemLevel="-1" MonsterClass="476" SpecialValue="-1" DropInventory="0" Name="Pet egg" />
 		<Bag Index="131" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="62" DropInventory="0" Name="Pandora" />
+		<Bag Index="169" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="63" DropInventory="0" Name="Blood Castle 1 Participant" />
+		<Bag Index="170" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="64" DropInventory="0" Name="Blood Castle 2 Participant" />
+		<Bag Index="171" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="65" DropInventory="0" Name="Blood Castle 3 Participant" />
+		<Bag Index="172" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="66" DropInventory="0" Name="Blood Castle 4 Participant" />
+		<Bag Index="173" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="67" DropInventory="0" Name="Blood Castle 5 Participant" />
+		<Bag Index="174" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="68" DropInventory="0" Name="Blood Castle 6 Participant" />
+		<Bag Index="175" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="69" DropInventory="0" Name="Blood Castle 7 Participant" />
+		<Bag Index="176" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="70" DropInventory="0" Name="Blood Castle 8 Participant" />
+		<Bag Index="177" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="71" DropInventory="0" Name="Devil Square 1" />
+		<Bag Index="178" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="72" DropInventory="0" Name="Devil Square 2" />
+		<Bag Index="179" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="73" DropInventory="0" Name="Devil Square 3" />
+		<Bag Index="180" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="74" DropInventory="0" Name="Devil Square 4" />
+		<Bag Index="181" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="75" DropInventory="0" Name="Devil Square 5" />
+		<Bag Index="182" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="76" DropInventory="0" Name="Devil Square 6" />
+		<Bag Index="183" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="77" DropInventory="0" Name="Devil Square 7" />
+		<Bag Index="184" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="78" DropInventory="0" Name="Devil Square 1 Participant" />
+		<Bag Index="185" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="79" DropInventory="0" Name="Devil Square 2 Participant" />
+		<Bag Index="186" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="80" DropInventory="0" Name="Devil Square 3 Participant" />
+		<Bag Index="187" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="81" DropInventory="0" Name="Devil Square 4 Participant" />
+		<Bag Index="188" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="82" DropInventory="0" Name="Devil Square 5 Participant" />
+		<Bag Index="189" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="83" DropInventory="0" Name="Devil Square 6 Participant" />
+		<Bag Index="190" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="84" DropInventory="0" Name="Devil Square 7 Participant" />
+		<Bag Index="191" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="85" DropInventory="0" Name="King of Mu" />
+		<Bag Index="192" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="86" DropInventory="0" Name="King of Mu Kill Guild" />
+		<Bag Index="193" ItemIndex="-1" ItemLevel="-1" MonsterClass="-1" SpecialValue="87" DropInventory="0" Name="King of Mu Kill Char" />
 
 	</Config>
 </ItemBagManager>
