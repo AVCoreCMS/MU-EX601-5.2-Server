@@ -1,0 +1,59 @@
+name: Build EventItemBag Editor
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - tools/event-item-bag-editor
+    paths:
+      - 'Tools/EventItemBagEditor/**'
+      - '.github/workflows/event-item-bag-editor.yml'
+  pull_request:
+    paths:
+      - 'Tools/EventItemBagEditor/**'
+      - '.github/workflows/event-item-bag-editor.yml'
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Publish single EXE
+        shell: pwsh
+        run: |
+          dotnet publish Tools/EventItemBagEditor/EventItemBagEditor.csproj `
+            -c Release `
+            -r win-x64 `
+            --self-contained true `
+            -p:PublishSingleFile=true `
+            -p:IncludeNativeLibrariesForSelfExtract=true `
+            -p:DebugType=None `
+            -p:DebugSymbols=false `
+            -o artifacts/EventItemBagEditor
+
+      - name: Verify executable
+        shell: pwsh
+        run: |
+          if (!(Test-Path 'artifacts/EventItemBagEditor/EventItemBagEditor.exe')) {
+            throw 'EventItemBagEditor.exe was not generated.'
+          }
+          Get-Item 'artifacts/EventItemBagEditor/EventItemBagEditor.exe' | Format-List Name,Length,LastWriteTime
+
+      - name: Upload Windows executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: EventItemBagEditor-win-x64
+          path: artifacts/EventItemBagEditor/EventItemBagEditor.exe
+          if-no-files-found: error
+          retention-days: 30
