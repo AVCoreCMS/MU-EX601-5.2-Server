@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== ScrambleWords.xml
+==
+== Evento de palabras desordenadas portado a C++.
+== No utiliza Lua ni SQL. Reload -> Reload Event lo recarga.
+============================================================
+
+### ServerSettings ###
+  Enabled: 0/1. Solo GameServer normal.
+
+### Timing ###
+  PreStartMinutes: cuenta regresiva antes de la primera ronda.
+  RoundSeconds: tiempo disponible para responder cada palabra.
+  HintAfterSeconds: segundos transcurridos antes de mostrar la pista.
+  RepeatSeconds: intervalo para volver a mostrar las letras desordenadas.
+                 Usa 0 para desactivar las repeticiones.
+  NextRoundDelaySeconds: espera entre una ronda y la siguiente.
+
+### Rounds ###
+  Cantidad de rondas por dificultad. Se juegan Fast, Medium y Hard.
+
+### Controls ###
+  AntiSpam: 0/1.
+  CooldownSeconds: espera después de una respuesta incorrecta.
+  WinnerLockRounds: rondas que debe esperar quien acaba de ganar.
+
+### Schedule ###
+  Horarios automáticos. -1 significa cualquier valor.
+  DayOfWeek: 1=domingo ... 7=sábado; -1=todos los días.
+
+### Difficulty / Reward ###
+  WC/WP/GP: monedas entregadas al ganador de esa dificultad.
+  GensContribution: contribución Gens.
+  ItemBag: SpecialValue de EventItemBag; -1 lo desactiva.
+
+### Word ###
+  Value: respuesta correcta, sin espacios.
+  Hint: pista mostrada durante la ronda.
+
+### Comandos ###
+  /scramble RESPUESTA
+  /scramblestart       inicia con cuenta regresiva
+  /scramblestart now   inicia inmediatamente
+  /scramblestop        detiene el evento
+-->
+
+<ScrambleWords>
+	<ServerSettings>
+		<GameServer Enabled="1" />
+	</ServerSettings>
+
+	<Timing PreStartMinutes="3" RoundSeconds="120" HintAfterSeconds="60" RepeatSeconds="30" NextRoundDelaySeconds="60" />
+
+	<Rounds Fast="5" Medium="5" Hard="5" />
+
+	<Controls AntiSpam="1" CooldownSeconds="10" WinnerLockRounds="1" />
+
+	<Schedule>
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="0" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="4" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="8" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="12" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="16" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="21" Minute="50" Second="0" />
+	</Schedule>
+
+	<Difficulties>
+		<Difficulty Name="Facil">
+			<Reward WC="0" WP="3" GP="0" GensContribution="0" ItemBag="-1" />
+			<Word Value="LORENCIA" Hint="Ciudad inicial de MU" />
+			<Word Value="DEVIAS" Hint="Mapa de nieve" />
+			<Word Value="ZEN" Hint="Moneda basica" />
+			<Word Value="WINGS" Hint="Equipo utilizado en la espalda" />
+			<Word Value="BOSS" Hint="Monstruo especial" />
+		</Difficulty>
+
+		<Difficulty Name="Media">
+			<Reward WC="0" WP="6" GP="0" GensContribution="0" ItemBag="-1" />
+			<Word Value="BLOODANGEL" Hint="Nombre clasico de un set" />
+			<Word Value="KANTURU" Hint="Zona relacionada con eventos y misiones" />
+			<Word Value="DUNGEON" Hint="Mapa subterraneo" />
+			<Word Value="EXCELLENT" Hint="Tipo de item con opciones especiales" />
+			<Word Value="ANCIENT" Hint="Tipo de set con bonificaciones" />
+		</Difficulty>
+
+		<Difficulty Name="Dificil">
+			<Reward WC="0" WP="10" GP="0" GensContribution="0" ItemBag="-1" />
+			<Word Value="ILLUSIONTEMPLE" Hint="Evento de los templos" />
+			<Word Value="CASTLESIEGE" Hint="Guerra por el castillo" />
+			<Word Value="DEVILSQUARE" Hint="Evento de oleadas" />
+			<Word Value="BLOODCASTLE" Hint="Evento del puente y la estatua" />
+			<Word Value="CHAOSCASTLE" Hint="Evento de supervivencia" />
+		</Difficulty>
+	</Difficulties>
+</ScrambleWords>

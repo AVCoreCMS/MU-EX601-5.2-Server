@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== 003 - Harold the Wandering Merchant.xml
+== NPC shop stock: Harold the Wandering Merchant.
+== Loaded by GameServer via CShop::LoadXML(), matched to its
+== ShopManager.xml entry by the leading number in this filename
+== (same convention as Data/EventItemBag/*.xml).
+== Modify only if you know what you're doing!
+============================================================
+
+### Item ###
+	Type/Index/Level/Durability   Item code (GET_ITEM(Type,Index) -
+	             matches Item.xml) and starting level/durability
+	             (0 = full/random).
+	Skill/Luck/Option/Excellent/Ancient/JOH/OpEx   Fixed item options.
+	Socket1-5    Socket seed per slot, 255 = none.
+	Value/Coin1-3/Sell   OPTIONAL - overrides this item's price in THIS
+	             shop only (Coin1/2/3 = WCoinC/WCoinP/GoblinPoint, Sell
+	             sets the sell-back price too). Absent = price comes
+	             from the global Data/Item/ItemValue.xml table instead.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<Shop>
+	<Item Type="7" Index="5" Level="0" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Leather Helm" />
+	<Item Type="7" Index="0" Level="2" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Bronze Helm" />
+	<Item Type="7" Index="6" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Scale Helm" />
+	<Item Type="7" Index="8" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Brass Helm" />
+	<Item Type="7" Index="9" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Plate Helm" />
+	<Item Type="8" Index="5" Level="0" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Leather Armor" />
+	<Item Type="8" Index="0" Level="2" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Bronze Armor" />
+	<Item Type="8" Index="6" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Scale Armor" />
+	<Item Type="8" Index="8" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Brass Armor" />
+	<Item Type="8" Index="9" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Plate Armor" />
+	<Item Type="9" Index="5" Level="0" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Leather Pants" />
+	<Item Type="9" Index="0" Level="2" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Bronze Pants" />
+	<Item Type="9" Index="6" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Scale Pants" />
+	<Item Type="9" Index="8" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Brass Pants" />
+	<Item Type="9" Index="9" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Plate Pants" />
+	<Item Type="10" Index="5" Level="0" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Leather Gloves" />
+	<Item Type="10" Index="0" Level="2" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Bronze Gloves" />
+	<Item Type="10" Index="6" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Scale Gloves" />
+	<Item Type="10" Index="8" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Brass Gloves" />
+	<Item Type="10" Index="9" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Plate Gloves" />
+	<Item Type="11" Index="5" Level="0" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Leather Boots" />
+	<Item Type="11" Index="0" Level="2" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Bronze Boots" />
+	<Item Type="11" Index="6" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Scale Boots" />
+	<Item Type="11" Index="8" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Brass Boots" />
+	<Item Type="11" Index="9" Level="3" Durability="0" Skill="0" Luck="1" Option="1" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Plate Boots" />
+</Shop>

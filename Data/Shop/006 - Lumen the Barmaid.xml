@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== 006 - Lumen the Barmaid.xml
+== NPC shop stock: Lumen the Barmaid.
+== Loaded by GameServer via CShop::LoadXML(), matched to its
+== ShopManager.xml entry by the leading number in this filename
+== (same convention as Data/EventItemBag/*.xml).
+== Modify only if you know what you're doing!
+============================================================
+
+### Item ###
+	Type/Index/Level/Durability   Item code (GET_ITEM(Type,Index) -
+	             matches Item.xml) and starting level/durability
+	             (0 = full/random).
+	Skill/Luck/Option/Excellent/Ancient/JOH/OpEx   Fixed item options.
+	Socket1-5    Socket seed per slot, 255 = none.
+	Value/Coin1-3/Sell   OPTIONAL - overrides this item's price in THIS
+	             shop only (Coin1/2/3 = WCoinC/WCoinP/GoblinPoint, Sell
+	             sets the sell-back price too). Absent = price comes
+	             from the global Data/Item/ItemValue.xml table instead.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<Shop>
+	<Item Type="14" Index="9" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Ale" />
+	<Item Type="14" Index="10" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Town Portal Scroll" />
+	<Item Type="14" Index="17" Level="1" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Devil's Eye" />
+	<Item Type="14" Index="17" Level="2" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Devil's Eye" />
+	<Item Type="14" Index="18" Level="1" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Devil's Key" />
+	<Item Type="14" Index="18" Level="2" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Devil's Key" />
+	<Item Type="13" Index="16" Level="1" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Scroll of Archangel" />
+	<Item Type="13" Index="16" Level="2" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Scroll of Archangel" />
+	<Item Type="13" Index="17" Level="1" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Blood Bone" />
+	<Item Type="13" Index="17" Level="2" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Blood Bone" />
+	<Item Type="13" Index="29" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Armor of Guardsman" />
+</Shop>

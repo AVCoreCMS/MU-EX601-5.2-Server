@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== CustomStartItemDame.xml
+== Empty template - no <Class>/<Item> rows yet, add your own.
+== Per-item damage/buff bonus while equipped (weapon icon buff system).
+== Loaded by GameServer via CCustomStartItemDame::LoadItemDameXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### Class ###
+	Index   0=DW 1=DK 2=FE 3=MG 4=DL 5=SU 6=RF.
+
+### Class::Item ###
+	Type/Index   Item code required for this bonus to apply (matches
+	             Item.xml). Level is the minimum item level required.
+	Luck/Durability/Skill/Option/Excellent   Minimum item option
+	             values required (see CaclCharacter() in
+	             CustomStartItemDame.cpp for how these gate the bonus).
+	TypeBuff/EffectBuff/Power1Buff/Power2Buff/TimeBuff   Skill-buff
+	             effect applied alongside the damage bonus, 0 = none.
+	DupeDame/TripDame     Double/Triple damage rate bonus.
+	CriticalDmg           Critical damage bonus.
+	DameRate              Physical/magic damage bonus.
+	DefDameRate           PvP defense bonus.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<CustomStartItemDame>
+</CustomStartItemDame>

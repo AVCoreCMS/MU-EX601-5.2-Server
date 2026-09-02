@@ -1,0 +1,36 @@
+===============================================================================
+                         SEGURIDAD Y RENDIMIENTO
+===============================================================================
+
+PROTECCIONES
+  MemoryLimitMB       Memoria maxima compartida por los scripts.
+  InstructionLimit   Limite por callback contra bucles infinitos.
+  Recarga atomica    Un error conserva activos los scripts anteriores.
+  Bloqueos           Sin os.execute/exit/remove/rename, io (completo),
+                     debug ni DLL de Lua (loadlib/dofile/loadfile).
+  Rutas              AV.Load no permite salir de Data\Script.
+  Sin SQL directo    AV.StorageGet/Set no exponen SQL crudo a los scripts -
+                     usan consultas parametrizadas fijas contra WZ_LuaStorage.
+                     Evita inyeccion SQL y acceso a otras tablas.
+
+REGLAS
+  1. Damage y PlayerMove deben ser pequeños.
+  2. No uses AV.Load dentro de Timer, Damage o PlayerMove.
+  3. No guardes permanentemente indices de monstruos.
+  4. Valida AV.IsConnected antes de premios retardados.
+  5. ItemUse=true bloquea el uso original; usalo solo al completar.
+  6. NpcTalk=true bloquea el NPC original.
+  7. Prueba eventos nuevos fuera del servidor en vivo.
+
+ERRORES COMUNES
+  Script no se ejecuta
+    Falta AV.Load en ScriptMain.lua o la ruta esta incorrecta.
+
+  Recarga rechazada
+    La primera linea roja [Lua] del log indica archivo y linea.
+
+  Comando nativo no llega a Lua
+    Los comandos nativos tienen prioridad. Usa otro nombre.
+
+  Item desaparece completo
+    AV.DeleteItem elimina todo el slot, no una unidad del stack.

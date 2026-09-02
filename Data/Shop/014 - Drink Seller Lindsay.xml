@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== 014 - Drink Seller Lindsay.xml
+== NPC shop stock: Drink Seller Lindsay.
+== Loaded by GameServer via CShop::LoadXML(), matched to its
+== ShopManager.xml entry by the leading number in this filename
+== (same convention as Data/EventItemBag/*.xml).
+== Modify only if you know what you're doing!
+============================================================
+
+### Item ###
+	Type/Index/Level/Durability   Item code (GET_ITEM(Type,Index) -
+	             matches Item.xml) and starting level/durability
+	             (0 = full/random).
+	Skill/Luck/Option/Excellent/Ancient/JOH/OpEx   Fixed item options.
+	Socket1-5    Socket seed per slot, 255 = none.
+	Value/Coin1-3/Sell   OPTIONAL - overrides this item's price in THIS
+	             shop only (Coin1/2/3 = WCoinC/WCoinP/GoblinPoint, Sell
+	             sets the sell-back price too). Absent = price comes
+	             from the global Data/Item/ItemValue.xml table instead.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<Shop>
+	<Item Type="14" Index="0" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Apple" />
+	<Item Type="14" Index="1" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Small Healing Potion" />
+	<Item Type="14" Index="2" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Healing Potion" />
+	<Item Type="14" Index="3" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Large Healing Potion" />
+	<Item Type="14" Index="4" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Small Mana Potion" />
+	<Item Type="14" Index="5" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Mana Potion" />
+	<Item Type="14" Index="6" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Large Mana Potion" />
+	<Item Type="14" Index="8" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Antidote" />
+	<Item Type="14" Index="0" Level="0" Durability="3" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Apple" />
+	<Item Type="14" Index="1" Level="0" Durability="3" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Small Healing Potion" />
+	<Item Type="14" Index="2" Level="0" Durability="3" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Healing Potion" />
+	<Item Type="14" Index="3" Level="0" Durability="3" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Large Healing Potion" />
+	<Item Type="14" Index="4" Level="0" Durability="3" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Small Mana Potion" />
+	<Item Type="14" Index="5" Level="0" Durability="3" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Mana Potion" />
+	<Item Type="14" Index="6" Level="0" Durability="3" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Large Mana Potion" />
+	<Item Type="14" Index="8" Level="0" Durability="3" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Antidote" />
+	<Item Type="14" Index="0" Level="1" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Apple" />
+	<Item Type="14" Index="1" Level="1" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Small Healing Potion" />
+	<Item Type="14" Index="2" Level="1" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Healing Potion" />
+	<Item Type="14" Index="3" Level="1" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Large Healing Potion" />
+	<Item Type="14" Index="0" Level="1" Durability="3" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Apple" />
+	<Item Type="14" Index="1" Level="1" Durability="3" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Small Healing Potion" />
+	<Item Type="14" Index="2" Level="1" Durability="3" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Healing Potion" />
+	<Item Type="14" Index="3" Level="1" Durability="3" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Large Healing Potion" />
+	<Item Type="14" Index="10" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Town Portal Scroll" />
+	<Item Type="4" Index="7" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Bolt" />
+	<Item Type="4" Index="7" Level="1" Durability="255" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Bolt" />
+	<Item Type="4" Index="7" Level="2" Durability="255" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Bolt" />
+	<Item Type="4" Index="7" Level="3" Durability="255" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Bolt" />
+	<Item Type="4" Index="15" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Arrow" />
+	<Item Type="4" Index="15" Level="1" Durability="255" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Arrow" />
+	<Item Type="4" Index="15" Level="2" Durability="255" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Arrow" />
+	<Item Type="4" Index="15" Level="3" Durability="255" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Arrow" />
+	<Item Type="13" Index="7" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Contract (Summon)" />
+	<Item Type="13" Index="7" Level="1" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Contract (Summon)" />
+	<Item Type="13" Index="29" Level="0" Durability="1" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Armor of Guardsman" />
+</Shop>

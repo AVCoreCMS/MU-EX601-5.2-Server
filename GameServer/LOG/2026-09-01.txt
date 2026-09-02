@@ -1,0 +1,1114 @@
+00:54:08 [ServerInfo] CashShop loaded successfully
+00:54:08 [ServerInfo] AV_ChaosMix.xml loaded successfully
+00:54:08 [ServerInfo] Character loaded successfully
+00:54:08 [FakeOnline] Load Data OK
+00:54:08 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+00:54:08 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+00:54:08 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+00:54:08 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\BloodCastle.xml
+00:54:08 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+00:54:08 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+00:54:08 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Chest.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Custom\CustomMix.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\DevilSquare.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Dinorant.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fenrir.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fruit.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\IllusionTemple.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ImperialGuardian.xml
+00:54:08 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Item380.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Item380.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ItemLevel.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LifeStone.xml
+00:54:08 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+00:54:08 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\MonsterWings.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Potions.xml
+00:54:08 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+00:54:08 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+00:54:08 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+00:54:08 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Socket.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\SocketWeapon.xml
+00:54:08 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Wings.xml
+00:54:08 [ItemMixManager] Chaos Machine XML folder loaded (Files: 21, Recipes: 28)
+00:54:08 [ServerInfo] Item Mix loaded successfully (Synchronized users: 0)
+00:54:08 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+00:54:08 [EventBoard] Loaded 23 rows from Dungeons.xml, Events.xml, Boss.xml and Competition.xml
+00:54:08 [CustomItemBank] (1) Load 10 Item In List
+00:54:08 [ServerInfo] Custom loaded successfully
+00:54:08 [ServerInfo] Command loaded successfully
+00:54:08 [ServerInfo] Common loaded successfully
+00:54:08 [ServerInfo] AV_Event.xml and Event XML settings loaded successfully
+00:54:08 [SpeedEvent] Loaded 2 schedule(s) and 3 location(s)
+00:54:08 [ScrambleWords] Loaded 7 schedules, 15 rounds and 5/5/5 words
+00:54:08 [ Crywolf ] State (0) -> NONE
+00:54:08 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+00:54:08 [DoubleGoer] Loaded 4 schedules, 10 open minute(s), max 5 user(s)
+00:54:08 [ServerInfo] Event loaded successfully
+00:54:08 [ServerInfo] EventItemBag loaded successfully
+00:54:08 [ServerInfo] Hack loaded successfully
+00:54:08 [ServerInfo] Item loaded successfully
+00:54:08 [ServerInfo] Monster loaded successfully
+00:54:08 [ServerInfo] Move loaded successfully
+00:54:08 [ServerInfo] Quest loaded successfully
+00:54:08 [ServerInfo] Shop loaded successfully
+00:54:08 [ServerInfo] Skill loaded successfully
+00:54:08 [ServerInfo] Util loaded successfully
+00:54:08 [ReadBotInfo] BotSystem loaded successfully
+00:54:08 [Lua] ScriptMain.lua cargado
+00:54:08 [Lua] Sistema Lua iniciado
+00:54:08 [Lua] Lua 5.4.9 loaded successfully (Main:ScriptMain.lua, Memory:32 MB, Instructions:500000)
+00:54:19 [Obj][9900] AddClient (192.168.1.12)
+00:54:20 [Obj][9900] AddAccount (admin)
+00:54:40 [Obj][9900] LogOutCharacter (Phanh)
+00:54:40 [Obj][9900] LogOutCharacter ()
+00:54:40 [Obj][9900] DelAccount (admin)
+00:54:40 [Obj][9900] DelClient (192.168.1.12)
+00:54:53 [Obj][9900] AddClient (192.168.1.12)
+00:54:54 [Obj][9900] AddAccount (admin)
+00:55:50 [Obj][9900] LogOutCharacter (Phanh)
+00:55:50 [Obj][9900] LogOutCharacter ()
+00:55:50 [Obj][9900] DelAccount (admin)
+00:55:50 [Obj][9900] DelClient (192.168.1.12)
+03:12:27 [ServerInfo] CashShop loaded successfully
+03:12:27 [ServerInfo] AV_ChaosMix.xml loaded successfully
+03:12:27 [ServerInfo] Character loaded successfully
+03:12:27 [FakeOnline] Load Data OK
+03:12:27 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+03:12:27 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+03:12:27 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+03:12:27 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\BloodCastle.xml
+03:12:27 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+03:12:27 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+03:12:27 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Chest.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Custom\CustomMix.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\DevilSquare.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Dinorant.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fenrir.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fruit.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\IllusionTemple.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ImperialGuardian.xml
+03:12:27 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Item380.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Item380.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ItemLevel.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LifeStone.xml
+03:12:27 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+03:12:27 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\MonsterWings.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Potions.xml
+03:12:27 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+03:12:27 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+03:12:27 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+03:12:27 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Socket.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\SocketWeapon.xml
+03:12:27 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Wings.xml
+03:12:27 [ItemMixManager] Chaos Machine XML folder loaded (Files: 21, Recipes: 28)
+03:12:27 [ServerInfo] Item Mix loaded successfully (Synchronized users: 0)
+03:12:27 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+03:12:27 [EventBoard] Loaded 23 rows from Dungeons.xml, Events.xml, Boss.xml and Competition.xml
+03:12:27 [CustomItemBank] (1) Load 10 Item In List
+03:12:27 [ServerInfo] Custom loaded successfully
+03:12:27 [ServerInfo] Command loaded successfully
+03:12:27 [ServerInfo] Common loaded successfully
+03:12:27 [ServerInfo] AV_Event.xml and Event XML settings loaded successfully
+03:12:27 [SpeedEvent] Loaded 2 schedule(s) and 3 location(s)
+03:12:27 [ScrambleWords] Loaded 7 schedules, 15 rounds and 5/5/5 words
+03:12:27 [ Crywolf ] State (0) -> NONE
+03:12:27 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+03:12:27 [DoubleGoer] Loaded 4 schedules, 10 open minute(s), max 5 user(s)
+03:12:27 [ServerInfo] Event loaded successfully
+03:12:27 [ServerInfo] EventItemBag loaded successfully
+03:12:27 [ServerInfo] Hack loaded successfully
+03:12:27 [ServerInfo] Item loaded successfully
+03:12:27 [ServerInfo] Monster loaded successfully
+03:12:27 [ServerInfo] Move loaded successfully
+03:12:27 [ServerInfo] Quest loaded successfully
+03:12:27 [ServerInfo] Shop loaded successfully
+03:12:27 [ServerInfo] Skill loaded successfully
+03:12:27 [ServerInfo] Util loaded successfully
+03:12:27 [ReadBotInfo] BotSystem loaded successfully
+03:12:27 [Lua] ScriptMain.lua cargado
+03:12:27 [Lua] Sistema Lua iniciado
+03:12:27 [Lua] Lua 5.4.9 loaded successfully (Main:ScriptMain.lua, Memory:32 MB, Instructions:500000)
+03:12:55 [Obj][9900] AddClient (192.168.1.12)
+03:12:56 [Obj][9900] AddAccount (admin)
+03:14:02 [Obj][9900] LogOutCharacter (Phanh)
+03:14:02 [Obj][9900] LogOutCharacter ()
+03:14:35 [Obj][9900] LogOutCharacter (TestDL)
+03:14:35 [Obj][9900] LogOutCharacter ()
+03:14:35 [Obj][9900] DelAccount (admin)
+03:14:35 [Obj][9900] DelClient (192.168.1.12)
+03:30:16 [ServerInfo] CashShop loaded successfully
+03:30:16 [ServerInfo] AV_ChaosMix.xml loaded successfully
+03:30:16 [ServerInfo] Character loaded successfully
+03:30:16 [FakeOnline] Load Data OK
+03:30:16 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+03:30:16 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+03:30:16 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+03:30:16 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\BloodCastle.xml
+03:30:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+03:30:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+03:30:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Chest.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Custom\CustomMix.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\DevilSquare.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Dinorant.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fenrir.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fruit.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\IllusionTemple.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ImperialGuardian.xml
+03:30:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Item380.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Item380.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ItemLevel.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LifeStone.xml
+03:30:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+03:30:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\MonsterWings.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Potions.xml
+03:30:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+03:30:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+03:30:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+03:30:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Socket.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\SocketWeapon.xml
+03:30:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Wings.xml
+03:30:16 [ItemMixManager] Chaos Machine XML folder loaded (Files: 21, Recipes: 28)
+03:30:16 [ServerInfo] Item Mix loaded successfully (Synchronized users: 0)
+03:30:16 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+03:30:16 [EventBoard] Loaded 23 rows from Dungeons.xml, Events.xml, Boss.xml and Competition.xml
+03:30:16 [CustomItemBank] (1) Load 10 Item In List
+03:30:16 [ServerInfo] Custom loaded successfully
+03:30:16 [ServerInfo] Command loaded successfully
+03:30:16 [ServerInfo] Common loaded successfully
+03:30:16 [ServerInfo] AV_Event.xml and Event XML settings loaded successfully
+03:30:16 [SpeedEvent] Loaded 2 schedule(s) and 3 location(s)
+03:30:16 [ScrambleWords] Loaded 7 schedules, 15 rounds and 5/5/5 words
+03:30:16 [ Crywolf ] State (0) -> NONE
+03:30:16 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+03:30:16 [DoubleGoer] Loaded 4 schedules, 10 open minute(s), max 5 user(s)
+03:30:16 [ServerInfo] Event loaded successfully
+03:30:16 [ServerInfo] EventItemBag loaded successfully
+03:30:16 [ServerInfo] Hack loaded successfully
+03:30:16 [ServerInfo] Item loaded successfully
+03:30:16 [ServerInfo] Monster loaded successfully
+03:30:16 [ServerInfo] Move loaded successfully
+03:30:16 [ServerInfo] Quest loaded successfully
+03:30:16 [ServerInfo] Shop loaded successfully
+03:30:16 [ServerInfo] Skill loaded successfully
+03:30:16 [ServerInfo] Util loaded successfully
+03:30:16 [ReadBotInfo] BotSystem loaded successfully
+03:30:16 [Lua] ScriptMain.lua cargado
+03:30:16 [Lua] Sistema Lua iniciado
+03:30:16 [Lua] Lua 5.4.9 loaded successfully (Main:ScriptMain.lua, Memory:32 MB, Instructions:500000)
+03:30:29 [Obj][9900] AddClient (192.168.1.12)
+03:30:30 [Obj][9900] AddAccount (admin)
+03:32:32 [Obj][9900] LogOutCharacter (TestDL)
+03:32:32 [Obj][9900] LogOutCharacter ()
+03:32:32 [Obj][9900] DelAccount (admin)
+03:32:32 [Obj][9900] DelClient (192.168.1.12)
+04:01:10 [ServerInfo] CashShop loaded successfully
+04:01:10 [ServerInfo] AV_ChaosMix.xml loaded successfully
+04:01:11 [ServerInfo] Character loaded successfully
+04:01:11 [FakeOnline] Load Data OK
+04:01:11 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+04:01:11 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+04:01:11 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+04:01:11 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\BloodCastle.xml
+04:01:11 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+04:01:11 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+04:01:11 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Chest.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Custom\CustomMix.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\DevilSquare.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Dinorant.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fenrir.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fruit.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\IllusionTemple.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ImperialGuardian.xml
+04:01:11 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Item380.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Item380.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ItemLevel.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LifeStone.xml
+04:01:11 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+04:01:11 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\MonsterWings.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Potions.xml
+04:01:11 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+04:01:11 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+04:01:11 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+04:01:11 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Socket.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\SocketWeapon.xml
+04:01:11 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Wings.xml
+04:01:11 [ItemMixManager] Chaos Machine XML folder loaded (Files: 21, Recipes: 28)
+04:01:11 [ServerInfo] Item Mix loaded successfully (Synchronized users: 0)
+04:01:11 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+04:01:11 [EventBoard] Loaded 23 rows from Dungeons.xml, Events.xml, Boss.xml and Competition.xml
+04:01:11 [CustomItemBank] (1) Load 10 Item In List
+04:01:11 [ServerInfo] Custom loaded successfully
+04:01:11 [ServerInfo] Command loaded successfully
+04:01:11 [ServerInfo] Common loaded successfully
+04:01:11 [ServerInfo] AV_Event.xml and Event XML settings loaded successfully
+04:01:11 [SpeedEvent] Loaded 2 schedule(s) and 3 location(s)
+04:01:11 [ScrambleWords] Loaded 7 schedules, 15 rounds and 5/5/5 words
+04:01:11 [ Crywolf ] State (0) -> NONE
+04:01:11 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+04:01:11 [DoubleGoer] Loaded 4 schedules, 10 open minute(s), max 5 user(s)
+04:01:11 [ServerInfo] Event loaded successfully
+04:01:11 [ServerInfo] EventItemBag loaded successfully
+04:01:11 [ServerInfo] Hack loaded successfully
+04:01:11 [ServerInfo] Item loaded successfully
+04:01:11 [ServerInfo] Monster loaded successfully
+04:01:11 [ServerInfo] Move loaded successfully
+04:01:11 [ServerInfo] Quest loaded successfully
+04:01:11 [ServerInfo] Shop loaded successfully
+04:01:11 [ServerInfo] Skill loaded successfully
+04:01:11 [ServerInfo] Util loaded successfully
+04:01:11 [ReadBotInfo] BotSystem loaded successfully
+04:01:11 [Lua] ScriptMain.lua cargado
+04:01:11 [Lua] Sistema Lua iniciado
+04:01:11 [Lua] Lua 5.4.9 loaded successfully (Main:ScriptMain.lua, Memory:32 MB, Instructions:500000)
+04:01:28 [Obj][9900] AddClient (192.168.1.12)
+04:01:29 [Obj][9900] AddAccount (admin)
+04:02:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+04:02:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+04:02:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+04:02:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+04:02:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+04:02:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+04:02:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+04:02:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+04:02:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+04:02:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+04:02:18 [Obj][9900] LogOutCharacter (TestDL)
+04:02:18 [Obj][9900] LogOutCharacter ()
+04:03:04 [Obj][9900] LogOutCharacter (Admin)
+04:03:04 [Obj][9900] LogOutCharacter ()
+04:03:04 [Obj][9900] DelAccount (admin)
+04:03:04 [Obj][9900] DelClient (192.168.1.12)
+10:17:58 [ServerInfo] CashShop loaded successfully
+10:17:58 [ServerInfo] AV_ChaosMix.xml loaded successfully
+10:17:58 [ServerInfo] Character loaded successfully
+10:17:58 [FakeOnline] Load Data OK
+10:17:58 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+10:17:58 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+10:17:58 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+10:17:58 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\BloodCastle.xml
+10:17:58 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+10:17:58 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+10:17:58 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Chest.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Custom\CustomMix.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\DevilSquare.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Dinorant.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fenrir.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fruit.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\IllusionTemple.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ImperialGuardian.xml
+10:17:58 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Item380.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Item380.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ItemLevel.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LifeStone.xml
+10:17:58 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+10:17:58 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\MonsterWings.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Potions.xml
+10:17:58 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+10:17:58 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+10:17:58 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+10:17:58 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Socket.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\SocketWeapon.xml
+10:17:58 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Wings.xml
+10:17:58 [ItemMixManager] Chaos Machine XML folder loaded (Files: 21, Recipes: 28)
+10:17:58 [ServerInfo] Item Mix loaded successfully (Synchronized users: 0)
+10:17:58 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+10:17:58 [EventBoard] Loaded 23 rows from Dungeons.xml, Events.xml, Boss.xml and Competition.xml
+10:17:58 [CustomItemBank] (1) Load 10 Item In List
+10:17:58 [ServerInfo] Custom loaded successfully
+10:17:58 [ServerInfo] Command loaded successfully
+10:17:59 [ServerInfo] Common loaded successfully
+10:17:59 [ServerInfo] AV_Event.xml and Event XML settings loaded successfully
+10:17:59 [SpeedEvent] Loaded 2 schedule(s) and 3 location(s)
+10:17:59 [ScrambleWords] Loaded 7 schedules, 15 rounds and 5/5/5 words
+10:17:59 [ Crywolf ] State (0) -> NONE
+10:17:59 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+10:17:59 [DoubleGoer] Loaded 4 schedules, 10 open minute(s), max 5 user(s)
+10:17:59 [ServerInfo] Event loaded successfully
+10:18:00 [ServerInfo] EventItemBag loaded successfully
+10:18:00 [ServerInfo] Hack loaded successfully
+10:18:00 [ServerInfo] Item loaded successfully
+10:18:02 [ServerInfo] Monster loaded successfully
+10:18:02 [ServerInfo] Move loaded successfully
+10:18:02 [ServerInfo] Quest loaded successfully
+10:18:02 [ServerInfo] Shop loaded successfully
+10:18:02 [ServerInfo] Skill loaded successfully
+10:18:02 [ServerInfo] Util loaded successfully
+10:18:02 [ReadBotInfo] BotSystem loaded successfully
+10:18:02 [Lua] ScriptMain.lua cargado
+10:18:02 [Lua] Sistema Lua iniciado
+10:18:02 [Lua] Lua 5.4.9 loaded successfully (Main:ScriptMain.lua, Memory:32 MB, Instructions:500000)
+10:18:30 [Obj][9900] AddClient (192.168.1.12)
+10:18:32 [Obj][9900] AddAccount (admin)
+10:18:49 12
+10:19:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+10:19:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+10:19:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+10:19:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+10:19:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+10:19:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+10:19:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+10:19:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+10:19:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+10:19:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+10:19:06 [Obj][9900] LogOutCharacter (TestDL)
+10:19:06 [Obj][9900] LogOutCharacter ()
+10:19:29 [Obj][9900] LogOutCharacter (TESTRF)
+10:19:29 [Obj][9900] LogOutCharacter ()
+10:19:29 [Obj][9900] DelAccount (admin)
+10:19:29 [Obj][9900] DelClient (192.168.1.12)
+11:01:30 [ServerInfo] CashShop loaded successfully
+11:01:30 [ServerInfo] AV_ChaosMix.xml loaded successfully
+11:01:30 [ServerInfo] Character loaded successfully
+11:01:30 [FakeOnline] Load Data OK
+11:01:30 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+11:01:30 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+11:01:30 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+11:01:30 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\BloodCastle.xml
+11:01:30 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+11:01:30 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+11:01:30 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Chest.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Custom\CustomMix.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\DevilSquare.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Dinorant.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fenrir.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fruit.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\IllusionTemple.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ImperialGuardian.xml
+11:01:30 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Item380.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Item380.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ItemLevel.xml
+11:01:30 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LifeStone.xml
+11:01:31 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+11:01:31 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+11:01:31 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+11:01:31 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\MonsterWings.xml
+11:01:31 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Potions.xml
+11:01:31 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:01:31 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:01:31 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:01:31 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:01:31 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:01:31 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\SocketWeapon.xml
+11:01:31 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Wings.xml
+11:01:31 [ItemMixManager] Chaos Machine XML folder loaded (Files: 21, Recipes: 28)
+11:01:31 [ServerInfo] Item Mix loaded successfully (Synchronized users: 0)
+11:01:31 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+11:01:31 [EventBoard] Loaded 23 rows from Dungeons.xml, Events.xml, Boss.xml and Competition.xml
+11:01:31 [CustomItemBank] (1) Load 10 Item In List
+11:01:31 [ServerInfo] Custom loaded successfully
+11:01:31 [ServerInfo] Command loaded successfully
+11:01:31 [ServerInfo] Common loaded successfully
+11:01:31 [ServerInfo] AV_Event.xml and Event XML settings loaded successfully
+11:01:31 [SpeedEvent] Loaded 2 schedule(s) and 3 location(s)
+11:01:31 [ScrambleWords] Loaded 7 schedules, 15 rounds and 5/5/5 words
+11:01:31 [ Crywolf ] State (0) -> NONE
+11:01:31 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+11:01:31 [DoubleGoer] Loaded 4 schedules, 10 open minute(s), max 5 user(s)
+11:01:31 [ServerInfo] Event loaded successfully
+11:01:32 [ServerInfo] EventItemBag loaded successfully
+11:01:32 [ServerInfo] Hack loaded successfully
+11:01:32 [ServerInfo] Item loaded successfully
+11:01:33 [ServerInfo] Monster loaded successfully
+11:01:33 [ServerInfo] Move loaded successfully
+11:01:33 [ServerInfo] Quest loaded successfully
+11:01:33 [ServerInfo] Shop loaded successfully
+11:01:33 [ServerInfo] Skill loaded successfully
+11:01:33 [ServerInfo] Util loaded successfully
+11:01:33 [ReadBotInfo] BotSystem loaded successfully
+11:01:33 [Lua] ScriptMain.lua cargado
+11:01:33 [Lua] Sistema Lua iniciado
+11:01:33 [Lua] Lua 5.4.9 loaded successfully (Main:ScriptMain.lua, Memory:32 MB, Instructions:500000)
+11:01:51 [Obj][9900] AddClient (192.168.1.12)
+11:01:53 [Obj][9900] AddAccount (admin)
+11:03:05 [Obj][9900] LogOutCharacter (TESTRF)
+11:03:05 [Obj][9900] LogOutCharacter ()
+11:03:05 [Obj][9900] DelAccount (admin)
+11:03:05 [Obj][9900] DelClient (192.168.1.12)
+11:13:50 [ServerInfo] CashShop loaded successfully
+11:13:50 [ServerInfo] AV_ChaosMix.xml loaded successfully
+11:13:50 [ServerInfo] Character loaded successfully
+11:13:50 [FakeOnline] Load Data OK
+11:13:50 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+11:13:50 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+11:13:50 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+11:13:50 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\BloodCastle.xml
+11:13:50 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+11:13:50 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+11:13:50 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Chest.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Custom\CustomMix.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\DevilSquare.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Dinorant.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fenrir.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fruit.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\IllusionTemple.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ImperialGuardian.xml
+11:13:50 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Item380.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Item380.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ItemLevel.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LifeStone.xml
+11:13:50 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+11:13:50 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\MonsterWings.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Potions.xml
+11:13:50 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:13:50 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:13:50 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:13:50 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\SocketWeapon.xml
+11:13:50 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Wings.xml
+11:13:50 [ItemMixManager] Chaos Machine XML folder loaded (Files: 21, Recipes: 28)
+11:13:50 [ServerInfo] Item Mix loaded successfully (Synchronized users: 0)
+11:13:50 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+11:13:50 [EventBoard] Loaded 23 rows from Dungeons.xml, Events.xml, Boss.xml and Competition.xml
+11:13:50 [CustomItemBank] (1) Load 10 Item In List
+11:13:50 [ServerInfo] Custom loaded successfully
+11:13:50 [ServerInfo] Command loaded successfully
+11:13:50 [ServerInfo] Common loaded successfully
+11:13:50 [ServerInfo] AV_Event.xml and Event XML settings loaded successfully
+11:13:50 [SpeedEvent] Loaded 2 schedule(s) and 3 location(s)
+11:13:50 [ScrambleWords] Loaded 7 schedules, 15 rounds and 5/5/5 words
+11:13:50 [ Crywolf ] State (0) -> NONE
+11:13:50 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+11:13:50 [DoubleGoer] Loaded 4 schedules, 10 open minute(s), max 5 user(s)
+11:13:50 [ServerInfo] Event loaded successfully
+11:13:50 [ServerInfo] EventItemBag loaded successfully
+11:13:50 [ServerInfo] Hack loaded successfully
+11:13:50 [ServerInfo] Item loaded successfully
+11:13:50 [ServerInfo] Monster loaded successfully
+11:13:50 [ServerInfo] Move loaded successfully
+11:13:50 [ServerInfo] Quest loaded successfully
+11:13:50 [ServerInfo] Shop loaded successfully
+11:13:50 [ServerInfo] Skill loaded successfully
+11:13:50 [ServerInfo] Util loaded successfully
+11:13:50 [ReadBotInfo] BotSystem loaded successfully
+11:13:50 [Lua] ScriptMain.lua cargado
+11:13:50 [Lua] Sistema Lua iniciado
+11:13:50 [Lua] Lua 5.4.9 loaded successfully (Main:ScriptMain.lua, Memory:32 MB, Instructions:500000)
+11:14:04 [Obj][9900] AddClient (192.168.1.12)
+11:14:05 [Obj][9900] AddAccount (admin)
+11:16:21 [Obj][9900] LogOutCharacter (TESTRF)
+11:16:21 [Obj][9900] LogOutCharacter ()
+11:17:09 [Obj][9900] LogOutCharacter (TestDL)
+11:17:09 [Obj][9900] LogOutCharacter ()
+11:19:08 [Obj][9900] LogOutCharacter (TESTRF)
+11:19:08 [Obj][9900] LogOutCharacter ()
+11:19:08 [Obj][9900] DelAccount (admin)
+11:19:08 [Obj][9900] DelClient (192.168.1.12)
+11:47:57 [ServerInfo] CashShop loaded successfully
+11:47:57 [ServerInfo] AV_ChaosMix.xml loaded successfully
+11:47:57 [ServerInfo] Character loaded successfully
+11:47:57 [FakeOnline] Load Data OK
+11:47:57 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+11:47:57 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+11:47:57 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+11:47:57 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\BloodCastle.xml
+11:47:57 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+11:47:57 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+11:47:57 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Chest.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Custom\CustomMix.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\DevilSquare.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Dinorant.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fenrir.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fruit.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\IllusionTemple.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ImperialGuardian.xml
+11:47:57 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Item380.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Item380.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ItemLevel.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LifeStone.xml
+11:47:57 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+11:47:57 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\MonsterWings.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Potions.xml
+11:47:57 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:47:57 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:47:57 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:47:57 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Socket.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\SocketWeapon.xml
+11:47:57 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Wings.xml
+11:47:57 [ItemMixManager] Chaos Machine XML folder loaded (Files: 21, Recipes: 28)
+11:47:57 [ServerInfo] Item Mix loaded successfully (Synchronized users: 0)
+11:47:57 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+11:47:57 [EventBoard] Loaded 23 rows from Dungeons.xml, Events.xml, Boss.xml and Competition.xml
+11:47:57 [CustomItemBank] (1) Load 10 Item In List
+11:47:57 [ServerInfo] Custom loaded successfully
+11:47:58 [ServerInfo] Command loaded successfully
+11:47:58 [ServerInfo] Common loaded successfully
+11:47:58 [ServerInfo] AV_Event.xml and Event XML settings loaded successfully
+11:47:58 [SpeedEvent] Loaded 2 schedule(s) and 3 location(s)
+11:47:58 [ScrambleWords] Loaded 7 schedules, 15 rounds and 5/5/5 words
+11:47:58 [ Crywolf ] State (0) -> NONE
+11:47:58 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+11:47:58 [DoubleGoer] Loaded 4 schedules, 10 open minute(s), max 5 user(s)
+11:47:58 [ServerInfo] Event loaded successfully
+11:47:58 [ServerInfo] EventItemBag loaded successfully
+11:47:58 [ServerInfo] Hack loaded successfully
+11:47:58 [ServerInfo] Item loaded successfully
+11:47:58 [ServerInfo] Monster loaded successfully
+11:47:58 [ServerInfo] Move loaded successfully
+11:47:58 [ServerInfo] Quest loaded successfully
+11:47:58 [ServerInfo] Shop loaded successfully
+11:47:58 [ServerInfo] Skill loaded successfully
+11:47:58 [ServerInfo] Util loaded successfully
+11:47:58 [ReadBotInfo] BotSystem loaded successfully
+11:47:58 [Lua] ScriptMain.lua cargado
+11:47:58 [Lua] Sistema Lua iniciado
+11:47:58 [Lua] Lua 5.4.9 loaded successfully (Main:ScriptMain.lua, Memory:32 MB, Instructions:500000)
+11:48:15 [Obj][9900] AddClient (192.168.1.12)
+11:48:16 [Obj][9900] AddAccount (admin)
+11:49:14 12
+11:49:21 [Obj][9900] LogOutCharacter (TESTRF)
+11:49:21 [Obj][9900] LogOutCharacter ()
+11:52:28 [Obj][9900] LogOutCharacter (TestDL)
+11:52:28 [Obj][9900] LogOutCharacter ()
+11:52:28 [Obj][9900] DelAccount (admin)
+11:52:28 [Obj][9900] DelClient (192.168.1.12)
+12:05:06 [ServerInfo] CashShop loaded successfully
+12:05:06 [ServerInfo] AV_ChaosMix.xml loaded successfully
+12:05:06 [ServerInfo] Character loaded successfully
+12:05:06 [FakeOnline] Load Data OK
+12:05:06 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+12:05:06 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+12:05:06 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+12:05:06 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\BloodCastle.xml
+12:05:06 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+12:05:06 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+12:05:06 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Chest.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Custom\CustomMix.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\DevilSquare.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Dinorant.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fenrir.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fruit.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\IllusionTemple.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ImperialGuardian.xml
+12:05:06 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Item380.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Item380.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ItemLevel.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LifeStone.xml
+12:05:06 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+12:05:06 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\MonsterWings.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Potions.xml
+12:05:06 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+12:05:06 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+12:05:06 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+12:05:06 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Socket.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\SocketWeapon.xml
+12:05:06 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Wings.xml
+12:05:06 [ItemMixManager] Chaos Machine XML folder loaded (Files: 21, Recipes: 28)
+12:05:06 [ServerInfo] Item Mix loaded successfully (Synchronized users: 0)
+12:05:06 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+12:05:06 [EventBoard] Loaded 23 rows from Dungeons.xml, Events.xml, Boss.xml and Competition.xml
+12:05:06 [CustomItemBank] (1) Load 10 Item In List
+12:05:06 [ServerInfo] Custom loaded successfully
+12:05:06 [ServerInfo] Command loaded successfully
+12:05:06 [ServerInfo] Common loaded successfully
+12:05:06 [ServerInfo] AV_Event.xml and Event XML settings loaded successfully
+12:05:06 [SpeedEvent] Loaded 2 schedule(s) and 3 location(s)
+12:05:06 [ScrambleWords] Loaded 7 schedules, 15 rounds and 5/5/5 words
+12:05:06 [ Crywolf ] State (0) -> NONE
+12:05:06 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+12:05:06 [DoubleGoer] Loaded 4 schedules, 10 open minute(s), max 5 user(s)
+12:05:07 [ServerInfo] Event loaded successfully
+12:05:07 [ServerInfo] EventItemBag loaded successfully
+12:05:07 [ServerInfo] Hack loaded successfully
+12:05:07 [ServerInfo] Item loaded successfully
+12:05:07 [ServerInfo] Monster loaded successfully
+12:05:07 [ServerInfo] Move loaded successfully
+12:05:07 [ServerInfo] Quest loaded successfully
+12:05:07 [ServerInfo] Shop loaded successfully
+12:05:07 [ServerInfo] Skill loaded successfully
+12:05:07 [ServerInfo] Util loaded successfully
+12:05:07 [ReadBotInfo] BotSystem loaded successfully
+12:05:07 [Lua] ScriptMain.lua cargado
+12:05:07 [Lua] Sistema Lua iniciado
+12:05:07 [Lua] Lua 5.4.9 loaded successfully (Main:ScriptMain.lua, Memory:32 MB, Instructions:500000)
+12:05:18 [Obj][9900] AddClient (192.168.1.12)
+12:05:20 [Obj][9900] AddAccount (admin)
+12:06:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+12:06:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+12:06:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+12:06:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+12:06:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+12:06:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+12:06:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+12:06:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+12:06:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+12:06:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+12:06:42 12
+12:06:51 [Obj][9900] LogOutCharacter (TestDL)
+12:06:51 [Obj][9900] LogOutCharacter ()
+12:08:49 [Obj][9900] LogOutCharacter (TESTRF)
+12:08:49 [Obj][9900] LogOutCharacter ()
+12:08:49 [Obj][9900] DelAccount (admin)
+12:08:49 [Obj][9900] DelClient (192.168.1.12)
+12:19:56 [ServerInfo] CashShop loaded successfully
+12:19:56 [ServerInfo] AV_ChaosMix.xml loaded successfully
+12:19:56 [ServerInfo] Character loaded successfully
+12:19:56 [FakeOnline] Load Data OK
+12:19:56 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+12:19:56 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+12:19:56 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+12:19:56 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\BloodCastle.xml
+12:19:56 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+12:19:56 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+12:19:56 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Chest.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Custom\CustomMix.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\DevilSquare.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Dinorant.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fenrir.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fruit.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\IllusionTemple.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ImperialGuardian.xml
+12:19:56 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Item380.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Item380.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ItemLevel.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LifeStone.xml
+12:19:56 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+12:19:56 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\MonsterWings.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Potions.xml
+12:19:56 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+12:19:56 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+12:19:56 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+12:19:56 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Socket.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\SocketWeapon.xml
+12:19:56 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Wings.xml
+12:19:56 [ItemMixManager] Chaos Machine XML folder loaded (Files: 21, Recipes: 28)
+12:19:56 [ServerInfo] Item Mix loaded successfully (Synchronized users: 0)
+12:19:56 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+12:19:56 [EventBoard] Loaded 23 rows from Dungeons.xml, Events.xml, Boss.xml and Competition.xml
+12:19:56 [CustomItemBank] (1) Load 10 Item In List
+12:19:56 [ServerInfo] Custom loaded successfully
+12:19:57 [ServerInfo] Command loaded successfully
+12:19:57 [ServerInfo] Common loaded successfully
+12:19:57 [ServerInfo] AV_Event.xml and Event XML settings loaded successfully
+12:19:57 [SpeedEvent] Loaded 2 schedule(s) and 3 location(s)
+12:19:57 [ScrambleWords] Loaded 7 schedules, 15 rounds and 5/5/5 words
+12:19:57 [ Crywolf ] State (0) -> NONE
+12:19:57 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+12:19:57 [DoubleGoer] Loaded 4 schedules, 10 open minute(s), max 5 user(s)
+12:19:57 [ServerInfo] Event loaded successfully
+12:19:57 [ServerInfo] EventItemBag loaded successfully
+12:19:57 [ServerInfo] Hack loaded successfully
+12:19:57 [ServerInfo] Item loaded successfully
+12:19:57 [ServerInfo] Monster loaded successfully
+12:19:57 [ServerInfo] Move loaded successfully
+12:19:57 [ServerInfo] Quest loaded successfully
+12:19:57 [ServerInfo] Shop loaded successfully
+12:19:57 [ServerInfo] Skill loaded successfully
+12:19:57 [ServerInfo] Util loaded successfully
+12:19:57 [ReadBotInfo] BotSystem loaded successfully
+12:19:57 [Lua] ScriptMain.lua cargado
+12:19:57 [Lua] Sistema Lua iniciado
+12:19:57 [Lua] Lua 5.4.9 loaded successfully (Main:ScriptMain.lua, Memory:32 MB, Instructions:500000)
+12:20:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+12:20:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+12:20:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+12:20:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+12:20:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+12:20:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+12:20:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+12:20:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+12:20:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+12:20:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+12:20:11 [Obj][9900] AddClient (192.168.1.12)
+12:20:12 [Obj][9900] AddAccount (admin)
+12:21:51 [Obj][9900] LogOutCharacter (TESTRF)
+12:21:51 [Obj][9900] LogOutCharacter ()
+12:21:51 [Obj][9900] DelAccount (admin)
+12:21:51 [Obj][9900] DelClient (192.168.1.12)
+17:26:00 [ServerInfo] CashShop loaded successfully
+17:26:00 [ServerInfo] AV_ChaosMix.xml loaded successfully
+17:26:00 [ServerInfo] Character loaded successfully
+17:26:00 [FakeOnline] Load Data OK
+17:26:01 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+17:26:01 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+17:26:01 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+17:26:01 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\BloodCastle.xml
+17:26:01 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+17:26:01 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+17:26:01 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Chest.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Custom\CustomMix.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\DevilSquare.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Dinorant.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fenrir.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fruit.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\IllusionTemple.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ImperialGuardian.xml
+17:26:01 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Item380.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Item380.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ItemLevel.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LifeStone.xml
+17:26:01 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+17:26:01 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\MonsterWings.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Potions.xml
+17:26:01 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+17:26:01 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+17:26:01 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+17:26:01 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Socket.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\SocketWeapon.xml
+17:26:01 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Wings.xml
+17:26:01 [ItemMixManager] Chaos Machine XML folder loaded (Files: 21, Recipes: 28)
+17:26:01 [ServerInfo] Item Mix loaded successfully (Synchronized users: 0)
+17:26:01 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+17:26:01 [EventBoard] Loaded 23 rows from Dungeons.xml, Events.xml, Boss.xml and Competition.xml
+17:26:01 [CustomItemBank] (1) Load 10 Item In List
+17:26:01 [ServerInfo] Custom loaded successfully
+17:26:01 [ServerInfo] Command loaded successfully
+17:26:01 [ServerInfo] Common loaded successfully
+17:26:01 [ServerInfo] AV_Event.xml and Event XML settings loaded successfully
+17:26:01 [SpeedEvent] Loaded 2 schedule(s) and 3 location(s)
+17:26:01 [ScrambleWords] Loaded 7 schedules, 15 rounds and 5/5/5 words
+17:26:01 [ Crywolf ] State (0) -> NONE
+17:26:01 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+17:26:01 [DoubleGoer] Loaded 4 schedules, 10 open minute(s), max 5 user(s)
+17:26:01 [ServerInfo] Event loaded successfully
+17:26:03 [ServerInfo] EventItemBag loaded successfully
+17:26:03 [ServerInfo] Hack loaded successfully
+17:26:03 [ServerInfo] Item loaded successfully
+17:26:05 [ServerInfo] Monster loaded successfully
+17:26:05 [ServerInfo] Move loaded successfully
+17:26:05 [ServerInfo] Quest loaded successfully
+17:26:05 [ServerInfo] Shop loaded successfully
+17:26:05 [ServerInfo] Skill loaded successfully
+17:26:05 [ServerInfo] Util loaded successfully
+17:26:05 [ReadBotInfo] BotSystem loaded successfully
+17:26:05 [Lua] ScriptMain.lua cargado
+17:26:05 [Lua] Sistema Lua iniciado
+17:26:05 [Lua] Lua 5.4.9 loaded successfully (Main:ScriptMain.lua, Memory:32 MB, Instructions:500000)
+17:26:40 [Obj][9900] AddClient (192.168.1.12)
+17:26:41 [Obj][9900] AddAccount (admin)
+17:28:37 [Obj][9900] LogOutCharacter (Phanh)
+17:28:37 [Obj][9900] LogOutCharacter ()
+17:36:01 [OnlineLoterry] Add Member (Phanh)
+17:36:01 [OnlineLoterry] Winner (Phanh)
+17:36:01 [admin][Phanh] WZ_SetCoin(Lottery) Val1: 10, Val2: 0, Val3: 0
+17:44:00 [Obj][9900] LogOutCharacter (Phanh)
+17:44:00 [Obj][9900] LogOutCharacter ()
+17:44:00 [Obj][9900] DelAccount (admin)
+17:44:00 [Obj][9900] DelClient (192.168.1.12)
+19:24:07 [ServerInfo] CashShop loaded successfully
+19:24:07 [ServerInfo] AV_ChaosMix.xml loaded successfully
+19:24:07 [ServerInfo] Character loaded successfully
+19:24:07 [FakeOnline] Load Data OK
+19:24:07 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+19:24:07 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+19:24:07 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+19:24:07 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\BloodCastle.xml
+19:24:07 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+19:24:07 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+19:24:07 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Chest.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Custom\CustomMix.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\DevilSquare.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Dinorant.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fenrir.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fruit.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\IllusionTemple.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ImperialGuardian.xml
+19:24:07 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Item380.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Item380.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ItemLevel.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LifeStone.xml
+19:24:07 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+19:24:07 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\MonsterWings.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Potions.xml
+19:24:07 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+19:24:07 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+19:24:07 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+19:24:07 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Socket.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\SocketWeapon.xml
+19:24:07 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Wings.xml
+19:24:07 [ItemMixManager] Chaos Machine XML folder loaded (Files: 21, Recipes: 28)
+19:24:07 [ServerInfo] Item Mix loaded successfully (Synchronized users: 0)
+19:24:07 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+19:24:07 [EventBoard] Loaded 23 rows from Dungeons.xml, Events.xml, Boss.xml and Competition.xml
+19:24:07 [CustomItemBank] (1) Load 10 Item In List
+19:24:07 [ServerInfo] Custom loaded successfully
+19:24:07 [ServerInfo] Command loaded successfully
+19:24:07 [ServerInfo] Common loaded successfully
+19:24:07 [ServerInfo] AV_Event.xml and Event XML settings loaded successfully
+19:24:07 [SpeedEvent] Loaded 2 schedule(s) and 3 location(s)
+19:24:07 [ScrambleWords] Loaded 7 schedules, 15 rounds and 5/5/5 words
+19:24:07 [ Crywolf ] State (0) -> NONE
+19:24:07 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+19:24:07 [DoubleGoer] Loaded 4 schedules, 10 open minute(s), max 5 user(s)
+19:24:07 [ServerInfo] Event loaded successfully
+19:24:07 [ServerInfo] EventItemBag loaded successfully
+19:24:07 [ServerInfo] Hack loaded successfully
+19:24:07 [ServerInfo] Item loaded successfully
+19:24:07 [ServerInfo] Monster loaded successfully
+19:24:07 [ServerInfo] Move loaded successfully
+19:24:07 [ServerInfo] Quest loaded successfully
+19:24:07 [ServerInfo] Shop loaded successfully
+19:24:08 [ServerInfo] Skill loaded successfully
+19:24:08 [ServerInfo] Util loaded successfully
+19:24:08 [ReadBotInfo] BotSystem loaded successfully
+19:24:08 [Lua] ScriptMain.lua cargado
+19:24:08 [Lua] Sistema Lua iniciado
+19:24:08 [Lua] Lua 5.4.9 loaded successfully (Main:ScriptMain.lua, Memory:32 MB, Instructions:500000)
+19:24:22 [Obj][9900] AddClient (192.168.1.12)
+19:24:23 [Obj][9900] AddAccount (admin)
+19:27:31 [Obj][9900] LogOutCharacter (Phanh)
+19:27:31 [Obj][9900] LogOutCharacter ()
+19:27:31 [Obj][9900] DelAccount (admin)
+19:27:31 [Obj][9900] DelClient (192.168.1.12)
+19:38:16 [ServerInfo] CashShop loaded successfully
+19:38:16 [ServerInfo] AV_ChaosMix.xml loaded successfully
+19:38:16 [ServerInfo] Character loaded successfully
+19:38:16 [FakeOnline] Load Data OK
+19:38:16 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+19:38:16 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+19:38:16 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+19:38:16 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\BloodCastle.xml
+19:38:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosCard.xml
+19:38:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ChaosWeapon.xml
+19:38:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\CherryBlossom.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Chest.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Custom\CustomMix.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\DevilSquare.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Dinorant.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fenrir.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Fruit.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\IllusionTemple.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ImperialGuardian.xml
+19:38:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Item380.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Item380.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\ItemLevel.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LifeStone.xml
+19:38:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+19:38:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\LuckyItem.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\MonsterWings.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Potions.xml
+19:38:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+19:38:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+19:38:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+19:38:16 [ItemMixManager] Invalid Chaos Machine recipe in: ..\Data\ItemMix\ChaosMachine\Socket.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Socket.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\SocketWeapon.xml
+19:38:16 [ItemMixManager] Chaos Machine XML loaded: ..\Data\ItemMix\ChaosMachine\Wings.xml
+19:38:16 [ItemMixManager] Chaos Machine XML folder loaded (Files: 21, Recipes: 28)
+19:38:16 [ServerInfo] Item Mix loaded successfully (Synchronized users: 0)
+19:38:16 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+19:38:16 [EventBoard] Loaded 23 rows from Dungeons.xml, Events.xml, Boss.xml and Competition.xml
+19:38:16 [CustomItemBank] (1) Load 10 Item In List
+19:38:16 [ServerInfo] Custom loaded successfully
+19:38:16 [ServerInfo] Command loaded successfully
+19:38:16 [ServerInfo] Common loaded successfully
+19:38:16 [ServerInfo] AV_Event.xml and Event XML settings loaded successfully
+19:38:16 [SpeedEvent] Loaded 2 schedule(s) and 3 location(s)
+19:38:16 [ScrambleWords] Loaded 7 schedules, 15 rounds and 5/5/5 words
+19:38:16 [ Crywolf ] State (0) -> NONE
+19:38:16 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+19:38:16 [DoubleGoer] Loaded 4 schedules, 10 open minute(s), max 5 user(s)
+19:38:16 [ServerInfo] Event loaded successfully
+19:38:16 [ServerInfo] EventItemBag loaded successfully
+19:38:16 [ServerInfo] Hack loaded successfully
+19:38:16 [ServerInfo] Item loaded successfully
+19:38:16 [ServerInfo] Monster loaded successfully
+19:38:16 [ServerInfo] Move loaded successfully
+19:38:16 [ServerInfo] Quest loaded successfully
+19:38:16 [ServerInfo] Shop loaded successfully
+19:38:16 [ServerInfo] Skill loaded successfully
+19:38:16 [ServerInfo] Util loaded successfully
+19:38:16 [ReadBotInfo] BotSystem loaded successfully
+19:38:16 [Lua] ScriptMain.lua cargado
+19:38:16 [Lua] Sistema Lua iniciado
+19:38:16 [Lua] Lua 5.4.9 loaded successfully (Main:ScriptMain.lua, Memory:32 MB, Instructions:500000)
+19:38:33 [Obj][9900] AddClient (192.168.1.12)
+19:38:34 [Obj][9900] AddAccount (admin)
+19:39:43 [Obj][9900] LogOutCharacter (Phanh)
+19:39:43 [Obj][9900] LogOutCharacter ()
+19:39:43 [Obj][9900] DelAccount (admin)
+19:39:43 [Obj][9900] DelClient (192.168.1.12)
+19:44:14 [Obj][9900] AddClient (192.168.1.12)
+19:44:15 [Obj][9900] AddAccount (admin)
+19:44:33 [Obj][9900] LogOutCharacter (Phanh)
+19:44:33 [Obj][9900] LogOutCharacter ()
+19:44:33 [Obj][9900] DelAccount (admin)
+19:44:33 [Obj][9900] DelClient (192.168.1.12)
+19:52:46 [Obj][9900] AddClient (192.168.1.12)
+19:52:48 [Obj][9900] AddAccount (admin)
+19:52:57 [Obj][9900] LogOutCharacter (Phanh)
+19:52:57 [Obj][9900] LogOutCharacter ()
+19:52:57 [Obj][9900] DelAccount (admin)
+19:52:57 [Obj][9900] DelClient (192.168.1.12)
+19:58:15 [Obj][9900] AddClient (192.168.1.12)
+19:58:19 [Obj][9900] AddAccount (admin)
+20:00:00 [SPEED EVENT] Start
+20:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+20:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+20:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+20:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+20:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+20:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+20:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+20:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+20:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+20:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+20:02:03 [SPEED EVENT] Finish without winner
+20:05:00 [Invasion Manager] Index(0) Boss Position (Map: 0 X: 132 Y: 200)
+20:05:00 [Invasion Manager] Index(0) Boss Position (Map: 0 X: 132 Y: 200)
+20:08:36 [Obj][9900] LogOutCharacter (Phanh)
+20:08:36 [Obj][9900] LogOutCharacter ()
+20:08:36 [Obj][9900] DelAccount (admin)
+20:08:36 [Obj][9900] DelClient (192.168.1.12)
+20:08:48 [Obj][9900] AddClient (192.168.1.12)
+20:08:49 [Obj][9900] AddAccount (admin)
+20:09:12 [Obj][9900] LogOutCharacter (Phanh)
+20:09:12 [Obj][9900] LogOutCharacter ()
+20:09:12 [Obj][9900] DelAccount (admin)
+20:09:12 [Obj][9900] DelClient (192.168.1.12)
+20:10:00 [CustomQuiz] Start
+20:13:00 [CustomQuiz] Finish
+20:25:00 [Invasion Manager] Index(2) Boss Position (Map: 37 X: 127 Y: 22)
+20:25:00 [Invasion Manager] Index(2) Boss Position (Map: 37 X: 127 Y: 22)
+20:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+20:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+20:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+20:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+20:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+20:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+20:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+20:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+20:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+20:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+20:36:01 [OnlineLoterry] No Winner
+20:50:01 [SCRAMBLE WORDS] Countdown started
+20:50:01 [Invasion Manager] Index(3) Boss Position (Map: 0 X: 148 Y: 53)
+20:50:01 [Invasion Manager] Index(3) Boss Position (Map: 0 X: 148 Y: 53)
+20:59:00 [Pandora] State -> STAND (notify broadcast sent, 60 sec to START)
+21:00:00 [Pandora] State -> START (mapServerOk=1, chestIndex=3075, map=0 x=145 y=126)
+21:00:00 [Invasion Manager] Index(8) Boss Position (Map: 56 X: 56 Y: 106)
+21:00:00 [Invasion Manager] Index(8) Boss Position (Map: 56 X: 56 Y: 106)
+21:10:00 [CustomQuiz] Start
+21:13:00 [CustomQuiz] Finish
+21:30:00 [Pandora] State -> CLEAN
+21:36:01 [OnlineLoterry] No Winner
+21:39:06 [SCRAMBLE WORDS] Event finished
+21:50:00 [SCRAMBLE WORDS] Countdown started
+22:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+22:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+22:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+22:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+22:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+22:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+22:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+22:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+22:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+22:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+22:05:00 [KING OF MU] Start
+22:10:00 [CustomQuiz] Start
+22:13:00 [CustomQuiz] Finish
+22:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+22:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+22:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+22:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+22:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+22:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+22:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+22:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+22:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+22:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+22:35:00 [KING OF MU] Finish - No Winner
+22:36:01 [OnlineLoterry] No Winner
+22:39:04 [SCRAMBLE WORDS] Event finished
+22:50:00 [Invasion Manager] Index(7) Boss Position (Map: 3 X: 196 Y: 85)
+22:50:00 [Invasion Manager] Index(7) Boss Position (Map: 3 X: 196 Y: 85)
+23:10:00 [CustomQuiz] Start
+23:13:00 [CustomQuiz] Finish
+23:36:01 [OnlineLoterry] No Winner

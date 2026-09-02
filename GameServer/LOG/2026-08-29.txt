@@ -1,0 +1,281 @@
+02:17:25 [ServerInfo] CashShop loaded successfully
+02:17:25 [ServerInfo] ChaosMix loaded successfully
+02:17:25 [ServerInfo] Character loaded successfully
+02:17:25 [FakeOnline] Load Data OK
+02:17:25 [ItemMixManager] Senior Mix XML loaded (Enabled: 1)
+02:17:25 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+02:17:25 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+02:17:25 [EventTime] [1] Size 4 
+02:17:25 [CustomItemBank] (1) Load 10 Item In List
+02:17:25 [ServerInfo] Custom loaded successfully
+02:17:25 [ServerInfo] Command loaded successfully
+02:17:25 [ServerInfo] Common loaded successfully
+02:17:25 [ Crywolf ] State (0) -> NONE
+02:17:25 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+02:17:25 [ServerInfo] Event loaded successfully
+02:17:25 [ServerInfo] EventItemBag loaded successfully
+02:17:25 [ServerInfo] Hack loaded successfully
+02:17:25 [ServerInfo] Item loaded successfully
+02:17:25 [ServerInfo] Monster loaded successfully
+02:17:25 [ServerInfo] Move loaded successfully
+02:17:25 [ServerInfo] Quest loaded successfully
+02:17:25 [ServerInfo] Shop loaded successfully
+02:17:25 [ServerInfo] Skill loaded successfully
+02:17:25 [ServerInfo] Util loaded successfully
+02:17:25 [ReadBotInfo] BotSystem loaded successfully
+02:18:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+02:18:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+02:18:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+02:18:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+02:18:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+02:18:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+02:18:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+02:18:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+02:18:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+02:18:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+02:18:44 [Obj][9900] AddClient (192.168.1.12)
+02:18:45 [Obj][9900] AddAccount (admin)
+02:19:05 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+02:22:12 [ServerInfo] CashShop loaded successfully
+02:22:12 [ServerInfo] ChaosMix loaded successfully
+02:22:13 [ServerInfo] Character loaded successfully
+02:22:13 [FakeOnline] Load Data OK
+02:22:13 [ItemMixManager] Senior Mix XML loaded (Enabled: 1)
+02:22:13 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+02:22:13 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+02:22:13 [EventTime] [1] Size 4 
+02:22:13 [CustomItemBank] (1) Load 10 Item In List
+02:22:13 [ServerInfo] Custom loaded successfully
+02:22:13 [ServerInfo] Command loaded successfully
+02:22:13 [ServerInfo] Common loaded successfully
+02:22:13 [ Crywolf ] State (0) -> NONE
+02:22:13 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+02:22:13 [ServerInfo] Event loaded successfully
+02:22:15 [ServerInfo] EventItemBag loaded successfully
+02:22:15 [ServerInfo] Hack loaded successfully
+02:22:15 [ServerInfo] Item loaded successfully
+02:22:16 [ServerInfo] Monster loaded successfully
+02:22:16 [ServerInfo] Move loaded successfully
+02:22:17 [ServerInfo] Quest loaded successfully
+02:22:17 [ServerInfo] Shop loaded successfully
+02:22:17 [ServerInfo] Skill loaded successfully
+02:22:17 [ServerInfo] Util loaded successfully
+02:22:17 [ReadBotInfo] BotSystem loaded successfully
+02:22:57 [Obj][9900] AddClient (192.168.1.12)
+02:22:58 [Obj][9900] AddAccount (admin)
+02:23:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+02:23:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+02:23:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+02:23:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+02:23:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+02:23:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+02:23:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+02:23:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+02:23:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+02:23:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+02:23:19 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+02:23:20 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+02:24:35 [ServerInfo] Monster loaded successfully
+02:25:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+02:25:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+02:25:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+02:25:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+02:25:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+02:25:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+02:25:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+02:25:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+02:25:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+02:25:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+02:25:36 [Obj][9900] LogOutCharacter (Phanh)
+02:25:36 [Obj][9900] LogOutCharacter ()
+02:25:36 [Obj][9900] DelAccount (admin)
+02:25:36 [Obj][9900] DelClient (192.168.1.12)
+02:51:38 [ServerInfo] CashShop loaded successfully
+02:51:38 [ServerInfo] ChaosMix loaded successfully
+02:51:38 [ServerInfo] Character loaded successfully
+02:51:38 [FakeOnline] Load Data OK
+02:51:38 [ItemMixManager] Senior Mix XML loaded (Enabled: 1)
+02:51:38 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+02:51:39 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+02:51:39 [EventTime] [1] Size 4 
+02:51:39 [CustomItemBank] (1) Load 10 Item In List
+02:51:39 [ServerInfo] Custom loaded successfully
+02:51:39 [ServerInfo] Command loaded successfully
+02:51:39 [ServerInfo] Common loaded successfully
+02:51:39 [ Crywolf ] State (0) -> NONE
+02:51:39 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+02:51:39 [ServerInfo] Event loaded successfully
+02:51:40 [ServerInfo] EventItemBag loaded successfully
+02:51:40 [ServerInfo] Hack loaded successfully
+02:51:40 [ServerInfo] Item loaded successfully
+02:51:42 [ServerInfo] Monster loaded successfully
+02:51:42 [ServerInfo] Move loaded successfully
+02:51:42 [ServerInfo] Quest loaded successfully
+02:51:42 [ServerInfo] Shop loaded successfully
+02:51:42 [ServerInfo] Skill loaded successfully
+02:51:43 [ServerInfo] Util loaded successfully
+02:51:43 [ReadBotInfo] BotSystem loaded successfully
+02:52:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+02:52:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+02:52:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+02:52:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+02:52:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+02:52:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+02:52:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+02:52:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+02:52:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+02:52:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+02:52:01 [Obj][9900] AddClient (192.168.1.12)
+02:52:02 [Obj][9900] AddAccount (admin)
+02:54:35 [Obj][9900] LogOutCharacter (Phanh)
+02:54:35 [Obj][9900] LogOutCharacter ()
+02:54:35 [Obj][9900] DelAccount (admin)
+02:54:35 [Obj][9900] DelClient (192.168.1.12)
+03:19:12 [ServerInfo] CashShop loaded successfully
+03:19:12 [ServerInfo] ChaosMix loaded successfully
+03:19:12 [ServerInfo] Character loaded successfully
+03:19:12 [FakeOnline] Load Data OK
+03:19:12 [ItemMixManager] Senior Mix XML loaded (Enabled: 1)
+03:19:12 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+03:19:12 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+03:19:12 [EventTime] [1] Size 4 
+03:19:12 [CustomItemBank] (1) Load 10 Item In List
+03:19:12 [ServerInfo] Custom loaded successfully
+03:19:12 [ServerInfo] Command loaded successfully
+03:19:12 [ServerInfo] Common loaded successfully
+03:19:12 [ Crywolf ] State (0) -> NONE
+03:19:12 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+03:19:12 [ServerInfo] Event loaded successfully
+03:19:12 [ServerInfo] EventItemBag loaded successfully
+03:19:12 [ServerInfo] Hack loaded successfully
+03:19:12 [ServerInfo] Item loaded successfully
+03:19:12 [ServerInfo] Monster loaded successfully
+03:19:12 [ServerInfo] Move loaded successfully
+03:19:12 [ServerInfo] Quest loaded successfully
+03:19:12 [ServerInfo] Shop loaded successfully
+03:19:12 [ServerInfo] Skill loaded successfully
+03:19:12 [ServerInfo] Util loaded successfully
+03:19:12 [ReadBotInfo] BotSystem loaded successfully
+03:19:26 [Obj][9900] AddClient (192.168.1.12)
+03:19:27 [Obj][9900] AddAccount (admin)
+03:23:12 [Obj][9900] LogOutCharacter (Phanh)
+03:23:12 [Obj][9900] LogOutCharacter ()
+03:23:12 [Obj][9900] DelAccount (admin)
+03:23:12 [Obj][9900] DelClient (192.168.1.12)
+13:52:58 [ServerInfo] CashShop loaded successfully
+13:52:58 [ServerInfo] ChaosMix loaded successfully
+13:52:58 [ServerInfo] Character loaded successfully
+13:52:58 [FakeOnline] Load Data OK
+13:52:58 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+13:52:58 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+13:52:58 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+13:52:58 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+13:52:58 [ItemMixManager] Chaos Machine XML loaded (Recipes: 28)
+13:52:58 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+13:52:58 [EventTime] [1] Size 4 
+13:52:58 [CustomItemBank] (1) Load 10 Item In List
+13:52:58 [ServerInfo] Custom loaded successfully
+13:52:58 [ServerInfo] Command loaded successfully
+13:52:58 [ServerInfo] Common loaded successfully
+13:52:58 [ Crywolf ] State (0) -> NONE
+13:52:58 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+13:52:58 [ServerInfo] Event loaded successfully
+13:52:58 [ServerInfo] EventItemBag loaded successfully
+13:52:58 [ServerInfo] Hack loaded successfully
+13:52:58 [ServerInfo] Item loaded successfully
+13:52:59 [ServerInfo] Monster loaded successfully
+13:52:59 [ServerInfo] Move loaded successfully
+13:52:59 [ServerInfo] Quest loaded successfully
+13:52:59 [ServerInfo] Shop loaded successfully
+13:52:59 [ServerInfo] Skill loaded successfully
+13:52:59 [ServerInfo] Util loaded successfully
+13:52:59 [ReadBotInfo] BotSystem loaded successfully
+13:53:55 [Obj][9900] AddClient (192.168.1.12)
+13:53:56 [Obj][9900] AddAccount (admin)
+13:56:50 [ServerInfo] CashShop loaded successfully
+13:56:50 [ServerInfo] ChaosMix loaded successfully
+13:56:50 [ServerInfo] Character loaded successfully
+13:56:51 [ServerInfo] Command loaded successfully
+13:56:51 [ServerInfo] Common loaded successfully
+13:56:51 [FakeOnline] Load Data OK
+13:56:51 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+13:56:51 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+13:56:51 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+13:56:51 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+13:56:51 [ItemMixManager] Chaos Machine XML loaded (Recipes: 28)
+13:56:51 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+13:56:51 [EventTime] [1] Size 4 
+13:56:51 [CustomItemBank] (1) Load 10 Item In List
+13:56:51 [ServerInfo] Custom loaded successfully
+13:56:51 [ Crywolf ] State (0) -> NONE
+13:56:51 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+13:56:51 [ServerInfo] Event loaded successfully
+13:56:51 [ServerInfo] EventItemBag loaded successfully
+13:56:51 [ServerInfo] Hack loaded successfully
+13:56:51 [ServerInfo] Monster loaded successfully
+13:56:51 [ServerInfo] Move loaded successfully
+13:56:51 [ServerInfo] Quest loaded successfully
+13:56:51 [ServerInfo] Shop loaded successfully
+13:56:51 [ServerInfo] Skill loaded successfully
+13:56:51 [ServerInfo] Util loaded successfully
+13:56:51 [ReadBotInfo] BotSystem loaded successfully
+13:57:29 [Obj][9900] LogOutCharacter (Phanh)
+13:57:29 [Obj][9900] LogOutCharacter ()
+13:57:29 [Obj][9900] DelAccount (admin)
+13:57:29 [Obj][9900] DelClient (192.168.1.12)
+13:57:36 [ServerInfo] CashShop loaded successfully
+13:57:36 [ServerInfo] ChaosMix loaded successfully
+13:57:36 [ServerInfo] Character loaded successfully
+13:57:36 [FakeOnline] Load Data OK
+13:57:36 [ItemMixManager] Senior Mix XML loaded (Recipes: 1)
+13:57:36 [ItemMixManager] Trainer Mix XML loaded (Recipes: 2)
+13:57:36 [JewelMix] Lahap XML loaded: ..\Data\ItemMix\Lahap\LahapMix.xml
+13:57:36 [ItemMixManager] Elpis Mix XML loaded (Recipes: 1)
+13:57:36 [ItemMixManager] Chaos Machine XML loaded (Recipes: 28)
+13:57:36 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+13:57:36 [EventTime] [1] Size 4 
+13:57:36 [CustomItemBank] (1) Load 10 Item In List
+13:57:36 [ServerInfo] Custom loaded successfully
+13:57:36 [ServerInfo] Command loaded successfully
+13:57:36 [ServerInfo] Common loaded successfully
+13:57:36 [ Crywolf ] State (0) -> NONE
+13:57:36 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+13:57:36 [ServerInfo] Event loaded successfully
+13:57:36 [ServerInfo] EventItemBag loaded successfully
+13:57:36 [ServerInfo] Hack loaded successfully
+13:57:36 [ServerInfo] Item loaded successfully
+13:57:36 [ServerInfo] Monster loaded successfully
+13:57:36 [ServerInfo] Move loaded successfully
+13:57:36 [ServerInfo] Quest loaded successfully
+13:57:36 [ServerInfo] Shop loaded successfully
+13:57:36 [ServerInfo] Skill loaded successfully
+13:57:36 [ServerInfo] Util loaded successfully
+13:57:36 [ReadBotInfo] BotSystem loaded successfully
+13:58:03 [Obj][9900] AddClient (192.168.1.12)
+13:58:04 [Obj][9900] AddAccount (admin)
+14:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+14:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+14:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+14:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+14:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+14:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+14:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+14:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+14:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+14:00:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+14:10:00 [CustomQuiz] Start
+14:13:00 [CustomQuiz] Finish
+14:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+14:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+14:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+14:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+14:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+14:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+14:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+14:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+14:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+14:30:01 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+14:34:20 [Obj][9900] LogOutCharacter (Phanh)
+14:34:20 [Obj][9900] LogOutCharacter ()
+14:34:20 [Obj][9900] DelAccount (admin)
+14:34:20 [Obj][9900] DelClient (192.168.1.12)

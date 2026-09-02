@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- AVEmulator - Event Board / Events
+     Eventos generales organizados en Data/Event/Events.
+     Source conecta cada fila con el temporizador real del GameServer. -->
+<EventBoard Enabled="1">
+	<Events>
+		<Event Name="Online Lottery" Source="OnlineLottery" ImageIndex="3" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="Stay online and take part in the scheduled lottery."
+			Description2="Winners are selected automatically by the event system." />
+
+		<Event Name="Quiz Event" Source="QuizEvent" ImageIndex="1" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="Answer the event questions before the other players."
+			Description2="Use the configured quiz command when the round begins." />
+
+		<Event Name="Bonus Event" Source="BonusEvent" ImageIndex="0" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="A scheduled server bonus will become active."
+			Description2="Check the event notices for the active bonus type." />
+
+		<Event Name="Drop Event" Source="DropEvent" ImageIndex="3" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="Special drops become available during this event."
+			Description2="The configured maps and monsters determine the rewards." />
+
+		<Event Name="Moss Merchant" Source="MossMerchant" ImageIndex="1" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="Moss the Merchant will open his special store."
+			Description2="Visit the configured location while the event is active." />
+
+		<Event Name="Pandora Event" Source="Pandora" ImageIndex="3" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="Pandora's event is approaching. Prepare for its challenge."
+			Description2="Rewards follow the configuration in Pandora.xml." />
+
+		<Event Name="Speed Event" Source="SpeedEvent" ImageIndex="1" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="Find the event NPC and be the first to reach it."
+			Description2="The timer reads the schedules configured in SpeedEvent.xml." />
+
+		<Event Name="Scramble Words" Source="ScrambleWords" ImageIndex="1" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="Unscramble each word and answer before everyone else."
+			Description2="The timer follows the schedule in ScrambleWords.xml." />
+	</Events>
+</EventBoard>

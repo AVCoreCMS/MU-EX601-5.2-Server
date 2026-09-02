@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== 024 - Bolo.xml
+== NPC shop stock: Bolo.
+== Loaded by GameServer via CShop::LoadXML(), matched to its
+== ShopManager.xml entry by the leading number in this filename
+== (same convention as Data/EventItemBag/*.xml).
+== Modify only if you know what you're doing!
+============================================================
+
+### Item ###
+	Type/Index/Level/Durability   Item code (GET_ITEM(Type,Index) -
+	             matches Item.xml) and starting level/durability
+	             (0 = full/random).
+	Skill/Luck/Option/Excellent/Ancient/JOH/OpEx   Fixed item options.
+	Socket1-5    Socket seed per slot, 255 = none.
+	Value/Coin1-3/Sell   OPTIONAL - overrides this item's price in THIS
+	             shop only (Coin1/2/3 = WCoinC/WCoinP/GoblinPoint, Sell
+	             sets the sell-back price too). Absent = price comes
+	             from the global Data/Item/ItemValue.xml table instead.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<Shop>
+	<Item Type="0" Index="16" Level="3" Durability="0" Skill="1" Luck="1" Option="3" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Sword of Destruction" />
+	<Item Type="2" Index="8" Level="3" Durability="0" Skill="1" Luck="1" Option="3" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Battle Scepter" />
+	<Item Type="2" Index="9" Level="3" Durability="0" Skill="1" Luck="1" Option="3" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Master Scepter" />
+	<Item Type="4" Index="14" Level="3" Durability="0" Skill="1" Luck="1" Option="3" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Aquagold Crossbow" />
+	<Item Type="4" Index="16" Level="3" Durability="0" Skill="1" Luck="1" Option="3" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Saint Crossbow" />
+	<Item Type="5" Index="6" Level="3" Durability="0" Skill="0" Luck="1" Option="3" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Staff of Resurrection" />
+</Shop>

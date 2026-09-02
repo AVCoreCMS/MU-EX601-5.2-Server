@@ -1,0 +1,235 @@
+14:34:47 [ServerInfo] CashShop loaded successfully
+14:34:47 [ServerInfo] ChaosMix loaded successfully
+14:34:48 [ServerInfo] Character loaded successfully
+14:34:48 [FakeOnline] Load Data OK
+14:34:48 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+14:34:48 [EventTime] [1] Size 4 
+14:34:48 [CustomItemBank] (1) Load 10 Item In List
+14:34:48 [ServerInfo] Custom loaded successfully
+14:34:48 [ServerInfo] Command loaded successfully
+14:34:48 [ServerInfo] Common loaded successfully
+14:34:48 [ Crywolf ] State (0) -> NONE
+14:34:48 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+14:34:48 [ServerInfo] Event loaded successfully
+14:34:49 [ServerInfo] EventItemBag loaded successfully
+14:34:50 [ServerInfo] Hack loaded successfully
+14:34:50 [ServerInfo] Item loaded successfully
+14:34:51 [ServerInfo] Monster loaded successfully
+14:34:51 [ServerInfo] Move loaded successfully
+14:34:51 [ServerInfo] Quest loaded successfully
+14:34:52 [ServerInfo] Shop loaded successfully
+14:34:52 [ServerInfo] Skill loaded successfully
+14:34:52 [ServerInfo] Util loaded successfully
+14:34:52 [ReadBotInfo] BotSystem loaded successfully
+14:35:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+14:35:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+14:35:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+14:35:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+14:35:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+14:35:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+14:35:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+14:35:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+14:35:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+14:35:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+14:36:01 [OnlineLoterry] No Winner
+14:38:19 [Obj][9900] AddClient (192.168.1.12)
+14:38:20 [Obj][9900] AddAccount (admin)
+14:39:56 [ServerInfo] Shop loaded successfully
+14:41:55 [ServerInfo] Shop loaded successfully
+14:42:00 [admin][Phanh] WZ_SetCoin(CommonShopBuy) Val1: 0, Val2: 0, Val3: -100
+14:43:37 [Obj][9900] LogOutCharacter (Phanh)
+14:43:37 [Obj][9900] LogOutCharacter ()
+14:43:37 [Obj][9900] DelAccount (admin)
+14:43:37 [Obj][9900] DelClient (192.168.1.12)
+14:50:00 [Invasion Manager] Index(7) Boss Position (Map: 0 X: 153 Y: 64)
+14:50:00 [Invasion Manager] Index(7) Boss Position (Map: 0 X: 153 Y: 64)
+15:10:00 [CustomQuiz] Start
+15:12:49 [Obj][9900] AddClient (192.168.1.12)
+15:12:50 [Obj][9900] AddAccount (admin)
+15:13:00 [CustomQuiz] Finish
+15:15:16 [Obj][9900] LogOutCharacter (Phanh)
+15:15:16 [Obj][9900] LogOutCharacter ()
+15:19:34 [Obj][9900] LogOutCharacter (TestDL)
+15:19:34 [Obj][9900] LogOutCharacter ()
+15:19:34 [Obj][9900] DelAccount (admin)
+15:19:34 [Obj][9900] DelClient (192.168.1.12)
+15:21:19 [Obj][9900] AddClient (192.168.1.12)
+15:21:20 [Obj][9900] AddAccount (admin)
+15:22:49 [ServerInfo] Shop loaded successfully
+15:26:44 [Obj][9900] LogOutCharacter (Phanh)
+15:26:44 [Obj][9900] LogOutCharacter ()
+15:26:44 [Obj][9900] DelAccount (admin)
+15:26:44 [Obj][9900] DelClient (192.168.1.12)
+15:27:33 [Obj][9900] AddClient (192.168.1.12)
+15:27:34 [Obj][9900] AddAccount (admin)
+15:27:58 [admin][Phanh] WZ_SetCoin(CommonShopBuy) Val1: -100, Val2: 0, Val3: 0
+15:28:00 [admin][Phanh] WZ_SetCoin(CommonShopBuy) Val1: -100, Val2: 0, Val3: 0
+15:28:09 [admin][Phanh] WZ_SetCoin(CommonShopBuy) Val1: -100, Val2: 0, Val3: 0
+15:36:01 [OnlineLoterry] Add Member (Phanh)
+15:36:01 [OnlineLoterry] Winner (Phanh)
+15:36:01 [admin][Phanh] WZ_SetCoin(Lottery) Val1: 10, Val2: 0, Val3: 0
+15:57:22 [Obj][9900] LogOutCharacter (Phanh)
+15:57:22 [Obj][9900] LogOutCharacter ()
+15:57:22 [Obj][9900] DelAccount (admin)
+15:57:22 [Obj][9900] DelClient (192.168.1.12)
+16:38:36 [ServerInfo] CashShop loaded successfully
+16:38:36 [ServerInfo] ChaosMix loaded successfully
+16:38:36 [ServerInfo] Character loaded successfully
+16:38:36 [FakeOnline] Load Data OK
+16:38:36 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+16:38:36 [EventTime] [1] Size 4 
+16:38:36 [CustomItemBank] (1) Load 10 Item In List
+16:38:36 [ServerInfo] Custom loaded successfully
+16:38:36 [ServerInfo] Command loaded successfully
+16:38:36 [ServerInfo] Common loaded successfully
+16:38:36 [ Crywolf ] State (0) -> NONE
+16:38:36 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+16:38:36 [ServerInfo] Event loaded successfully
+16:38:37 [ServerInfo] EventItemBag loaded successfully
+16:38:37 [ServerInfo] Hack loaded successfully
+16:38:37 [ServerInfo] Item loaded successfully
+16:38:37 [ServerInfo] Monster loaded successfully
+16:38:37 [ServerInfo] Move loaded successfully
+16:38:37 [ServerInfo] Quest loaded successfully
+16:38:37 [ServerInfo] Shop loaded successfully
+16:38:37 [ServerInfo] Skill loaded successfully
+16:38:37 [ServerInfo] Util loaded successfully
+16:38:37 [ReadBotInfo] BotSystem loaded successfully
+16:39:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+16:39:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+16:39:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+16:39:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+16:39:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+16:39:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+16:39:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+16:39:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+16:39:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+16:39:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+16:39:02 [Obj][9900] AddClient (192.168.1.12)
+16:39:03 [Obj][9900] AddAccount (admin)
+16:44:30 [ServerInfo] EventItemBag loaded successfully
+16:44:36 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+16:46:25 [ServerInfo] Monster loaded successfully
+16:47:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+16:47:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 56 Y: 202)
+16:47:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+16:47:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 40 Y: 63)
+16:47:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+16:47:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 220 Y: 51)
+16:47:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+16:47:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 225 Y: 204)
+16:47:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+16:47:00 [Invasion Manager] Index(1) Boss Position (Map: 0 X: 130 Y: 228)
+16:47:00 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+16:47:20 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+16:48:57 [ServerInfo] EventItemBag loaded successfully
+16:48:59 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+16:49:04 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+16:50:00 [Invasion Manager] Index(3) Boss Position (Map: 2 X: 165 Y: 17)
+16:50:00 [Invasion Manager] Index(3) Boss Position (Map: 2 X: 165 Y: 17)
+16:50:07 [Obj][9900] LogOutCharacter (Phanh)
+16:50:07 [Obj][9900] LogOutCharacter ()
+17:00:00 [Invasion Manager] Index(8) Boss Position (Map: 56 X: 157 Y: 13)
+17:00:00 [Invasion Manager] Index(8) Boss Position (Map: 56 X: 157 Y: 13)
+17:08:41 [Obj][9900] LogOutCharacter (Phanh)
+17:08:41 [Obj][9900] LogOutCharacter ()
+17:09:14 [Obj][9900] LogOutCharacter (Phanh)
+17:09:14 [Obj][9900] LogOutCharacter ()
+17:09:14 [Obj][9900] DelAccount (admin)
+17:09:14 [Obj][9900] DelClient (192.168.1.12)
+17:27:08 [ServerInfo] CashShop loaded successfully
+17:27:08 [ServerInfo] ChaosMix loaded successfully
+17:27:08 [ServerInfo] Character loaded successfully
+17:27:08 [FakeOnline] Load Data OK
+17:27:08 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+17:27:08 [EventTime] [1] Size 4 
+17:27:08 [CustomItemBank] (1) Load 10 Item In List
+17:27:08 [ServerInfo] Custom loaded successfully
+17:27:08 [ServerInfo] Command loaded successfully
+17:27:08 [ServerInfo] Common loaded successfully
+17:27:08 [ Crywolf ] State (0) -> NONE
+17:27:08 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+17:27:08 [ServerInfo] Event loaded successfully
+17:27:08 [ServerInfo] EventItemBag loaded successfully
+17:27:08 [ServerInfo] Hack loaded successfully
+17:27:08 [ServerInfo] Item loaded successfully
+17:27:08 [ServerInfo] Monster loaded successfully
+17:27:08 [ServerInfo] Move loaded successfully
+17:27:08 [ServerInfo] Quest loaded successfully
+17:27:08 [ServerInfo] Shop loaded successfully
+17:27:08 [ServerInfo] Skill loaded successfully
+17:27:08 [ServerInfo] Util loaded successfully
+17:27:08 [ReadBotInfo] BotSystem loaded successfully
+17:27:54 [Obj][9900] AddClient (192.168.1.12)
+17:27:55 [Obj][9900] AddAccount (admin)
+17:28:05 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+17:28:40 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+17:28:44 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+17:29:02 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+17:29:18 [Obj][9900] LogOutCharacter (Phanh)
+17:29:18 [Obj][9900] LogOutCharacter ()
+17:29:18 [Obj][9900] DelAccount (admin)
+17:29:18 [Obj][9900] DelClient (192.168.1.12)
+17:35:24 [ServerInfo] CashShop loaded successfully
+17:35:24 [ServerInfo] ChaosMix loaded successfully
+17:35:24 [ServerInfo] Character loaded successfully
+17:35:24 [FakeOnline] Load Data OK
+17:35:24 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+17:35:24 [EventTime] [1] Size 4 
+17:35:24 [CustomItemBank] (1) Load 10 Item In List
+17:35:24 [ServerInfo] Custom loaded successfully
+17:35:24 [ServerInfo] Command loaded successfully
+17:35:24 [ServerInfo] Common loaded successfully
+17:35:24 [ Crywolf ] State (0) -> NONE
+17:35:24 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+17:35:24 [ServerInfo] Event loaded successfully
+17:35:24 [ServerInfo] EventItemBag loaded successfully
+17:35:24 [ServerInfo] Hack loaded successfully
+17:35:24 [ServerInfo] Item loaded successfully
+17:35:25 [ServerInfo] Monster loaded successfully
+17:35:25 [ServerInfo] Move loaded successfully
+17:35:25 [ServerInfo] Quest loaded successfully
+17:35:25 [ServerInfo] Shop loaded successfully
+17:35:25 [ServerInfo] Skill loaded successfully
+17:35:25 [ServerInfo] Util loaded successfully
+17:35:25 [ReadBotInfo] BotSystem loaded successfully
+17:35:48 [Obj][9900] AddClient (192.168.1.12)
+17:35:49 [Obj][9900] AddAccount (admin)
+17:36:01 [OnlineLoterry] Add Member (Phanh)
+17:36:01 [OnlineLoterry] Winner (Phanh)
+17:36:01 [admin][Phanh] WZ_SetCoin(Lottery) Val1: 10, Val2: 0, Val3: 0
+17:36:01 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+17:36:25 [Obj][9900] LogOutCharacter (Phanh)
+17:36:25 [Obj][9900] LogOutCharacter ()
+17:36:25 [Obj][9900] DelAccount (admin)
+17:36:25 [Obj][9900] DelClient (192.168.1.12)
+17:38:06 [ServerInfo] CashShop loaded successfully
+17:38:06 [ServerInfo] ChaosMix loaded successfully
+17:38:06 [ServerInfo] Character loaded successfully
+17:38:06 [FakeOnline] Load Data OK
+17:38:06 [VIPChar] Enable 1, Date ItemPoint 1, Data LevelVip 44
+17:38:06 [EventTime] [1] Size 4 
+17:38:06 [CustomItemBank] (1) Load 10 Item In List
+17:38:06 [ServerInfo] Custom loaded successfully
+17:38:06 [ServerInfo] Command loaded successfully
+17:38:06 [ServerInfo] Common loaded successfully
+17:38:06 [ Crywolf ] State (0) -> NONE
+17:38:06 [ Crywolf ] SetState - StateInfo : Occupation/0, State/0
+17:38:06 [ServerInfo] Event loaded successfully
+17:38:06 [ServerInfo] EventItemBag loaded successfully
+17:38:06 [ServerInfo] Hack loaded successfully
+17:38:06 [ServerInfo] Item loaded successfully
+17:38:06 [ServerInfo] Monster loaded successfully
+17:38:06 [ServerInfo] Move loaded successfully
+17:38:06 [ServerInfo] Quest loaded successfully
+17:38:06 [ServerInfo] Shop loaded successfully
+17:38:06 [ServerInfo] Skill loaded successfully
+17:38:06 [ServerInfo] Util loaded successfully
+17:38:06 [ReadBotInfo] BotSystem loaded successfully
+17:38:20 [Obj][9900] AddClient (192.168.1.12)
+17:38:21 [Obj][9900] AddAccount (admin)
+17:38:38 [admin][Phanh] WZ_SetCoin(EventItemBag) Val1: 100, Val2: 0, Val3: 0
+17:39:35 [Obj][9900] LogOutCharacter (Phanh)
+17:39:35 [Obj][9900] LogOutCharacter ()
+17:39:35 [Obj][9900] DelAccount (admin)
+17:39:35 [Obj][9900] DelClient (192.168.1.12)

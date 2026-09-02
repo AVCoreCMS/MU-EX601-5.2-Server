@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  SISTEMA LUA DEL AV EMULATOR
+
+  Enabled             1 activa Lua; 0 lo desactiva.
+  MainFile            archivo principal dentro de Data/Script.
+  MemoryLimitMB       memoria maxima para todos los scripts cargados.
+  InstructionLimit    instrucciones permitidas por cada llamada de Lua.
+                      Detiene bucles infinitos sin cerrar el GameServer.
+  TimerIntervalMs     frecuencia del evento "Timer" en milisegundos.
+
+  Reload -> Reload Lua aplica los cambios sin reiniciar el GameServer.
+  Si existe un error de sintaxis, la recarga se cancela y continúa activa
+  la version anterior de los scripts.
+-->
+
+<LuaSystem
+  Enabled="1"
+  MainFile="ScriptMain.lua"
+  MemoryLimitMB="32"
+  InstructionLimit="500000"
+  TimerIntervalMs="1000"
+/>

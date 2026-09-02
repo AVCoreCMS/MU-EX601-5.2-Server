@@ -1,0 +1,32 @@
+===============================================================================
+                     INDICE - LUA AV EMULATOR
+===============================================================================
+
+Motor: Lua 5.4.9 integrado en GameServer y GameServerCS.
+API AV: 1.1.
+
+LEER EN ESTE ORDEN
+
+  01_GETTING_STARTED.txt   Estructura, primer script, carga y recarga.
+  02_EVENTS.txt            Eventos, parametros y retornos.
+  03_API_PLAYERS.txt       Jugadores, mensajes, monedas y party.
+  04_API_ITEMS.txt         Consulta, creacion y eliminacion de items.
+  05_API_WORLD.txt         Objetos, monstruos, NPC y efectos.
+  06_SECURITY.txt          Seguridad, rendimiento y errores comunes.
+
+  Templates\AllEvents.lua Firma exacta de todos los callbacks.
+
+EJEMPLOS
+
+  ..\Examples\CommandReward.lua
+  ..\Examples\CustomConsumable.lua
+  ..\Examples\MonsterReward.lua
+
+CARPETAS DE TRABAJO
+
+  ..\Scripts\Nombre\Nombre.lua   Una carpeta por script, con el nombre del
+                                  script. Si necesita config aparte, tambien
+                                  va ahi adentro (..\Scripts\Nombre\Config.lua).
+
+Documentation, Examples y Templates no se ejecutan por si solos. Solamente se
+ejecutan los archivos cargados expresamente desde ScriptMain.lua.

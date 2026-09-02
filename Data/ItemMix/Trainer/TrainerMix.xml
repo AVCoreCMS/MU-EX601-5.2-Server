@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+===============================================================================
+ TrainerMix.xml - Combinaciones del NPC Trainer
+===============================================================================
+
+ RECIPE
+   Enabled     1 = habilitada, 0 = deshabilitada.
+   RecipeID    Identificador de la receta dentro de TrainerMix.xml.
+               Rango valido: 0 a 255. Debe ser unico solamente en este archivo.
+               Puede repetirse en SeniorMix.xml u otro grupo de mezclas.
+   Name        Nombre mostrado por el cliente. Maximo 63 caracteres.
+   Type        Campo de compatibilidad de las recetas originales:
+               0 = Dark Horse, 1 = Dark Raven. Es opcional si RecipeID existe.
+   PriceType   Moneda usada para pagar la combinacion:
+               0 = Zen
+               1 = WCoinC
+               2 = WCoinP
+               3 = Goblin Point
+               4 = Contribucion Gens
+   Money       Cantidad que se cobra en la moneda elegida por PriceType.
+               El impuesto del castillo se aplica solamente cuando PriceType=0.
+
+ RATES
+   AL0         Porcentaje de exito para cuenta Free.
+   AL1         Porcentaje de exito para cuenta Bronze.
+   AL2         Porcentaje de exito para cuenta Silver.
+   AL3         Porcentaje de exito para cuenta Gold.
+   Valores validos: 0 a 100.
+
+ REQUIREMENTS / ITEM
+   Se permiten hasta 8 Item por receta.
+   Section     Seccion del objeto en Item.xml.
+   Index       Indice del objeto dentro de su seccion.
+   MinLevel    Nivel minimo permitido. -1 = cualquier nivel.
+   MaxLevel    Nivel maximo permitido. -1 = cualquier nivel.
+   Count       Cantidad exacta requerida. Debe ser mayor que 0.
+   CountMode   Forma de calcular Count:
+               0 = cantidad de casillas u objetos.
+               1 = suma del nivel + 1 de cada objeto.
+                   Ejemplo: un bundle +2 cuenta como 3.
+               2 = suma de la duracion, usada como cantidad del stack.
+                   Ejemplo: duracion 20 cuenta como 20 unidades.
+   Comment     Texto informativo. No afecta la combinacion.
+
+ RESULT
+   Section     Seccion del objeto creado.
+   Index       Indice del objeto creado.
+   Level       Nivel del objeto creado.
+   Comment     Texto informativo. No afecta el resultado.
+
+ LIMITES
+   Maximo 32 recetas activas y 8 requisitos por receta.
+   Para agregar recetas use RecipeID 2, 3, 4... dentro de este archivo.
+   Reiniciar GameServer, GameServerCS y cliente despues de modificar el archivo.
+   No es necesario editar Mix.bmd ni GetMain.
+
+ EJEMPLO DE RECETA NUEVA
+   <Recipe Enabled="1" RecipeID="2" Name="Nueva combinacion" PriceType="1" Money="100">
+     <Rates AL0="50" AL1="55" AL2="60" AL3="65" />
+     <Requirements>
+       <Item Section="12" Index="15" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Chaos" />
+     </Requirements>
+     <Result Section="14" Index="13" Level="0" Comment="Jewel of Bless" />
+   </Recipe>
+
+===============================================================================
+-->
+<ItemMix Name="Trainer">
+  <Recipe Enabled="1" RecipeID="0" Name="Dark horse Resurrection" Type="0" PriceType="0" Money="5000000">
+    <Rates AL0="60" AL1="60" AL2="60" AL3="60" />
+    <Requirements>
+      <Item Section="12" Index="15" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Chaos" />
+      <Item Section="13" Index="31" MinLevel="0" MaxLevel="0" Count="1" CountMode="0" Comment="Spirit of Dark Horse" />
+      <Item Section="14" Index="13" MinLevel="-1" MaxLevel="-1" Count="5" CountMode="0" Comment="Jewel of Bless" />
+      <Item Section="14" Index="14" MinLevel="-1" MaxLevel="-1" Count="5" CountMode="0" Comment="Jewel of Soul" />
+      <Item Section="14" Index="22" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Creation" />
+    </Requirements>
+    <Result Section="13" Index="4" Level="0" Comment="Dark Horse" />
+  </Recipe>
+
+  <Recipe Enabled="1" RecipeID="1" Name="Dark raven Resurrection" Type="1" PriceType="0" Money="1000000">
+    <Rates AL0="60" AL1="60" AL2="60" AL3="60" />
+    <Requirements>
+      <Item Section="12" Index="15" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Chaos" />
+      <Item Section="13" Index="31" MinLevel="1" MaxLevel="1" Count="1" CountMode="0" Comment="Spirit of Dark Raven" />
+      <Item Section="14" Index="13" MinLevel="-1" MaxLevel="-1" Count="2" CountMode="0" Comment="Jewel of Bless" />
+      <Item Section="14" Index="14" MinLevel="-1" MaxLevel="-1" Count="2" CountMode="0" Comment="Jewel of Soul" />
+      <Item Section="14" Index="22" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Creation" />
+    </Requirements>
+    <Result Section="13" Index="5" Level="0" Comment="Dark Raven" />
+  </Recipe>
+</ItemMix>

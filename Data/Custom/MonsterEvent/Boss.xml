@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- AVEmulator - Event Board / Boss
+     Reune invasiones y encuentros de boss en una sola pestaña.
+     InvasionManager usa SourceIndex; Raklion y Kanturu leen su estado
+     nativo; MonsterAlive comprueba si IndexBoss esta vivo. -->
+<EventBoard Enabled="1">
+	<Bosses>
+		<Boss Name="Red Dragon Invasion" Source="InvasionManager" SourceIndex="1" ImageIndex="3"
+			IndexBoss="42" SizeBoss="0.5" IndexItemBag="26" GateMove1="503" GateMove2="503" GateMove3="503"
+			Description1="A Red Dragon is approaching the city."
+			Description2="Drive back the invasion before it is too late." />
+
+		<Boss Name="Medusa" Source="InvasionManager" SourceIndex="8" ImageIndex="1"
+			IndexBoss="561" SizeBoss="0.7" IndexItemBag="106" GateMove1="273" GateMove2="273" GateMove3="273"
+			Description1="Medusa has appeared in the Swamp of Calm."
+			Description2="Defeat her before the invasion time expires." />
+
+		<Boss Name="Selupan" Source="Raklion" ImageIndex="3" IndexBoss="459" SizeBoss="0.7"
+			IndexItemBag="67" GateMove1="287" GateMove2="287" GateMove3="287"
+			Description1="Selupan awaits challengers inside the Raklion Hatchery."
+			Description2="Its status is read directly from the Raklion battle." />
+
+		<Boss Name="Nightmare" Source="Kanturu" ImageIndex="2" IndexBoss="361" SizeBoss="0.7"
+			IndexItemBag="48" GateMove1="138" GateMove2="138" GateMove3="138"
+			RequiredItemType1="13" RequiredItemIndex1="38"
+			Description1="Nightmare commands the final battle of Kanturu."
+			Description2="A Moonstone Pendant is required by the native event." />
+
+		<Boss Name="Kundun" Source="MonsterAlive" ImageIndex="0" IndexBoss="275" SizeBoss="0.7"
+			IndexItemBag="32" GateMove1="116" GateMove2="116" GateMove3="116"
+			Description1="Kundun rules the deepest floor of Kalima."
+			Description2="The panel reports whether the real Kalima 7 boss is alive." />
+	</Bosses>
+</EventBoard>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== 104 - Steel Jewelry Case.xml
+== Converted 1:1 from the original (now renamed) source file.
+== Item reward table for EventItemBagManager.xml's Bag Index="104" (Steel Jewelry Case).
+== Loaded by GameServer via CItemBag::LoadXML(), matched to its Bag
+== by the leading number in this filename (same convention as
+== Data/MonsterSetBase/*.txt).
+== Modify only if you know what you're doing!
+============================================================
+
+### Config ###
+	EventName        Internal label (not shown to players).
+	DropZen          Zen amount dropped, 0 = none.
+	ItemDropRate     Percent chance an item drops at all, out of 100.
+	ItemDropCount    How many items to roll when it does drop.
+	SetItemDropRate  Percent chance the item is a random Set item variant.
+	ItemDropType     Drop behavior (ground drop vs direct-to-inventory).
+	SendFirework     1 = show fireworks effect on drop.
+
+### Item ###
+	Type/Index    Item code (GET_ITEM(Type,Index) - matches Item.xml).
+	MinLevel/MaxLevel   Random item level range.
+	Option1-3/NewOption Random option rolls.
+	Time          Duration in seconds for a rental/temporary item, 0 = permanent.
+	DropRate      Relative weight among this bag's <Item> rows.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemBag>
+	<Config EventName="Box Zen" DropZen="1000000000" ItemDropRate="100" ItemDropCount="1" SetItemDropRate="0" ItemDropType="0" SendFirework="0" />
+
+</ItemBag>

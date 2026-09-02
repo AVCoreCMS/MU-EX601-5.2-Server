@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== 032 - Kundun.xml
+== Imported from a same-season-family reference server
+== (matching Bag Index and filename numbering already used by
+== this project). Source item rows had no Time/DropRate data;
+== Time defaults to 0 (permanent) and DropRate is uniform
+== across each bag's items (equal weight).
+== Item reward table for EventItemBagManager.xml's Bag Index="32" (Kundun).
+== Loaded by GameServer via CItemBag::LoadXML(), matched to its Bag
+== by the leading number in this filename (same convention as
+== Data/MonsterSetBase/*.txt).
+== Modify only if you know what you're doing!
+============================================================
+
+### Config ###
+	EventName        Internal label (not shown to players).
+	DropZen          Zen amount dropped, 0 = none.
+	ItemDropRate     Percent chance an item drops at all, out of 100.
+	ItemDropCount    How many items to roll when it does drop.
+	SetItemDropRate  Percent chance the item is a random Set item variant.
+	ItemDropType     Drop behavior (ground drop vs direct-to-inventory).
+	SendFirework     1 = show fireworks effect on drop.
+
+### Item ###
+	Type/Index    Item code (GET_ITEM(Type,Index) - matches Item.xml).
+	MinLevel/MaxLevel   Random item level range.
+	Option1-3/NewOption Random option rolls.
+	Time          Duration in seconds for a rental/temporary item, 0 = permanent.
+	DropRate      Relative weight among this bag's <Item> rows.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+
+<ItemBag>
+	<Config EventName="Kundun" DropZen="1000" ItemDropRate="50" ItemDropCount="3" SetItemDropRate="0" ItemDropType="0" SendFirework="0" />
+	<Item Type="0" Index="17" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Dark Breaker" />
+	<Item Type="0" Index="18" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Thunder Blade" />
+	<Item Type="0" Index="31" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Rune Blade" />
+	<Item Type="0" Index="20" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Knight Blade" />
+	<Item Type="0" Index="21" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Dark Reign Blade" />
+	<Item Type="4" Index="19" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Great Reign Crossbow" />
+	<Item Type="4" Index="20" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Arrow Viper Bow" />
+	<Item Type="5" Index="9" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Dragon Soul Staff" />
+	<Item Type="5" Index="11" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Staff of Kundun" />
+	<Item Type="2" Index="14" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Soleil Scepter" />
+	<Item Type="0" Index="22" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Bone Blade" />
+	<Item Type="0" Index="23" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Explosion Blade" />
+	<Item Type="4" Index="21" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Sylph Wind Bow" />
+	<Item Type="5" Index="12" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Grand Viper Staff" />
+	<Item Type="0" Index="16" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="0" NewOption="1" Time="0" DropRate="2" Comment="Sword of Destruction" />
+	<Item Type="2" Index="10" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="0" NewOption="1" Time="0" DropRate="2" Comment="Great Scepter" />
+	<Item Type="3" Index="10" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="0" NewOption="1" Time="0" DropRate="2" Comment="Dragon Spear" />
+	<Item Type="4" Index="16" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="0" NewOption="1" Time="0" DropRate="2" Comment="Saint Crossbow" />
+	<Item Type="4" Index="17" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="0" NewOption="1" Time="0" DropRate="2" Comment="Celestial Bow" />
+	<Item Type="5" Index="8" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="0" NewOption="1" Time="0" DropRate="2" Comment="Staff of Destruction" />
+	<Item Type="7" Index="21" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Great Dragon Helm" />
+	<Item Type="7" Index="22" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Dark Soul Helm" />
+	<Item Type="7" Index="28" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Dark Master Mask" />
+	<Item Type="8" Index="17" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Dark Phoenix Armor" />
+	<Item Type="8" Index="20" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Thunder Hawk Armor" />
+	<Item Type="8" Index="21" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Great Dragon Armor" />
+	<Item Type="8" Index="22" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Dark Soul Armor" />
+	<Item Type="8" Index="23" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Hurricane Armor" />
+	<Item Type="8" Index="24" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Red Spirit Armor" />
+	<Item Type="8" Index="28" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Dark Master Armor" />
+	<Item Type="8" Index="30" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Venom Mist Armor" />
+	<Item Type="8" Index="31" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Sylphid Ray Armor" />
+	<Item Type="8" Index="32" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Volcano Armor" />
+	<Item Type="8" Index="33" MinLevel="0" MaxLevel="4" Option1="1" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Sunlight Armor" />
+	<Item Type="9" Index="21" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Great Dragon Pants" />
+	<Item Type="9" Index="22" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Dark Soul Pants" />
+	<Item Type="9" Index="23" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Hurricane Pants" />
+	<Item Type="9" Index="24" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Red Spirit Pants" />
+	<Item Type="9" Index="28" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Dark Master Pants" />
+	<Item Type="10" Index="23" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Hurricane Gloves" />
+	<Item Type="11" Index="23" MinLevel="0" MaxLevel="4" Option1="0" Option2="1" Option3="0" NewOption="0" Time="0" DropRate="2" Comment="Hurricane Boots" />
+</ItemBag>

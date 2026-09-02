@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ResetTable.xml
+== Overrides the /reset command's level requirement, zen
+== cost, and points-per-reset, per reset range and account
+== VIP level. Empty by default - every reset uses
+== GameServerInfo's normal m_CommandReset* values.
+== Loaded by GameServer via CResetTable::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### Range ###
+	MinReset/MaxReset   Which upcoming reset (character's current
+	             Reset+1) this row applies to.
+	Level_AL0-3   Required level to reset, per account VIP level
+	             (Free/Bronze/Silver/Gold). -1 = use the normal
+	             /reset command default instead.
+	Money_AL0-3   Zen cost to reset, per account VIP level. -1 = use
+	             the normal /reset command default instead.
+	Point_AL0-3   Stat points granted per reset, per account VIP
+	             level. -1 = use the normal /reset command default
+	             instead.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ResetTable>
+</ResetTable>

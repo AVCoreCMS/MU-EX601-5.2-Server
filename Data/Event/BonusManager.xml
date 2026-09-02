@@ -44,6 +44,10 @@ STRICTLY NO COMMENTS INSIDE TAGS
 -->
 
 <BonusManager>
+	<!-- Enabled: 0/1. -->
+	<ServerSettings>
+		<GameServer Enabled="1" />
+	</ServerSettings>
 	<Bonus Index="0" StartMessage="-1" FinalMessage="-1" BonusTime="86400">
 		<StartTime Year="-1" Month="1" Day="-1" DayOfWeek="-1" Hour="0" Minute="0" Second="0" />
 		<Value BonusIndex="3" Value0="1000" Value1="1000" Value2="1000" Value3="1000" ItemIndex="7179" ItemLevel="3" MapNumber="-1" MonsterClass="-1" MonsterLevelMin="12" MonsterLevelMax="69" />

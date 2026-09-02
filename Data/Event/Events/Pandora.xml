@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== Pandora.xml
+== Pandora Event: a single server-wide chest spawns at a
+== configurable map/coordinate. Whoever picks it up becomes
+== PK-flagged and frozen (slower movement) until either they
+== survive SurviveTime minutes uninterrupted (win) or someone
+== kills them (chest drops where they died, timer resets, and
+== the PK flag/freeze on them is restored/removed).
+== Loaded by GameServer via CPandoraEvent::LoadXML(). Enabled
+== in this same file under ServerSettings.
+== Modify only if you know what you're doing!
+============================================================
+
+### Pandora::Location ###
+	Map/X/Y  Where the chest spawns when the event starts.
+
+### Pandora::Timing ###
+	NotifyTime    Minutes before start that the "event starting soon"
+	              announcement fires.
+	SurviveTime   Minutes the holder must survive uninterrupted (timer
+	              resets to 0 every time the chest changes hands) to
+	              win.
+	EventTime     Total event duration, minutes. If nobody wins before
+	              this runs out, the event just closes - no winner.
+	CloseTime     Minutes the event stays in its closing/cleanup phase
+	              before the next scheduled run can begin.
+
+### Pandora::Schedule::StartTime ###
+	One or more scheduled triggers, matched against the real-world
+	clock (-1 = any/wildcard for that field):
+	Year/Month/Day/DayOfWeek/Hour/Minute/Second.
+
+### Pandora::Reward ###
+	WC/WP/GP           WCoinC/WCoinP/GoblinPoint paid to the winner.
+	GensContribution   Gens Family contribution points paid to the
+	                   winner, 0 = none.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<PandoraEvent>
+	<!-- Enabled: 0/1. -->
+	<ServerSettings>
+		<GameServer Enabled="1" />
+	</ServerSettings>
+	<Location Map="0" X="145" Y="126" />
+	<Timing NotifyTime="1" SurviveTime="10" EventTime="30" CloseTime="1" />
+
+	<Schedule>
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="21" Minute="0" Second="0" />
+	</Schedule>
+
+	<Reward WC="0" WP="0" GP="0" GensContribution="0" />
+</PandoraEvent>

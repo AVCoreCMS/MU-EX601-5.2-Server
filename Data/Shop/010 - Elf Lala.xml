@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== 010 - Elf Lala.xml
+== NPC shop stock: Elf Lala.
+== Loaded by GameServer via CShop::LoadXML(), matched to its
+== ShopManager.xml entry by the leading number in this filename
+== (same convention as Data/EventItemBag/*.xml).
+== Modify only if you know what you're doing!
+============================================================
+
+### Item ###
+	Type/Index/Level/Durability   Item code (GET_ITEM(Type,Index) -
+	             matches Item.xml) and starting level/durability
+	             (0 = full/random).
+	Skill/Luck/Option/Excellent/Ancient/JOH/OpEx   Fixed item options.
+	Socket1-5    Socket seed per slot, 255 = none.
+	Value/Coin1-3/Sell   OPTIONAL - overrides this item's price in THIS
+	             shop only (Coin1/2/3 = WCoinC/WCoinP/GoblinPoint, Sell
+	             sets the sell-back price too). Absent = price comes
+	             from the global Data/Item/ItemValue.xml table instead.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<Shop>
+	<Item Type="7" Index="10" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Vine Helm" />
+	<Item Type="7" Index="11" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Silk Helm" />
+	<Item Type="7" Index="13" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Spirit Helm" />
+	<Item Type="7" Index="14" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Guardian Helm" />
+	<Item Type="8" Index="10" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Vine Armor" />
+	<Item Type="8" Index="11" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Silk Armor" />
+	<Item Type="8" Index="13" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Spirit Armor" />
+	<Item Type="8" Index="14" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Guardian Armor" />
+	<Item Type="9" Index="10" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Vine Pants" />
+	<Item Type="9" Index="11" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Silk Pants" />
+	<Item Type="9" Index="13" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Spirit Pants" />
+	<Item Type="9" Index="14" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Guardian Pants" />
+	<Item Type="10" Index="10" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Vine Gloves" />
+	<Item Type="10" Index="11" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Silk Gloves" />
+	<Item Type="10" Index="13" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Spirit Gloves" />
+	<Item Type="10" Index="14" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Guardian Gloves" />
+	<Item Type="11" Index="10" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Vine Boots" />
+	<Item Type="11" Index="11" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Silk Boots" />
+	<Item Type="11" Index="13" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Spirit Boots" />
+	<Item Type="11" Index="14" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Guardian Boots" />
+	<Item Type="12" Index="8" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Healing Orb" />
+	<Item Type="12" Index="9" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Orb of Greater Fortitude" />
+	<Item Type="12" Index="10" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Orb of Greater Damage" />
+	<Item Type="12" Index="17" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Orb of Penetration" />
+	<Item Type="12" Index="18" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Orb of Ice Arrow" />
+	<Item Type="12" Index="45" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Crystal of Multi-Shot" />
+	<Item Type="12" Index="46" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Crystal of Recovery" />
+	<Item Type="14" Index="3" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Large Healing Potion" />
+	<Item Type="14" Index="6" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Large Mana Potion" />
+</Shop>

@@ -1,0 +1,35 @@
+===============================================================================
+                         PRIMEROS PASOS
+===============================================================================
+
+1. CREA UN ARCHIVO
+   Data\Script\Scripts\MiEvento\MiEvento.lua
+
+2. REGISTRA SUS EVENTOS
+
+   AV.On("PlayerConnect", function(index)
+       AV.Notice(index, "Mi evento esta activo", 1)
+   end)
+
+3. CARGALO DESDE ScriptMain.lua
+
+   AV.Load("Scripts\\MiEvento\\MiEvento.lua")
+
+4. RECARGA SIN CERRAR EL SERVIDOR
+   GameServer -> Reload -> Reload Lua
+
+Si hay un error, la recarga completa se rechaza y sigue funcionando la version
+anterior. El archivo y la linea del error aparecen en el log.
+
+ORGANIZACION
+
+  ScriptMain.lua
+    Solo AV.Load y callbacks globales pequeños.
+
+  Scripts\Nombre\Nombre.lua
+    Una carpeta por script, con el nombre del script: Scripts\ScrambleWords\
+    ScrambleWords.lua, Scripts\NpcReward\NpcReward.lua. Si un script necesita
+    su propia configuracion, va en la misma carpeta (Scripts\Nombre\Config.lua).
+
+AV.On admite varias funciones para el mismo evento y las ejecuta en orden de
+carga. No repitas la misma responsabilidad en dos archivos diferentes.

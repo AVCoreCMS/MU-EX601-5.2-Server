@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+===============================================================================
+ ElpisMix.xml - Refinacion de Gemstone del NPC Elpis
+===============================================================================
+
+ RECIPE
+   Enabled     1 = habilitada, 0 = deshabilitada.
+   RecipeID    ID local, unico solamente dentro de ElpisMix.xml (0 a 255).
+   Name        Nombre mostrado por el cliente. Maximo 63 caracteres.
+   PriceType   0=Zen, 1=WCoinC, 2=WCoinP, 3=Goblin Point, 4=Contribucion Gens.
+   Money       Cantidad cobrada en la moneda seleccionada.
+
+ RATES
+   AL0..AL3    Porcentaje de exito para Free, Bronze, Silver y Gold.
+
+ REQUIREMENTS / ITEM
+   Section, Index, MinLevel, MaxLevel, Count y CountMode funcionan igual que
+   en TrainerMix.xml. CountMode: 0=casillas, 1=nivel+1, 2=duracion/stack.
+
+ RESULT
+   Section, Index y Level definen el objeto creado.
+
+ IMPORTANTE
+   Los RecipeID de este archivo son independientes de Trainer y Senior.
+   Se pueden agregar RecipeID 1, 2, 3... sin modificar Mix.bmd ni GetMain.
+   Maximo global sincronizado: 32 recetas activas y 8 requisitos por receta.
+   Reiniciar GameServer, GameServerCS y cliente despues de modificarlo.
+
+===============================================================================
+-->
+<ItemMix Name="Elpis">
+  <Recipe Enabled="1" RecipeID="0" Name="Refine Gemstone" PriceType="0" Money="0">
+    <Rates AL0="100" AL1="100" AL2="100" AL3="100" />
+    <Requirements>
+      <Item Section="14" Index="41" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Gemstone" />
+    </Requirements>
+    <Result Section="14" Index="42" Level="0" Comment="Jewel of Harmony" />
+  </Recipe>
+</ItemMix>

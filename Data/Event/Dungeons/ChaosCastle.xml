@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== ChaosCastle.xml
+== Chaos Castle event: timing, schedule, per-level (0-6)
+== experience reward table, and per-level WCoin reward.
+== Loaded by GameServer via CChaosCastle::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### ChaosCastle::Timing ###
+	WarningTime/NotifyTime/EventTime/CloseTime in minutes.
+
+### ChaosCastle::Schedule::StartTime ###
+	One or more scheduled triggers, matched against the real-world
+	clock (-1 = any/wildcard for that field):
+	Year/Month/Day/DayOfWeek/Hour/Minute/Second.
+
+### ChaosCastle::ExperienceSettings::Experience ###
+	Level 0-6 (MAX_CC_LEVEL) - Table1/Table2 experience reward
+	values for that castle level.
+
+### ChaosCastle::RewardSettings::Reward ###
+	Level 0-6 - WC/WP/GP (WCoinC/WCoinP/GoblinPoint) paid for
+	winning at that level.
+	GensContribution  Gens Family contribution points paid for
+	                  winning at that level, 0 = none.
+
+### ChaosCastle::EntryLevelMgDlRf::Castle / ChaosCastle::EntryLevelStandard::Castle ###
+	Level 0-6 (MAX_CC_LEVEL) - which Chaos Castle level this row
+	configures. Decides which Chaos Castle a character can enter based
+	on a combined level value: character Level (1-400) + MasterLevel
+	(Master Skill Tree level, 0 before the 2nd class change). The two
+	tables apply to different class groups:
+	  EntryLevelMgDlRf   Magic Gladiator / Dark Lord / Rage Fighter.
+	  EntryLevelStandard All other classes.
+	MinLevel/MaxLevel  Combined-level range for this Chaos Castle.
+	                   MaxLevel=-1 means no upper bound. See
+	                   BloodCastle.xml for the full note on how the
+	                   post-2nd-change (level 6 / CC7) bracket works.
+
+### ChaosCastle::EntrySettings::Entry ###
+	Level            0-6 (MAX_CC_LEVEL) - which Chaos Castle level this
+	                 row configures.
+	MaxUser          Maximum characters allowed inside this level's
+	                 instance at once.
+	MinAccountLevel  Minimum VIP tier (AccountLevel) required to enter,
+	                 -1 = no restriction.
+	MinReset/MaxReset  Reset range required to enter. MaxReset=0 means
+	                 no upper limit.
+	MinMasterReset/MaxMasterReset  Grand Reset (Master Reset) range
+	                 required to enter. MaxMasterReset=0 means no upper
+	                 limit.
+
+### ChaosCastle::DailyEntryLimit ###
+	Vip0-3  Maximum number of Chaos Castle entries per day (any level),
+	        per VIP tier (AccountLevel 0-3). Resets at midnight (server
+	        local time). -1 = unlimited. Kept in memory only - resets
+	        if the server restarts.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ChaosCastle>
+	<!-- Enabled: 0/1. MinUser: minimo para iniciar. BlowUserRate: probabilidad de empuje entre jugadores. -->
+	<ServerSettings>
+		<GameServer Enabled="1" MinUser="1" BlowUserRate="50" />
+	</ServerSettings>
+	<Timing WarningTime="5" NotifyTime="1" EventTime="10" CloseTime="4" />
+	<DailyEntryLimit Vip0="-1" Vip1="-1" Vip2="-1" Vip3="-1" />
+
+	<EntryLevelMgDlRf>
+		<Castle Level="0" MinLevel="10" MaxLevel="29" />
+		<Castle Level="1" MinLevel="30" MaxLevel="99" />
+		<Castle Level="2" MinLevel="100" MaxLevel="159" />
+		<Castle Level="3" MinLevel="160" MaxLevel="219" />
+		<Castle Level="4" MinLevel="220" MaxLevel="279" />
+		<Castle Level="5" MinLevel="280" MaxLevel="400" />
+		<Castle Level="6" MinLevel="401" MaxLevel="-1" />
+	</EntryLevelMgDlRf>
+
+	<EntryLevelStandard>
+		<Castle Level="0" MinLevel="10" MaxLevel="49" />
+		<Castle Level="1" MinLevel="50" MaxLevel="119" />
+		<Castle Level="2" MinLevel="120" MaxLevel="179" />
+		<Castle Level="3" MinLevel="180" MaxLevel="239" />
+		<Castle Level="4" MinLevel="240" MaxLevel="299" />
+		<Castle Level="5" MinLevel="300" MaxLevel="400" />
+		<Castle Level="6" MinLevel="401" MaxLevel="-1" />
+	</EntryLevelStandard>
+
+	<EntrySettings>
+		<Entry Level="0" MaxUser="20" MinAccountLevel="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" />
+		<Entry Level="1" MaxUser="20" MinAccountLevel="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" />
+		<Entry Level="2" MaxUser="20" MinAccountLevel="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" />
+		<Entry Level="3" MaxUser="20" MinAccountLevel="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" />
+		<Entry Level="4" MaxUser="20" MinAccountLevel="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" />
+		<Entry Level="5" MaxUser="20" MinAccountLevel="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" />
+		<Entry Level="6" MaxUser="20" MinAccountLevel="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" />
+	</EntrySettings>
+
+	<Schedule>
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="1" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="3" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="5" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="7" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="9" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="11" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="13" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="15" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="17" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="19" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="21" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="23" Minute="0" Second="0" />
+	</Schedule>
+
+	<ExperienceSettings>
+		<Experience Level="0" Table1="1000" Table2="500" />
+		<Experience Level="1" Table1="1500" Table2="100" />
+		<Experience Level="2" Table1="2000" Table2="1500" />
+		<Experience Level="3" Table1="2500" Table2="2000" />
+		<Experience Level="4" Table1="3000" Table2="2500" />
+		<Experience Level="5" Table1="3500" Table2="3000" />
+		<Experience Level="6" Table1="4000" Table2="3500" />
+	</ExperienceSettings>
+
+	<RewardSettings>
+		<Reward Level="0" WC="0" WP="0" GP="0" GensContribution="0" />
+		<Reward Level="1" WC="0" WP="0" GP="0" GensContribution="0" />
+		<Reward Level="2" WC="0" WP="0" GP="0" GensContribution="0" />
+		<Reward Level="3" WC="0" WP="0" GP="0" GensContribution="0" />
+		<Reward Level="4" WC="0" WP="0" GP="0" GensContribution="0" />
+		<Reward Level="5" WC="0" WP="0" GP="0" GensContribution="0" />
+		<Reward Level="6" WC="0" WP="0" GP="0" GensContribution="0" />
+	</RewardSettings>
+</ChaosCastle>

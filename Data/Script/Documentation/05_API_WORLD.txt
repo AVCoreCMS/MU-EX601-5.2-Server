@@ -1,0 +1,43 @@
+===============================================================================
+                    API DE OBJETOS, EFECTOS Y MUNDO
+===============================================================================
+
+OBJETOS
+  AV.GetObject(objectIndex) -> tabla o nil
+    Index, Type, Class, Level, Map, X, Y, Live, Life, MaxLife, Shield,
+    MaxShield, Party, Account, Name.
+
+    Type 1: jugador
+    Type 2: monstruo
+    Type 3: NPC
+
+MONSTRUOS
+  AV.CreateMonster(class, map, x, y [, direction, durationSeconds])
+    -> objectIndex o nil
+
+    direction: 0 a 7
+    duracion predeterminada: 300 segundos
+    duracion maxima: 86400 segundos
+    durationSeconds=0: no se borra automaticamente
+
+  AV.DeleteObject(objectIndex) -> boolean
+    Borra monstruos o NPC. Nunca elimina jugadores.
+
+EFECTOS
+  AV.AddEffect(index, effect, seconds [, value1, value2, value3, value4])
+    -> boolean
+  AV.RemoveEffect(index, effect) -> boolean
+  AV.HasEffect(index, effect) -> boolean
+  AV.ClearEffects(index) -> boolean
+    Quita los 256 efectos posibles. Uso tipico: al terminar un evento.
+
+MAPA
+  AV.CheckMapAttr(map, x, y, attr) -> boolean
+    attr es la mascara de atributo nativa del mapa (bloqueado, seguro,
+    zona PK, etc.) - revisa antes de mover o spawnear algo ahi.
+
+VISUALES
+  AV.Fireworks(index [, x, y]) -> boolean
+
+Un ObjectIndex no es permanente. Cuando un objeto se borra, su indice puede
+ser reutilizado. Consultalo con AV.GetObject antes de modificarlo nuevamente.

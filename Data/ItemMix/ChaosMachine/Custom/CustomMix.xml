@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+===============================================================================
+ CustomMix.xml - Combinaciones nuevas de la Chaos Machine
+===============================================================================
+
+ RECIPE
+   Enabled     1 = habilitada, 0 = deshabilitada.
+   RecipeID    Use IDs desde 100 hasta 65535 en este archivo.
+               0 a 99 quedan reservados para mezclas nativas y del sistema.
+               El ID debe ser unico entre todos los XML de ChaosMachine.
+               Puede repetirse en Trainer, Senior o Elpis sin conflictos.
+   Type        NO usar en recetas nuevas. Type pertenece exclusivamente a
+               las mezclas nativas guardadas en los otros XML.
+   ClientSync  Debe ser 1 en combinaciones nuevas para enviarlas al cliente.
+               El cliente las ejecuta mediante Type 250 y RecipeID.
+   Name        Nombre mostrado por el cliente. Maximo 63 caracteres.
+   PriceType   Moneda usada para pagar:
+               0 = Zen
+               1 = WCoinC
+               2 = WCoinP
+               3 = Goblin Point
+               4 = Contribucion Gens
+   Money       Cantidad exacta cobrada en la moneda seleccionada.
+   Mode        Fixed (por defecto) crea el objeto indicado en Result.
+               Evolution transforma un objeto existente y conserva las
+               opciones elegidas. Evolution se usa sin Type.
+
+ RATES
+   AL0..AL3    Porcentaje de exito para Free, Bronze, Silver y Gold.
+
+ REQUIREMENTS / ITEM
+   Section     Seccion del objeto en Item.xml.
+   Index       Indice del objeto.
+   MinLevel    Nivel minimo; -1 = cualquiera.
+   MaxLevel    Nivel maximo; -1 = cualquiera.
+   MinDurability Duracion minima; -1 o ausente = cualquiera.
+   MaxDurability Duracion maxima; -1 o ausente = cualquiera.
+   Count       Cantidad exacta requerida.
+   CountMode   0 = casillas/objetos.
+               1 = suma de Level+1.
+               2 = suma de Durability (cantidad del stack).
+
+ RESULT
+   Section, Index y Level definen el objeto fijo creado.
+
+ EVOLUTION MODE
+   En Requirements debe existir exactamente un Item con Role="EvolutionItem",
+   Count="1" y el mismo Section/Index usado como From en EvolutionMap.
+   EvolutionMap transforma FromSection/FromIndex en ToSection/ToIndex.
+   ResultLevel es el nivel usado cuando InheritOptions Level="0".
+   Para evolucionar casco, armor, pants, gloves y boots cree una Recipe por pieza;
+   asi el cliente muestra y valida claramente el objeto correcto.
+
+ INHERITOPTIONS (1 conserva, 0 elimina)
+   Level, Durability, Skill, Luck, AdditionalOption, ExcellentOptions,
+   AncientOptions, HarmonyOptions, Option380 y SocketOptions.
+   ExcellentOptions copia exactamente la mascara original: si el objeto tiene
+   Reflect y HP, el resultado conserva solamente Reflect y HP.
+
+ FAILURE
+   DestroyEvolutionItem  1 destruye el objeto base; 0 lo conserva.
+   DestroyMaterials      1 destruye los demas materiales; 0 los conserva.
+   ReduceLevel           niveles que pierde el objeto conservado; 0 no reduce.
+
+ FUNCIONAMIENTO
+   El GameServer carga todos los XML de Data/ItemMix/ChaosMachine.
+   Tambien revisa automaticamente sus subcarpetas, incluida Custom.
+   Este archivo queda reservado exclusivamente para combinaciones nuevas.
+   Las combinaciones nativas se encuentran separadas por sistema.
+   La configuracion visual legible del cliente esta en
+   GETMAIN/CustomManager/ChaosMachine.xml y GetMainInfo la guarda dentro de
+   Client/Data/Local/AVEmulatorMain.bin.
+   El cliente no utiliza el grupo Chaos Machine de Mix.bmd.
+   Cada receta nueva habilitada con ClientSync="1" se envia al cliente sin
+   necesitar editar Mix.bmd ni el XML de GETMAIN.
+   Las recetas se sincronizan en bloques de 32; no existe un limite total de
+   32 recetas. Cada receta admite un maximo de 8 requisitos.
+   Reiniciar GameServer, GameServerCS y cliente despues de modificar el archivo.
+
+ EJEMPLO DESHABILITADO
+   Cambie los objetos y el resultado antes de usar Enabled="1".
+
+===============================================================================
+-->
+<ItemMix Name="CustomMix">
+
+  <!-- Primera RecipeID disponible para una combinacion nueva: 100. -->
+  <!-- Los ejemplos usan 65534 y 65535 para no ocupar el inicio del rango Custom. -->
+  <Recipe Enabled="0" RecipeID="65534" Name="Example XML Chaos Mix" PriceType="0" Money="1000000">
+    <Rates AL0="50" AL1="55" AL2="60" AL3="65" />
+    <Requirements>
+      <Item Section="12" Index="15" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Chaos" />
+	  <Item Section="14" Index="16" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Life" />
+      <Item Section="14" Index="22" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Creation" />
+    </Requirements>
+    <Result Section="14" Index="13" Level="0" Comment="Jewel of Bless" />
+  </Recipe>
+
+  <Recipe Enabled="0" RecipeID="65535" Mode="Evolution" ClientSync="1" Name="Bloodangel Armor to Arkangel Armor" PriceType="0" Money="50000000">
+    <Rates AL0="50" AL1="55" AL2="60" AL3="65" />
+    <Requirements>
+      <Item Role="EvolutionItem" Section="7" Index="200" MinLevel="9" MaxLevel="15" Count="1" CountMode="0" Comment="Bloodangel Armor; example index" />
+      <Item Section="12" Index="15" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Chaos" />
+      <Item Section="14" Index="22" MinLevel="-1" MaxLevel="-1" Count="5" CountMode="0" Comment="Jewel of Creation" />
+    </Requirements>
+    <EvolutionMap>
+      <Item FromSection="7" FromIndex="200" ToSection="7" ToIndex="201" ResultLevel="0" Comment="Bloodangel Armor to Arkangel Armor; example indices" />
+    </EvolutionMap>
+    <InheritOptions Level="1" Durability="0" Skill="1" Luck="1" AdditionalOption="1" ExcellentOptions="1" AncientOptions="0" HarmonyOptions="0" Option380="0" SocketOptions="0" />
+    <Failure DestroyEvolutionItem="0" DestroyMaterials="1" ReduceLevel="1" />
+  </Recipe>
+</ItemMix>

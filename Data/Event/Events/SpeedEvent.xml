@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== SpeedEvent.xml
+==
+== Evento de busqueda rapida:
+== aparece un NPC en una de las ubicaciones configuradas y
+== gana el primer jugador que lo encuentra y hace clic.
+==
+== Reload -> Reload Event aplica los cambios sin apagar.
+============================================================
+
+### ServerSettings ###
+  Enabled: 0 = desactivado, 1 = activado.
+  Solo funciona en GameServer normal; no se ejecuta en GameServerCS.
+
+### Timing ###
+  EventTime: minutos disponibles para encontrar el NPC.
+
+### Npc ###
+  Class: numero de monstruo/NPC que aparecera durante el evento.
+
+### Schedule / StartTime ###
+  Horarios automaticos. -1 significa cualquier valor.
+  DayOfWeek: 1=domingo, 2=lunes ... 7=sabado; -1=cualquier dia.
+  Se pueden agregar todos los StartTime necesarios.
+
+### Locations ###
+  Random=1 elige una ubicacion al azar.
+  Random=0 utiliza siempre la primera Location.
+  Map/X/Y indican el lugar exacto donde aparece el NPC.
+  Comment es solo una descripcion y no afecta el evento.
+
+### Reward ###
+  WC: WCoinC.
+  WP: WCoinP.
+  GP: Goblin Point.
+  GensContribution: puntos de contribucion Gens.
+  ItemBag: SpecialValue del EventItemBag. -1 desactiva el premio de items.
+           El valor 88 corresponde a 194 - Speed Event.xml.
+  El premio se entrega solamente al primer jugador que toca el NPC.
+
+### Comandos GM ###
+  /startspeed inicia inmediatamente usando este XML.
+  /stopspeed detiene el evento activo.
+-->
+
+<SpeedEvent>
+	<ServerSettings>
+		<GameServer Enabled="1" />
+	</ServerSettings>
+
+	<Timing EventTime="2" />
+
+	<Npc Class="465" Comment="Santa Claus" />
+
+	<Schedule>
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="12" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="0" Second="0" />
+	</Schedule>
+
+	<Locations Random="1">
+		<Location Map="0" X="130" Y="125" Comment="Lorencia" />
+		<Location Map="2" X="220" Y="60" Comment="Devias" />
+		<Location Map="3" X="175" Y="100" Comment="Noria" />
+	</Locations>
+
+	<Reward WC="0" WP="0" GP="0" GensContribution="0" ItemBag="88" />
+</SpeedEvent>

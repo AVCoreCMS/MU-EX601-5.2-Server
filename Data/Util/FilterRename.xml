@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== FilterRename.xml
+== A character name containing any listed word/phrase is
+== blocked at creation.
+== Loaded by GameServer via CFilterRename::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### Word ###
+	Label   Blocked word/phrase (case-sensitive, max 10 characters).
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<FilterRename>
+	<Word Label="[gm]" />
+</FilterRename>

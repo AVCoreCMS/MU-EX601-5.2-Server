@@ -217,6 +217,7 @@ STRICTLY NO COMMENTS INSIDE TAGS
 			<Item Index="21" Rate0="0" Rate1="0" Rate2="0" Rate3="5000" Rate4="5000" Rate5="0" Comment="Socket Option (EventItemBag) (3~4)" />
 			<Item Index="22" Rate0="0" Rate1="0" Rate2="0" Rate3="3334" Rate4="3333" Rate5="3333" Comment="Socket Option (EventItemBag) (3~5)" />
 			<Item Index="23" Rate0="0" Rate1="0" Rate2="0" Rate3="0" Rate4="5000" Rate5="5000" Comment="Socket Option (EventItemBag) (4~5)" />
+			<Item Index="24" Rate0="0" Rate1="2000" Rate2="2000" Rate3="2000" Rate4="2000" Rate5="2000" Comment="Socket Option (EventItemBag) (1~5)" />
 		</Option6>
 	</Config>
 </ItemOptionRate>

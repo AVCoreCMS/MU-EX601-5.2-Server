@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  AV_ChaosMix.xml - Porcentajes de mezclas disponibles en Season 6
+
+  AL0, AL1, AL2 y AL3 = niveles de cuenta 0, 1, 2 y 3.
+  Valor 0 a 100          = porcentaje fijo de exito.
+  Valor -1               = usar la formula o tasa de la receta nativa.
+
+  Si una mezcla configurada por debajo de 100 falla, consume el costo y los ingredientes.
+  Para aplicar cambios sin apagar el servidor: Reload -> Reload ChaosMix.
+-->
+<AV_ChaosMix>
+  <Rates>
+
+    <!-- ================================================================ -->
+    <!-- CHAOS WEAPON                                                    -->
+    <!-- ================================================================ -->
+    <Group Name="Chaos Weapon">
+      <Rate Name="ChaosItemMixRate" AL0="-1" AL1="-1" AL2="-1" AL3="-1" Comment="Creacion de Chaos Weapon" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- SUBIR NIVEL DEL ITEM                                            -->
+    <!-- ================================================================ -->
+    <Group Name="Item Level Upgrade">
+      <Rate Name="PlusItemLevelMixRate1" AL0="60" AL1="60" AL2="60" AL3="60" Comment="Subir item a +10" />
+      <Rate Name="PlusItemLevelMixRate2" AL0="60" AL1="60" AL2="60" AL3="60" Comment="Subir item a +11" />
+      <Rate Name="PlusItemLevelMixRate3" AL0="50" AL1="50" AL2="50" AL3="50" Comment="Subir item a +12" />
+      <Rate Name="PlusItemLevelMixRate4" AL0="50" AL1="50" AL2="50" AL3="50" Comment="Subir item a +13" />
+      <Rate Name="PlusItemLevelMixRate5" AL0="40" AL1="40" AL2="40" AL3="40" Comment="Subir item a +14" />
+      <Rate Name="PlusItemLevelMixRate6" AL0="40" AL1="40" AL2="40" AL3="40" Comment="Subir item a +15" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- ALAS                                                            -->
+    <!-- ================================================================ -->
+    <Group Name="Wings">
+      <Rate Name="Wing1MixRate" AL0="-1" AL1="-1" AL2="-1" AL3="-1" Comment="Alas nivel 1" />
+      <Rate Name="Wing2MixRate" AL0="-1" AL1="-1" AL2="-1" AL3="-1" Comment="Alas nivel 2" />
+      <Rate Name="FeatherOfCondorMixRate" AL0="50" AL1="50" AL2="50" AL3="50" Comment="Feather of Condor" />
+      <Rate Name="Wing3MixRate" AL0="-1" AL1="-1" AL2="-1" AL3="-1" Comment="Alas nivel 3" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- MASCOTAS Y FENRIR                                               -->
+    <!-- ================================================================ -->
+    <Group Name="Pets and Fenrir">
+      <Rate Name="DinorantMixRate" AL0="70" AL1="70" AL2="70" AL3="70" Comment="Dinorant" />
+      <Rate Name="PetMixRate" AL0="60" AL1="60" AL2="60" AL3="60" Comment="Dark Horse o Dark Raven" />
+      <Rate Name="PieceOfHornMixRate" AL0="70" AL1="70" AL2="70" AL3="70" Comment="Piece of Horn" />
+      <Rate Name="BrokenHornMixRate" AL0="50" AL1="50" AL2="50" AL3="50" Comment="Broken Horn" />
+      <Rate Name="HornOfFenrirMixRate" AL0="30" AL1="30" AL2="30" AL3="30" Comment="Horn of Fenrir" />
+      <Rate Name="HornOfFenrirUpgradeMixRate" AL0="-1" AL1="-1" AL2="-1" AL3="-1" Comment="Mejora de Fenrir" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- FRUIT Y POCIONES                                                -->
+    <!-- ================================================================ -->
+    <Group Name="Fruit and Potions">
+      <Rate Name="FruitMixRate" AL0="90" AL1="90" AL2="90" AL3="90" Comment="Fruit" />
+      <Rate Name="ShieldPotionMixRate1" AL0="50" AL1="50" AL2="50" AL3="50" Comment="Small Complex Potion" />
+      <Rate Name="ShieldPotionMixRate2" AL0="30" AL1="30" AL2="30" AL3="30" Comment="Medium Complex Potion" />
+      <Rate Name="ShieldPotionMixRate3" AL0="30" AL1="30" AL2="30" AL3="30" Comment="Large Complex Potion" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- CASTLE SIEGE                                                    -->
+    <!-- ================================================================ -->
+    <Group Name="Castle Siege">
+      <Rate Name="SiegePotionMixRate1" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Potion of Bless" />
+      <Rate Name="SiegePotionMixRate2" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Potion of Soul" />
+      <Rate Name="LifeStoneMixRate" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Life Stone" />
+      <Rate Name="SeniorMixRate" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Senior Mix o Lord's Mix" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- DEVIL SQUARE                                                    -->
+    <!-- ================================================================ -->
+    <Group Name="Devil Square">
+      <Rate Name="DevilSquareMixRate1" AL0="80" AL1="80" AL2="80" AL3="80" Comment="Devil Square nivel 1" />
+      <Rate Name="DevilSquareMixRate2" AL0="80" AL1="80" AL2="80" AL3="80" Comment="Devil Square nivel 2" />
+      <Rate Name="DevilSquareMixRate3" AL0="80" AL1="80" AL2="80" AL3="80" Comment="Devil Square nivel 3" />
+      <Rate Name="DevilSquareMixRate4" AL0="80" AL1="80" AL2="80" AL3="80" Comment="Devil Square nivel 4" />
+      <Rate Name="DevilSquareMixRate5" AL0="70" AL1="70" AL2="70" AL3="70" Comment="Devil Square nivel 5" />
+      <Rate Name="DevilSquareMixRate6" AL0="70" AL1="70" AL2="70" AL3="70" Comment="Devil Square nivel 6" />
+      <Rate Name="DevilSquareMixRate7" AL0="70" AL1="70" AL2="70" AL3="70" Comment="Devil Square nivel 7" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- BLOOD CASTLE                                                    -->
+    <!-- ================================================================ -->
+    <Group Name="Blood Castle">
+      <Rate Name="BloodCastleMixRate1" AL0="80" AL1="80" AL2="80" AL3="80" Comment="Blood Castle nivel 1" />
+      <Rate Name="BloodCastleMixRate2" AL0="80" AL1="80" AL2="80" AL3="80" Comment="Blood Castle nivel 2" />
+      <Rate Name="BloodCastleMixRate3" AL0="80" AL1="80" AL2="80" AL3="80" Comment="Blood Castle nivel 3" />
+      <Rate Name="BloodCastleMixRate4" AL0="80" AL1="80" AL2="80" AL3="80" Comment="Blood Castle nivel 4" />
+      <Rate Name="BloodCastleMixRate5" AL0="80" AL1="80" AL2="80" AL3="80" Comment="Blood Castle nivel 5" />
+      <Rate Name="BloodCastleMixRate6" AL0="80" AL1="80" AL2="80" AL3="80" Comment="Blood Castle nivel 6" />
+      <Rate Name="BloodCastleMixRate7" AL0="80" AL1="80" AL2="80" AL3="80" Comment="Blood Castle nivel 7" />
+      <Rate Name="BloodCastleMixRate8" AL0="80" AL1="80" AL2="80" AL3="80" Comment="Blood Castle nivel 8" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- ILLUSION TEMPLE                                                 -->
+    <!-- ================================================================ -->
+    <Group Name="Illusion Temple">
+      <Rate Name="IllusionTempleMixRate1" AL0="70" AL1="70" AL2="70" AL3="70" Comment="Illusion Temple nivel 1" />
+      <Rate Name="IllusionTempleMixRate2" AL0="70" AL1="70" AL2="70" AL3="70" Comment="Illusion Temple nivel 2" />
+      <Rate Name="IllusionTempleMixRate3" AL0="70" AL1="70" AL2="70" AL3="70" Comment="Illusion Temple nivel 3" />
+      <Rate Name="IllusionTempleMixRate4" AL0="70" AL1="70" AL2="70" AL3="70" Comment="Illusion Temple nivel 4" />
+      <Rate Name="IllusionTempleMixRate5" AL0="70" AL1="70" AL2="70" AL3="70" Comment="Illusion Temple nivel 5" />
+      <Rate Name="IllusionTempleMixRate6" AL0="70" AL1="70" AL2="70" AL3="70" Comment="Illusion Temple nivel 6" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- IMPERIAL GUARDIAN                                               -->
+    <!-- ================================================================ -->
+    <Group Name="Imperial Guardian">
+      <Rate Name="ImperialGuardianMixRate" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Entrada Imperial Guardian" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- CHAOS CARD                                                      -->
+    <!-- ================================================================ -->
+    <Group Name="Chaos Card">
+      <Rate Name="ChaosCardMixRate1" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Chaos Card normal" />
+      <Rate Name="ChaosCardMixRate2" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Chaos Card Gold" />
+      <Rate Name="ChaosCardMixRate3" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Chaos Card Rare" />
+      <Rate Name="ChaosCardMixRate4" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Chaos Card Mini" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- CHERRY BLOSSOM                                                  -->
+    <!-- ================================================================ -->
+    <Group Name="Cherry Blossom">
+      <Rate Name="CherryBlossomMixRate1" AL0="100" AL1="100" AL2="100" AL3="100" Comment="White Cherry Blossom" />
+      <Rate Name="CherryBlossomMixRate2" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Red Cherry Blossom" />
+      <Rate Name="CherryBlossomMixRate3" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Golden Cherry Blossom" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- JEWEL OF HARMONY                                                -->
+    <!-- ================================================================ -->
+    <Group Name="Jewel of Harmony">
+      <Rate Name="JewelOfHarmonyItemPurityMixRate" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Purificar Gemstone" />
+      <Rate Name="JewelOfHarmonyItemSmeltMixRate1" AL0="50" AL1="50" AL2="50" AL3="50" Comment="Fundir item normal" />
+      <Rate Name="JewelOfHarmonyItemSmeltMixRate2" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Fundir item excellent" />
+      <Rate Name="JewelOfHarmonyItemRestoreMixRate" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Quitar opcion Harmony" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- OPCION 380                                                      -->
+    <!-- ================================================================ -->
+    <Group Name="Option 380">
+      <Rate Name="Item380MixRate1" AL0="50" AL1="50" AL2="50" AL3="50" Comment="Agregar opcion 380" />
+      <Rate Name="Item380MixRate2" AL0="70" AL1="70" AL2="70" AL3="70" Comment="Quitar opcion 380" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- SOCKET                                                          -->
+    <!-- ================================================================ -->
+    <Group Name="Socket">
+      <Rate Name="SocketItemCreateSeedMixRate" AL0="-1" AL1="-1" AL2="-1" AL3="-1" Comment="Crear Seed" />
+      <Rate Name="SocketItemCreateSeedSphereMixRate" AL0="-1" AL1="-1" AL2="-1" AL3="-1" Comment="Crear Seed Sphere" />
+      <Rate Name="SocketItemMountSeedSphereMixRate" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Montar Seed Sphere" />
+      <Rate Name="SocketItemUnMountSeedSphereMixRate" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Desmontar Seed Sphere" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- COFRES                                                          -->
+    <!-- ================================================================ -->
+    <Group Name="Chests">
+      <Rate Name="ChestMixRate1" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Silver Chest" />
+      <Rate Name="ChestMixRate2" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Gold Chest" />
+    </Group>
+
+    <!-- ================================================================ -->
+    <!-- LUCKY ITEM                                                      -->
+    <!-- ================================================================ -->
+    <Group Name="Lucky Item">
+      <Rate Name="LuckyItemCreateMixRate" AL0="100" AL1="100" AL2="100" AL3="100" Comment="Crear Lucky Item desde ticket" />
+      <Rate Name="LuckyItemRefineMixRate1" AL0="60" AL1="60" AL2="60" AL3="60" Comment="Refinar Lucky Item tipo 1" />
+      <Rate Name="LuckyItemRefineMixRate2" AL0="10" AL1="10" AL2="10" AL3="10" Comment="Refinar Lucky Item tipo 2" />
+    </Group>
+
+  </Rates>
+</AV_ChaosMix>
+

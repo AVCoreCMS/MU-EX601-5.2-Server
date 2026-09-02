@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== Effect.xml
+== Every buff/debuff (status effect) the server knows about -
+== skills, potions, item-use buffs (Seals/Scrolls/Elixirs/
+== Talismans), PK-state flags, event states, etc.
+== Loaded by GameServer via CEffectManager::LoadXML().
+== Modify only if you know what you are doing!
+============================================================
+
+### Effect ###
+	Index        Effect ID (matches EFFECT_* constants in code).
+	Group        Effects in the same Group replace each other (only
+	           one active per Group at a time).
+	ItemIndex    Item that grants this effect on use (GET_ITEM(12,x) -
+	           matches Item.xml Index for Type 12 consumables), -1 if
+	           not item-granted (a skill/passive/system state).
+	Name         Display name.
+	Save         1 = effect persists across relog (saved to DB).
+	Type         0 = normal buff, 1 = item-use buff, 2 = Seal/Scroll/
+	           Elixir/Talisman-style buff (adds stats via Value1-4).
+	Flag         1 = debuff (shows as a negative/red state client-side).
+	Count        Default duration in seconds, -1 = not time-limited.
+	Value1-4     Stat bonus(es) this effect grants while active. What
+	           each slot means is hardcoded PER INDEX in
+	           CEffectManager::InsertEffect() (EffectManager.cpp) -
+	           it is NOT a generic/uniform meaning across rows. See the
+	           reference table below for every Index that actually
+	           reads Value1-4; any Index not listed there ignores them
+	           entirely (leave as -1).
+	Value1Stat-4Stat   OPTIONAL. Makes that Value slot data-driven instead
+	           of hardcoded: put the exact name of a field from struct
+	           EFFECT_OPTION (User.h) here, e.g. Value1Stat="AddDefense",
+	           and CEffectManager adds/subtracts Value1 to/from that stat
+	           directly - no C++ case needed. This is how you create a
+	           brand-new Seal/Scroll combo (see Index 206 below) without
+	           touching code. ONLY use this on a NEW Index that has no
+	           existing case in InsertEffect() - using it on one of the
+	           already-hardcoded effects below would apply the value
+	           twice (once via the switch, once via this). Leave empty
+	           (or omit) for every effect that's already in the
+	           reference table.
+
+### Value1-4 reference, per Index (from CEffectManager::InsertEffect()) ###
+	1 (Greater Damage): Value1=Physical Damage/Magic Damage/Curse Damage
+	2 (Greater Defense): Value1=Defense
+	3 (Elf Buffer): Value1=Physical Damage/Magic Damage/Curse Damage, Value2=Defense
+	4 (Mana Shield): Value1=Damage Reduction %
+	5 (Greater Critical Damage): Value1=Critical Damage
+	8 (Greater Life): Value1=Max HP %
+	9 (Greater Mana): Value1=Max MP %
+	11 (Soul Potion): Value1=Attack Speed/Magic Speed, Value2=BP Recovery
+	29 (Seal of Ascension): Value1=Exp Rate %
+	30 (Seal of Wealth): Value1=Exp Rate %, Value2=Item Drop Rate %
+	34 (Order of Protection): Value1=Damage Reduction %
+	35 (Halloween 1): Value1=Attack Speed/Magic Speed
+	36 (Halloween 2): Value1=Physical Damage/Magic Damage
+	37 (Halloween 3): Value1=Defense
+	38 (Halloween 4): Value1=Max HP
+	39 (Halloween 5): Value1=Max MP
+	40 (Seal of Ascension): Value1=Exp Rate %
+	41 (Seal of Wealth): Value1=Exp Rate %, Value2=Item Drop Rate %
+	44 (Scroll of Quick): Value1=Attack Speed/Magic Speed
+	45 (Scroll of Defense): Value1=Defense
+	46 (Scroll of Damage): Value1=Physical Damage
+	47 (Scroll of Magic Damage): Value1=Magic Damage
+	48 (Scroll of Life): Value1=Max HP
+	49 (Scroll of Mana): Value1=Max MP
+	50 (Elixir of Strength): Value1=Strength
+	51 (Elixir of Dexterity): Value1=Dexterity
+	52 (Elixir of Vitality): Value1=Vitality
+	53 (Elixir of Energy): Value1=Energy
+	54 (Elixir of Leadership): Value1=Leadership
+	58 (Fire Slash): Value1=-Defense %
+	71 (Damage Reflect): Value1=Damage Reflect %
+	73 (Blind): Value1=-Attack Success Rate %
+	76 (Lesser Damage): Value1=-Physical Damage %/-Magic Damage %/-Curse Damage %
+	77 (Lesser Defense): Value1=-Defense %
+	78 (Cherry Blossom 1): Value1=Max MP
+	79 (Cherry Blossom 2): Value1=Max HP
+	80 (Cherry Blossom 3): Value1=Physical Damage/Magic Damage
+	81 (Sword Power): Value1=Sword Power Damage %, Value2=Max MP %, Value3=Sword Power Defense %, Value4=-Max HP %
+	82 (Magic Circle): Value1=Min Magic Damage
+	87 (Seal of Life): Value1=Exp Rate %, Value2=HP Recovery Rate %
+	88 (Seal of Mana): Value1=Item Drop Rate %, Value2=MP Recovery Rate %
+	89 (Scroll of Battle): Value1=Critical Damage Rate %
+	90 (Scroll of Strength): Value1=Excellent Damage Rate %
+	91 (Christmas 1): Value1=Physical Damage/Magic Damage/Curse Damage, Value2=Defense
+	92 (Christmas 2): Value1=Max HP
+	93 (Christmas 3): Value1=Max MP
+	94 (Christmas 4): Value1=Physical Damage/Magic Damage/Curse Damage
+	95 (Christmas 5): Value1=Defense
+	96 (Christmas 6): Value1=Attack Speed/Magic Speed
+	97 (Christmas 7): Value1=BP Recovery
+	101 (Master Seal of Ascension): Value1=Master Exp Rate %
+	102 (Master Seal of Wealth): Value1=Master Exp Rate %, Value2=Item Drop Rate %
+	103 (Gladiator's Glory): Value1=Volcano Exp Rate %
+	112 (Party Experience Bonus): Value1=Exp Rate %/Master Exp Rate %, Value2=Party Bonus Exp Rate %
+	113 (Max AG Boost Aura): Value1=Max BP
+	114 (Max SD Boost Aura): Value1=Max SD
+	121 (Scroll of Healing): Value1=HP Recovery Rate %, Value2=Max HP
+	122 (Hawk Figurine): Value1=Critical Damage Rate %
+	123 (Goat Figurine): Value1=Excellent Damage Rate %
+	124 (Oak Charm): Value1=Max HP
+	125 (Maple Charm): Value1=Max MP
+	126 (Golden Oak Charm): Value1=Max HP, Value2=Max SD
+	127 (Golden Maple Charm): Value1=Max MP, Value2=Max BP
+	128 (Worn Horseshoe): Value1=Item Drop Rate %
+	129 (Greater Ignore Defense Rate): Value1=Ignore Defense Rate %
+	130 (Fitness): Value1=Vitality
+	131 (Greater Defense Success Rate): Value1=Defense Success Rate %
+	134 (Iron Defense): Value1=Max HP, Value2=Defense
+	135 (Greater Life Enhanced): Value1=Max HP %, Value2=Max MP %
+	136 (Greater Life Mastered): Value1=Max HP %, Value2=Max MP %, Value3=Max BP %
+	138 (Magic Circle Improved): Value1=Min Magic Damage, Value2=Max Magic Damage
+	139 (Magic Circle Enhanced): Value1=Min Magic Damage, Value2=Max Magic Damage, Value3=Critical Damage Rate %
+	140 (Mana Shield Mastered): Value1=Damage Reduction %, Value2=Max MP %
+	142 (Bless): Value1=Strength/Dexterity/Vitality/Energy
+	143 (Infinity Arrrow Improved): Value1=Physical Damage %
+	144 (Blind Improved): Value1=-Attack Success Rate %
+	148 (Greater Critical D. Mastered): Value1=Critical Damage, Value2=Critical Damage Rate %
+	149 (Greater Critical D. Extended): Value1=Critical Damage, Value2=Critical Damage Rate %, Value3=Excellent Damage Rate %
+	150 (Sword Power Improved): Value1=Sword Power Damage %, Value2=Max MP %, Value3=Sword Power Defense %, Value4=-Max HP %
+	151 (Sword Power Enhanced): Value1=Sword Power Damage %, Value2=Max MP %, Value3=Sword Power Defense %, Value4=-Max HP %
+	152 (Sword Power Mastered): Value1=Sword Power Damage %, Value2=Max MP %, Value3=Sword Power Defense %, Value4=-Max HP %
+	153 (Greater D. S. Rate Improved): Value1=Defense Success Rate %
+	154 (Greater D. S. Rate Enhanced): Value1=Defense Success Rate %, Value2=Defense
+	155 (Fitness Improved): Value1=Vitality
+	161 (Bless Improved): Value1=Strength/Dexterity/Vitality/Energy
+	162 (Lesser Damage Improved): Value1=-Physical Damage %/-Magic Damage %/-Curse Damage %
+	163 (Lesser Defense Improved): Value1=-Defense %
+	164 (Fire Slash Enhanced): Value1=-Defense %
+	165 (Iron Defense Improved): Value1=Max HP, Value2=Defense
+	174 (Pentagram Jewel Half SD): Value1=-Max SD %
+	175 (Pentagram Jewel Half MP): Value1=-Max MP %
+	176 (Pentagram Jewel Half Speed): Value1=-Attack Speed %/-Magic Speed %
+	177 (Pentagram Jewel Half HP): Value1=-Max HP %
+	190 (Talisman of Ascension 1): Value1=Exp Rate %/Master Exp Rate %
+	191 (Talisman of Ascension 2): Value1=Exp Rate %/Master Exp Rate %
+	192 (Talisman of Ascension 3): Value1=Exp Rate %/Master Exp Rate %
+	193 (Seal of Ascension): Value1=Exp Rate %
+	194 (Master Seal of Ascension): Value1=Master Exp Rate %
+	195 (Blessing of Light): Value1=Exp Rate %/Master Exp Rate %
+	196 (Master Scroll of Defense): Value1=Defense
+	197 (Master Scroll of Magic Damage): Value1=Magic Damage
+	198 (Master Scroll of Life): Value1=Max HP
+	199 (Master Scroll of Mana): Value1=Max MP
+	200 (Master Scroll of Damage): Value1=Physical Damage
+	201 (Master Scroll of Healing): Value1=HP Recovery Rate %, Value2=Max HP
+	202 (Master Scroll of Battle): Value1=Critical Damage Rate %
+	203 (Master Scroll of Strength): Value1=Excellent Damage Rate %
+	204 (Master Scroll of Quick): Value1=Attack Speed/Magic Speed
+	205 (Custom Item Power): (unused - stat code is commented out)
+	206 (Seal of Custom): DATA-DRIVEN EXAMPLE (see Value1Stat/Value2Stat
+	  on the row itself, not a switch case) - Value1=Exp Rate %,
+	  Value2=Defense.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<EffectManager>
+	<Effect Index="1" Group="1" ItemIndex="-1" Name="Greater Damage" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="2" Group="2" ItemIndex="-1" Name="Greater Defense" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="3" Group="3" ItemIndex="-1" Name="Elf Buffer" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="4" Group="4" ItemIndex="-1" Name="Mana Shield" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="5" Group="5" ItemIndex="-1" Name="Greater Critical Damage" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="6" Group="6" ItemIndex="-1" Name="Infinity Arrrow" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="7" Group="7" ItemIndex="-1" Name="BP Recovery" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="8" Group="8" ItemIndex="-1" Name="Greater Life" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="9" Group="9" ItemIndex="-1" Name="Greater Mana" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="10" Group="10" ItemIndex="-1" Name="Bless Potion" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="11" Group="11" ItemIndex="-1" Name="Soul Potion" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="12" Group="12" ItemIndex="-1" Name="Disable Magic" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="13" Group="13" ItemIndex="-1" Name="Castle Gate State" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="14" Group="14" ItemIndex="-1" Name="Guild State 1" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="15" Group="14" ItemIndex="-1" Name="Guild State 2" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="16" Group="14" ItemIndex="-1" Name="Guild State 3" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="17" Group="14" ItemIndex="-1" Name="Guild State 4" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="18" Group="15" ItemIndex="-1" Name="Invisibility" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="19" Group="16" ItemIndex="-1" Name="Guild State 5" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="20" Group="17" ItemIndex="-1" Name="Guild State 6" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="21" Group="18" ItemIndex="-1" Name="Crywolf State 1" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="22" Group="18" ItemIndex="-1" Name="Crywolf State 2" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="23" Group="18" ItemIndex="-1" Name="Crywolf State 3" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="24" Group="18" ItemIndex="-1" Name="Crywolf State 4" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="25" Group="18" ItemIndex="-1" Name="Crywolf State 5" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="26" Group="18" ItemIndex="-1" Name="Crywolf State 6" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="27" Group="19" ItemIndex="-1" Name="Crywolf State 7" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="28" Group="20" ItemIndex="-1" Name="Game Master" Save="0" Type="1" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="29" Group="60" ItemIndex="6699" Name="Seal of Ascension" Save="1" Type="2" Flag="0" Count="1800" Value1="50" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="30" Group="61" ItemIndex="6700" Name="Seal of Wealth" Save="1" Type="2" Flag="0" Count="1800" Value1="100" Value2="50" Value3="-1" Value4="-1" />
+	<Effect Index="31" Group="62" ItemIndex="6701" Name="Seal of Sustenance" Save="1" Type="2" Flag="0" Count="1800" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="32" Group="22" ItemIndex="-1" Name="Order of Speed" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="33" Group="22" ItemIndex="-1" Name="Order of Sublimation" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="34" Group="22" ItemIndex="-1" Name="Order of Protection" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="35" Group="23" ItemIndex="7214" Name="Halloween 1" Save="1" Type="1" Flag="0" Count="1800" Value1="10" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="36" Group="23" ItemIndex="7215" Name="Halloween 2" Save="1" Type="1" Flag="0" Count="1800" Value1="100" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="37" Group="23" ItemIndex="7216" Name="Halloween 3" Save="1" Type="1" Flag="0" Count="1800" Value1="25" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="38" Group="23" ItemIndex="7217" Name="Halloween 4" Save="1" Type="1" Flag="0" Count="1800" Value1="500" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="39" Group="23" ItemIndex="7218" Name="Halloween 5" Save="1" Type="1" Flag="0" Count="1800" Value1="500" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="40" Group="60" ItemIndex="6699" Name="Seal of Ascension" Save="1" Type="2" Flag="0" Count="1800" Value1="50" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="41" Group="61" ItemIndex="6700" Name="Seal of Wealth" Save="1" Type="2" Flag="0" Count="1800" Value1="100" Value2="50" Value3="-1" Value4="-1" />
+	<Effect Index="42" Group="65" ItemIndex="6701" Name="Seal of Sustenance" Save="1" Type="2" Flag="0" Count="1800" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="43" Group="57" ItemIndex="6715" Name="Seal of Movement" Save="1" Type="2" Flag="0" Count="1800" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="44" Group="67" ItemIndex="7240" Name="Scroll of Quick" Save="1" Type="2" Flag="0" Count="1800" Value1="15" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="45" Group="68" ItemIndex="7241" Name="Scroll of Defense" Save="1" Type="2" Flag="0" Count="1800" Value1="60" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="46" Group="69" ItemIndex="7242" Name="Scroll of Damage" Save="1" Type="2" Flag="0" Count="1800" Value1="30" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="47" Group="70" ItemIndex="7243" Name="Scroll of Magic Damage" Save="1" Type="2" Flag="0" Count="1800" Value1="30" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="48" Group="71" ItemIndex="7244" Name="Scroll of Life" Save="1" Type="2" Flag="0" Count="1800" Value1="200" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="49" Group="72" ItemIndex="7245" Name="Scroll of Mana" Save="1" Type="2" Flag="0" Count="1800" Value1="300" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="50" Group="26" ItemIndex="7246" Name="Elixir of Strength" Save="1" Type="2" Flag="0" Count="1800" Value1="50" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="51" Group="26" ItemIndex="7247" Name="Elixir of Dexterity" Save="1" Type="2" Flag="0" Count="1800" Value1="50" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="52" Group="26" ItemIndex="7248" Name="Elixir of Vitality" Save="1" Type="2" Flag="0" Count="1800" Value1="50" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="53" Group="26" ItemIndex="7249" Name="Elixir of Energy" Save="1" Type="2" Flag="0" Count="1800" Value1="50" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="54" Group="26" ItemIndex="7250" Name="Elixir of Leadership" Save="1" Type="2" Flag="0" Count="1800" Value1="50" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="55" Group="27" ItemIndex="-1" Name="Poison" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="56" Group="28" ItemIndex="-1" Name="Ice" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="57" Group="29" ItemIndex="-1" Name="Ice Arrow" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="58" Group="30" ItemIndex="-1" Name="Fire Slash" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="59" Group="31" ItemIndex="-1" Name="Physi Damage Immunity" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="60" Group="32" ItemIndex="-1" Name="Magic Damage Immunity" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="61" Group="33" ItemIndex="-1" Name="Stern" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="62" Group="34" ItemIndex="-1" Name="Magic Defense" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="63" Group="35" ItemIndex="-1" Name="Monster Physi Damage Immunity" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="64" Group="36" ItemIndex="-1" Name="Monster Magic Damage Immunity" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="65" Group="37" ItemIndex="-1" Name="Order of Restraint" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="66" Group="38" ItemIndex="-1" Name="Crywolf State 8" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="67" Group="38" ItemIndex="-1" Name="Crywolf State 9" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="68" Group="38" ItemIndex="-1" Name="Crywolf State 10" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="69" Group="38" ItemIndex="-1" Name="Crywolf State 11" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="70" Group="38" ItemIndex="-1" Name="Crywolf State 12" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="71" Group="39" ItemIndex="-1" Name="Damage Reflect" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="72" Group="40" ItemIndex="-1" Name="Sleep" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="73" Group="40" ItemIndex="-1" Name="Blind" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="74" Group="41" ItemIndex="-1" Name="Neil" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="75" Group="42" ItemIndex="-1" Name="Sahamutt" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="76" Group="43" ItemIndex="-1" Name="Lesser Damage" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="77" Group="44" ItemIndex="-1" Name="Lesser Defense" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="78" Group="23" ItemIndex="7253" Name="Cherry Blossom 1" Save="1" Type="1" Flag="0" Count="1800" Value1="700" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="79" Group="23" ItemIndex="7254" Name="Cherry Blossom 2" Save="1" Type="1" Flag="0" Count="1800" Value1="700" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="80" Group="23" ItemIndex="7255" Name="Cherry Blossom 3" Save="1" Type="1" Flag="0" Count="1800" Value1="40" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="81" Group="21" ItemIndex="-1" Name="Sword Power" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="82" Group="45" ItemIndex="-1" Name="Magic Circle" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="83" Group="46" ItemIndex="-1" Name="Sword Slash" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="84" Group="47" ItemIndex="-1" Name="Lightning Storm" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="85" Group="48" ItemIndex="-1" Name="Red Storm" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="86" Group="49" ItemIndex="-1" Name="Frozen Stab" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="87" Group="13" ItemIndex="6718" Name="Seal of Life" Save="1" Type="2" Flag="0" Count="1800" Value1="50" Value2="5" Value3="-1" Value4="-1" />
+	<Effect Index="88" Group="13" ItemIndex="6719" Name="Seal of Mana" Save="1" Type="2" Flag="0" Count="1800" Value1="50" Value2="5" Value3="-1" Value4="-1" />
+	<Effect Index="89" Group="73" ItemIndex="7265" Name="Scroll of Battle" Save="1" Type="2" Flag="0" Count="1800" Value1="20" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="90" Group="74" ItemIndex="7266" Name="Scroll of Strength" Save="1" Type="2" Flag="0" Count="1800" Value1="20" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="91" Group="23" ItemIndex="-1" Name="Christmas 1" Save="1" Type="1" Flag="0" Count="1800" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="92" Group="23" ItemIndex="-1" Name="Christmas 2" Save="1" Type="1" Flag="0" Count="1800" Value1="500" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="93" Group="23" ItemIndex="-1" Name="Christmas 3" Save="1" Type="1" Flag="0" Count="1800" Value1="500" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="94" Group="23" ItemIndex="-1" Name="Christmas 4" Save="1" Type="1" Flag="0" Count="1800" Value1="30" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="95" Group="23" ItemIndex="-1" Name="Christmas 5" Save="1" Type="1" Flag="0" Count="1800" Value1="100" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="96" Group="23" ItemIndex="-1" Name="Christmas 6" Save="1" Type="1" Flag="0" Count="1800" Value1="15" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="97" Group="23" ItemIndex="-1" Name="Christmas 7" Save="1" Type="1" Flag="0" Count="1800" Value1="5" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="98" Group="50" ItemIndex="-1" Name="Duel Arena Watch" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="99" Group="52" ItemIndex="6737" Name="Talisman of Guardian" Save="1" Type="2" Flag="0" Count="1800" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="100" Group="53" ItemIndex="6738" Name="Talisman of Protection" Save="1" Type="2" Flag="0" Count="1800" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="101" Group="60" ItemIndex="6749" Name="Master Seal of Ascension" Save="1" Type="2" Flag="0" Count="1800" Value1="50" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="102" Group="61" ItemIndex="6750" Name="Master Seal of Wealth" Save="1" Type="2" Flag="0" Count="1800" Value1="100" Value2="50" Value3="-1" Value4="-1" />
+	<Effect Index="103" Group="51" ItemIndex="-1" Name="Gladiator's Glory" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="105" Group="54" ItemIndex="-1" Name="Double Goer Delete" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="112" Group="24" ItemIndex="6759" Name="Party Experience Bonus" Save="1" Type="2" Flag="0" Count="1800" Value1="90" Value2="10" Value3="-1" Value4="-1" />
+	<Effect Index="113" Group="58" ItemIndex="6760" Name="Max AG Boost Aura" Save="1" Type="2" Flag="0" Count="1800" Value1="10" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="114" Group="58" ItemIndex="6761" Name="Max SD Boost Aura" Save="1" Type="2" Flag="0" Count="1800" Value1="10" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="121" Group="75" ItemIndex="7308" Name="Scroll of Healing" Save="1" Type="2" Flag="0" Count="1800" Value1="3" Value2="100" Value3="-1" Value4="-1" />
+	<Effect Index="122" Group="76" ItemIndex="6784" Name="Hawk Figurine" Save="0" Type="1" Flag="0" Count="-1" Value1="10" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="123" Group="76" ItemIndex="6785" Name="Goat Figurine" Save="0" Type="1" Flag="0" Count="-1" Value1="10" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="124" Group="77" ItemIndex="6786" Name="Oak Charm" Save="0" Type="1" Flag="0" Count="-1" Value1="50" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="125" Group="77" ItemIndex="6787" Name="Maple Charm" Save="0" Type="1" Flag="0" Count="-1" Value1="50" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="126" Group="77" ItemIndex="6788" Name="Golden Oak Charm" Save="0" Type="1" Flag="0" Count="-1" Value1="100" Value2="500" Value3="-1" Value4="-1" />
+	<Effect Index="127" Group="77" ItemIndex="6789" Name="Golden Maple Charm" Save="0" Type="1" Flag="0" Count="-1" Value1="150" Value2="50" Value3="-1" Value4="-1" />
+	<Effect Index="128" Group="78" ItemIndex="6790" Name="Worn Horseshoe" Save="0" Type="1" Flag="0" Count="-1" Value1="20" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="129" Group="79" ItemIndex="-1" Name="Greater Ignore Defense Rate" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="130" Group="80" ItemIndex="-1" Name="Fitness" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="131" Group="81" ItemIndex="-1" Name="Greater Defense Success Rate" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="134" Group="84" ItemIndex="-1" Name="Iron Defense" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="135" Group="8" ItemIndex="-1" Name="Greater Life Enhanced" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="136" Group="8" ItemIndex="-1" Name="Greater Life Mastered" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="137" Group="85" ItemIndex="-1" Name="Death Stab Enhanced" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="138" Group="45" ItemIndex="-1" Name="Magic Circle Improved" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="139" Group="45" ItemIndex="-1" Name="Magic Circle Enhanced" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="140" Group="4" ItemIndex="-1" Name="Mana Shield Mastered" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="141" Group="86" ItemIndex="-1" Name="Frozen Stab Mastered" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="142" Group="87" ItemIndex="-1" Name="Bless" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="143" Group="6" ItemIndex="-1" Name="Infinity Arrrow Improved" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="144" Group="88" ItemIndex="-1" Name="Blind Improved" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="145" Group="89" ItemIndex="-1" Name="Drain Life Enhanced" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="146" Group="90" ItemIndex="-1" Name="Ice Storm Enhanced" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="147" Group="91" ItemIndex="-1" Name="Earth Prison" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="148" Group="5" ItemIndex="-1" Name="Greater Critical D. Mastered" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="149" Group="5" ItemIndex="-1" Name="Greater Critical D. Extended" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="150" Group="21" ItemIndex="-1" Name="Sword Power Improved" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="151" Group="21" ItemIndex="-1" Name="Sword Power Enhanced" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="152" Group="21" ItemIndex="-1" Name="Sword Power Mastered" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="153" Group="81" ItemIndex="-1" Name="Greater D. S. Rate Improved" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="154" Group="81" ItemIndex="-1" Name="Greater D. S. Rate Enhanced" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="155" Group="80" ItemIndex="-1" Name="Fitness Improved" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="157" Group="92" ItemIndex="-1" Name="Dragon Lore Enhanced" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="158" Group="93" ItemIndex="-1" Name="Chain Driver Enhanced" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="159" Group="94" ItemIndex="-1" Name="Poison Arrow" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="160" Group="94" ItemIndex="-1" Name="Poison Arrow Improved" Save="0" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="161" Group="87" ItemIndex="-1" Name="Bless Improved" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="162" Group="43" ItemIndex="-1" Name="Lesser Damage Improved" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="163" Group="44" ItemIndex="-1" Name="Lesser Defense Improved" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="164" Group="30" ItemIndex="-1" Name="Fire Slash Enhanced" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="165" Group="84" ItemIndex="-1" Name="Iron Defense Improved" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="166" Group="95" ItemIndex="-1" Name="Blood Howling" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="167" Group="95" ItemIndex="-1" Name="Blood Howling Improved" Save="1" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="174" Group="98" ItemIndex="-1" Name="Pentagram Jewel Half SD" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="175" Group="99" ItemIndex="-1" Name="Pentagram Jewel Half MP" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="176" Group="100" ItemIndex="-1" Name="Pentagram Jewel Half Speed" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="177" Group="101" ItemIndex="-1" Name="Pentagram Jewel Half HP" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="178" Group="102" ItemIndex="-1" Name="Pentagram Jewel Stun" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="186" Group="109" ItemIndex="-1" Name="Pentagram Jewel Slow" Save="1" Type="0" Flag="1" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="190" Group="115" ItemIndex="6833" Name="Talisman of Ascension 1" Save="1" Type="1" Flag="0" Count="1800" Value1="50" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="191" Group="115" ItemIndex="6834" Name="Talisman of Ascension 2" Save="1" Type="1" Flag="0" Count="1800" Value1="100" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="192" Group="115" ItemIndex="6835" Name="Talisman of Ascension 3" Save="1" Type="1" Flag="0" Count="1800" Value1="200" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="193" Group="60" ItemIndex="6836" Name="Seal of Ascension" Save="1" Type="2" Flag="0" Count="1800" Value1="100" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="194" Group="60" ItemIndex="6837" Name="Master Seal of Ascension" Save="1" Type="2" Flag="0" Count="1800" Value1="100" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="195" Group="116" ItemIndex="7392" Name="Blessing of Light" Save="1" Type="1" Flag="0" Count="1800" Value1="200" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="196" Group="68" ItemIndex="7393" Name="Master Scroll of Defense" Save="1" Type="2" Flag="0" Count="1800" Value1="120" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="197" Group="70" ItemIndex="7394" Name="Master Scroll of Magic Damage" Save="1" Type="2" Flag="0" Count="1800" Value1="60" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="198" Group="71" ItemIndex="7395" Name="Master Scroll of Life" Save="1" Type="2" Flag="0" Count="1800" Value1="400" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="199" Group="72" ItemIndex="7396" Name="Master Scroll of Mana" Save="1" Type="2" Flag="0" Count="1800" Value1="600" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="200" Group="69" ItemIndex="7397" Name="Master Scroll of Damage" Save="1" Type="2" Flag="0" Count="1800" Value1="60" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="201" Group="75" ItemIndex="7398" Name="Master Scroll of Healing" Save="1" Type="2" Flag="0" Count="1800" Value1="4" Value2="200" Value3="-1" Value4="-1" />
+	<Effect Index="202" Group="14" ItemIndex="7399" Name="Master Scroll of Battle" Save="1" Type="2" Flag="0" Count="1800" Value1="25" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="203" Group="14" ItemIndex="7400" Name="Master Scroll of Strength" Save="1" Type="2" Flag="0" Count="1800" Value1="25" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="204" Group="67" ItemIndex="7403" Name="Master Scroll of Quick" Save="1" Type="2" Flag="0" Count="1800" Value1="20" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="205" Group="150" ItemIndex="-1" Name="Custom Item Power" Save="0" Type="0" Flag="0" Count="-1" Value1="-1" Value2="-1" Value3="-1" Value4="-1" />
+	<Effect Index="206" Group="151" ItemIndex="-1" Name="Seal of Custom" Save="1" Type="2" Flag="0" Count="1800" Value1="100" Value2="50" Value3="-1" Value4="-1" Value1Stat="AddExperienceRate" Value2Stat="AddDefense" />
+</EffectManager>

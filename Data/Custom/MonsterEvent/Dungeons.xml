@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- AVEmulator - Event Board / Dungeons
+     Dungeons organizados en Data/Event/Dungeons. Los requisitos,
+     niveles, premios y horarios se leen del sistema nativo. -->
+<EventBoard Enabled="1">
+	<Dungeons>
+		<Dungeon Name="Blood Castle" Source="BloodCastle" ImageIndex="0" IndexBoss="233" SizeBoss="0.5"
+			IndexItemBag="19" GateMove1="500" GateMove2="500" GateMove3="500"
+			Description1="The Archangel's weapon lies sealed inside Blood Castle."
+			Description2="Break through its defenses before time runs out."
+			RewardLabel1="Winner" RewardLabel2="Participant" />
+
+		<Dungeon Name="Devil's Square" Source="DevilSquare" ImageIndex="1" IndexBoss="237" SizeBoss="0.5"
+			IndexItemBag="28" GateMove1="501" GateMove2="501" GateMove3="501"
+			Description1="Endless demons are flooding the Devil's Square."
+			Description2="Survive and defeat them before the gate closes."
+			RewardLabel1="Best Rank" RewardLabel2="Lowest Rank" />
+
+		<Dungeon Name="Chaos Castle" Source="ChaosCastle" ImageIndex="2" IndexBoss="162" SizeBoss="0.5"
+			IndexItemBag="26" GateMove1="502" GateMove2="502" GateMove3="502"
+			Description1="Enter Chaos Castle and fight every challenger."
+			Description2="Only one survivor will leave as the champion."
+			RewardLabel1="Per Player Kill" RewardLabel2="Per Monster Kill" />
+
+		<Dungeon Name="Illusion Temple" Source="IllusionTemple" ImageIndex="4" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="Compete as a team to secure the sacred illusion relic."
+			Description2="The countdown follows the real Illusion Temple schedule."
+			RewardLabel1="Base Reward" RewardLabel2="Score Bonus" />
+
+		<Dungeon Name="Doppelganger" Source="DoubleGoer" ImageIndex="5" IndexBoss="533" SizeBoss="0.5"
+			IndexItemBag="0" GateMove1="-1" GateMove2="-1" GateMove3="-1"
+			Description1="Enter Double Goer with a ticket during its opening time."
+			Description2="Only one party can begin each available instance."
+			RewardLabel1="Silver Chest" RewardLabel2="Golden Chest" />
+	</Dungeons>
+</EventBoard>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  AV_Event.xml - Configuracion de eventos personalizados sin XML propio.
+
+  Los eventos nativos se configuran completamente en Data\Event\<Evento>.xml.
+  Switch: 0 = desactivado, 1 = activado.
+  AutoReward1, AutoReward2 y AutoReward3 corresponden a las tres monedas del servidor.
+  Para aplicar cambios sin apagar el servidor: Reload -> Reload Event.
+-->
+<AV_Event>
+  <Groups>
+
+    <!-- CONFIGURACION GENERAL -->
+    <Group Name="General">
+      <Option Name="TimerMarlonTeleport" Value="300" Comment="Tiempo del teletransporte de Marlon" />
+    </Group>
+
+    <!-- EVENT START -->
+    <Group Name="Event Start">
+      <Option Name="EventStartSwitch" Value="0" Comment="Activa Event Start" />
+      <Option Name="EventStartTime" Value="15" Comment="Tiempo del evento" />
+    </Group>
+
+    <!-- RUN AND CATCH -->
+    <Group Name="Run and Catch">
+      <Option Name="EventRunAndCatchSwitch" Value="0" Comment="Activa Run and Catch" />
+      <Option Name="EventRunAndCatchTimeToEnter" Value="10" Comment="Tiempo disponible para entrar" />
+      <Option Name="EventRunAndCatchMaxTime" Value="10" Comment="Duracion maxima" />
+      <Option Name="EventRunAndCatchAutoReward1" Value="0" Comment="Recompensa Coin 1" />
+      <Option Name="EventRunAndCatchAutoReward2" Value="0" Comment="Recompensa Coin 2" />
+      <Option Name="EventRunAndCatchAutoReward3" Value="0" Comment="Recompensa Coin 3" />
+    </Group>
+
+    <!-- HIDE AND SEEK -->
+    <Group Name="Hide and Seek">
+      <Option Name="EventHideAndSeekSwitch" Value="0" Comment="Activa Hide and Seek" />
+      <Option Name="EventHideAndSeekMaxTime" Value="5" Comment="Duracion maxima" />
+      <Option Name="EventHideAndSeekAutoReward1" Value="0" Comment="Recompensa Coin 1" />
+      <Option Name="EventHideAndSeekAutoReward2" Value="0" Comment="Recompensa Coin 2" />
+      <Option Name="EventHideAndSeekAutoReward3" Value="0" Comment="Recompensa Coin 3" />
+    </Group>
+
+    <!-- RUSSIAN ROULETTE -->
+    <Group Name="Russian Roulette">
+      <Option Name="EventRussianRouletteSwitch" Value="0" Comment="Activa Russian Roulette" />
+      <Option Name="EventRussianRouletteTimeToEnter" Value="10" Comment="Tiempo disponible para entrar" />
+      <Option Name="EventRussianRouletteMaxTime" Value="10" Comment="Duracion maxima" />
+      <Option Name="EventRussianRouletteMaxPlayer" Value="8" Comment="Cantidad maxima de jugadores" />
+      <Option Name="EventRussianRouletteAutoReward1" Value="0" Comment="Recompensa Coin 1" />
+      <Option Name="EventRussianRouletteAutoReward2" Value="0" Comment="Recompensa Coin 2" />
+      <Option Name="EventRussianRouletteAutoReward3" Value="0" Comment="Recompensa Coin 3" />
+    </Group>
+
+    <!-- PVP EVENT -->
+    <Group Name="PvP Event">
+      <Option Name="EventPvPSwitch" Value="0" Comment="Activa PvP Event" />
+      <Option Name="EventPvPMaxScore" Value="3" Comment="Puntaje necesario para ganar" />
+      <Option Name="EventPvPMaxTime" Value="3" Comment="Duracion maxima" />
+      <Option Name="EventPvPAutoReward1" Value="0" Comment="Recompensa Coin 1" />
+      <Option Name="EventPvPAutoReward2" Value="0" Comment="Recompensa Coin 2" />
+      <Option Name="EventPvPAutoReward3" Value="100" Comment="Recompensa Coin 3" />
+    </Group>
+
+    <!-- KILL ALL -->
+    <Group Name="Kill All">
+      <Option Name="EventKillAllSwitch" Value="0" Comment="Activa Kill All" />
+      <Option Name="EventKillAllTimeToEnter" Value="20" Comment="Tiempo disponible para entrar" />
+      <Option Name="EventKillAllDeadDecrease" Value="1" Comment="Puntos descontados al morir" />
+      <Option Name="EventKillAllKillIncrease" Value="2" Comment="Puntos obtenidos por muerte" />
+      <Option Name="EventKillAllMaxScore" Value="20" Comment="Puntaje maximo" />
+      <Option Name="EventKillAllMinPlayers" Value="2" Comment="Cantidad minima de jugadores" />
+      <Option Name="EventKillAllMaxPlayers" Value="20" Comment="Cantidad maxima de jugadores" />
+      <Option Name="EventKillAllMaxTime" Value="2" Comment="Duracion maxima" />
+      <Option Name="EventKillAllAutoReward1Rank1" Value="0" Comment="Coin 1 para primer lugar" />
+      <Option Name="EventKillAllAutoReward1Rank2" Value="0" Comment="Coin 1 para segundo lugar" />
+      <Option Name="EventKillAllAutoReward1Rank3" Value="0" Comment="Coin 1 para tercer lugar" />
+      <Option Name="EventKillAllAutoReward2Rank1" Value="0" Comment="Coin 2 para primer lugar" />
+      <Option Name="EventKillAllAutoReward2Rank2" Value="0" Comment="Coin 2 para segundo lugar" />
+      <Option Name="EventKillAllAutoReward2Rank3" Value="0" Comment="Coin 2 para tercer lugar" />
+      <Option Name="EventKillAllAutoReward3Rank1" Value="100" Comment="Coin 3 para primer lugar" />
+      <Option Name="EventKillAllAutoReward3Rank2" Value="50" Comment="Coin 3 para segundo lugar" />
+      <Option Name="EventKillAllAutoReward3Rank3" Value="30" Comment="Coin 3 para tercer lugar" />
+    </Group>
+
+  </Groups>
+</AV_Event>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== 001 - Liaman the Barmaid.xml
+== NPC shop stock: Liaman the Barmaid.
+== Loaded by GameServer via CShop::LoadXML(), matched to its
+== ShopManager.xml entry by the leading number in this filename
+== (same convention as Data/EventItemBag/*.xml).
+== Modify only if you know what you're doing!
+============================================================
+
+### Item ###
+	Type/Index/Level/Durability   Item code (GET_ITEM(Type,Index) -
+	             matches Item.xml) and starting level/durability
+	             (0 = full/random).
+	Skill/Luck/Option/Excellent/Ancient/JOH/OpEx   Fixed item options.
+	Socket1-5    Socket seed per slot, 255 = none.
+	Value/Coin1-3/Sell   OPTIONAL - overrides this item's price in THIS
+	             shop only (Coin1/2/3 = WCoinC/WCoinP/GoblinPoint, Sell
+	             sets the sell-back price too). Absent = price comes
+	             from the global Data/Item/ItemValue.xml table instead.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<Shop>
+	<Item Type="14" Index="13" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Coin1="100" Comment="Jewel of Bless" />
+	<Item Type="14" Index="14" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Coin2="100" Comment="Jewel of Soul" />
+	<Item Type="14" Index="16" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Coin3="100" Comment="Jewel of Life" />
+	<Item Type="14" Index="3" Level="1" Durability="255" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Large Healing Potion" />
+	<Item Type="14" Index="6" Level="1" Durability="255" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Large Mana Potion" />
+	<Item Type="14" Index="8" Level="0" Durability="255" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Antidote" />
+	<Item Type="14" Index="111" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Mirror of Dimensions" />
+	<Item Type="14" Index="102" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Gaion's Order" />
+	<Item Type="14" Index="10" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Town Portal Scroll" />
+	<Item Type="13" Index="0" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Guardian Angel" />
+	<Item Type="13" Index="1" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Imp" />
+	<Item Type="13" Index="2" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Horn of Uniria" />
+</Shop>

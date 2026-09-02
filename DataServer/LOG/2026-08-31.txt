@@ -1,0 +1,78 @@
+02:54:22 [SocketManager] Server started at port [55960]
+02:54:26 [ServerManager][0] AddServer (127.0.0.1)
+02:54:26 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+07:35:46 [SocketManager] Server started at port [55960]
+07:35:53 [ServerManager][0] AddServer (127.0.0.1)
+07:35:53 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+07:54:17 [SocketManager] Server started at port [55960]
+07:54:19 [ServerManager][0] AddServer (127.0.0.1)
+07:54:19 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+08:38:06 [SocketManager] Server started at port [55960]
+08:38:09 [ServerManager][0] AddServer (127.0.0.1)
+08:38:09 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+09:14:51 [SocketManager] Server started at port [55960]
+09:14:54 [ServerManager][0] AddServer (127.0.0.1)
+09:14:54 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+09:19:12 [SocketManager] Server started at port [55960]
+09:19:15 [ServerManager][0] AddServer (127.0.0.1)
+09:19:15 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+09:48:11 [SocketManager] Server started at port [55960]
+09:48:14 [ServerManager][0] AddServer (127.0.0.1)
+09:48:14 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+09:53:47 [SocketManager] Server started at port [55960]
+09:53:50 [ServerManager][0] AddServer (127.0.0.1)
+09:53:50 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+10:28:56 [SocketManager] Server started at port [55960]
+10:29:03 [ServerManager][0] AddServer (127.0.0.1)
+10:29:03 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+11:22:18 [SocketManager] Server started at port [55960]
+11:22:21 [ServerManager][0] AddServer (127.0.0.1)
+11:22:21 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+11:33:23 [SocketManager] Server started at port [55960]
+11:33:25 [ServerManager][0] AddServer (127.0.0.1)
+11:33:25 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+15:14:01 [SocketManager] Server started at port [55960]
+15:14:03 [ServerManager][0] AddServer (127.0.0.1)
+15:14:03 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+15:28:12 [SocketManager] Server started at port [55960]
+15:28:15 [ServerManager][0] AddServer (127.0.0.1)
+15:28:15 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+17:34:00 [SocketManager] Server started at port [55960]
+17:34:08 [ServerManager][0] AddServer (127.0.0.1)
+17:34:08 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+17:46:56 [SocketManager] Server started at port [55960]
+17:46:59 [ServerManager][0] AddServer (127.0.0.1)
+17:46:59 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+17:54:11 [SocketManager] Server started at port [55960]
+17:54:14 [ServerManager][0] AddServer (127.0.0.1)
+17:54:14 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+18:37:34 [SocketManager] Server started at port [55960]
+18:37:38 [ServerManager][0] AddServer (127.0.0.1)
+18:37:38 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+18:47:36 [SocketManager] Server started at port [55960]
+18:47:39 [ServerManager][0] AddServer (127.0.0.1)
+18:47:39 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+18:57:15 [SocketManager] Server started at port [55960]
+18:57:18 [ServerManager][0] AddServer (127.0.0.1)
+18:57:18 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+19:13:35 [SocketManager] Server started at port [55960]
+19:13:38 [ServerManager][0] AddServer (127.0.0.1)
+19:13:38 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+19:32:25 [SocketManager] Server started at port [55960]
+19:32:28 [ServerManager][0] AddServer (127.0.0.1)
+19:32:28 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+21:48:40 UPDATE OptionData SET SkillKey=?,GameOption=21,Qkey=255,Wkey=255,Ekey=255,ChatWindow=6,Rkey=255,QWERLevel=0,TKey=0,TKeyLevel=0 WHERE Name='TestDL'
+21:48:40 [QueryManager] State (42S22), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'TKey'.
+21:48:40 [QueryManager] State (42S22), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'TKeyLevel'.
+21:49:09 UPDATE OptionData SET SkillKey=?,GameOption=21,Qkey=255,Wkey=255,Ekey=255,ChatWindow=6,Rkey=255,QWERLevel=0,TKey=0,TKeyLevel=0 WHERE Name='Admin'
+21:49:09 [QueryManager] State (42S22), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'TKey'.
+21:49:09 [QueryManager] State (42S22), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'TKeyLevel'.
+22:57:53 [SocketManager] Server started at port [55960]
+22:57:56 [ServerManager][0] AddServer (127.0.0.1)
+22:57:56 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+23:02:52 [SocketManager] Server started at port [55960]
+23:02:55 [ServerManager][0] AddServer (127.0.0.1)
+23:02:55 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+23:11:12 [SocketManager] Server started at port [55960]
+23:11:15 [ServerManager][0] AddServer (127.0.0.1)
+23:11:15 [ServerManager][0] ServerInfo (Server01) (55901) (0)

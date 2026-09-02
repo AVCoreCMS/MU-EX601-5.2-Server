@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== 103 - Elegant Jewelry Case.xml
+== Converted 1:1 from the original (now renamed) source file.
+== Item reward table for EventItemBagManager.xml's Bag Index="103" (Elegant Jewelry Case).
+== Loaded by GameServer via CItemBag::LoadXML(), matched to its Bag
+== by the leading number in this filename (same convention as
+== Data/MonsterSetBase/*.txt).
+== Modify only if you know what you're doing!
+============================================================
+
+### Config ###
+	EventName        Internal label (not shown to players).
+	DropZen          Zen amount dropped, 0 = none.
+	ItemDropRate     Percent chance an item drops at all, out of 100.
+	ItemDropCount    How many items to roll when it does drop.
+	SetItemDropRate  Percent chance the item is a random Set item variant.
+	ItemDropType     Drop behavior (ground drop vs direct-to-inventory).
+	SendFirework     1 = show fireworks effect on drop.
+
+### Item ###
+	Type/Index    Item code (GET_ITEM(Type,Index) - matches Item.xml).
+	MinLevel/MaxLevel   Random item level range.
+	Option1-3/NewOption Random option rolls.
+	Time          Duration in seconds for a rental/temporary item, 0 = permanent.
+	DropRate      Relative weight among this bag's <Item> rows.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemBag>
+	<Config EventName="Crystal Aromor" DropZen="10000" ItemDropRate="100" ItemDropCount="10" SetItemDropRate="0" ItemDropType="0" SendFirework="1" />
+	<Item Type="14" Index="253" MinLevel="0" MaxLevel="0" Option1="0" Option2="0" Option3="0" NewOption="0" Time="0" DropRate="90" Comment="Weapon Jewel" />
+	<Item Type="14" Index="254" MinLevel="0" MaxLevel="0" Option1="0" Option2="0" Option3="0" NewOption="0" Time="0" DropRate="60" Comment="Weapon Jewel" />
+	<Item Type="14" Index="255" MinLevel="0" MaxLevel="0" Option1="0" Option2="0" Option3="0" NewOption="0" Time="0" DropRate="50" Comment="Weapon Jewel" />
+	<Item Type="14" Index="256" MinLevel="0" MaxLevel="0" Option1="0" Option2="0" Option3="0" NewOption="0" Time="0" DropRate="30" Comment="Weapon Jewel" />
+	<Item Type="14" Index="257" MinLevel="0" MaxLevel="0" Option1="0" Option2="0" Option3="0" NewOption="0" Time="0" DropRate="20" Comment="Weapon Jewel" />
+</ItemBag>

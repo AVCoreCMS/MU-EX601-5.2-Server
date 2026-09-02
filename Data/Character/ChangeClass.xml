@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ChangeClass.xml
+== Price to use the Change Class feature (cash shop), per
+== account VIP level.
+== Loaded by GameServer via cChangeClass::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### Account ###
+	Level      Account VIP level: 0=Free 1=Bronze 2=Silver 3=Gold.
+	PriceType  0=Zen 1=WCoinC 2=WCoinP 3=WCoinG.
+	Price      Amount required, in whichever currency PriceType picks.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ChangeClass>
+	<Account Level="0" PriceType="1" Price="30000" Comment="Free" />
+	<Account Level="1" PriceType="1" Price="30000" Comment="Bronze" />
+	<Account Level="2" PriceType="1" Price="30000" Comment="Silver" />
+	<Account Level="3" PriceType="1" Price="30000" Comment="Gold" />
+</ChangeClass>

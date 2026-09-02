@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- AVEmulator - Event Board / Competition
+     Competencias organizadas en Data/Event/Competition. -->
+<EventBoard Enabled="1">
+	<Competitions>
+		<Competition Name="King of MU" Source="KingOfMU" ImageIndex="2" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="Challenge the other players and claim the royal title."
+			Description2="Follow the server announcement when registration opens." />
+
+		<Competition Name="Team vs Team" Source="TeamVsTeam" ImageIndex="2" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="Two teams face each other in a scheduled battle."
+			Description2="Join through the event NPC when registration opens." />
+
+		<Competition Name="Castle Deep" Source="CastleDeep" ImageIndex="2" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="Defend the castle grounds against the attacking forces."
+			Description2="The timer comes directly from the Castle Deep system." />
+
+		<Competition Name="Crywolf" Source="Crywolf" ImageIndex="2" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="Protect the Crywolf altar and its contract warriors."
+			Description2="The battle schedule is controlled by Crywolf.xml." />
+
+		<Competition Name="Castle Siege" Source="CastleSiege" ImageIndex="0" IndexBoss="0" SizeBoss="0.5" IndexItemBag="0"
+			Description1="Guilds fight for control of Lorencia Castle."
+			Description2="The countdown follows the active siege cycle." />
+	</Competitions>
+</EventBoard>

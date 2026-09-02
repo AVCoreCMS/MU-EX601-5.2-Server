@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== InvasionManager.xml
+== Scheduled monster invasion events (e.g. "Red Dragon"):
+== schedule, notice messages, boss, and the monster spawn
+== groups that appear during the invasion.
+== Loaded by GameServer via CInvasionManager::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### InvasionManager::Invasion ###
+	Index           0-29, fixed (MAX_INVASION).
+	RespawnMessage  Message index (Message_<LANG>.txt) broadcast when
+	                the invasion starts. -1 = none.
+	DespawnMessage  Message index broadcast when the invasion time runs
+	                out. -1 = none.
+	BossIndex       Monster class of the invasion's boss. -1 = none.
+	BossMessage     Message index broadcast when the boss is killed.
+	                -1 = none.
+	InvasionTime    Duration in seconds once started.
+
+	Child <StartTime> - one or more scheduled triggers, matched against
+	the real-world clock (-1 = any/wildcard for that field):
+		Year/Month/Day/DayOfWeek/Hour/Minute/Second
+
+	Child <Respawn> - one or more spawn-point groups (0-19):
+		Group   Respawn group id (0-19, MAX_INVASION_RESPAWN_GROUP).
+		Map     Map number this respawn point is on.
+		Value   Spawn point reference (see CInvasionManager::SetMonster).
+
+	Child <Monster> - one or more monster entries spawned during the
+	invasion:
+		Group        Which <Respawn> group (0-19) this monster uses.
+		MonsterClass Monster class to spawn.
+		RegenType    Respawn behavior on death (0 = normal).
+		RegenTime    Seconds before respawning after death.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<InvasionManager>
+	<!-- Enabled: 0/1. FlyingDragons y FlyingDragonsKillBoss controlan el efecto visual de los dragones. -->
+	<ServerSettings>
+		<GameServer Enabled="1" FlyingDragons="1" FlyingDragonsKillBoss="1" />
+	</ServerSettings>
+	<Invasion Index="1" RespawnMessage="191" DespawnMessage="192" BossIndex="42" BossMessage="193" InvasionTime="1800" Comment="Red Dragon">
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="2" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="4" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="6" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="8" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="10" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="12" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="16" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="18" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="-1" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="-1" Second="0" />
+		<Respawn Group="0" Map="0" Value="2" />
+		<Monster Group="0" MonsterClass="42" RegenType="0" RegenTime="0" Comment="Red Dragon" />
+	</Invasion>
+	<Invasion Index="0" RespawnMessage="9131" DespawnMessage="9132" BossIndex="55" BossMessage="9133" InvasionTime="120" Comment="Skeleton King">
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="0" Minute="5" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="4" Minute="5" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="8" Minute="5" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="12" Minute="5" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="16" Minute="5" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="5" Second="0" />
+		<Respawn Group="0" Map="0" Value="0" />
+		<Respawn Group="0" Map="3" Value="0" />
+		<Monster Group="0" MonsterClass="55" RegenType="0" RegenTime="0" Comment="Death King" />
+		<Monster Group="0" MonsterClass="56" RegenType="0" RegenTime="0" Comment="Death Bone" />
+	</Invasion>
+
+	<Invasion Index="2" RespawnMessage="9134" DespawnMessage="9135" BossIndex="501" BossMessage="9136" InvasionTime="600" Comment="Golden Invasion">
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="0" Minute="25" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="4" Minute="25" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="8" Minute="25" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="12" Minute="25" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="16" Minute="25" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="25" Second="0" />
+		<Respawn Group="0" Map="0" Value="0" />
+		<Respawn Group="1" Map="2" Value="0" />
+		<Respawn Group="2" Map="2" Value="0" />
+		<Respawn Group="3" Map="3" Value="0" />
+		<Respawn Group="4" Map="0" Value="0" />
+		<Respawn Group="4" Map="2" Value="0" />
+		<Respawn Group="4" Map="3" Value="0" />
+		<Respawn Group="4" Map="51" Value="0" />
+		<Respawn Group="5" Map="7" Value="0" />
+		<Respawn Group="6" Map="7" Value="0" />
+		<Respawn Group="7" Map="8" Value="0" />
+		<Respawn Group="8" Map="8" Value="0" />
+		<Respawn Group="9" Map="1" Value="0" />
+		<Respawn Group="10" Map="4" Value="0" />
+		<Respawn Group="11" Map="33" Value="0" />
+		<Respawn Group="12" Map="10" Value="0" />
+		<Respawn Group="13" Map="37" Value="0" />
+		<Respawn Group="14" Map="38" Value="0" />
+		<Respawn Group="15" Map="57" Value="0" />
+		<Respawn Group="16" Map="56" Value="0" />
+		<Respawn Group="17" Map="37" Value="0" />
+		<Respawn Group="17" Map="57" Value="0" />
+		<Respawn Group="18" Map="51" Value="0" />
+		<Monster Group="0" MonsterClass="43" RegenType="0" RegenTime="0" Comment="Golden Budge Dragon" />
+		<Monster Group="1" MonsterClass="53" RegenType="0" RegenTime="0" Comment="Golden Titan" />
+		<Monster Group="2" MonsterClass="54" RegenType="0" RegenTime="0" Comment="Golden Soldier" />
+		<Monster Group="3" MonsterClass="78" RegenType="0" RegenTime="0" Comment="Golden Goblin" />
+		<Monster Group="4" MonsterClass="79" RegenType="0" RegenTime="0" Comment="Golden Derkon" />
+		<Monster Group="5" MonsterClass="80" RegenType="0" RegenTime="0" Comment="Golden Lizard King" />
+		<Monster Group="6" MonsterClass="81" RegenType="0" RegenTime="0" Comment="Golden Vepar" />
+		<Monster Group="7" MonsterClass="82" RegenType="0" RegenTime="0" Comment="Golden Tantalos" />
+		<Monster Group="8" MonsterClass="83" RegenType="0" RegenTime="0" Comment="Golden Wheel" />
+		<Monster Group="9" MonsterClass="493" RegenType="0" RegenTime="0" Comment="Golden Dark Knight" />
+		<Monster Group="10" MonsterClass="494" RegenType="0" RegenTime="0" Comment="Golden Devil" />
+		<Monster Group="11" MonsterClass="495" RegenType="0" RegenTime="0" Comment="Golden Stone Golem" />
+		<Monster Group="12" MonsterClass="496" RegenType="0" RegenTime="0" Comment="Golden Crust" />
+		<Monster Group="13" MonsterClass="497" RegenType="0" RegenTime="0" Comment="Golden Satyros" />
+		<Monster Group="14" MonsterClass="498" RegenType="0" RegenTime="0" Comment="Golden Twin Tail" />
+		<Monster Group="15" MonsterClass="499" RegenType="0" RegenTime="0" Comment="Golden Iron Knight" />
+		<Monster Group="16" MonsterClass="500" RegenType="0" RegenTime="0" Comment="Golden Napin" />
+		<Monster Group="17" MonsterClass="501" RegenType="0" RegenTime="0" Comment="Great Golden Dragon" />
+		<Monster Group="18" MonsterClass="502" RegenType="0" RegenTime="0" Comment="Golden Rabbit" />
+	</Invasion>
+
+	<Invasion Index="3" RespawnMessage="9137" DespawnMessage="9138" BossIndex="135" BossMessage="9139" InvasionTime="600" Comment="White Wizard">
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="0" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="4" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="8" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="12" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="16" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="20" Minute="50" Second="0" />
+		<Respawn Group="0" Map="0" Value="0" />
+		<Respawn Group="0" Map="2" Value="0" />
+		<Respawn Group="0" Map="3" Value="0" />
+		<Monster Group="0" MonsterClass="135" RegenType="0" RegenTime="0" Comment="White Wizard" />
+		<Monster Group="0" MonsterClass="136" RegenType="0" RegenTime="0" Comment="Destructive Ogre Soldier" />
+		<Monster Group="0" MonsterClass="137" RegenType="0" RegenTime="0" Comment="Destructive Ogre Archer" />
+	</Invasion>
+
+	<Invasion Index="4" RespawnMessage="9140" DespawnMessage="9141" BossIndex="-1" BossMessage="-1" InvasionTime="600" Comment="New Year">
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="2" Minute="5" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="6" Minute="5" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="10" Minute="5" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="5" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="18" Minute="5" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="5" Second="0" />
+		<Respawn Group="0" Map="4" Value="0" />
+		<Respawn Group="0" Map="7" Value="0" />
+		<Respawn Group="0" Map="8" Value="0" />
+		<Respawn Group="0" Map="33" Value="0" />
+		<Respawn Group="0" Map="37" Value="0" />
+		<Respawn Group="0" Map="57" Value="0" />
+		<Monster Group="0" MonsterClass="365" RegenType="0" RegenTime="0" Comment="Pouch of Blessing" />
+	</Invasion>
+
+	<Invasion Index="5" RespawnMessage="9142" DespawnMessage="9143" BossIndex="-1" BossMessage="-1" InvasionTime="600" Comment="Rabbits">
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="2" Minute="15" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="6" Minute="15" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="10" Minute="15" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="15" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="18" Minute="15" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="15" Second="0" />
+		<Respawn Group="0" Map="4" Value="0" />
+		<Respawn Group="0" Map="7" Value="0" />
+		<Respawn Group="0" Map="8" Value="0" />
+		<Respawn Group="0" Map="33" Value="0" />
+		<Respawn Group="0" Map="37" Value="0" />
+		<Respawn Group="0" Map="57" Value="0" />
+		<Monster Group="0" MonsterClass="413" RegenType="0" RegenTime="0" Comment="Lunar Rabbit" />
+	</Invasion>
+
+	<Invasion Index="6" RespawnMessage="9144" DespawnMessage="9145" BossIndex="-1" BossMessage="-1" InvasionTime="600" Comment="Summer">
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="2" Minute="25" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="6" Minute="25" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="10" Minute="25" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="25" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="18" Minute="25" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="25" Second="0" />
+		<Respawn Group="0" Map="4" Value="0" />
+		<Respawn Group="0" Map="7" Value="0" />
+		<Respawn Group="0" Map="8" Value="0" />
+		<Respawn Group="0" Map="33" Value="0" />
+		<Respawn Group="0" Map="37" Value="0" />
+		<Respawn Group="0" Map="57" Value="0" />
+		<Monster Group="0" MonsterClass="463" RegenType="0" RegenTime="0" Comment="Summer Monster" />
+	</Invasion>
+
+	<Invasion Index="7" RespawnMessage="9146" DespawnMessage="9147" BossIndex="476" BossMessage="9148" InvasionTime="600" Comment="Cursed Santa">
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="2" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="6" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="10" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="18" Minute="50" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="50" Second="0" />
+		<Respawn Group="0" Map="0" Value="0" />
+		<Respawn Group="0" Map="2" Value="0" />
+		<Respawn Group="0" Map="3" Value="0" />
+		<Monster Group="0" MonsterClass="466" RegenType="0" RegenTime="0" Comment="Cursed Goblin" />
+		<Monster Group="0" MonsterClass="476" RegenType="0" RegenTime="0" Comment="Cursed Santa" />
+	</Invasion>
+
+	<Invasion Index="8" RespawnMessage="9149" DespawnMessage="9150" BossIndex="561" BossMessage="9151" InvasionTime="600" Comment="Medusa">
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="1" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="5" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="9" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="13" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="17" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="21" Minute="0" Second="0" />
+		<Respawn Group="0" Map="56" Value="0" />
+		<Respawn Group="0" Map="56" Value="1" />
+		<Respawn Group="0" Map="56" Value="2" />
+		<Respawn Group="0" Map="56" Value="3" />
+		<Monster Group="0" MonsterClass="561" RegenType="0" RegenTime="0" Comment="Medusa" />
+	</Invasion>
+</InvasionManager>

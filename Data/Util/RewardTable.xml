@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== RewardTable.xml
+== Items granted automatically each time a character resets
+== (via the /reset command), per class and account VIP level.
+== Loaded by GameServer via cRewardSystem::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### Class ###
+	Index   0=DW 1=DK 2=FE 3=MG 4=DL 5=SU 6=RF. -1 = all 7 classes.
+
+### Class::Item ###
+	Reset/MReset   Which Reset/MasterReset count this reward fires on,
+	             -1 = every reset.
+	UserType0-3    How many of this item to grant, per account VIP
+	             level (Free/Bronze/Silver/Gold).
+	Type/Index     Item code (GET_ITEM(Type,Index) - matches Item.xml).
+	Level          Item level.
+	Luck/Durability/Skill   NOTE: named to match the C++ struct fields
+	             they feed (REWARD_ITEM_INFO), not literal
+	             luck/durability/skill - the original file's own
+	             column header used different labels (Dur/Skill/Luck)
+	             than what the loader actually reads into. Kept as-is
+	             to not change gameplay.
+	Option/Excellent/Ancient/JOH/OpEx   Item option rolls.
+	Socket1-5      Socket seed per slot, 255 = none.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<RewardSystem>
+	<Class Index="0" Name="Dark Wizard">
+		<Item Reset="-1" MReset="0" UserType0="0" UserType1="1" UserType2="2" UserType3="3" Type="14" Index="11" Level="12" Luck="1" Durability="0" Skill="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Box of Luck" />
+		<Item Reset="-1" MReset="0" UserType0="0" UserType1="1" UserType2="2" UserType3="3" Type="14" Index="11" Level="11" Luck="1" Durability="0" Skill="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Box of Luck" />
+	</Class>
+	<Class Index="1" Name="Dark Knight">
+		<Item Reset="-1" MReset="0" UserType0="1" UserType1="2" UserType2="3" UserType3="4" Type="14" Index="11" Level="12" Luck="1" Durability="0" Skill="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Box of Luck" />
+	</Class>
+</RewardSystem>

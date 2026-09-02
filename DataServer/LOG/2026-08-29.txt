@@ -1,0 +1,21 @@
+02:17:22 [SocketManager] Server started at port [55960]
+02:17:25 [ServerManager][0] AddServer (127.0.0.1)
+02:17:25 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+02:22:09 [SocketManager] Server started at port [55960]
+02:22:17 [ServerManager][0] AddServer (127.0.0.1)
+02:22:17 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+02:25:30 UPDATE OptionData SET SkillKey=?,GameOption=21,Qkey=255,Wkey=255,Ekey=255,ChatWindow=6,Rkey=255,QWERLevel=0,TKey=0,TKeyLevel=0 WHERE Name='Phanh'
+02:25:30 [QueryManager] State (42S22), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'TKey'.
+02:25:30 [QueryManager] State (42S22), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'TKeyLevel'.
+02:51:35 [SocketManager] Server started at port [55960]
+02:51:43 [ServerManager][0] AddServer (127.0.0.1)
+02:51:43 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+03:19:09 [SocketManager] Server started at port [55960]
+03:19:12 [ServerManager][0] AddServer (127.0.0.1)
+03:19:12 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+13:52:55 [SocketManager] Server started at port [55960]
+13:52:59 [ServerManager][0] AddServer (127.0.0.1)
+13:52:59 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+13:57:34 [SocketManager] Server started at port [55960]
+13:57:36 [ServerManager][0] AddServer (127.0.0.1)
+13:57:36 [ServerManager][0] ServerInfo (Server01) (55901) (0)

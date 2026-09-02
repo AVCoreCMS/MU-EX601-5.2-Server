@@ -1,0 +1,108 @@
+===============================================================================
+                     API DE JUGADORES Y RECOMPENSAS
+===============================================================================
+
+CONSULTAS
+  AV.IsConnected(index) -> boolean
+  AV.FindPlayer(name) -> index o nil
+  AV.GetPlayers() -> tabla de indices
+  AV.GetPartyMembers(index) -> tabla de indices
+
+  AV.GetPlayer(index) -> tabla o nil
+    Index, Account, Name, AccountLevel, Authority, Class, Level, MasterLevel,
+    Reset, MasterReset, Map, X, Y, Money, Coin1, Coin2, Coin3, GensFamily,
+    GensContribution, LevelUpPoint, MasterPoint, Strength, Dexterity,
+    Vitality, Energy, Leadership, Life, MaxLife, Mana, MaxMana, Shield,
+    MaxShield, BP, MaxBP, PKLevel, PKCount, PKTime, Party, GuildNumber,
+    GuildStatus, GuildName.
+
+  AV.GetGuildMembers(guildNumber) -> tabla de indices conectados
+    guildNumber sale de GetPlayer(index).GuildNumber. 0 = sin guild.
+
+  AV.GuildAddMember(index, targetIndex) -> boolean
+    Agrega a targetIndex al guild de index directamente, sin pedirle
+    confirmacion (a diferencia de una invitacion real de jugador a jugador).
+  AV.GuildRemoveMember(index) -> boolean
+    Saca a index de su propio guild (sirve tanto para que se salga solo
+    como para expulsarlo desde un evento). No pide el "personal code" que
+    pide el cliente normalmente - un script Lua ya tiene autoridad de admin.
+
+  AV.GuildSetNotice(index, text) -> boolean
+    Cambia el notice del guild de index. text: 1-58 caracteres.
+
+Las tres pasan por el Event Server (mismo camino que usa el cliente real) -
+el guild en memoria y la base de datos quedan sincronizados solos.
+
+  AV.GetServer() -> tabla
+    Code, Type, Update, Language, Users, MaxUsers, Name.
+
+MENSAJES
+  AV.Log(text)
+  AV.Notice(index, text [, type]) -> boolean
+  AV.NoticeAll(text [, type])
+  AV.Whisper(index, fromName, text) -> boolean
+    Le llega al jugador como si fuera un susurro de "fromName" (no hace
+    falta que sea un jugador real conectado, puede ser un nombre de evento).
+
+PARTY (crear/gestionar)
+  AV.PartyCreate(index) -> boolean
+  AV.PartyAddMember(leaderIndex, index) -> boolean
+    Agrega "index" al party de leaderIndex.
+  AV.PartyRemoveMember(index) -> boolean
+    Saca a "index" de su propio party.
+  AV.PartyDisband(partyNumber) -> boolean
+    partyNumber sale de GetPlayer(index).Party.
+
+RECOMPENSAS
+  AV.AddCoins(index, coin1, coin2, coin3 [, reason]) -> boolean
+  AV.AddGensContribution(index, amount) -> boolean
+  AV.AddMoney(index, amount) -> boolean
+  AV.AddExperience(index, amount) -> boolean
+  AV.RewardBag(index, specialValue) -> boolean
+
+STATS
+  AV.AddStat(index, type, amount) -> boolean
+    type: 0=Strength, 1=Dexterity, 2=Vitality, 3=Energy, 4=Leadership.
+    Respeta LevelUpPoint disponible y el maximo por cuenta (igual que el
+    comando /addstat nativo) - no se puede pasar el limite.
+  AV.SetLevelUpPoint(index, value) -> boolean
+  AV.SetPKLevel(index, pkLevel) -> boolean
+    0-3. Si pkLevel=3, limpia PKCount y PKTime (igual que el comando /pk).
+  AV.Heal(index) -> boolean
+    Restaura Life, Mana, Shield y BP al maximo.
+
+ALMACENAMIENTO PERSISTENTE
+  AV.StorageGet(key, function(found, value) ... end)
+  AV.StorageGetPlayer(index, key, function(found, value) ... end)
+  AV.StorageSet(key, value) -> boolean
+  AV.StorageSetPlayer(index, key, value) -> boolean
+
+  key hasta 64 caracteres, value hasta 255. StorageGet/GetPlayer son
+  asincronos (viajan a traves de DataServer) - el resultado llega en el
+  callback, no como valor de retorno. found=false si la clave no existe.
+  StorageSet/SetPlayer no tienen respuesta - se guardan sin bloquear.
+
+  Ejemplo (puntaje de trivia por cuenta):
+    AV.StorageGetPlayer(index, "trivia_score", function(found, value)
+        local score = found and tonumber(value) or 0
+        AV.StorageSetPlayer(index, "trivia_score", tostring(score + 10))
+    end)
+
+PUENTE CON EL LUA DEL CLIENTE
+  AV.SendClientEvent(index, eventName [, arg1, arg2, arg3, arg4]) -> boolean
+    Le manda un evento al Lua que corre DENTRO del cliente (ventanas custom,
+    ver Client\Data\Script\Client\Documentation\00_INDEX.txt). El cliente lo
+    recibe con AV.On(eventName, function(arg1,arg2,arg3,arg4) ... end).
+    eventName hasta 32 caracteres, cada arg hasta 32.
+
+  AV.On("ClientEvent", function(index, eventName, arg1, arg2, arg3, arg4)
+      ... end)
+    Recibe lo que el cliente mande con AV.SendServerEvent(...) - por ejemplo
+    el click de un boton de una ventana Lua.
+
+MOVIMIENTO Y GUARDADO
+  AV.Move(index, map, x, y) -> boolean
+  AV.SavePlayer(index) -> boolean
+
+AddCoins usa DataServer. AddMoney limita el resultado entre cero y el maximo.
+AddExperience solo acepta cantidades positivas y usa el level up nativo.

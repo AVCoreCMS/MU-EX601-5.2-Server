@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== EJEMPLO - Formato basico (<Item>)
+== Este archivo NO se carga en el juego (esta carpeta se ignora).
+== Es solo para copiar/pegar y entender el formato.
+============================================================
+
+UseEx="0" en la raiz (o directamente sin el atributo) = usa <Item>.
+
+### Config ###
+	EventName        Etiqueta interna (no la ve el jugador).
+	DropZen          Zen que cae si no toca item, 0 = ninguno.
+	ItemDropRate     Chance de que caiga algo en general, sobre 100.
+	ItemDropCount    Cuantos items intenta tirar por drop.
+	SetItemDropRate  Chance (sobre 10000) de que en vez de un item de
+	                 la lista, caiga un Set Item random.
+	ItemDropType     Comportamiento de drop (piso vs directo a
+	                 inventario para el random de options).
+	SendFirework     1 = efecto de fuegos artificiales al caer.
+	Coin1/2/3        Bono fijo de WCoin/WCoinP/GoblinPoint, se otorga
+	                 cada vez que se activa este bag - ADEMAS del
+	                 item/zen del roll, no en vez de. 0 = nada.
+	GensContribution Bono fijo de puntos de contribucion Gens, mismo
+	                 trato que Coin1-3. 0 = nada.
+
+### Item ###
+	Type/Index          Codigo del item (GET_ITEM(Type,Index), igual
+	                     que en Item.xml).
+	MinLevel/MaxLevel    Rango de nivel random del item.
+	Option1-3/NewOption  Rolls de opciones random.
+	Time                 Segundos de duracion si es item de renta,
+	                     0 = permanente.
+	DropRate             Peso RELATIVO entre los <Item> de este bag -
+	                     no es porcentaje. Si un item tiene 80 y otro
+	                     20, el primero sale 4 veces mas seguido.
+	SocketOption         Fuerza exactamente esta cantidad de sockets
+	                     (1-5) en el drop - garantizado, no es una
+	                     chance. 0/ausente = tira random por
+	                     SocketOptionRate en vez. Solo funciona si
+	                     el Type/Index del item esta registrado en
+	                     SocketItemType.xml - sino se ignora.
+	SocketOptionRate     A que fila de la tabla <Option6> de
+	                     ItemOptionRate.xml tira sockets cuando
+	                     SocketOption es 0/ausente (11=siempre 0,
+	                     12=siempre 1, ..., 16=siempre 5, 17-24=
+	                     rangos random, ej: 18=1~3, 24=1~5).
+	                     0/ausente = contexto 0 ("Common"), 100%
+	                     cero sockets por defecto.
+-->
+
+<ItemBag UseEx="0">
+	<!-- Cada vez que se activa este bag: 100 WCoin + 5 puntos de
+	     contribucion Gens, ADEMAS de lo que salga en el roll de abajo. -->
+	<Config EventName="Ejemplo" DropZen="1000" ItemDropRate="100" ItemDropCount="1"
+	        SetItemDropRate="0" ItemDropType="0" SendFirework="0"
+	        Coin1="100" Coin2="0" Coin3="0" GensContribution="5" />
+
+	<!-- Sale 4 veces mas seguido que el de abajo (peso 80 vs 20) -->
+	<Item Type="12" Index="30" MinLevel="0" MaxLevel="0" Option1="0" Option2="0"
+	      Option3="0" NewOption="0" Time="0" DropRate="80" Comment="Jewel of Bless" />
+
+	<!-- Item raro dentro del mismo bag -->
+	<Item Type="12" Index="15" MinLevel="0" MaxLevel="0" Option1="0" Option2="0"
+	      Option3="0" NewOption="0" Time="0" DropRate="20" Comment="Jewel of Chaos" />
+
+	<!-- Ejemplo de arma con socket: Sword Breaker (Type 0, Index 27) esta
+	     registrada en SocketItemType.xml con 3 sockets maximo. SocketOption="3"
+	     fuerza los 3, garantizado, sin tirada. -->
+	<Item Type="0" Index="27" MinLevel="0" MaxLevel="0" Option1="0" Option2="0"
+	      Option3="0" NewOption="0" Time="0" DropRate="5" SocketOption="3"
+	      Comment="Sword Breaker (3 sockets, forzado)" />
+
+	<!-- Misma arma, pero random 1~3 sockets en vez de forzado (contexto 18) -->
+	<Item Type="0" Index="27" MinLevel="0" MaxLevel="0" Option1="0" Option2="0"
+	      Option3="0" NewOption="0" Time="0" DropRate="5" SocketOptionRate="18"
+	      Comment="Sword Breaker (1~3 sockets, random)" />
+</ItemBag>

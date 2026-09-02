@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+===============================================================================
+ SeniorMix.xml - Combinacion del Senior de Castle Siege
+===============================================================================
+
+ RECIPE
+   Enabled             1 = habilitada, 0 = deshabilitada.
+   RecipeID            Identificador de la receta dentro de SeniorMix.xml.
+                       Rango valido: 0 a 255. Debe ser unico solo en este archivo.
+                       Puede repetirse en TrainerMix.xml u otro grupo de mezclas.
+   Name                Nombre mostrado por el cliente. Maximo 63 caracteres.
+   PriceType           Moneda usada para pagar la combinacion:
+                       0 = Zen
+                       1 = WCoinC
+                       2 = WCoinP
+                       3 = Goblin Point
+                       4 = Contribucion Gens
+   Money               Cantidad que se cobra en la moneda seleccionada.
+                       La mezcla Senior no agrega impuesto del castillo.
+   DailyLimit          1 = permite una mezcla diaria, 0 = sin limite diario.
+   RequireCastleOwner  1 = exige pertenecer a la alianza dueña del castillo.
+   RequireGuildMaster  1 = exige ser Guild Master.
+   ResultBag           Numero del EventItemBag que entrega el resultado.
+                       Ejemplo: ResultBag="17" utiliza el bag numero 17.
+
+ RATES
+   AL0, AL1, AL2, AL3  Porcentaje mostrado para Free, Bronze, Silver y Gold.
+                       La mezcla Senior actual es determinista; conservar 100.
+
+ REQUIREMENTS / ITEM
+   Se permiten hasta 8 Item.
+   Section             Seccion del objeto en Item.xml.
+   Index               Indice del objeto dentro de su seccion.
+   MinLevel            Nivel minimo permitido. -1 = cualquier nivel.
+   MaxLevel            Nivel maximo permitido. -1 = cualquier nivel.
+   Count               Cantidad exacta requerida.
+   CountMode           Forma de calcular Count:
+                       0 = cantidad de casillas u objetos.
+                       1 = suma del nivel + 1 de cada objeto.
+                       2 = suma de duracion o cantidad del stack.
+   Comment             Texto informativo. No afecta la combinacion.
+
+ IMPORTANTE
+   Se pueden agregar recetas Senior con RecipeID 1, 2, 3...
+   DailyLimit se comparte entre todas las recetas Senior configuradas.
+   El premio se configura dentro del EventItemBag indicado por ResultBag.
+   Reiniciar GameServer, GameServerCS y cliente despues de modificar el archivo.
+   No es necesario editar Mix.bmd ni GetMain.
+
+===============================================================================
+-->
+<ItemMix Name="Senior">
+  <Recipe Enabled="1" RecipeID="0" Name="Lord's Mix" PriceType="0" Money="1000000000" DailyLimit="1" RequireCastleOwner="1" RequireGuildMaster="1" ResultBag="17">
+    <Rates AL0="100" AL1="100" AL2="100" AL3="100" />
+    <Requirements>
+      <Item Section="12" Index="30" MinLevel="-1" MaxLevel="-1" Count="3" CountMode="1" Comment="Bless bundle total" />
+      <Item Section="12" Index="31" MinLevel="-1" MaxLevel="-1" Count="3" CountMode="1" Comment="Soul bundle total" />
+      <Item Section="14" Index="31" MinLevel="-1" MaxLevel="-1" Count="30" CountMode="0" Comment="Jewel of Guardian" />
+    </Requirements>
+  </Recipe>
+</ItemMix>

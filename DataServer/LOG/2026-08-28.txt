@@ -1,0 +1,24 @@
+14:34:44 [SocketManager] Server started at port [55960]
+14:34:52 [ServerManager][0] AddServer (127.0.0.1)
+14:34:52 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+15:15:10 UPDATE OptionData SET SkillKey=?,GameOption=21,Qkey=255,Wkey=255,Ekey=255,ChatWindow=6,Rkey=255,QWERLevel=0,TKey=0,TKeyLevel=0 WHERE Name='Phanh'
+15:15:10 [QueryManager] State (42S22), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'TKey'.
+15:15:10 [QueryManager] State (42S22), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'TKeyLevel'.
+16:38:34 [SocketManager] Server started at port [55960]
+16:38:38 [ServerManager][0] AddServer (127.0.0.1)
+16:38:38 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+16:50:01 UPDATE OptionData SET SkillKey=?,GameOption=21,Qkey=255,Wkey=255,Ekey=255,ChatWindow=6,Rkey=255,QWERLevel=0,TKey=0,TKeyLevel=0 WHERE Name='Phanh'
+16:50:01 [QueryManager] State (42S22), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'TKey'.
+16:50:01 [QueryManager] State (42S22), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'TKeyLevel'.
+17:08:35 UPDATE OptionData SET SkillKey=?,GameOption=21,Qkey=255,Wkey=255,Ekey=255,ChatWindow=6,Rkey=255,QWERLevel=0,TKey=0,TKeyLevel=0 WHERE Name='Phanh'
+17:08:35 [QueryManager] State (42S22), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'TKey'.
+17:08:35 [QueryManager] State (42S22), Diagnostic: [Microsoft][ODBC SQL Server Driver][SQL Server]Invalid column name 'TKeyLevel'.
+17:27:05 [SocketManager] Server started at port [55960]
+17:27:08 [ServerManager][0] AddServer (127.0.0.1)
+17:27:08 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+17:35:22 [SocketManager] Server started at port [55960]
+17:35:25 [ServerManager][0] AddServer (127.0.0.1)
+17:35:25 [ServerManager][0] ServerInfo (Server01) (55901) (0)
+17:38:04 [SocketManager] Server started at port [55960]
+17:38:07 [ServerManager][0] AddServer (127.0.0.1)
+17:38:07 [ServerManager][0] ServerInfo (Server01) (55901) (0)

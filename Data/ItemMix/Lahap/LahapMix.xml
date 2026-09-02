@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+===============================================================================
+ LahapMix.xml - Paquetes y desempaquetado de joyas de Lahap
+===============================================================================
+
+ JEWEL
+   Enabled        1 = habilitado, 0 = deshabilitado.
+   Type           ID usado por la ventana original de Lahap (0 a 9).
+                  Debe ser unico dentro de este archivo.
+   SimpleSection  Seccion de la joya individual.
+   SimpleIndex    Indice de la joya individual.
+   BundleSection  Seccion del paquete creado.
+   BundleIndex    Indice del paquete creado.
+
+ NIVELES DE PAQUETE
+   Count0         Joyas contenidas en el paquete nivel 0.
+   Count1         Joyas contenidas en el paquete nivel 1.
+   Count2         Joyas contenidas en el paquete nivel 2.
+   MixMoney0..2   Zen cobrado al crear cada nivel de paquete.
+   UnMixMoney0..2 Zen cobrado al desarmar cada nivel de paquete.
+
+ IMPORTANTE
+   Esta ventana admite actualmente Type 0 a 9 y tres niveles de paquete.
+   Los objetos, cantidades y precios se pueden cambiar sin editar el cliente.
+   Reiniciar GameServer y GameServerCS despues de modificar este archivo.
+
+===============================================================================
+-->
+<LahapMix>
+  <Jewel Enabled="1" Type="0" SimpleSection="14" SimpleIndex="13" BundleSection="12" BundleIndex="30" Count0="10" Count1="20" Count2="30" MixMoney0="500000" MixMoney1="1000000" MixMoney2="1500000" UnMixMoney0="1000000" UnMixMoney1="1000000" UnMixMoney2="1000000" Comment="Jewel of Bless" />
+  <Jewel Enabled="1" Type="1" SimpleSection="14" SimpleIndex="14" BundleSection="12" BundleIndex="31" Count0="10" Count1="20" Count2="30" MixMoney0="500000" MixMoney1="1000000" MixMoney2="1500000" UnMixMoney0="1000000" UnMixMoney1="1000000" UnMixMoney2="1000000" Comment="Jewel of Soul" />
+  <Jewel Enabled="1" Type="2" SimpleSection="14" SimpleIndex="16" BundleSection="12" BundleIndex="136" Count0="10" Count1="20" Count2="30" MixMoney0="500000" MixMoney1="1000000" MixMoney2="1500000" UnMixMoney0="1000000" UnMixMoney1="1000000" UnMixMoney2="1000000" Comment="Jewel of Life" />
+  <Jewel Enabled="1" Type="3" SimpleSection="14" SimpleIndex="22" BundleSection="12" BundleIndex="137" Count0="10" Count1="20" Count2="30" MixMoney0="500000" MixMoney1="1000000" MixMoney2="1500000" UnMixMoney0="1000000" UnMixMoney1="1000000" UnMixMoney2="1000000" Comment="Jewel of Creation" />
+  <Jewel Enabled="1" Type="4" SimpleSection="14" SimpleIndex="31" BundleSection="12" BundleIndex="138" Count0="10" Count1="20" Count2="30" MixMoney0="500000" MixMoney1="1000000" MixMoney2="1500000" UnMixMoney0="1000000" UnMixMoney1="1000000" UnMixMoney2="1000000" Comment="Jewel of Guardian" />
+  <Jewel Enabled="1" Type="5" SimpleSection="14" SimpleIndex="41" BundleSection="12" BundleIndex="139" Count0="10" Count1="20" Count2="30" MixMoney0="500000" MixMoney1="1000000" MixMoney2="1500000" UnMixMoney0="1000000" UnMixMoney1="1000000" UnMixMoney2="1000000" Comment="Gemstone" />
+  <Jewel Enabled="1" Type="6" SimpleSection="14" SimpleIndex="42" BundleSection="12" BundleIndex="140" Count0="10" Count1="20" Count2="30" MixMoney0="500000" MixMoney1="1000000" MixMoney2="1500000" UnMixMoney0="1000000" UnMixMoney1="1000000" UnMixMoney2="1000000" Comment="Jewel of Harmony" />
+  <Jewel Enabled="1" Type="7" SimpleSection="12" SimpleIndex="15" BundleSection="12" BundleIndex="141" Count0="10" Count1="20" Count2="30" MixMoney0="500000" MixMoney1="1000000" MixMoney2="1500000" UnMixMoney0="1000000" UnMixMoney1="1000000" UnMixMoney2="1000000" Comment="Jewel of Chaos" />
+  <Jewel Enabled="1" Type="8" SimpleSection="14" SimpleIndex="43" BundleSection="12" BundleIndex="142" Count0="10" Count1="20" Count2="30" MixMoney0="500000" MixMoney1="1000000" MixMoney2="1500000" UnMixMoney0="1000000" UnMixMoney1="1000000" UnMixMoney2="1000000" Comment="Lower Refining Stone" />
+  <Jewel Enabled="1" Type="9" SimpleSection="14" SimpleIndex="44" BundleSection="12" BundleIndex="143" Count0="10" Count1="20" Count2="30" MixMoney0="500000" MixMoney1="1000000" MixMoney2="1500000" UnMixMoney0="1000000" UnMixMoney1="1000000" UnMixMoney2="1000000" Comment="Higher Refining Stone" />
+</LahapMix>

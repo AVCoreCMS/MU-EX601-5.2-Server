@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== 194 - Speed Event.xml
+==
+== Premio de items para el ganador de Speed Event.
+== Se activa desde Data/Event/SpeedEvent.xml con ItemBag="88".
+==
+== Reload -> Reload EventItemBag recarga este archivo.
+============================================================
+
+### Config ###
+  EventName: nombre interno.
+  DropZen: Zen adicional; 0 = ninguno.
+  ItemDropRate: probabilidad de entregar items, de 0 a 100.
+  ItemDropCount: cantidad de items sorteados.
+  SetItemDropRate: probabilidad de convertir el resultado en item set.
+  ItemDropType: filtro/tipo interno del sorteo; normalmente 0.
+  SendFirework: 1 muestra fuegos artificiales.
+  Coin1/Coin2/Coin3: monedas adicionales del propio bag.
+  GensContribution: contribucion Gens adicional.
+
+### Entrega en suelo o inventario ###
+  Se controla en Data/EventItemBagManager.xml:
+    DropInventory="0" deja los items en el suelo junto al ganador.
+    DropInventory="1" intenta enviarlos directamente al inventario.
+
+### Item ###
+  Type/Index: identificador del item.
+  MinLevel/MaxLevel: rango de nivel.
+  Option1: skill.
+  Option2: luck.
+  Option3: opcion adicional.
+  NewOption: mascara de opciones excellent.
+  Time: duracion en segundos; 0 = permanente.
+  DropRate: peso relativo del item.
+  Comment: descripcion libre.
+
+  Puedes agregar todas las filas <Item ... /> que necesites.
+  Este archivo comienza sin items para que no entregue premios
+  accidentales antes de que configures la lista.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<ItemBag UseEx="0">
+	<Config EventName="Speed Event" DropZen="0" ItemDropRate="100" ItemDropCount="1"
+	        SetItemDropRate="0" ItemDropType="0" SendFirework="0"
+	        Coin1="0" Coin2="0" Coin3="0" GensContribution="0" />
+</ItemBag>
+

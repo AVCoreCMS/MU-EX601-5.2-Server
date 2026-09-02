@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+======================================================================
+ AVEmulator - Pet.xml
+ Fuente unica de ESTADISTICAS para mascotas nativas y custom.
+
+ El GameServer lee este archivo y envia sus valores al cliente. Por eso,
+ el tooltip muestra exactamente la misma configuracion que usa el servidor.
+ No es necesario editar Main ni GetMain para cambiar estadisticas.
+
+ IDENTIDAD
+   Type / Index                 Seccion e indice del item en Item.xml.
+   Name                         Solo comentario para identificar la mascota.
+
+ ESTADISTICAS (todos los campos omitidos valen 0)
+   AddLife / AddMana / AddBP    HP, Mana y AG maximos.
+   AddDefense                   Defensa plana (Defensive Skill).
+   AddDefenseRate               Indice de defensa plano.
+   DamageRate                   Porcentaje de dano causado.
+   AttackSpeed                  Velocidad de ataque y magia.
+   CriticalDamageRate           Probabilidad de dano critico.
+   ExcellentDamageRate          Probabilidad de dano excelente.
+   IgnoreDefenseRate            Probabilidad de ignorar defensa.
+   DoubleDamageRate             Probabilidad de dano doble.
+   TripleDamageRate             Probabilidad de dano triple.
+   ExperienceRate               Porcentaje adicional de experiencia.
+   MoneyDropRate                Porcentaje adicional de Zen obtenido.
+   ResistDoubleDamage           Resistencia a dano doble.
+   ResistIgnoreDefense          Resistencia a ignorar defensa.
+   ResistIgnoreShield           Resistencia a ignorar SD.
+   ResistCriticalDamage         Resistencia a dano critico.
+   ResistExcellentDamage        Resistencia a dano excelente.
+   BlockStuck                   Resistencia a stun.
+   ReflectRate                  Porcentaje de reflejo.
+
+ COMPORTAMIENTO
+   Immortal                     1 = no pierde durabilidad.
+   AutoPickZen                  1 = recoge Zen cercano automaticamente.
+   AutoPickJewel                1 = recoge joyas cercanas automaticamente.
+   OffenseLifeCost              HP consumido por golpe al dar DamageRate.
+   DefenseDamageReduction       Porcentaje de dano recibido reducido.
+   DinorantExtraReduction       Reduccion extra de la variante Dinorant.
+   DarkHorseReductionBase       Base de reduccion del Dark Horse.
+   DarkHorseReductionDivisor    Divisor de reduccion del Dark Horse.
+   DurabilityLossRate           Multiplicador de perdida de durabilidad.
+
+ Para quitar una estadistica, dejala en 0 o elimina el atributo.
+ Para agregar una mascota, copia un bloque Item y cambia Type/Index/Name.
+ Los modelos, escalas y movimiento de mascotas custom siguen siendo datos
+ visuales del GetMain; este archivo controla solamente sus efectos reales.
+======================================================================
+-->
+
+<Pet>
+	<!-- Mascotas nativas -->
+	<Item Type="13" Index="0" Name="Angel"
+		AddLife="50" DefenseDamageReduction="20" DurabilityLossRate="3.0" />
+
+	<Item Type="13" Index="1" Name="Satan"
+		DamageRate="30" OffenseLifeCost="3" DurabilityLossRate="2.0" />
+
+	<Item Type="13" Index="2" Name="Uniria"
+		DurabilityLossRate="1.0" />
+
+	<Item Type="13" Index="3" Name="Dinorant"
+		DamageRate="15" OffenseLifeCost="1" DefenseDamageReduction="10"
+		DinorantExtraReduction="5" DurabilityLossRate="1.0" />
+
+	<Item Type="13" Index="4" Name="Dark Horse"
+		DarkHorseReductionBase="30" DarkHorseReductionDivisor="2" />
+
+	<Item Type="13" Index="37" Name="Fenrir"
+		DamageRate="10" DefenseDamageReduction="10" />
+
+	<Item Type="13" Index="64" Name="Demon"
+		DamageRate="40" AttackSpeed="10" OffenseLifeCost="4"
+		DurabilityLossRate="1.0" />
+
+	<Item Type="13" Index="65" Name="Spirit of Guardian"
+		AddLife="50" DefenseDamageReduction="30" DurabilityLossRate="2.0" />
+
+	<Item Type="13" Index="67" Name="Rudolph"
+		AutoPickZen="1" DurabilityLossRate="1.0" />
+
+	<Item Type="13" Index="80" Name="Pet Panda"
+		AddDefense="50" ExperienceRate="250" AutoPickZen="1"
+		AutoPickJewel="1" DurabilityLossRate="1.0" />
+
+	<Item Type="13" Index="106" Name="Unicorn"
+		AddDefense="50" MoneyDropRate="50" AutoPickZen="1"
+		DurabilityLossRate="1.0" />
+
+	<Item Type="13" Index="123" Name="Skeleton"
+		DamageRate="20" AttackSpeed="10" ExperienceRate="30"
+		OffenseLifeCost="2" DurabilityLossRate="1.0" />
+
+	<!-- Mascotas custom migradas desde Data/Custom/CustomPet.txt -->
+	<Item Type="13" Index="200" Name="Pet38"
+		AddLife="200" AddMana="500" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="1" Immortal="1" />
+
+	<Item Type="13" Index="201" Name="Ghost"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="202" Name="Pet Steel"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="203" Name="Adventure Cat"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="204" Name="Angry Chicken Up"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="205" Name="Bael Pet Evol"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="206" Name="Bateria Up"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="207" Name="Beagle"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="208" Name="Blue Fairy Up"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="209" Name="Bogeon Pet Evol"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="210" Name="Bulldog"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="211" Name="Cyclops Pet Evol"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="212" Name="Figure"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="213" Name="Knight Instructor Up"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="214" Name="Knight Zombie Up"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="215" Name="Lycan Pet Evol"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="216" Name="Mermaid Pet Evol"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="217" Name="Mino Pet Evol"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="218" Name="Mammoth Pet Evol"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="219" Name="Mummy Boy"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="220" Name="Polaris Pet Evol"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="221" Name="Reyner Pet Evol"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="222" Name="Rio"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="223" Name="Skull Pet"
+		AddLife="1000" AddMana="2000" DamageRate="40" AttackSpeed="50"
+		DoubleDamageRate="10" Immortal="1" />
+
+	<Item Type="13" Index="224" Name="Alcamo Pet"
+		AddLife="5000" AddMana="1000" DamageRate="100" AttackSpeed="50"
+		DoubleDamageRate="50" Immortal="1" />
+
+	<Item Type="13" Index="225" Name="Alcamo Pet Evol"
+		AddLife="10000" AddMana="2000" DamageRate="100" AttackSpeed="100"
+		DoubleDamageRate="100" Immortal="1" />
+
+	<Item Type="13" Index="230" Name="Ghost Horse"
+		AddLife="10000" AddMana="2000" DamageRate="100" Immortal="1" />
+
+	<Item Type="13" Index="231" Name="Golden Fenrir"
+		AddLife="10000" AddMana="2000" DamageRate="100" Immortal="1" />
+</Pet>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ItemLevel.xml
+== Chaos Machine recipes: Item Level mixes. Native handler Types: 3, 4,
+== 22, 23, 49, 50. ClientSync="0" keeps the native UI's special
+== variants. Money="-1" and Rates AL*="-1" keep the original native
+== formulas where indicated.
+==
+== <Recipe> attributes:
+==   Enabled            1 = active, 0 = skip this recipe entirely.
+==   Type               Native handler ID (fixed per built-in mix - do not
+==                       change on an existing recipe).
+==   RecipeID           Unique ID within this Type's handler. Falls back to
+==                       MixID if omitted.
+==   ClientSync         1 = client shows this recipe in the Chaos Machine UI
+==                       and its Requirements/Rates/Result below are enforced
+==                       server-side too. 0 = display-only; the native
+==                       hardcoded handler's own check still runs (Money and
+==                       Rates below are then informational only).
+==   Name               Recipe name shown to the player.
+==   PriceType          0 Zen, 1 WCoinC, 2 WCoinP, 3 GoblinPoint,
+==                       4 GensContribution.
+==   Money              Zen/coin cost. -1 keeps the native handler's own
+==                       dynamic price formula (only valid when Type>=0).
+==   DailyLimit         Max uses per account per day. 0 = unlimited.
+==   RequireCastleOwner 1 = only the current Castle Siege owning guild's
+==                       members can use this recipe.
+==   RequireGuildMaster 1 = only a guild master can use this recipe.
+==   ResultBag          Optional EventItemBagManager.xml Bag Index to roll
+==                       the result from instead of a fixed Result. -1 = none.
+==   Mode               "Fixed" (default) or "Evolution".
+==
+== <Rates AL0-3=".."/> success rate percent per Ancient Level (0-3) of the
+==   crafted item, read by the native handler for its own formula.
+==
+== <Result Section="" Index="" Level="" /> the crafted item (Mode="Fixed").
+==
+== <Requirements><Item .../></Requirements> - materials consumed:
+==   Section/Index      Item (matches Item.xml).
+==   MinLevel/MaxLevel  Required item level range. -1 = any.
+==   Count              How many are required.
+==   CountMode          0 = that many item slots, 1 = Level+1 stacks
+==                       (jewels), 2 = raw Durability units (potions/etc).
+==   MinDurability/MaxDurability  -1 = any.
+==   Role="EvolutionItem"  Marks which requirement is the base item being
+==                       evolved (Mode="Evolution" only).
+==
+== Mode="Evolution" only:
+==   <EvolutionMap><Item FromSection="" FromIndex="" ToSection="" ToIndex=""
+==     ResultLevel="" /></EvolutionMap>  what the EvolutionItem turns into.
+==   <InheritOptions Level="" Durability="" Skill="" Luck=""
+==     AdditionalOption="" ExcellentOptions="" AncientOptions=""
+==     HarmonyOptions="" Option380="" SocketOptions="" />  1 = carry that
+==     property over from the base item to the result.
+==   <Failure DestroyEvolutionItem="" DestroyMaterials="" ReduceLevel="" />
+==     what happens on the small failure chance implied by Rates.
+== Modify only if you know what you're doing!
+============================================================
+-->
+<ItemMix Name="ItemLevel">
+  <Recipe Enabled="1" RecipeID="20" Type="3" ClientSync="0" Name="Item Level +10" PriceType="0" Money="2000000">
+    <Rates AL0="60" AL1="60" AL2="60" AL3="60" />
+    <Requirements>
+      <Item Section="12" Index="15" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Chaos; native handler also requires the equipment, Bless and Soul" />
+    </Requirements>
+    <Result Section="12" Index="15" Level="0" Comment="Dynamic result: the original equipment is upgraded to +10; this item is only a placeholder" />
+  </Recipe>
+
+  <Recipe Enabled="1" RecipeID="21" Type="4" ClientSync="0" Name="Item Level +11" PriceType="0" Money="4000000">
+    <Rates AL0="60" AL1="60" AL2="60" AL3="60" />
+    <Requirements>
+      <Item Section="12" Index="15" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Chaos; native handler also requires the equipment, Bless and Soul" />
+    </Requirements>
+    <Result Section="12" Index="15" Level="0" Comment="Dynamic result: the original equipment is upgraded to +11; this item is only a placeholder" />
+  </Recipe>
+
+  <Recipe Enabled="1" RecipeID="22" Type="22" ClientSync="0" Name="Item Level +12" PriceType="0" Money="6000000">
+    <Rates AL0="50" AL1="50" AL2="50" AL3="50" />
+    <Requirements>
+      <Item Section="12" Index="15" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Chaos; native handler also requires the equipment, Bless and Soul" />
+    </Requirements>
+    <Result Section="12" Index="15" Level="0" Comment="Dynamic result: the original equipment is upgraded to +12; this item is only a placeholder" />
+  </Recipe>
+
+  <Recipe Enabled="1" RecipeID="23" Type="23" ClientSync="0" Name="Item Level +13" PriceType="0" Money="8000000">
+    <Rates AL0="50" AL1="50" AL2="50" AL3="50" />
+    <Requirements>
+      <Item Section="12" Index="15" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Chaos; native handler also requires the equipment, Bless and Soul" />
+    </Requirements>
+    <Result Section="12" Index="15" Level="0" Comment="Dynamic result: the original equipment is upgraded to +13; this item is only a placeholder" />
+  </Recipe>
+
+  <Recipe Enabled="1" RecipeID="24" Type="49" ClientSync="0" Name="Item Level +14" PriceType="0" Money="10000000">
+    <Rates AL0="40" AL1="40" AL2="40" AL3="40" />
+    <Requirements>
+      <Item Section="12" Index="15" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Chaos; native handler also requires the equipment, Bless and Soul" />
+    </Requirements>
+    <Result Section="12" Index="15" Level="0" Comment="Dynamic result: the original equipment is upgraded to +14; this item is only a placeholder" />
+  </Recipe>
+
+  <Recipe Enabled="1" RecipeID="25" Type="50" ClientSync="0" Name="Item Level +15" PriceType="0" Money="12000000">
+    <Rates AL0="100" AL1="100" AL2="100" AL3="100" />
+    <Requirements>
+      <Item Section="12" Index="15" MinLevel="-1" MaxLevel="-1" Count="1" CountMode="0" Comment="Jewel of Chaos; native handler also requires the equipment, Bless and Soul" />
+    </Requirements>
+    <Result Section="12" Index="15" Level="0" Comment="Dynamic result: the original equipment is upgraded to +15; this item is only a placeholder" />
+  </Recipe>
+</ItemMix>

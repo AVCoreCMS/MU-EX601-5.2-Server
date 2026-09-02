@@ -1,0 +1,69 @@
+===============================================================================
+                              API DE ITEMS
+===============================================================================
+
+IDENTIFICACION
+  AV.Item(section, type) -> itemIndex
+  Ejemplo: local bless = AV.Item(14, 13)
+
+CONSULTA
+  AV.GetInventoryItem(index, slot) -> tabla o nil
+    Slot, Index, Section, Type, Level, Durability, Skill, Luck, Option,
+    Excellent, Ancient, Harmony, OptionEx, Duration.
+
+  AV.CountItem(index, itemIndex [, level]) -> cantidad
+    level omitido o -1 acepta cualquier nivel.
+
+CREACION
+  AV.GiveItem(index, itemIndex [, level, durability, skill, luck, option,
+              excellent, ancient, duration]) -> boolean
+
+  level       0 a 15
+  durability  0 a 255
+  skill/luck  0 o 1
+  option      0 a 7
+  excellent   mascara 0 a 63
+  ancient     0 a 15
+  duration    tiempo interno; 0 usa comportamiento normal
+
+GiveItem solicita la creacion al DataServer. El booleano confirma que la
+solicitud era valida, no que el cliente ya recibio el item.
+
+ELIMINACION
+  AV.DeleteItem(index, slot) -> boolean
+
+ADVERTENCIA: elimina todo el item del slot. No descuenta una unidad del stack.
+Valida primero con AV.GetInventoryItem.
+
+  AV.DeleteItemCount(index, itemIndex, level, count) -> boolean
+    Descuenta "count" unidades de itemIndex/level, sea de un stack (baja
+    Durability) o de items sueltos (borra slots completos). Falla (false)
+    si el jugador no tiene "count" unidades - no borra nada a medias.
+
+EDICION
+  AV.SetItemOption(index, slot, skill, luck, option, excellent, ancient)
+    -> boolean
+    Cambia las opciones de un item que YA esta en el inventario (no crea
+    uno nuevo). skill/luck: 0 o 1. option: 0-7. excellent: mascara 0-63.
+    ancient: 0-15. Usa AV.GetInventoryItem primero para no perder los
+    valores que no querés tocar.
+
+ESPACIO
+  AV.GetFreeSlots(index) -> cantidad de slots vacios
+  AV.HasSpace(index, itemIndex) -> boolean (usa el tamano real del item)
+  AV.HasSpaceSize(index, width, height) -> boolean (1-8 x 1-15)
+
+Revisa espacio antes de AV.GiveItem para evitar pedir un item que se va a
+perder si el inventario esta lleno.
+
+EJEMPLO SEGURO
+
+  local item = AV.GetInventoryItem(index, sourceSlot)
+  if not item or item.Index ~= AV.Item(14, 200) then return false end
+
+  if AV.DeleteItem(index, sourceSlot) then
+      AV.AddCoins(index, 10, 0, 0, "Consumible Lua")
+      return true
+  end
+
+  return false

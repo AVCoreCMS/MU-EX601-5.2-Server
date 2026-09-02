@@ -1,4 +1,0 @@
-//Account         Name         Level
-"admin"	         "Admin"	     2
-"admin"	         "Phanh"	     2
-end

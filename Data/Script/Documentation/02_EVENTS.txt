@@ -1,0 +1,44 @@
+===============================================================================
+                         REFERENCIA DE EVENTOS
+===============================================================================
+
+CICLO DEL MOTOR
+  ServerStart()
+  ServerShutdown()
+  Timer()                         Cada TimerIntervalMs de LuaConfig.xml.
+
+JUGADORES
+  PlayerConnect(index)
+  PlayerDisconnect(index)
+  PlayerMove(index, map, x, y)
+  PlayerRespawn(index, map, x, y, killerType)
+  LevelUp(index, oldLevel, newLevel, isMaster)
+    isMaster: 0 nivel normal; 1 Master Level.
+
+COMBATE
+  Damage(attacker, target, lifeDamage, shieldDamage, skill, flag)
+    Es una notificacion posterior; no modifica el daño.
+  PlayerDie(victim, killer, skill)
+  MonsterDie(killer, monster)
+
+INTERACCION
+  Chat(index, message) -> boolean
+    true bloquea el mensaje.
+  Command(index, command, arguments, rawMessage) -> boolean
+    true indica que Lua atendio el comando.
+  NpcTalk(index, npcIndex) -> boolean
+    true bloquea el comportamiento nativo del NPC.
+  TradeComplete(firstIndex, secondIndex)
+  WarehouseOpen(index, isGuildWarehouse)
+  WarehouseClose(index, isGuildWarehouse)
+
+ITEMS
+  ItemPick(index, slot, itemIndex, level, durability, excellent, ancient)
+    slot puede ser -1 para Zen o stack.
+  ItemDrop(index, slot, itemIndex, level, durability, excellent, ancient, x, y)
+  ItemMove(index, sourceFlag, sourceSlot, targetFlag, targetSlot, itemIndex)
+  ItemUse(index, sourceSlot, targetSlot, itemIndex, level, durability) -> boolean
+    true bloquea el uso nativo porque Lua ya lo atendio completamente.
+
+Solo Command, Chat, NpcTalk e ItemUse usan el booleano retornado. Los demas
+eventos son notificaciones. Damage y PlayerMove deben mantenerse livianos.

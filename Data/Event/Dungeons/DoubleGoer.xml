@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== DoubleGoer.xml
+== Double Goer event: timing, the 4 monster AI unit numbers
+== used per difficulty level, and the 60-step monster scaling
+== table (Level/Life/Damage/Defense multipliers, 5 tiers each,
+== applied as the event's monsters get progressively harder).
+== Loaded by GameServer via CDoubleGoer::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### DoubleGoer::Timing ###
+	NotifyTime/EventTime/CloseTime in minutes.
+
+### DoubleGoer::EntrySettings ###
+	OpenMinutes  Tiempo durante el cual el NPC acepta el ticket despues
+	             de cada horario. Fuera de esta ventana no consume nada.
+	MaxUsers     Cupo maximo del grupo que inicia la instancia (1-5).
+
+### DoubleGoer::Schedule ###
+	Horarios de apertura. -1 significa cualquier fecha o dia.
+	DayOfWeek: 1=domingo ... 7=sabado; -1=todos los dias.
+	Solamente una party puede iniciar la instancia disponible.
+
+### DoubleGoer::MonsterAI ###
+	Unit1-4 - AI unit numbers used for each of the 4 difficulty
+	levels (MAX_DG_LEVEL).
+
+### DoubleGoer::MonsterSettings::Monster ###
+	One row per difficulty step (0-59, MAX_DG_MONSTER_DIFFICULT):
+	  Index          Difficulty step.
+	  Level1-5       Monster level multiplier, per tier 1-5.
+	  Life1-5        Max life multiplier, per tier.
+	  Damage1-5      Damage multiplier, per tier.
+	  Defense1-5     Defense multiplier, per tier.
+	All values are floats (multipliers), not raw stats.
+
+### DoubleGoer::BreachSettings ###
+	Monsters (including the Slaughterer/Mad Slaughterer/Ice Walker
+	mini-bosses) walk toward the map's final point; each one that
+	reaches it counts as a "breach" and despawns.
+	BreachLimit               Breaches allowed before the party fails
+	                          the run.
+	SlaughtererThreshold      % of event time remaining at or below
+	                          which the Slaughterer spawns.
+	MadSlaughtererThreshold   % of event time remaining at or below
+	                          which the Mad Slaughterer spawns.
+	IceWalkerThreshold        % of event time remaining at or below
+	                          which the Ice Walker spawns (winning
+	                          requires it to never reach the final
+	                          point).
+
+### DoubleGoer::DailyEntryLimit ###
+	Vip0-3  Maximum number of DoubleGoer entries per day, per VIP tier
+	        (AccountLevel 0-3). Resets at midnight (server local time).
+	        -1 = unlimited. Kept in memory only - resets if the server
+	        restarts.
+
+### DoubleGoer::RewardMode ###
+	PartyReward  1 = every party member present gets the Silver/Golden
+	             chest reward (fixed default - previously only whoever
+	             clicked the single chest NPC first got anything, and
+	             it never scaled with party size). 0 = restore the old
+	             single physical chest behavior.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<DoubleGoer>
+	<!-- Enabled: 0/1. DifficultRate: porcentaje aplicado a la dificultad base. -->
+	<ServerSettings>
+		<GameServer Enabled="1" DifficultRate="100" />
+	</ServerSettings>
+	<Timing NotifyTime="1" EventTime="10" CloseTime="4" />
+	<EntrySettings OpenMinutes="10" MaxUsers="5" />
+
+	<Schedule>
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="10" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="14" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="18" Minute="0" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="22" Minute="0" Second="0" />
+	</Schedule>
+
+	<MonsterAI Unit1="74" Unit2="75" Unit3="76" Unit4="77" />
+	<BreachSettings BreachLimit="3" SlaughtererThreshold="75" MadSlaughtererThreshold="50" IceWalkerThreshold="25" />
+	<DailyEntryLimit Vip0="-1" Vip1="-1" Vip2="-1" Vip3="-1" />
+	<RewardMode PartyReward="1" />
+
+	<MonsterSettings>
+		<Monster Index="0" Level1="1.00" Level2="1.00" Level3="1.00" Level4="1.00" Level5="1.00" Life1="1.00" Life2="2.00" Life3="3.00" Life4="3.80" Life5="4.80" Damage1="1.00" Damage2="2.00" Damage3="3.00" Damage4="3.70" Damage5="4.70" Defense1="1.00" Defense2="2.00" Defense3="3.00" Defense4="3.70" Defense5="4.50" />
+		<Monster Index="1" Level1="1.20" Level2="1.20" Level3="1.20" Level4="1.20" Level5="1.20" Life1="2.00" Life2="2.20" Life3="3.20" Life4="4.00" Life5="5.00" Damage1="1.15" Damage2="2.05" Damage3="3.05" Damage4="3.75" Damage5="4.75" Defense1="1.35" Defense2="2.15" Defense3="3.15" Defense4="3.85" Defense5="4.65" />
+		<Monster Index="2" Level1="1.60" Level2="1.60" Level3="1.60" Level4="1.60" Level5="1.60" Life1="2.70" Life2="2.40" Life3="3.40" Life4="4.20" Life5="5.20" Damage1="1.20" Damage2="2.10" Damage3="3.10" Damage4="3.80" Damage5="4.80" Defense1="1.50" Defense2="2.30" Defense3="3.30" Defense4="4.00" Defense5="4.80" />
+		<Monster Index="3" Level1="1.90" Level2="1.90" Level3="1.90" Level4="1.90" Level5="1.90" Life1="3.40" Life2="2.60" Life3="3.60" Life4="4.40" Life5="5.40" Damage1="1.23" Damage2="2.15" Damage3="3.15" Damage4="3.85" Damage5="4.85" Defense1="1.65" Defense2="2.45" Defense3="3.45" Defense4="4.15" Defense5="4.95" />
+		<Monster Index="4" Level1="2.20" Level2="2.20" Level3="2.20" Level4="2.20" Level5="2.20" Life1="4.10" Life2="2.80" Life3="3.80" Life4="4.60" Life5="5.60" Damage1="1.43" Damage2="2.18" Damage3="3.18" Damage4="3.88" Damage5="4.88" Defense1="1.80" Defense2="2.60" Defense3="3.60" Defense4="4.30" Defense5="5.10" />
+		<Monster Index="5" Level1="2.50" Level2="2.50" Level3="2.50" Level4="2.50" Level5="2.50" Life1="4.80" Life2="3.50" Life3="4.50" Life4="5.30" Life5="6.30" Damage1="1.63" Damage2="2.38" Damage3="3.38" Damage4="4.08" Damage5="5.08" Defense1="1.95" Defense2="2.75" Defense3="3.75" Defense4="4.45" Defense5="5.25" />
+		<Monster Index="6" Level1="2.70" Level2="2.70" Level3="2.70" Level4="2.70" Level5="2.70" Life1="5.50" Life2="4.00" Life3="5.00" Life4="5.80" Life5="6.80" Damage1="1.83" Damage2="2.58" Damage3="3.58" Damage4="4.28" Damage5="5.28" Defense1="2.10" Defense2="2.90" Defense3="3.90" Defense4="4.60" Defense5="5.40" />
+		<Monster Index="7" Level1="3.00" Level2="3.00" Level3="3.00" Level4="3.00" Level5="3.00" Life1="6.20" Life2="4.50" Life3="5.50" Life4="6.30" Life5="7.30" Damage1="2.10" Damage2="2.78" Damage3="3.78" Damage4="4.48" Damage5="5.48" Defense1="2.25" Defense2="3.05" Defense3="4.05" Defense4="4.75" Defense5="5.55" />
+		<Monster Index="8" Level1="3.30" Level2="3.30" Level3="3.30" Level4="3.30" Level5="3.30" Life1="6.90" Life2="5.00" Life3="6.00" Life4="6.80" Life5="7.80" Damage1="2.31" Damage2="2.98" Damage3="3.98" Damage4="4.68" Damage5="5.68" Defense1="2.40" Defense2="3.20" Defense3="4.20" Defense4="4.90" Defense5="5.80" />
+		<Monster Index="9" Level1="3.60" Level2="3.60" Level3="3.60" Level4="3.60" Level5="3.60" Life1="7.60" Life2="6.00" Life3="7.00" Life4="7.80" Life5="8.80" Damage1="2.51" Damage2="3.28" Damage3="4.28" Damage4="4.98" Damage5="5.98" Defense1="2.55" Defense2="3.35" Defense3="4.35" Defense4="5.05" Defense5="6.85" />
+		<Monster Index="10" Level1="3.65" Level2="3.65" Level3="3.65" Level4="3.65" Level5="3.65" Life1="8.30" Life2="6.50" Life3="7.50" Life4="8.30" Life5="9.30" Damage1="2.71" Damage2="3.48" Damage3="4.48" Damage4="5.18" Damage5="6.18" Defense1="2.70" Defense2="3.50" Defense3="4.50" Defense4="5.20" Defense5="6.00" />
+		<Monster Index="11" Level1="3.69" Level2="3.69" Level3="3.69" Level4="3.69" Level5="3.69" Life1="9.00" Life2="6.70" Life3="7.70" Life4="8.50" Life5="9.50" Damage1="2.91" Damage2="3.68" Damage3="4.68" Damage4="5.38" Damage5="6.38" Defense1="2.85" Defense2="3.65" Defense3="4.65" Defense4="5.35" Defense5="6.15" />
+		<Monster Index="12" Level1="3.73" Level2="3.73" Level3="3.73" Level4="3.73" Level5="3.73" Life1="9.70" Life2="6.90" Life3="7.90" Life4="8.70" Life5="9.70" Damage1="3.11" Damage2="3.88" Damage3="4.88" Damage4="5.58" Damage5="6.58" Defense1="3.00" Defense2="3.80" Defense3="4.80" Defense4="5.50" Defense5="6.30" />
+		<Monster Index="13" Level1="3.77" Level2="3.77" Level3="3.77" Level4="3.77" Level5="3.77" Life1="10.40" Life2="7.10" Life3="8.10" Life4="8.90" Life5="9.90" Damage1="3.31" Damage2="4.08" Damage3="5.08" Damage4="5.78" Damage5="6.78" Defense1="3.15" Defense2="3.95" Defense3="4.95" Defense4="5.65" Defense5="6.45" />
+		<Monster Index="14" Level1="3.81" Level2="3.81" Level3="3.81" Level4="3.81" Level5="3.81" Life1="11.10" Life2="7.30" Life3="8.30" Life4="9.10" Life5="10.10" Damage1="3.51" Damage2="4.28" Damage3="5.28" Damage4="5.98" Damage5="6.98" Defense1="3.30" Defense2="4.10" Defense3="5.10" Defense4="5.80" Defense5="6.60" />
+		<Monster Index="15" Level1="3.85" Level2="3.85" Level3="3.85" Level4="3.85" Level5="3.85" Life1="11.80" Life2="8.00" Life3="9.00" Life4="9.80" Life5="10.80" Damage1="3.71" Damage2="4.48" Damage3="5.48" Damage4="6.18" Damage5="7.18" Defense1="3.45" Defense2="4.25" Defense3="5.25" Defense4="5.95" Defense5="6.75" />
+		<Monster Index="16" Level1="3.89" Level2="3.89" Level3="3.89" Level4="3.89" Level5="3.89" Life1="12.50" Life2="9.00" Life3="10.00" Life4="10.80" Life5="11.80" Damage1="3.81" Damage2="4.68" Damage3="5.68" Damage4="6.38" Damage5="7.38" Defense1="4.60" Defense2="4.40" Defense3="5.40" Defense4="6.10" Defense5="6.90" />
+		<Monster Index="17" Level1="3.93" Level2="3.93" Level3="3.93" Level4="3.93" Level5="3.93" Life1="13.20" Life2="11.00" Life3="12.00" Life4="11.80" Life5="12.80" Damage1="3.91" Damage2="6.00" Damage3="6.40" Damage4="6.50" Damage5="6.90" Defense1="4.65" Defense2="5.30" Defense3="6.30" Defense4="6.70" Defense5="7.00" />
+		<Monster Index="18" Level1="3.97" Level2="3.97" Level3="3.97" Level4="3.97" Level5="3.97" Life1="13.50" Life2="12.00" Life3="13.00" Life4="12.80" Life5="13.80" Damage1="4.08" Damage2="6.40" Damage3="6.80" Damage4="6.70" Damage5="7.18" Defense1="4.70" Defense2="5.80" Defense3="6.40" Defense4="6.70" Defense5="7.30" />
+		<Monster Index="19" Level1="4.01" Level2="4.01" Level3="4.01" Level4="4.01" Level5="4.01" Life1="15.00" Life2="15.00" Life3="15.00" Life4="14.80" Life5="14.80" Damage1="4.28" Damage2="6.80" Damage3="7.00" Damage4="6.90" Damage5="7.28" Defense1="4.85" Defense2="6.40" Defense3="7.00" Defense4="7.10" Defense5="7.50" />
+		<Monster Index="20" Level1="4.05" Level2="4.05" Level3="4.05" Level4="4.05" Level5="4.05" Life1="16.00" Life2="17.00" Life3="18.00" Life4="18.80" Life5="18.80" Damage1="4.48" Damage2="7.00" Damage3="7.20" Damage4="7.10" Damage5="7.38" Defense1="5.00" Defense2="7.00" Defense3="7.50" Defense4="7.50" Defense5="7.80" />
+		<Monster Index="21" Level1="5.00" Level2="4.09" Level3="4.09" Level4="4.09" Level5="4.09" Life1="17.80" Life2="18.00" Life3="19.00" Life4="19.80" Life5="20.60" Damage1="4.68" Damage2="7.01" Damage3="6.80" Damage4="6.58" Damage5="7.58" Defense1="6.40" Defense2="7.20" Defense3="7.70" Defense4="7.70" Defense5="7.90" />
+		<Monster Index="22" Level1="5.05" Level2="4.13" Level3="4.13" Level4="4.13" Level5="4.13" Life1="18.80" Life2="19.00" Life3="20.00" Life4="20.80" Life5="21.60" Damage1="4.88" Damage2="7.02" Damage3="7.00" Damage4="6.78" Damage5="7.78" Defense1="6.60" Defense2="7.40" Defense3="7.90" Defense4="7.90" Defense5="8.10" />
+		<Monster Index="23" Level1="5.10" Level2="4.17" Level3="4.17" Level4="4.17" Level5="4.17" Life1="19.80" Life2="20.00" Life3="21.00" Life4="21.80" Life5="22.60" Damage1="5.08" Damage2="7.03" Damage3="7.10" Damage4="6.98" Damage5="7.98" Defense1="6.80" Defense2="7.60" Defense3="8.10" Defense4="8.10" Defense5="8.30" />
+		<Monster Index="24" Level1="5.15" Level2="4.21" Level3="4.21" Level4="4.21" Level5="4.21" Life1="20.80" Life2="21.00" Life3="22.00" Life4="22.80" Life5="23.60" Damage1="5.28" Damage2="7.04" Damage3="7.28" Damage4="7.18" Damage5="8.18" Defense1="7.20" Defense2="7.80" Defense3="8.30" Defense4="8.30" Defense5="8.50" />
+		<Monster Index="25" Level1="5.20" Level2="4.25" Level3="4.25" Level4="4.25" Level5="4.25" Life1="21.80" Life2="22.00" Life3="23.00" Life4="23.80" Life5="24.60" Damage1="5.48" Damage2="7.05" Damage3="7.48" Damage4="7.38" Damage5="8.38" Defense1="7.60" Defense2="8.00" Defense3="8.50" Defense4="8.50" Defense5="8.70" />
+		<Monster Index="26" Level1="5.25" Level2="4.29" Level3="4.29" Level4="4.29" Level5="4.29" Life1="22.80" Life2="23.00" Life3="24.00" Life4="24.80" Life5="25.60" Damage1="5.68" Damage2="7.06" Damage3="7.68" Damage4="7.58" Damage5="8.58" Defense1="8.00" Defense2="8.20" Defense3="8.70" Defense4="8.70" Defense5="8.90" />
+		<Monster Index="27" Level1="5.30" Level2="4.33" Level3="4.33" Level4="4.33" Level5="4.33" Life1="23.80" Life2="24.00" Life3="25.00" Life4="25.80" Life5="26.60" Damage1="5.88" Damage2="7.07" Damage3="7.88" Damage4="7.78" Damage5="8.78" Defense1="8.20" Defense2="8.40" Defense3="8.90" Defense4="8.90" Defense5="9.10" />
+		<Monster Index="28" Level1="5.35" Level2="4.37" Level3="4.37" Level4="4.37" Level5="4.37" Life1="25.80" Life2="25.00" Life3="26.00" Life4="26.80" Life5="27.60" Damage1="6.18" Damage2="7.08" Damage3="8.08" Damage4="7.98" Damage5="8.98" Defense1="8.60" Defense2="8.60" Defense3="9.10" Defense4="9.10" Defense5="9.30" />
+		<Monster Index="29" Level1="5.40" Level2="4.41" Level3="4.41" Level4="4.41" Level5="4.41" Life1="26.20" Life2="26.00" Life3="27.00" Life4="27.80" Life5="28.60" Damage1="6.28" Damage2="7.28" Damage3="8.28" Damage4="8.18" Damage5="9.18" Defense1="8.70" Defense2="8.80" Defense3="9.30" Defense4="9.30" Defense5="9.50" />
+		<Monster Index="30" Level1="5.45" Level2="4.45" Level3="4.45" Level4="4.45" Level5="4.45" Life1="26.80" Life2="27.00" Life3="28.00" Life4="28.80" Life5="29.60" Damage1="6.48" Damage2="7.48" Damage3="8.48" Damage4="8.38" Damage5="9.38" Defense1="8.80" Defense2="9.00" Defense3="9.50" Defense4="9.50" Defense5="9.70" />
+		<Monster Index="31" Level1="5.50" Level2="4.49" Level3="4.49" Level4="4.49" Level5="4.49" Life1="27.80" Life2="28.00" Life3="29.00" Life4="29.80" Life5="30.60" Damage1="6.68" Damage2="7.68" Damage3="8.68" Damage4="8.58" Damage5="9.58" Defense1="9.00" Defense2="9.20" Defense3="9.70" Defense4="9.70" Defense5="9.90" />
+		<Monster Index="32" Level1="5.55" Level2="4.53" Level3="4.53" Level4="4.53" Level5="4.53" Life1="29.80" Life2="29.50" Life3="30.00" Life4="30.80" Life5="31.60" Damage1="6.98" Damage2="7.88" Damage3="8.88" Damage4="8.78" Damage5="9.78" Defense1="9.40" Defense2="9.40" Defense3="9.90" Defense4="9.90" Defense5="10.10" />
+		<Monster Index="33" Level1="5.60" Level2="4.57" Level3="4.57" Level4="4.57" Level5="4.57" Life1="30.80" Life2="30.50" Life3="31.00" Life4="31.80" Life5="32.60" Damage1="7.18" Damage2="8.08" Damage3="9.08" Damage4="9.05" Damage5="10.05" Defense1="9.60" Defense2="9.60" Defense3="10.10" Defense4="10.10" Defense5="10.30" />
+		<Monster Index="34" Level1="5.65" Level2="4.61" Level3="4.61" Level4="4.61" Level5="4.61" Life1="31.80" Life2="31.50" Life3="32.00" Life4="32.80" Life5="33.60" Damage1="7.38" Damage2="8.35" Damage3="9.35" Damage4="9.18" Damage5="10.18" Defense1="9.80" Defense2="9.80" Defense3="10.30" Defense4="10.30" Defense5="10.50" />
+		<Monster Index="35" Level1="5.70" Level2="4.65" Level3="4.65" Level4="4.65" Level5="4.65" Life1="32.80" Life2="32.50" Life3="33.00" Life4="33.80" Life5="34.60" Damage1="7.58" Damage2="8.48" Damage3="9.48" Damage4="9.38" Damage5="10.38" Defense1="10.00" Defense2="10.00" Defense3="10.50" Defense4="10.50" Defense5="10.70" />
+		<Monster Index="36" Level1="5.75" Level2="4.69" Level3="4.69" Level4="4.69" Level5="4.69" Life1="33.80" Life2="33.50" Life3="34.00" Life4="34.80" Life5="35.60" Damage1="7.78" Damage2="8.68" Damage3="9.68" Damage4="9.58" Damage5="10.58" Defense1="10.20" Defense2="10.20" Defense3="10.70" Defense4="10.70" Defense5="10.90" />
+		<Monster Index="37" Level1="5.80" Level2="4.73" Level3="4.73" Level4="4.73" Level5="4.73" Life1="34.80" Life2="34.50" Life3="35.00" Life4="35.80" Life5="36.60" Damage1="7.98" Damage2="8.88" Damage3="9.88" Damage4="9.78" Damage5="10.78" Defense1="10.40" Defense2="10.40" Defense3="10.90" Defense4="10.90" Defense5="11.10" />
+		<Monster Index="38" Level1="5.85" Level2="4.77" Level3="4.77" Level4="4.77" Level5="4.77" Life1="35.80" Life2="35.50" Life3="36.00" Life4="36.80" Life5="37.60" Damage1="8.18" Damage2="9.08" Damage3="10.08" Damage4="9.98" Damage5="10.98" Defense1="10.60" Defense2="10.60" Defense3="11.10" Defense4="11.10" Defense5="11.30" />
+		<Monster Index="39" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="38.00" Life2="37.00" Life3="38.00" Life4="38.80" Life5="39.80" Damage1="8.48" Damage2="9.28" Damage3="10.28" Damage4="10.18" Damage5="11.18" Defense1="11.60" Defense2="11.50" Defense3="11.40" Defense4="11.40" Defense5="11.50" />
+		<Monster Index="40" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="39.00" Life2="41.00" Life3="42.00" Life4="42.80" Life5="43.80" Damage1="8.58" Damage2="9.68" Damage3="10.78" Damage4="10.38" Damage5="11.38" Defense1="12.00" Defense2="12.50" Defense3="12.80" Defense4="12.50" Defense5="12.30" />
+		<Monster Index="41" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="42.00" Life2="50.00" Life3="52.00" Life4="61.80" Life5="66.80" Damage1="8.68" Damage2="9.88" Damage3="10.78" Damage4="10.58" Damage5="11.58" Defense1="12.30" Defense2="13.50" Defense3="15.00" Defense4="15.70" Defense5="17.50" />
+		<Monster Index="42" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="47.00" Life2="52.00" Life3="57.00" Life4="66.80" Life5="71.80" Damage1="8.88" Damage2="9.98" Damage3="10.88" Damage4="10.78" Damage5="11.78" Defense1="12.60" Defense2="14.00" Defense3="15.50" Defense4="16.20" Defense5="18.00" />
+		<Monster Index="43" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="53.00" Life2="58.00" Life3="63.00" Life4="72.80" Life5="77.80" Damage1="9.08" Damage2="10.08" Damage3="11.08" Damage4="10.98" Damage5="11.98" Defense1="12.90" Defense2="14.30" Defense3="16.30" Defense4="17.00" Defense5="18.80" />
+		<Monster Index="44" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="59.00" Life2="64.00" Life3="69.00" Life4="78.80" Life5="83.80" Damage1="9.38" Damage2="10.28" Damage3="11.28" Damage4="11.18" Damage5="12.18" Defense1="13.10" Defense2="15.10" Defense3="17.10" Defense4="17.80" Defense5="19.60" />
+		<Monster Index="45" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="69.00" Life2="70.00" Life3="75.00" Life4="84.80" Life5="89.80" Damage1="9.98" Damage2="11.00" Damage3="12.00" Damage4="12.38" Damage5="13.38" Defense1="14.00" Defense2="15.90" Defense3="17.90" Defense4="18.60" Defense5="20.40" />
+		<Monster Index="46" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="76.00" Life2="76.00" Life3="81.00" Life4="90.80" Life5="95.80" Damage1="10.28" Damage2="12.00" Damage3="13.00" Damage4="13.10" Damage5="13.70" Defense1="14.70" Defense2="16.70" Defense3="18.70" Defense4="19.40" Defense5="21.20" />
+		<Monster Index="47" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="82.00" Life2="82.00" Life3="87.00" Life4="96.80" Life5="100.80" Damage1="10.58" Damage2="12.50" Damage3="13.50" Damage4="13.50" Damage5="14.00" Defense1="15.20" Defense2="17.50" Defense3="19.50" Defense4="20.20" Defense5="22.00" />
+		<Monster Index="48" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="88.00" Life2="88.00" Life3="93.00" Life4="101.80" Life5="106.80" Damage1="10.88" Damage2="13.00" Damage3="13.80" Damage4="13.70" Damage5="14.30" Defense1="16.00" Defense2="18.30" Defense3="20.30" Defense4="21.00" Defense5="22.80" />
+		<Monster Index="49" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="93.00" Life2="94.00" Life3="99.00" Life4="107.80" Life5="112.80" Damage1="11.18" Damage2="13.40" Damage3="14.10" Damage4="14.00" Damage5="14.60" Defense1="16.70" Defense2="19.10" Defense3="21.10" Defense4="21.80" Defense5="23.60" />
+		<Monster Index="50" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="95.00" Life2="100.00" Life3="105.00" Life4="113.80" Life5="118.80" Damage1="11.38" Damage2="13.70" Damage3="14.40" Damage4="14.30" Damage5="14.90" Defense1="17.40" Defense2="19.90" Defense3="21.90" Defense4="22.60" Defense5="24.40" />
+		<Monster Index="51" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="101.00" Life2="106.00" Life3="111.00" Life4="119.80" Life5="124.80" Damage1="11.48" Damage2="14.00" Damage3="14.70" Damage4="14.60" Damage5="15.20" Defense1="17.70" Defense2="20.70" Defense3="22.70" Defense4="23.40" Defense5="25.20" />
+		<Monster Index="52" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="107.00" Life2="112.00" Life3="117.00" Life4="125.80" Life5="130.80" Damage1="11.78" Damage2="14.30" Damage3="15.00" Damage4="14.90" Damage5="15.50" Defense1="18.50" Defense2="21.50" Defense3="23.50" Defense4="24.20" Defense5="26.00" />
+		<Monster Index="53" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="113.00" Life2="118.00" Life3="123.00" Life4="131.80" Life5="136.80" Damage1="12.08" Damage2="14.60" Damage3="15.30" Damage4="15.20" Damage5="15.80" Defense1="19.30" Defense2="22.30" Defense3="24.30" Defense4="25.00" Defense5="26.80" />
+		<Monster Index="54" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="119.00" Life2="124.00" Life3="129.00" Life4="137.80" Life5="142.80" Damage1="12.38" Damage2="14.90" Damage3="15.60" Damage4="15.50" Damage5="16.10" Defense1="20.10" Defense2="23.10" Defense3="25.10" Defense4="25.80" Defense5="27.60" />
+		<Monster Index="55" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="125.00" Life2="130.00" Life3="135.00" Life4="143.80" Life5="148.80" Damage1="12.68" Damage2="15.20" Damage3="15.90" Damage4="15.80" Damage5="16.40" Defense1="20.90" Defense2="23.90" Defense3="25.90" Defense4="26.60" Defense5="28.40" />
+		<Monster Index="56" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="131.00" Life2="136.00" Life3="141.00" Life4="149.80" Life5="154.80" Damage1="12.98" Damage2="15.50" Damage3="16.20" Damage4="16.10" Damage5="16.70" Defense1="21.70" Defense2="24.70" Defense3="26.70" Defense4="27.40" Defense5="29.20" />
+		<Monster Index="57" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="137.00" Life2="142.00" Life3="147.00" Life4="155.80" Life5="160.80" Damage1="13.28" Damage2="15.80" Damage3="16.50" Damage4="16.40" Damage5="17.00" Defense1="22.50" Defense2="25.50" Defense3="27.50" Defense4="28.20" Defense5="30.00" />
+		<Monster Index="58" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="143.00" Life2="148.00" Life3="153.00" Life4="161.80" Life5="166.80" Damage1="13.58" Damage2="16.10" Damage3="16.80" Damage4="16.70" Damage5="17.30" Defense1="23.30" Defense2="26.30" Defense3="28.30" Defense4="29.00" Defense5="30.80" />
+		<Monster Index="59" Level1="6.79" Level2="6.79" Level3="6.79" Level4="6.79" Level5="6.79" Life1="149.00" Life2="157.00" Life3="162.00" Life4="167.80" Life5="172.80" Damage1="13.88" Damage2="16.60" Damage3="17.20" Damage4="17.00" Damage5="17.60" Defense1="24.10" Defense2="28.10" Defense3="29.10" Defense4="29.80" Defense5="31.60" />
+	</MonsterSettings>
+</DoubleGoer>

@@ -1,0 +1,32 @@
+-- Plantilla de firmas. Este archivo NO se carga automaticamente.
+
+-- AV.On("ServerStart", function() end)
+-- AV.On("ServerShutdown", function() end)
+-- AV.On("Timer", function() end)
+-- AV.On("PlayerConnect", function(index) end)
+-- AV.On("PlayerDisconnect", function(index) end)
+-- AV.On("PlayerMove", function(index, map, x, y) end)
+-- AV.On("PlayerRespawn", function(index, map, x, y, killerType) end)
+-- AV.On("MonsterDie", function(killerIndex, monsterIndex) end)
+-- AV.On("PlayerDie", function(victimIndex, killerIndex, skill) end)
+-- AV.On("Damage", function(attacker, target, lifeDamage, shieldDamage, skill, flag) end)
+-- AV.On("LevelUp", function(index, oldLevel, newLevel, isMaster) end)
+-- AV.On("TradeComplete", function(firstIndex, secondIndex) end)
+-- AV.On("WarehouseOpen", function(index, isGuildWarehouse) end)
+-- AV.On("WarehouseClose", function(index, isGuildWarehouse) end)
+-- AV.On("ItemPick", function(index, slot, item, level, durability, excellent, ancient) end)
+-- AV.On("ItemDrop", function(index, slot, item, level, durability, excellent, ancient, x, y) end)
+-- AV.On("ItemMove", function(index, sourceFlag, sourceSlot, targetFlag, targetSlot, item) end)
+
+-- AV.On("Command", function(index, command, arguments, rawMessage)
+--     return false -- true consume el comando
+-- end)
+-- AV.On("Chat", function(index, message)
+--     return false -- true bloquea el mensaje
+-- end)
+-- AV.On("NpcTalk", function(index, npcIndex)
+--     return false -- true bloquea el NPC original
+-- end)
+-- AV.On("ItemUse", function(index, sourceSlot, targetSlot, item, level, durability)
+--     return false -- true bloquea el uso original
+-- end)

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== EXAMPLE - Basic format (<Item>)
+== This file is NOT loaded by the game (this folder is ignored).
+== It's just here to copy/paste from and understand the format.
+============================================================
+
+UseEx="0" on the root (or simply no attribute at all) = uses <Item>.
+
+### Config ###
+	EventName        Internal label (not shown to players).
+	DropZen          Zen dropped if no item hits, 0 = none.
+	ItemDropRate     Chance anything drops at all, out of 100.
+	ItemDropCount    How many items to roll per drop.
+	SetItemDropRate  Chance (out of 10000) that instead of a listed
+	                 item, a random Set Item drops.
+	ItemDropType     Drop behavior (ground vs direct-to-inventory
+	                 for the random option rolls).
+	SendFirework     1 = fireworks effect on drop.
+	Coin1/2/3        WCoin/WCoinP/GoblinPoint flat bonus, granted
+	                 every time this bag triggers - on top of the
+	                 item/zen roll, not instead of it. 0 = none.
+	GensContribution Flat Gens contribution points bonus, same deal
+	                 as Coin1-3. 0 = none.
+
+### Item ###
+	Type/Index          Item code (GET_ITEM(Type,Index), same as
+	                     Item.xml).
+	MinLevel/MaxLevel    Random item level range.
+	Option1-3/NewOption  Random option rolls.
+	Time                 Duration in seconds for a rental item,
+	                     0 = permanent.
+	DropRate             RELATIVE weight among this bag's <Item>
+	                     rows - not a percentage. If one item has 80
+	                     and another 20, the first drops 4x as often.
+	SocketOption         Forces exactly this many sockets (1-5) on
+	                     the drop - a hard guarantee, not a chance.
+	                     0/absent = roll randomly instead via
+	                     SocketOptionRate. Only works if the item's
+	                     Type/Index is registered in
+	                     SocketItemType.xml - otherwise ignored.
+	SocketOptionRate     Which row of ItemOptionRate.xml's <Option6>
+	                     table to roll sockets from when SocketOption
+	                     is 0/absent (11=always 0, 12=always 1, ...,
+	                     16=always 5, 17-24=random ranges, e.g.
+	                     18=1~3, 24=1~5). 0/absent = context 0
+	                     ("Common"), 100% zero sockets by default.
+-->
+
+<ItemBag UseEx="0">
+	<!-- Every time this bag triggers: 100 WCoin + 5 Gens contribution
+	     points, PLUS whatever item/zen the roll below produces. -->
+	<Config EventName="Example" DropZen="1000" ItemDropRate="100" ItemDropCount="1"
+	        SetItemDropRate="0" ItemDropType="0" SendFirework="0"
+	        Coin1="100" Coin2="0" Coin3="0" GensContribution="5" />
+
+	<!-- Drops 4x as often as the one below (weight 80 vs 20) -->
+	<Item Type="12" Index="30" MinLevel="0" MaxLevel="0" Option1="0" Option2="0"
+	      Option3="0" NewOption="0" Time="0" DropRate="80" Comment="Jewel of Bless" />
+
+	<!-- Rare item within the same bag -->
+	<Item Type="12" Index="15" MinLevel="0" MaxLevel="0" Option1="0" Option2="0"
+	      Option3="0" NewOption="0" Time="0" DropRate="20" Comment="Jewel of Chaos" />
+
+	<!-- Socket weapon example: Sword Breaker (Type 0, Index 27) is registered
+	     in SocketItemType.xml with 3 max sockets. SocketOption="3" forces
+	     all 3, guaranteed, no roll. -->
+	<Item Type="0" Index="27" MinLevel="0" MaxLevel="0" Option1="0" Option2="0"
+	      Option3="0" NewOption="0" Time="0" DropRate="5" SocketOption="3"
+	      Comment="Sword Breaker (3 sockets, forced)" />
+
+	<!-- Same weapon, but random 1~3 sockets instead of forced (context 18) -->
+	<Item Type="0" Index="27" MinLevel="0" MaxLevel="0" Option1="0" Option2="0"
+	      Option3="0" NewOption="0" Time="0" DropRate="5" SocketOptionRate="18"
+	      Comment="Sword Breaker (1~3 sockets, random)" />
+</ItemBag>

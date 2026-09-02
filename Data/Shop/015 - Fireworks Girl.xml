@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== 015 - Fireworks Girl.xml
+== NPC shop stock: Fireworks Girl.
+== Loaded by GameServer via CShop::LoadXML(), matched to its
+== ShopManager.xml entry by the leading number in this filename
+== (same convention as Data/EventItemBag/*.xml).
+== Modify only if you know what you're doing!
+============================================================
+
+### Item ###
+	Type/Index/Level/Durability   Item code (GET_ITEM(Type,Index) -
+	             matches Item.xml) and starting level/durability
+	             (0 = full/random).
+	Skill/Luck/Option/Excellent/Ancient/JOH/OpEx   Fixed item options.
+	Socket1-5    Socket seed per slot, 255 = none.
+	Value/Coin1-3/Sell   OPTIONAL - overrides this item's price in THIS
+	             shop only (Coin1/2/3 = WCoinC/WCoinP/GoblinPoint, Sell
+	             sets the sell-back price too). Absent = price comes
+	             from the global Data/Item/ItemValue.xml table instead.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+<Shop>
+	<Item Type="7" Index="59" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Sacred Fire Helm" />
+	<Item Type="7" Index="60" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Storm Jahad Helm" />
+	<Item Type="7" Index="5" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Leather Helm" />
+	<Item Type="7" Index="8" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Brass Helm" />
+	<Item Type="8" Index="59" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Sacred Fire Armor" />
+	<Item Type="8" Index="60" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Storm Jahad Armor" />
+	<Item Type="8" Index="5" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Leather Armor" />
+	<Item Type="8" Index="8" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Brass Armor" />
+	<Item Type="9" Index="59" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Sacred Fire Pants" />
+	<Item Type="9" Index="60" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Storm Jahad Pants" />
+	<Item Type="9" Index="5" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Leather Pants" />
+	<Item Type="9" Index="8" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Brass Pants" />
+	<Item Type="11" Index="59" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Sacred Fire Boots" />
+	<Item Type="11" Index="60" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Storm Jahad Boots" />
+	<Item Type="11" Index="5" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Leather Boots" />
+	<Item Type="11" Index="8" Level="0" Durability="0" Skill="0" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Brass Boots" />
+	<Item Type="0" Index="32" Level="0" Durability="0" Skill="1" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Sacred Glove" />
+	<Item Type="0" Index="33" Level="0" Durability="0" Skill="1" Luck="1" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Holy Storm Claws" />
+	<Item Type="15" Index="32" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Dragon Roar Parchment" />
+	<Item Type="15" Index="33" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Dragon Slasher Parchment" />
+	<Item Type="15" Index="30" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Chain Drive Parchment" />
+	<Item Type="15" Index="31" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Dark Side Parchment" />
+	<Item Type="15" Index="34" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Ignore Defense Parchment" />
+	<Item Type="15" Index="35" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Increase Health Parchment" />
+	<Item Type="15" Index="36" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Increase Block Parchment" />
+	<Item Type="15" Index="30" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Chain Drive Parchment" />
+	<Item Type="15" Index="31" Level="0" Durability="0" Skill="0" Luck="0" Option="0" Excellent="0" Ancient="0" JOH="0" OpEx="0" Socket1="255" Socket2="255" Socket3="255" Socket4="255" Socket5="255" Comment="Dark Side Parchment" />
+</Shop>

@@ -1,0 +1,1 @@
+17:24:57 [ChaosMachineXmlMix][Success][admin][Phanh] - (RecipeID: 65534, ChaosSuccessRate: 50, ChaosMoney: 1000000)

@@ -1,0 +1,5 @@
+02:54:01 [PetMix][Success][admin][Phanh] - (Type: 0, ChaosSuccessRate: 60, ChaosMoney: 5000000)
+03:21:49 [PetMix][Failure][admin][Phanh] - (Type: 1, ChaosSuccessRate: 60, ChaosMoney: 10)
+03:22:40 [PetMix][Success][admin][Phanh] - (Type: 1, ChaosSuccessRate: 60, ChaosMoney: 10)
+13:56:22 [LifeStoneMix][Success][admin][Phanh] - (ChaosSuccessRate: 0, ChaosMoney: 5000000)
+13:58:32 [LifeStoneMix][Success][admin][Phanh] - (ChaosSuccessRate: 0, ChaosMoney: 5000000)

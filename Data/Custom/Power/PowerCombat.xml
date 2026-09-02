@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== PowerCombat.xml
+== Player "Combat Power" (Power) rating formula, used for rankings and as
+== a requirement gate for other systems (e.g. TierRank.xml rank-up).
+== Loaded by GameServer via BCustomLucChien::LoadFileXML(). After editing,
+== copy the same changes to Tools/GETMAIN/ItemManager/PowerCombat.xml and
+== re-run GetMainInfo.exe so the client's copy stays in sync.
+==
+== <CharacterWeights> - per-point Power granted by each character stat:
+==   LevelWeight        * character Level
+==   StrengthWeight      * total Strength
+==   DexterityWeight     * total Dexterity
+==   VitalityWeight      * total Vitality
+==   EnergyWeight        * total Energy
+==   LeadershipWeight    * total Leadership
+==   MasterLevelWeight   * Master Level (Master class only)
+==   MasterPointWeight   * Master Skill points spent (Master class only)
+==   CultivationWeight, TitleWeight, ReincarnationWeight - reserved for
+==     future systems, currently unused by CalcLucChien().
+==
+== <ItemWeights><Item .../></ItemWeights> - Power granted per equipped item
+==   (checked against the 12 equipment slots):
+==   IndexMin/IndexMax  Item index range this row applies to.
+==   BaseWeight         Flat Power for having any item in range equipped.
+==   RefineWeight       * item +Level (refine level).
+==   RankWeight         * gItemManager.GetItemLevel(index) (item's base
+==                         rank/tier, independent of refine level).
+==   SkillOptionWeight  Flat Power if the item has the Skill option.
+==   LuckOptionWeight   Flat Power if the item has the Luck option.
+==   LifeOptionWeight   * the item's Option (Life/Defense) magnitude.
+==   ExcellentOptionWeight  * number of Excellent lines on the item.
+==   HarmonyOptionWeight    Flat Power if the item has a Harmony option.
+==   Option380Weight        Flat Power if the item has the 380 option.
+==   AncientOptionWeight    Flat Power if the item is an Ancient (Set) item.
+==   SocketOptionWeight     * number of socketed lines on the item.
+==
+== You can add extra <Item> rows (even for a single specific item, e.g.
+== IndexMin="19" IndexMax="19") to give bonus Power for VIP items or wings -
+== all matching rows are added together, they don't replace each other.
+== Modify only if you know what you're doing!
+============================================================
+-->
+<PowerCombat  Enable="1">
+		<CharacterWeights LevelWeight="1" StrengthWeight="0" DexterityWeight="0" VitalityWeight="0" EnergyWeight="0" LeadershipWeight="0" MasterLevelWeight="0"   MasterPointWeight="0" CultivationWeight="0" TitleWeight="0" ReincarnationWeight="0"/>
+		<ItemWeights>
+		
+	 <!-- Wing 1 ELF -->
+     <Item IndexMin="6144" IndexMax="6144"    RankWeight="0"	  BaseWeight="100"    RefineWeight="100" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="100" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+	 <!-- Wing 1 DW -->
+     <Item IndexMin="6145" IndexMax="6145"    RankWeight="0"	  BaseWeight="100"    RefineWeight="100" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="100" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+	 <!-- Wing 1 DK-MG -->
+     <Item IndexMin="6146" IndexMax="6146"    RankWeight="0"	  BaseWeight="100"    RefineWeight="100" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="100" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+	 <!-- Wing 1 SM -->
+     <Item IndexMin="6185" IndexMax="6185"    RankWeight="0"	  BaseWeight="100"    RefineWeight="100" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="100" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+	 
+     <!-- Wing 2 ELF -->
+     <Item IndexMin="6147" IndexMax="6147"    RankWeight="0"	  BaseWeight="300"    RefineWeight="300" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="300" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <!-- Wing 2 DW -->
+     <Item IndexMin="6148" IndexMax="6148"    RankWeight="0"	  BaseWeight="300"    RefineWeight="300" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="300" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <!-- Wing 2 DK -->
+     <Item IndexMin="6149" IndexMax="6149"    RankWeight="0"	  BaseWeight="300"    RefineWeight="300" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="300" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <!-- Wing 2 MG -->
+     <Item IndexMin="6150" IndexMax="6150"    RankWeight="0"	  BaseWeight="300"    RefineWeight="300" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="300" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <!-- Wing 2 SM -->
+     <Item IndexMin="6186" IndexMax="6186"    RankWeight="0"	  BaseWeight="300"    RefineWeight="300" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="300" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <!-- Wing 2 RF -->
+     <Item IndexMin="6193" IndexMax="6193"    RankWeight="0"	  BaseWeight="300"    RefineWeight="300" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="300" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <!-- Wing 2 DL -->
+     <Item IndexMin="6686" IndexMax="6686"    RankWeight="0"	  BaseWeight="300"    RefineWeight="300" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="300" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     
+	 <!-- Wing DK -->
+     <Item IndexMin="6180" IndexMax="6180"    RankWeight="0"	  BaseWeight="600"    RefineWeight="600" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="600" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <Item IndexMin="6181" IndexMax="6181"    RankWeight="0"	  BaseWeight="600"    RefineWeight="600" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="600" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <Item IndexMin="6182" IndexMax="6182"    RankWeight="0"	  BaseWeight="600"    RefineWeight="600" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="600" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <Item IndexMin="6183" IndexMax="6183"    RankWeight="0"	  BaseWeight="600"    RefineWeight="600" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="600" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <Item IndexMin="6187" IndexMax="6187"    RankWeight="0"	  BaseWeight="600"    RefineWeight="600" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="600" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <Item IndexMin="6184" IndexMax="6184"    RankWeight="0"	  BaseWeight="600"    RefineWeight="600" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="600" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <Item IndexMin="6194" IndexMax="6194"    RankWeight="0"	  BaseWeight="600"    RefineWeight="600" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="600" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <!-- Wing 4  -->
+     <Item IndexMin="6300" IndexMax="6300"    RankWeight="0"	  BaseWeight="1200"    RefineWeight="1200" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="1200" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <Item IndexMin="6301" IndexMax="6301"    RankWeight="0"	  BaseWeight="1200"    RefineWeight="1200" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="1200" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <Item IndexMin="6302" IndexMax="6302"    RankWeight="0"	  BaseWeight="1200"    RefineWeight="1200" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="1200" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <Item IndexMin="6303" IndexMax="6303"    RankWeight="0"	  BaseWeight="1200"    RefineWeight="1200" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="1200" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <Item IndexMin="6304" IndexMax="6304"    RankWeight="0"	  BaseWeight="1200"    RefineWeight="1200" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="1200" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <Item IndexMin="6305" IndexMax="6305"    RankWeight="0"	  BaseWeight="1200"    RefineWeight="1200" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="1200" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+     <Item IndexMin="6306" IndexMax="6306"    RankWeight="0"	  BaseWeight="1200"    RefineWeight="1200" 	SkillOptionWeight="100"  LuckOptionWeight="100" 	LifeOptionWeight="100"   ExcellentOptionWeight="1200" 	HarmonyOptionWeight="0"  Option380Weight="0"   AncientOptionWeight="0" SocketOptionWeight="0"/>
+
+
+		</ItemWeights>
+</PowerCombat>
