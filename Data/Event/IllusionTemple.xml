@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+============================================================
+== AVEmulator
+== (C) 2026 AVEmulator
+== ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== IllusionTemple.xml
+== Illusion Temple event: timing, schedule, per-level (0-5)
+== experience reward table, and per-level WCoin reward.
+== Loaded by GameServer via CIllusionTemple::LoadXML().
+== Modify only if you know what you're doing!
+============================================================
+
+### IllusionTemple::Timing ###
+	WarningTime/NotifyTime/EventTime/CloseTime in minutes.
+
+### IllusionTemple::Schedule::StartTime ###
+	One or more scheduled triggers, matched against the real-world
+	clock (-1 = any/wildcard for that field):
+	Year/Month/Day/DayOfWeek/Hour/Minute/Second.
+
+### IllusionTemple::ExperienceSettings::Experience ###
+	Level 0-5 (MAX_IT_LEVEL) - Table1/Table2 experience reward
+	values for that difficulty level.
+
+### IllusionTemple::RewardSettings::Reward ###
+	Level 0-5 - WC/WP/GP (WCoinC/WCoinP/GoblinPoint) and
+	GensContribution (Gens Family points, 0 = none) paid for
+	clearing that difficulty level.
+
+### IllusionTemple::EntryLevelMgDlRf / EntryLevelStandard ###
+	Which Illusion Temple level (0-5) a character can enter, based on
+	combined Level + MasterLevel. MgDlRf applies to Magic Gladiator/
+	Dark Lord/Rage Fighter, Standard to everyone else.
+	MinLevel/MaxLevel, -1 on MaxLevel = unbounded.
+
+### IllusionTemple::DailyEntryLimit ###
+	Vip0-3 - max entries per day (any level combined) for that VIP
+	tier, -1 = unlimited. Resets at midnight server time, in-memory
+	only (not persisted across restarts).
+
+### IllusionTemple::EntrySettings::Entry ###
+	Level 0-5:
+	MaxUser         Player cap for that level (hard ceiling MAX_IT_USER=10).
+	MinAccountLevel Minimum VIP tier required, -1 = none.
+	MinReset/MaxReset/MinMasterReset/MaxMasterReset
+	                Reset range restrictions, 0 on the Max fields = unbounded.
+
+STRICTLY NO COMMENTS INSIDE TAGS
+-->
+
+<IllusionTemple>
+	<Timing WarningTime="5" NotifyTime="1" EventTime="15" CloseTime="4" />
+
+	<Schedule>
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="1" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="5" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="9" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="13" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="17" Minute="30" Second="0" />
+		<StartTime Year="-1" Month="-1" Day="-1" DayOfWeek="-1" Hour="21" Minute="30" Second="0" />
+	</Schedule>
+
+	<ExperienceSettings>
+		<Experience Level="0" Table1="300000" Table2="50000" />
+		<Experience Level="1" Table1="340000" Table2="60000" />
+		<Experience Level="2" Table1="380000" Table2="70000" />
+		<Experience Level="3" Table1="420000" Table2="80000" />
+		<Experience Level="4" Table1="460000" Table2="90000" />
+		<Experience Level="5" Table1="500000" Table2="100000" />
+	</ExperienceSettings>
+
+	<RewardSettings>
+		<Reward Level="0" WC="10" WP="0" GP="0" GensContribution="0" />
+		<Reward Level="1" WC="10" WP="0" GP="0" GensContribution="0" />
+		<Reward Level="2" WC="10" WP="0" GP="0" GensContribution="0" />
+		<Reward Level="3" WC="10" WP="0" GP="0" GensContribution="0" />
+		<Reward Level="4" WC="10" WP="0" GP="0" GensContribution="0" />
+		<Reward Level="5" WC="10" WP="0" GP="0" GensContribution="0" />
+	</RewardSettings>
+
+	<EntryLevelMgDlRf>
+		<Temple Level="0" MinLevel="220" MaxLevel="270" />
+		<Temple Level="1" MinLevel="271" MaxLevel="320" />
+		<Temple Level="2" MinLevel="321" MaxLevel="350" />
+		<Temple Level="3" MinLevel="351" MaxLevel="380" />
+		<Temple Level="4" MinLevel="381" MaxLevel="400" />
+		<Temple Level="5" MinLevel="401" MaxLevel="-1" />
+	</EntryLevelMgDlRf>
+
+	<EntryLevelStandard>
+		<Temple Level="0" MinLevel="220" MaxLevel="270" />
+		<Temple Level="1" MinLevel="271" MaxLevel="320" />
+		<Temple Level="2" MinLevel="321" MaxLevel="350" />
+		<Temple Level="3" MinLevel="351" MaxLevel="380" />
+		<Temple Level="4" MinLevel="381" MaxLevel="400" />
+		<Temple Level="5" MinLevel="401" MaxLevel="-1" />
+	</EntryLevelStandard>
+
+	<DailyEntryLimit Vip0="-1" Vip1="-1" Vip2="-1" Vip3="-1" />
+
+	<EntrySettings>
+		<Entry Level="0" MaxUser="10" MinAccountLevel="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" />
+		<Entry Level="1" MaxUser="10" MinAccountLevel="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" />
+		<Entry Level="2" MaxUser="10" MinAccountLevel="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" />
+		<Entry Level="3" MaxUser="10" MinAccountLevel="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" />
+		<Entry Level="4" MaxUser="10" MinAccountLevel="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" />
+		<Entry Level="5" MaxUser="10" MinAccountLevel="-1" MinReset="0" MaxReset="0" MinMasterReset="0" MaxMasterReset="0" />
+	</EntrySettings>
+</IllusionTemple>

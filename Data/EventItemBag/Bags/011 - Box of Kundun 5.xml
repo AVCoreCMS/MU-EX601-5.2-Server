@@ -38,7 +38,22 @@ STRICTLY NO COMMENTS INSIDE TAGS
 
 
 <ItemBag>
-	<Config EventName="Box of Kundun 5" DropZen="10000" ItemDropRate="100" ItemDropCount="1" SetItemDropRate="0" ItemDropType="0" SendFirework="0" Coin1="100" Coin2="0" Coin3="0" GensContribution="5" />
-	<Item Type="4" Index="2" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="10" DropRate="5" Comment="Elven Bow" />
-	<Item Type="4" Index="4" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="10" DropRate="5" Comment="Tiger Bow" />
+	<Config EventName="Box of Kundun 5" DropZen="10000" ItemDropRate="100" ItemDropCount="1" SetItemDropRate="0" ItemDropType="0" SendFirework="0" />
+	<Item Type="4" Index="2" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Elven Bow" />
+	<Item Type="4" Index="4" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Tiger Bow" />
+	<Item Type="4" Index="10" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Arquebus" />
+	<Item Type="4" Index="13" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Bluewing Crossbow" />
+	<Item Type="5" Index="1" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Angelic Staff" />
+	<Item Type="5" Index="4" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Gorgon Staff" />
+	<Item Type="2" Index="8" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Battle Scepter" />
+	<Item Type="5" Index="14" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Mystery Stick" />
+	<Item Type="6" Index="4" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Buckler" />
+	<Item Type="6" Index="6" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Skull Shield" />
+	<Item Type="6" Index="7" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Spiked Shield" />
+	<Item Type="7" Index="5" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Leather Helm" />
+	<Item Type="8" Index="5" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Leather Armor" />
+	<Item Type="9" Index="5" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Leather Pants" />
+	<Item Type="10" Index="5" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Leather Gloves" />
+	<Item Type="11" Index="5" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Leather Boots" />
+	<Item Type="7" Index="9" MinLevel="0" MaxLevel="0" Option1="1" Option2="1" Option3="1" NewOption="1" Time="0" DropRate="5" Comment="Plate Helm" />
 </ItemBag>
